@@ -1,16 +1,7 @@
-# MarqueeSign
-![Photo1](https://github.com/Furkanprlk/Marquee-Sign/blob/main/photos/photo.png)
-Make your own Scrolling Text! Easy to make LED Marquee Sign using a NodeMCU and a LED Dot Matrix Panel. Full Arduino software.
+# DSP F28335 Examples
+Document explaining process of programming TI F28335 using Simulink models and Code Composer Studio v10.3
 
-[![GitHub followers](https://img.shields.io/github/followers/Furkanprlk?style=social)](https://github.com/Furkanprlk) &#9;
-![](https://img.shields.io/github/forks/Furkanprlk/Marquee-Sign.svg)&#9;
-![](https://img.shields.io/github/stars/Furkanprlk/Marquee-Sign.svg)&#9;
-![](https://img.shields.io/github/tag/Furkanprlk/Marquee-Sign.svg)&#9;
-![](https://img.shields.io/github/release/Furkanprlk/Marquee-Sign.svg)&#9;
-![](https://img.shields.io/github/issues/Furkanprlk/Marquee-Sign.svg)&#9;
-
-
-## Features (Coming Soon)
+## Hardware Requirements
 * Configured through Web Interface
     * --------
 
