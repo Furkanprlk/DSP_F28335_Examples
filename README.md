@@ -5,13 +5,9 @@ Document explaining process of programming TI F28335 using Simulink models and C
 * [TMDSCNCD28335](https://www.ti.com/tool/TMDSCNCD28335)
 * [TMDSDOCK28335](https://www.ti.com/tool/TMDSDOCK28335)
 
-### Supported Platforms
-* Chrome Web Browser
-* Opera Web Browser
-* Edge Web Browser
-* Mobile Web Browser
-
-
+## Software Requirements
+* MATLAB2020b
+* [CCSTUDIO](https://www.ti.com/tool/CCSTUDIO)
 
 ## Installation
 
