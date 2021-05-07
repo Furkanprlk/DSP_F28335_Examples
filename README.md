@@ -16,6 +16,15 @@ Steps to create Simulink model which can be used to generate DSP program are sim
 
 
 ### MATLAB
+* Create a new Simulink Model
+* Drop new Simulink Coder/Target Preferences block on the model. In Initializa Configuration Parameters select:
+  * IDE/Tool Chain: Texas Instruments Code Composer Studio
+  * Board: SD F28355 Do you want to update the model's Configuration Parameters to correspond to your selections: Yes
+* When in your model window, open Tools/Code Generation/Options... dialog. In Code Generation/IDE Link select appropriate Build action:
+  * Build - if you just want to generate and compile code, or
+  * Build_and_execute - if you want to generate code, compile it and then automatically run on the DSP
+
+Now it should be possible to execute Tools/Code Generation/Build Model action (Ctrl+B) (program doesn't do anything useful at this point, though).
 
 
 ### CCS
