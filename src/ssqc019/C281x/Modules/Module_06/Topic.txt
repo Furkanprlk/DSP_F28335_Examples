@@ -1,0 +1,1 @@
+* ADC Module Overview	* ADC Conversion Time * ADC Cascaded Mode	* ADC Register Block * ADC Dual Sequencer Mode	* Example:  3 phase measurement	 * ADC Result Register Set * Lab 6: Two Potentiometer Voltages * Lab 6A Speed Control of ‘Knight Rider‘

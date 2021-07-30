@@ -1,0 +1,136 @@
+---------------------------  adc_oku.pjt - CustomMW  ---------------------------
+[DSP2833x_Adc.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_Adc.c"
+Fatal error: could not open source file "DSP2833x_Adc.c"
+1 fatal error detected in the compilation of "DSP2833x_Adc.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_ADC_cal.asm] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_ADC_cal.asm"
+"DSP2833x_ADC_cal.asm", ERROR!  : [E1000] Cannot open source file
+                                          DSP2833x_ADC_cal.asm: No such file or
+                                          directory
+
+>> Compilation failure
+
+[DSP2833x_CodeStartBranch.asm] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_CodeStartBranch.asm"
+"DSP2833x_CodeStartBranch.asm", ERROR!  : [E1000] Cannot open source file
+                                                  DSP2833x_CodeStartBranch.asm:
+                                                  No such file or directory
+
+>> Compilation failure
+
+[DSP2833x_CpuTimers.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_CpuTimers.c"
+Fatal error: could not open source file "DSP2833x_CpuTimers.c"
+1 fatal error detected in the compilation of "DSP2833x_CpuTimers.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_DefaultIsr.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_DefaultIsr.c"
+Fatal error: could not open source file "DSP2833x_DefaultIsr.c"
+1 fatal error detected in the compilation of "DSP2833x_DefaultIsr.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_DMA.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_DMA.c"
+Fatal error: could not open source file "DSP2833x_DMA.c"
+1 fatal error detected in the compilation of "DSP2833x_DMA.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_GlobalVariableDefs.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_GlobalVariableDefs.c"
+Fatal error: could not open source file "DSP2833x_GlobalVariableDefs.c"
+1 fatal error detected in the compilation of "DSP2833x_GlobalVariableDefs.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_MemCopy.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_MemCopy.c"
+Fatal error: could not open source file "DSP2833x_MemCopy.c"
+1 fatal error detected in the compilation of "DSP2833x_MemCopy.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_PieCtrl.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_PieCtrl.c"
+Fatal error: could not open source file "DSP2833x_PieCtrl.c"
+1 fatal error detected in the compilation of "DSP2833x_PieCtrl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_PieVect.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_PieVect.c"
+Fatal error: could not open source file "DSP2833x_PieVect.c"
+1 fatal error detected in the compilation of "DSP2833x_PieVect.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_SysCtrl.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_SysCtrl.c"
+Fatal error: could not open source file "DSP2833x_SysCtrl.c"
+1 fatal error detected in the compilation of "DSP2833x_SysCtrl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_usDelay.asm] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"../../../../../../../../Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW.lkf" "DSP2833x_usDelay.asm"
+"DSP2833x_usDelay.asm", ERROR!  : [E1000] Cannot open source file
+                                          DSP2833x_usDelay.asm: No such file or
+                                          directory
+
+>> Compilation failure
+
+[adc_oku.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "adc_oku.c"
+"adc_oku.h", line 24: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "adc_oku.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[adc_oku_data.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "adc_oku_data.c"
+"adc_oku.h", line 24: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "adc_oku_data.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[adc_oku_main.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "adc_oku_main.c"
+"adc_oku.h", line 24: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "adc_oku_main.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[MW_c28xx_adc.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "MW_c28xx_adc.c"
+"MW_c28xx_adc.c", line 1: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "MW_c28xx_adc.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[MW_c28xx_board.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "MW_c28xx_board.c"
+"MW_c28xx_board.c", line 1: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "MW_c28xx_board.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[MW_c28xx_csl.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "MW_c28xx_csl.c"
+"MW_c28xx_csl.c", line 1: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "MW_c28xx_csl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[MW_c28xx_pwm.c] "C:\CCStudio_v3.3MCU\C2000\cgtools\bin\cl2000" -fr"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs/CustomMW" -i"C:/Program Files/MATLAB/R2011b/toolbox/idelink/extensions/ticcs/inc" -i"C:/Users/mustafa/Desktop/adc_oku/adc_oku_ticcs" -i"C:/Users/mustafa/Desktop/adc_oku" -i"C:/Program Files/MATLAB/R2011b/extern/include" -i"C:/Program Files/MATLAB/R2011b/simulink/include" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src" -i"C:/Program Files/MATLAB/R2011b/rtw/c/src/ext_mode/common" -i"C:/Program Files/MATLAB/R2011b/rtw/c/ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=adc_oku" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32 -@"CustomMW.lkf" "MW_c28xx_pwm.c"
+"MW_c28xx_pwm.c", line 1: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "MW_c28xx_pwm.c".
+Compilation terminated.
+
+>> Compilation failure
+
+Build Complete,
+  19 Errors, 0 Warnings, 0 Remarks.

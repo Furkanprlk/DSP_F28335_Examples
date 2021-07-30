@@ -1,0 +1,51 @@
+//###########################################################################
+// Description:
+//
+// Task 1: ln
+//
+//###########################################################################
+// $TI Release:  $
+// $Release Date:  $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+#include "CLAMath.h"
+#include "CLAShared.h"
+
+//Task 1 : Calculate ln(X)
+interrupt void Cla1Task1 ( void )
+{
+	__mdebugstop();
+    fResult = CLAln(fVal);
+}
+
+interrupt void Cla1Task2 ( void )
+{
+
+}
+interrupt void Cla1Task3 ( void )
+{
+
+}
+interrupt void Cla1Task4 ( void )
+{
+
+}
+interrupt void Cla1Task5 ( void )
+{
+
+}
+interrupt void Cla1Task6 ( void )
+{
+
+}
+interrupt void Cla1Task7 ( void )
+{
+
+}
+interrupt void Cla1Task8 ( void )
+{
+
+}
+
+// End of file

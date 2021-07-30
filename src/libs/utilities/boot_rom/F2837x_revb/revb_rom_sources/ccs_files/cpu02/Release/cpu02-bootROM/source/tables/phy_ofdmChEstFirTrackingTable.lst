@@ -1,0 +1,611 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.1.3 *
+       3              ;* Date/Time created: Thu Jan 30 10:31:27 2014                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --o
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TMS320C2000 C/C++ Codegen PC v6.1.3 Copyright (c) 1996-2012 Texas I
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\work\grepos\bootrom\Boot_ROM\F2837x_bootROM-REVB\F2837x_bootROM_
+      13                      .global _PHY_ofdmchEstFirTracking
+      14 00000000               .sect   "sunPhyTable"
+      15                      .align  2
+      16 00000000       _PHY_ofdmchEstFirTracking:
+      17 00000000 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][0] @ 0
+      18 00000001 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][1] @ 16
+      19 00000002 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][2] @ 32
+      20 00000003 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][3] @ 48
+      21 00000004 5A8A          .field  23178,16                        ; _PHY_ofdmchEstFirTracking[0][4] @ 64
+      22 00000005 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][5] @ 80
+      23 00000006 F5E7          .field  -2585,16                        ; _PHY_ofdmchEstFirTracking[0][6] @ 96
+      24 00000007 2148          .field  8520,16                 ; _PHY_ofdmchEstFirTracking[0][7] @ 112
+      25 00000008 0B7D          .field  2941,16                 ; _PHY_ofdmchEstFirTracking[0][8] @ 128
+      26 00000009 07AD          .field  1965,16                 ; _PHY_ofdmchEstFirTracking[0][9] @ 144
+      27 0000000a 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][10] @ 160
+      28 0000000b 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][11] @ 176
+      29 0000000c F651          .field  -2479,16                        ; _PHY_ofdmchEstFirTracking[0][12] @ 192
+      30 0000000d E013          .field  -8173,16                        ; _PHY_ofdmchEstFirTracking[0][13] @ 208
+      31 0000000e 3DDB          .field  15835,16                        ; _PHY_ofdmchEstFirTracking[0][14] @ 224
+      32 0000000f 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][15] @ 240
+      33 00000010 F401          .field  -3071,16                        ; _PHY_ofdmchEstFirTracking[0][16] @ 256
+      34 00000011 278B          .field  10123,16                        ; _PHY_ofdmchEstFirTracking[0][17] @ 272
+      35 00000012 0654          .field  1620,16                 ; _PHY_ofdmchEstFirTracking[0][18] @ 288
+      36 00000013 043A          .field  1082,16                 ; _PHY_ofdmchEstFirTracking[0][19] @ 304
+      37 00000014 0578          .field  1400,16                 ; _PHY_ofdmchEstFirTracking[0][20] @ 320
+      38 00000015 FC59          .field  -935,16                 ; _PHY_ofdmchEstFirTracking[0][21] @ 336
+      39 00000016 F49E          .field  -2914,16                        ; _PHY_ofdmchEstFirTracking[0][22] @ 352
+      40 00000017 DA7B          .field  -9605,16                        ; _PHY_ofdmchEstFirTracking[0][23] @ 368
+      41 00000018 3CC5          .field  15557,16                        ; _PHY_ofdmchEstFirTracking[0][24] @ 384
+      42 00000019 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][25] @ 400
+      43 0000001a F49E          .field  -2914,16                        ; _PHY_ofdmchEstFirTracking[0][26] @ 416
+      44 0000001b 2585          .field  9605,16                 ; _PHY_ofdmchEstFirTracking[0][27] @ 432
+      45 0000001c 0578          .field  1400,16                 ; _PHY_ofdmchEstFirTracking[0][28] @ 448
+      46 0000001d 03A7          .field  935,16                  ; _PHY_ofdmchEstFirTracking[0][29] @ 464
+      47 0000001e 0654          .field  1620,16                 ; _PHY_ofdmchEstFirTracking[0][30] @ 480
+      48 0000001f FBC6          .field  -1082,16                        ; _PHY_ofdmchEstFirTracking[0][31] @ 496
+      49 00000020 F401          .field  -3071,16                        ; _PHY_ofdmchEstFirTracking[0][32] @ 512
+      50 00000021 D875          .field  -10123,16                       ; _PHY_ofdmchEstFirTracking[0][33] @ 528
+      51 00000022 3DDB          .field  15835,16                        ; _PHY_ofdmchEstFirTracking[0][34] @ 544
+      52 00000023 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][35] @ 560
+      53 00000024 F651          .field  -2479,16                        ; _PHY_ofdmchEstFirTracking[0][36] @ 576
+      54 00000025 1FED          .field  8173,16                 ; _PHY_ofdmchEstFirTracking[0][37] @ 592
+      55 00000026 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][38] @ 608
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    2
+
+      56 00000027 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][39] @ 624
+      57 00000028 0B7D          .field  2941,16                 ; _PHY_ofdmchEstFirTracking[0][40] @ 640
+      58 00000029 F853          .field  -1965,16                        ; _PHY_ofdmchEstFirTracking[0][41] @ 656
+      59 0000002a F5E7          .field  -2585,16                        ; _PHY_ofdmchEstFirTracking[0][42] @ 672
+      60 0000002b DEB8          .field  -8520,16                        ; _PHY_ofdmchEstFirTracking[0][43] @ 688
+      61 0000002c 5A8A          .field  23178,16                        ; _PHY_ofdmchEstFirTracking[0][44] @ 704
+      62 0000002d 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][45] @ 720
+      63 0000002e 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][46] @ 736
+      64 0000002f 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][47] @ 752
+      65 00000030 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][48] @ 768
+      66 00000031 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][49] @ 784
+      67 00000032 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][50] @ 800
+      68 00000033 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][51] @ 816
+      69 00000034 2688          .field  9864,16                 ; _PHY_ofdmchEstFirTracking[0][52] @ 832
+      70 00000035 CC0C          .field  -13300,16                       ; _PHY_ofdmchEstFirTracking[0][53] @ 848
+      71 00000036 2135          .field  8501,16                 ; _PHY_ofdmchEstFirTracking[0][54] @ 864
+      72 00000037 2CC6          .field  11462,16                        ; _PHY_ofdmchEstFirTracking[0][55] @ 880
+      73 00000038 F984          .field  -1660,16                        ; _PHY_ofdmchEstFirTracking[0][56] @ 896
+      74 00000039 0252          .field  594,16                  ; _PHY_ofdmchEstFirTracking[0][57] @ 912
+      75 0000003a F808          .field  -2040,16                        ; _PHY_ofdmchEstFirTracking[0][58] @ 928
+      76 0000003b FD26          .field  -730,16                 ; _PHY_ofdmchEstFirTracking[0][59] @ 944
+      77 0000003c 2232          .field  8754,16                 ; _PHY_ofdmchEstFirTracking[0][60] @ 960
+      78 0000003d D1E4          .field  -11804,16                       ; _PHY_ofdmchEstFirTracking[0][61] @ 976
+      79 0000003e 2232          .field  8754,16                 ; _PHY_ofdmchEstFirTracking[0][62] @ 992
+      80 0000003f 2E1C          .field  11804,16                        ; _PHY_ofdmchEstFirTracking[0][63] @ 1008
+      81 00000040 F808          .field  -2040,16                        ; _PHY_ofdmchEstFirTracking[0][64] @ 1024
+      82 00000041 02DA          .field  730,16                  ; _PHY_ofdmchEstFirTracking[0][65] @ 1040
+      83 00000042 F984          .field  -1660,16                        ; _PHY_ofdmchEstFirTracking[0][66] @ 1056
+      84 00000043 FDAE          .field  -594,16                 ; _PHY_ofdmchEstFirTracking[0][67] @ 1072
+      85 00000044 2135          .field  8501,16                 ; _PHY_ofdmchEstFirTracking[0][68] @ 1088
+      86 00000045 D33A          .field  -11462,16                       ; _PHY_ofdmchEstFirTracking[0][69] @ 1104
+      87 00000046 2688          .field  9864,16                 ; _PHY_ofdmchEstFirTracking[0][70] @ 1120
+      88 00000047 33F4          .field  13300,16                        ; _PHY_ofdmchEstFirTracking[0][71] @ 1136
+      89 00000048 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][72] @ 1152
+      90 00000049 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[0][73] @ 1168
+      91 0000004a 0CCD          .field  3277,16                 ; _PHY_ofdmchEstFirTracking[0][74] @ 1184
+      92 0000004b 0CCD          .field  3277,16                 ; _PHY_ofdmchEstFirTracking[0][75] @ 1200
+      93 0000004c 7333          .field  29491,16                        ; _PHY_ofdmchEstFirTracking[0][76] @ 1216
+      94 0000004d 7333          .field  29491,16                        ; _PHY_ofdmchEstFirTracking[0][77] @ 1232
+      95 0000004e               .space  160
+      96 00000058 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][0] @ 1408
+      97 00000059 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][1] @ 1424
+      98 0000005a 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][2] @ 1440
+      99 0000005b 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][3] @ 1456
+     100 0000005c 6B12          .field  27410,16                        ; _PHY_ofdmchEstFirTracking[1][4] @ 1472
+     101 0000005d 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][5] @ 1488
+     102 0000005e F69A          .field  -2406,16                        ; _PHY_ofdmchEstFirTracking[1][6] @ 1504
+     103 0000005f 1EFB          .field  7931,16                 ; _PHY_ofdmchEstFirTracking[1][7] @ 1520
+     104 00000060 0CEB          .field  3307,16                 ; _PHY_ofdmchEstFirTracking[1][8] @ 1536
+     105 00000061 08A2          .field  2210,16                 ; _PHY_ofdmchEstFirTracking[1][9] @ 1552
+     106 00000062 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][10] @ 1568
+     107 00000063 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][11] @ 1584
+     108 00000064 F720          .field  -2272,16                        ; _PHY_ofdmchEstFirTracking[1][12] @ 1600
+     109 00000065 E2BD          .field  -7491,16                        ; _PHY_ofdmchEstFirTracking[1][13] @ 1616
+     110 00000066 3FCE          .field  16334,16                        ; _PHY_ofdmchEstFirTracking[1][14] @ 1632
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    3
+
+     111 00000067 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][15] @ 1648
+     112 00000068 F274          .field  -3468,16                        ; _PHY_ofdmchEstFirTracking[1][16] @ 1664
+     113 00000069 2CAA          .field  11434,16                        ; _PHY_ofdmchEstFirTracking[1][17] @ 1680
+     114 0000006a 0867          .field  2151,16                 ; _PHY_ofdmchEstFirTracking[1][18] @ 1696
+     115 0000006b 059D          .field  1437,16                 ; _PHY_ofdmchEstFirTracking[1][19] @ 1712
+     116 0000006c 066C          .field  1644,16                 ; _PHY_ofdmchEstFirTracking[1][20] @ 1728
+     117 0000006d FBB6          .field  -1098,16                        ; _PHY_ofdmchEstFirTracking[1][21] @ 1744
+     118 0000006e F3D4          .field  -3116,16                        ; _PHY_ofdmchEstFirTracking[1][22] @ 1760
+     119 0000006f D7E1          .field  -10271,16                       ; _PHY_ofdmchEstFirTracking[1][23] @ 1776
+     120 00000070 3D4F          .field  15695,16                        ; _PHY_ofdmchEstFirTracking[1][24] @ 1792
+     121 00000071 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][25] @ 1808
+     122 00000072 F3D4          .field  -3116,16                        ; _PHY_ofdmchEstFirTracking[1][26] @ 1824
+     123 00000073 281F          .field  10271,16                        ; _PHY_ofdmchEstFirTracking[1][27] @ 1840
+     124 00000074 066C          .field  1644,16                 ; _PHY_ofdmchEstFirTracking[1][28] @ 1856
+     125 00000075 044A          .field  1098,16                 ; _PHY_ofdmchEstFirTracking[1][29] @ 1872
+     126 00000076 0867          .field  2151,16                 ; _PHY_ofdmchEstFirTracking[1][30] @ 1888
+     127 00000077 FA63          .field  -1437,16                        ; _PHY_ofdmchEstFirTracking[1][31] @ 1904
+     128 00000078 F274          .field  -3468,16                        ; _PHY_ofdmchEstFirTracking[1][32] @ 1920
+     129 00000079 D356          .field  -11434,16                       ; _PHY_ofdmchEstFirTracking[1][33] @ 1936
+     130 0000007a 3FCE          .field  16334,16                        ; _PHY_ofdmchEstFirTracking[1][34] @ 1952
+     131 0000007b 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][35] @ 1968
+     132 0000007c F720          .field  -2272,16                        ; _PHY_ofdmchEstFirTracking[1][36] @ 1984
+     133 0000007d 1D43          .field  7491,16                 ; _PHY_ofdmchEstFirTracking[1][37] @ 2000
+     134 0000007e 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][38] @ 2016
+     135 0000007f 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][39] @ 2032
+     136 00000080 0CEB          .field  3307,16                 ; _PHY_ofdmchEstFirTracking[1][40] @ 2048
+     137 00000081 F75E          .field  -2210,16                        ; _PHY_ofdmchEstFirTracking[1][41] @ 2064
+     138 00000082 F69A          .field  -2406,16                        ; _PHY_ofdmchEstFirTracking[1][42] @ 2080
+     139 00000083 E105          .field  -7931,16                        ; _PHY_ofdmchEstFirTracking[1][43] @ 2096
+     140 00000084 6B12          .field  27410,16                        ; _PHY_ofdmchEstFirTracking[1][44] @ 2112
+     141 00000085 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][45] @ 2128
+     142 00000086 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][46] @ 2144
+     143 00000087 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][47] @ 2160
+     144 00000088 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][48] @ 2176
+     145 00000089 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][49] @ 2192
+     146 0000008a 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][50] @ 2208
+     147 0000008b 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][51] @ 2224
+     148 0000008c 2870          .field  10352,16                        ; _PHY_ofdmchEstFirTracking[1][52] @ 2240
+     149 0000008d C97A          .field  -13958,16                       ; _PHY_ofdmchEstFirTracking[1][53] @ 2256
+     150 0000008e 2347          .field  9031,16                 ; _PHY_ofdmchEstFirTracking[1][54] @ 2272
+     151 0000008f 2F91          .field  12177,16                        ; _PHY_ofdmchEstFirTracking[1][55] @ 2288
+     152 00000090 FC70          .field  -912,16                 ; _PHY_ofdmchEstFirTracking[1][56] @ 2304
+     153 00000091 0146          .field  326,16                  ; _PHY_ofdmchEstFirTracking[1][57] @ 2320
+     154 00000092 FBAB          .field  -1109,16                        ; _PHY_ofdmchEstFirTracking[1][58] @ 2336
+     155 00000093 FE73          .field  -397,16                 ; _PHY_ofdmchEstFirTracking[1][59] @ 2352
+     156 00000094 248F          .field  9359,16                 ; _PHY_ofdmchEstFirTracking[1][60] @ 2368
+     157 00000095 CEB4          .field  -12620,16                       ; _PHY_ofdmchEstFirTracking[1][61] @ 2384
+     158 00000096 248F          .field  9359,16                 ; _PHY_ofdmchEstFirTracking[1][62] @ 2400
+     159 00000097 314C          .field  12620,16                        ; _PHY_ofdmchEstFirTracking[1][63] @ 2416
+     160 00000098 FBAB          .field  -1109,16                        ; _PHY_ofdmchEstFirTracking[1][64] @ 2432
+     161 00000099 018D          .field  397,16                  ; _PHY_ofdmchEstFirTracking[1][65] @ 2448
+     162 0000009a FC70          .field  -912,16                 ; _PHY_ofdmchEstFirTracking[1][66] @ 2464
+     163 0000009b FEBA          .field  -326,16                 ; _PHY_ofdmchEstFirTracking[1][67] @ 2480
+     164 0000009c 2347          .field  9031,16                 ; _PHY_ofdmchEstFirTracking[1][68] @ 2496
+     165 0000009d D06F          .field  -12177,16                       ; _PHY_ofdmchEstFirTracking[1][69] @ 2512
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    4
+
+     166 0000009e 2870          .field  10352,16                        ; _PHY_ofdmchEstFirTracking[1][70] @ 2528
+     167 0000009f 3686          .field  13958,16                        ; _PHY_ofdmchEstFirTracking[1][71] @ 2544
+     168 000000a0 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][72] @ 2560
+     169 000000a1 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[1][73] @ 2576
+     170 000000a2 199A          .field  6554,16                 ; _PHY_ofdmchEstFirTracking[1][74] @ 2592
+     171 000000a3 199A          .field  6554,16                 ; _PHY_ofdmchEstFirTracking[1][75] @ 2608
+     172 000000a4 6666          .field  26214,16                        ; _PHY_ofdmchEstFirTracking[1][76] @ 2624
+     173 000000a5 6666          .field  26214,16                        ; _PHY_ofdmchEstFirTracking[1][77] @ 2640
+     174 000000a6               .space  160
+     175 000000b0 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][0] @ 2816
+     176 000000b1 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][1] @ 2832
+     177 000000b2 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][2] @ 2848
+     178 000000b3 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][3] @ 2864
+     179 000000b4 740F          .field  29711,16                        ; _PHY_ofdmchEstFirTracking[2][4] @ 2880
+     180 000000b5 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][5] @ 2896
+     181 000000b6 F9B9          .field  -1607,16                        ; _PHY_ofdmchEstFirTracking[2][6] @ 2912
+     182 000000b7 14B3          .field  5299,16                 ; _PHY_ofdmchEstFirTracking[2][7] @ 2928
+     183 000000b8 0923          .field  2339,16                 ; _PHY_ofdmchEstFirTracking[2][8] @ 2944
+     184 000000b9 061B          .field  1563,16                 ; _PHY_ofdmchEstFirTracking[2][9] @ 2960
+     185 000000ba 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][10] @ 2976
+     186 000000bb 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][11] @ 2992
+     187 000000bc F8F5          .field  -1803,16                        ; _PHY_ofdmchEstFirTracking[2][12] @ 3008
+     188 000000bd E8C7          .field  -5945,16                        ; _PHY_ofdmchEstFirTracking[2][13] @ 3024
+     189 000000be 443A          .field  17466,16                        ; _PHY_ofdmchEstFirTracking[2][14] @ 3040
+     190 000000bf 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][15] @ 3056
+     191 000000c0 F106          .field  -3834,16                        ; _PHY_ofdmchEstFirTracking[2][16] @ 3072
+     192 000000c1 315F          .field  12639,16                        ; _PHY_ofdmchEstFirTracking[2][17] @ 3088
+     193 000000c2 0CA4          .field  3236,16                 ; _PHY_ofdmchEstFirTracking[2][18] @ 3104
+     194 000000c3 0872          .field  2162,16                 ; _PHY_ofdmchEstFirTracking[2][19] @ 3120
+     195 000000c4 084E          .field  2126,16                 ; _PHY_ofdmchEstFirTracking[2][20] @ 3136
+     196 000000c5 FA73          .field  -1421,16                        ; _PHY_ofdmchEstFirTracking[2][21] @ 3152
+     197 000000c6 F381          .field  -3199,16                        ; _PHY_ofdmchEstFirTracking[2][22] @ 3168
+     198 000000c7 D6CE          .field  -10546,16                       ; _PHY_ofdmchEstFirTracking[2][23] @ 3184
+     199 000000c8 3E55          .field  15957,16                        ; _PHY_ofdmchEstFirTracking[2][24] @ 3200
+     200 000000c9 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][25] @ 3216
+     201 000000ca F381          .field  -3199,16                        ; _PHY_ofdmchEstFirTracking[2][26] @ 3232
+     202 000000cb 2932          .field  10546,16                        ; _PHY_ofdmchEstFirTracking[2][27] @ 3248
+     203 000000cc 084E          .field  2126,16                 ; _PHY_ofdmchEstFirTracking[2][28] @ 3264
+     204 000000cd 058D          .field  1421,16                 ; _PHY_ofdmchEstFirTracking[2][29] @ 3280
+     205 000000ce 0CA4          .field  3236,16                 ; _PHY_ofdmchEstFirTracking[2][30] @ 3296
+     206 000000cf F78E          .field  -2162,16                        ; _PHY_ofdmchEstFirTracking[2][31] @ 3312
+     207 000000d0 F106          .field  -3834,16                        ; _PHY_ofdmchEstFirTracking[2][32] @ 3328
+     208 000000d1 CEA1          .field  -12639,16                       ; _PHY_ofdmchEstFirTracking[2][33] @ 3344
+     209 000000d2 443A          .field  17466,16                        ; _PHY_ofdmchEstFirTracking[2][34] @ 3360
+     210 000000d3 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][35] @ 3376
+     211 000000d4 F8F5          .field  -1803,16                        ; _PHY_ofdmchEstFirTracking[2][36] @ 3392
+     212 000000d5 1739          .field  5945,16                 ; _PHY_ofdmchEstFirTracking[2][37] @ 3408
+     213 000000d6 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][38] @ 3424
+     214 000000d7 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][39] @ 3440
+     215 000000d8 0923          .field  2339,16                 ; _PHY_ofdmchEstFirTracking[2][40] @ 3456
+     216 000000d9 F9E5          .field  -1563,16                        ; _PHY_ofdmchEstFirTracking[2][41] @ 3472
+     217 000000da F9B9          .field  -1607,16                        ; _PHY_ofdmchEstFirTracking[2][42] @ 3488
+     218 000000db EB4D          .field  -5299,16                        ; _PHY_ofdmchEstFirTracking[2][43] @ 3504
+     219 000000dc 740F          .field  29711,16                        ; _PHY_ofdmchEstFirTracking[2][44] @ 3520
+     220 000000dd 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][45] @ 3536
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    5
+
+     221 000000de 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][46] @ 3552
+     222 000000df 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][47] @ 3568
+     223 000000e0 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][48] @ 3584
+     224 000000e1 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][49] @ 3600
+     225 000000e2 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][50] @ 3616
+     226 000000e3 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][51] @ 3632
+     227 000000e4 24F4          .field  9460,16                 ; _PHY_ofdmchEstFirTracking[2][52] @ 3648
+     228 000000e5 CE2D          .field  -12755,16                       ; _PHY_ofdmchEstFirTracking[2][53] @ 3664
+     229 000000e6 29EE          .field  10734,16                        ; _PHY_ofdmchEstFirTracking[2][54] @ 3680
+     230 000000e7 388A          .field  14474,16                        ; _PHY_ofdmchEstFirTracking[2][55] @ 3696
+     231 000000e8 02E2          .field  738,16                  ; _PHY_ofdmchEstFirTracking[2][56] @ 3712
+     232 000000e9 FEF8          .field  -264,16                 ; _PHY_ofdmchEstFirTracking[2][57] @ 3728
+     233 000000ea 0275          .field  629,16                  ; _PHY_ofdmchEstFirTracking[2][58] @ 3744
+     234 000000eb 00E1          .field  225,16                  ; _PHY_ofdmchEstFirTracking[2][59] @ 3760
+     235 000000ec 2803          .field  10243,16                        ; _PHY_ofdmchEstFirTracking[2][60] @ 3776
+     236 000000ed CA0C          .field  -13812,16                       ; _PHY_ofdmchEstFirTracking[2][61] @ 3792
+     237 000000ee 2803          .field  10243,16                        ; _PHY_ofdmchEstFirTracking[2][62] @ 3808
+     238 000000ef 35F4          .field  13812,16                        ; _PHY_ofdmchEstFirTracking[2][63] @ 3824
+     239 000000f0 0275          .field  629,16                  ; _PHY_ofdmchEstFirTracking[2][64] @ 3840
+     240 000000f1 FF1F          .field  -225,16                 ; _PHY_ofdmchEstFirTracking[2][65] @ 3856
+     241 000000f2 02E2          .field  738,16                  ; _PHY_ofdmchEstFirTracking[2][66] @ 3872
+     242 000000f3 0108          .field  264,16                  ; _PHY_ofdmchEstFirTracking[2][67] @ 3888
+     243 000000f4 29EE          .field  10734,16                        ; _PHY_ofdmchEstFirTracking[2][68] @ 3904
+     244 000000f5 C776          .field  -14474,16                       ; _PHY_ofdmchEstFirTracking[2][69] @ 3920
+     245 000000f6 24F4          .field  9460,16                 ; _PHY_ofdmchEstFirTracking[2][70] @ 3936
+     246 000000f7 31D3          .field  12755,16                        ; _PHY_ofdmchEstFirTracking[2][71] @ 3952
+     247 000000f8 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][72] @ 3968
+     248 000000f9 0000          .field  0,16                    ; _PHY_ofdmchEstFirTracking[2][73] @ 3984
+     249 000000fa 3333          .field  13107,16                        ; _PHY_ofdmchEstFirTracking[2][74] @ 4000
+     250 000000fb 3333          .field  13107,16                        ; _PHY_ofdmchEstFirTracking[2][75] @ 4016
+     251 000000fc 4CCD          .field  19661,16                        ; _PHY_ofdmchEstFirTracking[2][76] @ 4032
+     252 000000fd 4CCD          .field  19661,16                        ; _PHY_ofdmchEstFirTracking[2][77] @ 4048
+     253 000000fe               .space  160
+     254              
+     255              $C$DW$1 .dwtag  DW_TAG_variable, DW_AT_name("PHY_ofdmchEstFirTracking")
+     256                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_PHY_ofdmchEstFirTracking")
+     257                      .dwattr $C$DW$1, DW_AT_location[DW_OP_addr _PHY_ofdmchEstFirTracking]
+     258                      .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$22)
+     259                      .dwattr $C$DW$1, DW_AT_external
+     260              ;       C:\ti\ccsv5\tools\compiler\c2000_6.1.3\bin\ac2000.exe -@C:\\Users\\a0272466\\AppData\\Local\\Temp\\09
+     261              
+     262              ;***************************************************************
+     263              ;* TYPE INFORMATION                                            *
+     264              ;***************************************************************
+     265              $C$DW$T$4       .dwtag  DW_TAG_base_type
+     266                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     267                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+     268                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     269              $C$DW$T$5       .dwtag  DW_TAG_base_type
+     270                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     271                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     272                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     273              $C$DW$T$6       .dwtag  DW_TAG_base_type
+     274                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     275                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    6
+
+     276                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     277              $C$DW$T$7       .dwtag  DW_TAG_base_type
+     278                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     279                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     280                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+     281              $C$DW$T$8       .dwtag  DW_TAG_base_type
+     282                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     283                      .dwattr $C$DW$T$8, DW_AT_name("short")
+     284                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+     285              $C$DW$T$9       .dwtag  DW_TAG_base_type
+     286                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     287                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     288                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+     289              $C$DW$T$10      .dwtag  DW_TAG_base_type
+     290                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     291                      .dwattr $C$DW$T$10, DW_AT_name("int")
+     292                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+     293              $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("SINT16")
+     294                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$10)
+     295                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+     296              $C$DW$2 .dwtag  DW_TAG_TI_far_type
+     297                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$19)
+     298              $C$DW$T$20      .dwtag  DW_TAG_const_type
+     299                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$2)
+     300              
+     301              $C$DW$T$21      .dwtag  DW_TAG_array_type
+     302                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+     303                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+     304                      .dwattr $C$DW$T$21, DW_AT_byte_size(0x58)
+     305              $C$DW$3 .dwtag  DW_TAG_subrange_type
+     306                      .dwattr $C$DW$3, DW_AT_upper_bound(0x57)
+     307                      .dwendtag $C$DW$T$21
+     308              
+     309              
+     310              $C$DW$T$22      .dwtag  DW_TAG_array_type
+     311                      .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
+     312                      .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+     313                      .dwattr $C$DW$T$22, DW_AT_byte_size(0x108)
+     314              $C$DW$4 .dwtag  DW_TAG_subrange_type
+     315                      .dwattr $C$DW$4, DW_AT_upper_bound(0x02)
+     316              $C$DW$5 .dwtag  DW_TAG_subrange_type
+     317                      .dwattr $C$DW$5, DW_AT_upper_bound(0x57)
+     318                      .dwendtag $C$DW$T$22
+     319              
+     320              $C$DW$T$11      .dwtag  DW_TAG_base_type
+     321                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     322                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     323                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+     324              $C$DW$T$12      .dwtag  DW_TAG_base_type
+     325                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     326                      .dwattr $C$DW$T$12, DW_AT_name("long")
+     327                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+     328              $C$DW$T$13      .dwtag  DW_TAG_base_type
+     329                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     330                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    7
+
+     331                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+     332              $C$DW$T$14      .dwtag  DW_TAG_base_type
+     333                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     334                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+     335                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+     336              $C$DW$T$15      .dwtag  DW_TAG_base_type
+     337                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     338                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     339                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+     340              $C$DW$T$16      .dwtag  DW_TAG_base_type
+     341                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     342                      .dwattr $C$DW$T$16, DW_AT_name("float")
+     343                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+     344              $C$DW$T$17      .dwtag  DW_TAG_base_type
+     345                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     346                      .dwattr $C$DW$T$17, DW_AT_name("double")
+     347                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+     348              $C$DW$T$18      .dwtag  DW_TAG_base_type
+     349                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     350                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+     351                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+     352                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     353              
+     354              ;***************************************************************
+     355              ;* DWARF CIE ENTRIES                                           *
+     356              ;***************************************************************
+     357              
+     358              $C$DW$CIE       .dwcie 78
+     359                      .dwcfi  cfa_register, 20
+     360                      .dwcfi  cfa_offset, 0
+     361                      .dwcfi  undefined, 0
+     362                      .dwcfi  undefined, 1
+     363                      .dwcfi  undefined, 2
+     364                      .dwcfi  undefined, 3
+     365                      .dwcfi  undefined, 22
+     366                      .dwcfi  undefined, 37
+     367                      .dwcfi  undefined, 36
+     368                      .dwcfi  undefined, 23
+     369                      .dwcfi  undefined, 30
+     370                      .dwcfi  undefined, 31
+     371                      .dwcfi  undefined, 32
+     372                      .dwcfi  undefined, 38
+     373                      .dwcfi  undefined, 75
+     374                      .dwcfi  undefined, 24
+     375                      .dwcfi  undefined, 33
+     376                      .dwcfi  undefined, 35
+     377                      .dwcfi  undefined, 34
+     378                      .dwcfi  undefined, 76
+     379                      .dwcfi  undefined, 21
+     380                      .dwcfi  undefined, 20
+     381                      .dwcfi  undefined, 28
+     382                      .dwcfi  undefined, 29
+     383                      .dwcfi  undefined, 25
+     384                      .dwcfi  undefined, 77
+     385                      .dwcfi  undefined, 4
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    8
+
+     386                      .dwcfi  undefined, 6
+     387                      .dwcfi  undefined, 8
+     388                      .dwcfi  undefined, 10
+     389                      .dwcfi  undefined, 12
+     390                      .dwcfi  undefined, 14
+     391                      .dwcfi  undefined, 16
+     392                      .dwcfi  undefined, 17
+     393                      .dwcfi  undefined, 18
+     394                      .dwcfi  undefined, 19
+     395                      .dwcfi  undefined, 5
+     396                      .dwcfi  undefined, 7
+     397                      .dwcfi  undefined, 9
+     398                      .dwcfi  undefined, 11
+     399                      .dwcfi  undefined, 13
+     400                      .dwcfi  undefined, 15
+     401                      .dwcfi  undefined, 43
+     402                      .dwcfi  undefined, 44
+     403                      .dwcfi  undefined, 47
+     404                      .dwcfi  undefined, 48
+     405                      .dwcfi  undefined, 51
+     406                      .dwcfi  undefined, 52
+     407                      .dwcfi  undefined, 55
+     408                      .dwcfi  undefined, 56
+     409                      .dwcfi  undefined, 59
+     410                      .dwcfi  undefined, 60
+     411                      .dwcfi  undefined, 63
+     412                      .dwcfi  undefined, 64
+     413                      .dwcfi  undefined, 67
+     414                      .dwcfi  undefined, 68
+     415                      .dwcfi  undefined, 71
+     416                      .dwcfi  undefined, 72
+     417                      .dwcfi  undefined, 73
+     418                      .dwcfi  undefined, 74
+     419                      .dwcfi  undefined, 39
+     420                      .dwcfi  undefined, 40
+     421                      .dwcfi  undefined, 27
+     422                      .dwcfi  undefined, 78
+     423                      .dwendentry
+     424              
+     425              ;***************************************************************
+     426              ;* DWARF REGISTER MAP                                          *
+     427              ;***************************************************************
+     428              
+     429              $C$DW$6 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AL")
+     430                      .dwattr $C$DW$6, DW_AT_location[DW_OP_reg0]
+     431              $C$DW$7 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AH")
+     432                      .dwattr $C$DW$7, DW_AT_location[DW_OP_reg1]
+     433              $C$DW$8 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PL")
+     434                      .dwattr $C$DW$8, DW_AT_location[DW_OP_reg2]
+     435              $C$DW$9 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PH")
+     436                      .dwattr $C$DW$9, DW_AT_location[DW_OP_reg3]
+     437              $C$DW$10        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("T")
+     438                      .dwattr $C$DW$10, DW_AT_location[DW_OP_reg22]
+     439              $C$DW$11        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
+     440                      .dwattr $C$DW$11, DW_AT_location[DW_OP_regx 0x25]
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE    9
+
+     441              $C$DW$12        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
+     442                      .dwattr $C$DW$12, DW_AT_location[DW_OP_regx 0x24]
+     443              $C$DW$13        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST0")
+     444                      .dwattr $C$DW$13, DW_AT_location[DW_OP_reg23]
+     445              $C$DW$14        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SXM")
+     446                      .dwattr $C$DW$14, DW_AT_location[DW_OP_reg30]
+     447              $C$DW$15        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PM")
+     448                      .dwattr $C$DW$15, DW_AT_location[DW_OP_reg31]
+     449              $C$DW$16        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("OVM")
+     450                      .dwattr $C$DW$16, DW_AT_location[DW_OP_regx 0x20]
+     451              $C$DW$17        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("V")
+     452                      .dwattr $C$DW$17, DW_AT_location[DW_OP_regx 0x26]
+     453              $C$DW$18        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDO")
+     454                      .dwattr $C$DW$18, DW_AT_location[DW_OP_regx 0x4b]
+     455              $C$DW$19        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
+     456                      .dwattr $C$DW$19, DW_AT_location[DW_OP_reg24]
+     457              $C$DW$20        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PAGE0")
+     458                      .dwattr $C$DW$20, DW_AT_location[DW_OP_regx 0x21]
+     459              $C$DW$21        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("INTM")
+     460                      .dwattr $C$DW$21, DW_AT_location[DW_OP_regx 0x23]
+     461              $C$DW$22        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AMODE")
+     462                      .dwattr $C$DW$22, DW_AT_location[DW_OP_regx 0x22]
+     463              $C$DW$23        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDOH")
+     464                      .dwattr $C$DW$23, DW_AT_location[DW_OP_regx 0x4c]
+     465              $C$DW$24        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
+     466                      .dwattr $C$DW$24, DW_AT_location[DW_OP_reg21]
+     467              $C$DW$25        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+     468                      .dwattr $C$DW$25, DW_AT_location[DW_OP_reg20]
+     469              $C$DW$26        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FP")
+     470                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg28]
+     471              $C$DW$27        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("DP")
+     472                      .dwattr $C$DW$27, DW_AT_location[DW_OP_reg29]
+     473              $C$DW$28        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+     474                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg25]
+     475              $C$DW$29        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("VOL")
+     476                      .dwattr $C$DW$29, DW_AT_location[DW_OP_regx 0x4d]
+     477              $C$DW$30        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR0")
+     478                      .dwattr $C$DW$30, DW_AT_location[DW_OP_reg4]
+     479              $C$DW$31        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR1")
+     480                      .dwattr $C$DW$31, DW_AT_location[DW_OP_reg6]
+     481              $C$DW$32        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR2")
+     482                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg8]
+     483              $C$DW$33        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR3")
+     484                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg10]
+     485              $C$DW$34        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
+     486                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg12]
+     487              $C$DW$35        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR5")
+     488                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg14]
+     489              $C$DW$36        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
+     490                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg16]
+     491              $C$DW$37        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
+     492                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg17]
+     493              $C$DW$38        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR7")
+     494                      .dwattr $C$DW$38, DW_AT_location[DW_OP_reg18]
+     495              $C$DW$39        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR7")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE   10
+
+     496                      .dwattr $C$DW$39, DW_AT_location[DW_OP_reg19]
+     497              $C$DW$40        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR0")
+     498                      .dwattr $C$DW$40, DW_AT_location[DW_OP_reg5]
+     499              $C$DW$41        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR1")
+     500                      .dwattr $C$DW$41, DW_AT_location[DW_OP_reg7]
+     501              $C$DW$42        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR2")
+     502                      .dwattr $C$DW$42, DW_AT_location[DW_OP_reg9]
+     503              $C$DW$43        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
+     504                      .dwattr $C$DW$43, DW_AT_location[DW_OP_reg11]
+     505              $C$DW$44        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")
+     506                      .dwattr $C$DW$44, DW_AT_location[DW_OP_reg13]
+     507              $C$DW$45        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR5")
+     508                      .dwattr $C$DW$45, DW_AT_location[DW_OP_reg15]
+     509              $C$DW$46        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0HL")
+     510                      .dwattr $C$DW$46, DW_AT_location[DW_OP_regx 0x2b]
+     511              $C$DW$47        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0H")
+     512                      .dwattr $C$DW$47, DW_AT_location[DW_OP_regx 0x2c]
+     513              $C$DW$48        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1HL")
+     514                      .dwattr $C$DW$48, DW_AT_location[DW_OP_regx 0x2f]
+     515              $C$DW$49        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1H")
+     516                      .dwattr $C$DW$49, DW_AT_location[DW_OP_regx 0x30]
+     517              $C$DW$50        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2HL")
+     518                      .dwattr $C$DW$50, DW_AT_location[DW_OP_regx 0x33]
+     519              $C$DW$51        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2H")
+     520                      .dwattr $C$DW$51, DW_AT_location[DW_OP_regx 0x34]
+     521              $C$DW$52        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3HL")
+     522                      .dwattr $C$DW$52, DW_AT_location[DW_OP_regx 0x37]
+     523              $C$DW$53        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3H")
+     524                      .dwattr $C$DW$53, DW_AT_location[DW_OP_regx 0x38]
+     525              $C$DW$54        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4HL")
+     526                      .dwattr $C$DW$54, DW_AT_location[DW_OP_regx 0x3b]
+     527              $C$DW$55        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4H")
+     528                      .dwattr $C$DW$55, DW_AT_location[DW_OP_regx 0x3c]
+     529              $C$DW$56        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5HL")
+     530                      .dwattr $C$DW$56, DW_AT_location[DW_OP_regx 0x3f]
+     531              $C$DW$57        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5H")
+     532                      .dwattr $C$DW$57, DW_AT_location[DW_OP_regx 0x40]
+     533              $C$DW$58        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6HL")
+     534                      .dwattr $C$DW$58, DW_AT_location[DW_OP_regx 0x43]
+     535              $C$DW$59        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6H")
+     536                      .dwattr $C$DW$59, DW_AT_location[DW_OP_regx 0x44]
+     537              $C$DW$60        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7HL")
+     538                      .dwattr $C$DW$60, DW_AT_location[DW_OP_regx 0x47]
+     539              $C$DW$61        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7H")
+     540                      .dwattr $C$DW$61, DW_AT_location[DW_OP_regx 0x48]
+     541              $C$DW$62        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RBL")
+     542                      .dwattr $C$DW$62, DW_AT_location[DW_OP_regx 0x49]
+     543              $C$DW$63        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RB")
+     544                      .dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x4a]
+     545              $C$DW$64        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STFL")
+     546                      .dwattr $C$DW$64, DW_AT_location[DW_OP_regx 0x27]
+     547              $C$DW$65        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STF")
+     548                      .dwattr $C$DW$65, DW_AT_location[DW_OP_regx 0x28]
+     549              $C$DW$66        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FPUHAZ")
+     550                      .dwattr $C$DW$66, DW_AT_location[DW_OP_reg27]
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:27 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0925610                         PAGE   11
+
+     551              $C$DW$67        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+     552                      .dwattr $C$DW$67, DW_AT_location[DW_OP_regx 0x4e]
+     553                      .dwendtag $C$DW$CU
+     554              
+
+No Assembly Errors, No Assembly Warnings

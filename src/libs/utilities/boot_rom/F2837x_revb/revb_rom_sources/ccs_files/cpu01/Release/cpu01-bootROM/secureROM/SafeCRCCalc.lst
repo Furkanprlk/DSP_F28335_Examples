@@ -1,0 +1,257 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:26:25 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/secureROM/SafeCRCCalc.asm PAGE    1
+
+       1              ;;*****************************************************************************
+       2              ;;! \file F28069_CRCCalcZx/CRCCalcZx.asm
+       3              ;;!
+       4              ;;! \brief  Safe CRC calculation
+       5              ;;! \author Vishal Coelho
+       6              ;;! \date   Mar 11, 2013
+       7              ;;! 
+       8              ;;
+       9              ;;  Group:                      C2000
+      10              ;;  Target Family:
+      11              ;;
+      12              ;; (C)Copyright 2013, Texas Instruments, Inc.
+      13              ;;*****************************************************************************
+      14              ;;$TI Release: PACKAGE NAME $
+      15              ;;$Release Date: PACKAGE RELEASE DATE $
+      16              ;;*****************************************************************************
+      17              ;;
+      18              ;;*****************************************************************************
+      19              ;; includes
+      20              ;;*****************************************************************************
+      21              ;;
+      22              ;;*****************************************************************************
+      23              ;; defines
+      24              ;;*****************************************************************************
+      25              ;; Stack defines
+      26              ;;
+      27              ;;   |_______|
+      28              ;;   |_______|<- Stack Pointer(SP) <---SP
+      29              ;;   |_______|<- STK_OFF_VCRC   (SP-2)
+      30              ;;   |_______|<- STK_OFF_SRC    (SP-4)
+      31              ;;
+      32        0004  LOCAL_FRAME_SIZE    .set    4
+      33        0000  STK_OFF_VRX_BASE    .set    0
+      34        0002  STK_OFF_VCRC        .set    2
+      35        0004  STK_OFF_SRC         .set    4
+      36              ;;*****************************************************************************
+      37              ;; macros
+      38              ;;*****************************************************************************
+      39              ;;
+      40              ;; MACRO   : 'CRC_CONTEXT_SAVE'
+      41              ;; SIZE    : Number of WORDS/Number of Cycles 6
+      42              ;; USAGE   : Called on entry into CRC routine
+      43              ;;
+      44              CRC_CONTEXT_SAVE    .macro
+      45                  PUSH      XAR0
+      46                  PUSH      XAR1
+      47                  PUSH      XAR2
+      48                  PUSH      XAR3
+      49                  ADDB      SP, #LOCAL_FRAME_SIZE            ; allocate stack space for local frame
+      50                                                             ; save VCRC to stack
+      51                  VMOV32    *-SP[STK_OFF_VRX_BASE+STK_OFF_VCRC], VCRC
+      52                  .endm
+      53              ;;
+      54              ;; MACRO   : 'CRC_CONTEXT_RESTORE'
+      55              ;; SIZE    : Number of WORDS/Number of Cycles 6
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:26:25 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/secureROM/SafeCRCCalc.asm PAGE    2
+
+      56              ;; USAGE   : Called on exit from CRC routine
+      57              ;;
+      58              CRC_CONTEXT_RESTORE    .macro
+      59                  VMOV32    VCRC, *-SP[STK_OFF_VRX_BASE+STK_OFF_VCRC]
+      60                  SUBB      SP, #LOCAL_FRAME_SIZE          ; deallocate stack space for local frame
+      61                  POP       XAR3
+      62                  POP       XAR2
+      63                  POP       XAR1
+      64                  POP       XAR0
+      65                  .endm
+      66              ;;*****************************************************************************
+      67              ;; globals
+      68              ;;*****************************************************************************
+      69 00000000           .sect   ".crctable_forsecrom"
+      70              ;    .sect   ".econst"
+      71 00000000       _sizeTableSafeCRC:
+      72 00000000 0020      .word   32                                   ; _sizeTableSafeCRC[0]
+      73 00000001 0040      .word   64                                   ; _sizeTableSafeCRC[1]
+      74 00000002 0080      .word   128                                  ; _sizeTableSafeCRC[2]
+      75 00000003 0100      .word   256                                  ; _sizeTableSafeCRC[3]
+      76 00000004 0200      .word   512                                  ; _sizeTableSafeCRC[4]
+      77 00000005 0400      .word   1024                                 ; _sizeTableSafeCRC[5]
+      78 00000006 0800      .word   2048                                 ; _sizeTableSafeCRC[6]
+      79 00000007 1000      .word   4096                                 ; _sizeTableSafeCRC[7]
+      80              
+      81                  .global _CRCCalcZ1
+      82                  .global _CRCCalcZ2
+      83              ;;*****************************************************************************
+      84              ;; function definitions
+      85              ;;*****************************************************************************
+      86              
+      87              
+      88              ;; \brief  CRC calculation(polynomial = 0x04c11db7)executed from SecureROM.
+      89              ;;
+      90              ;; In this case dont use the RPTB (RPTB doesn't work on Sorpano Rev0) , and loop using a branch statement. Th
+      91              ;; allow for interrupts during long CRC calculations
+      92              ;;
+      93              ;; \param[in]  XAR4 : pointer to the source whose crc is to be calculated
+      94              ;; \param[out] XAR5 : pointer to the destination where the CRC will be written
+      95              ;; \param[in]  AL   : length id for i = 1 : 8   block_length =  2^(3+i)
+      96              ;;
+      97              ;; \return number of words(16-bit) for which the CRC was calculated
+      98              ;;
+      99              ;; Register Usage:
+     100              ;; XAR0: Contains number of bytes to process
+     101              ;; XAR1: index to the table _sizeTableSafeCRC / Loop counter
+     102              ;; XAR2: points to _sizeTableSafeCRC (Table of byte sizes)
+     103              ;; XAR3:
+     104              ;; XAR4: Points to the source buffer
+     105              ;; XAR5: Points to the destination where CRC must be stored
+     106              ;; XAR6:
+     107              ;; XAR7:
+     108              ;; AL  : number of words on which CRC was calculated(-1 for error)
+     109              ;; AH  :
+     110              ;; PL  :
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:26:25 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/secureROM/SafeCRCCalc.asm PAGE    3
+
+     111              ;; PH  :
+     112              ;; XT  :
+     113              ;;
+     114              
+     115              ;; Function for Zone1
+     116 00000000           .sect "SCCLZ1"
+     117 00000000       _CRCCalcZ1:
+     118 00000000           CRC_CONTEXT_SAVE
+1        00000000 3ABD      PUSH      XAR0
+1        00000001 B2BD      PUSH      XAR1
+1        00000002 AABD      PUSH      XAR2
+1        00000003 A2BD      PUSH      XAR3
+1        00000004 FE04      ADDB      SP, #LOCAL_FRAME_SIZE            ; allocate stack space for local frame
+1                                                                    ; save VCRC to stack
+1        00000005 E206      VMOV32    *-SP[STK_OFF_VRX_BASE+STK_OFF_VCRC], VCRC
+         00000006 0042 
+     119 00000007 E524      VCRCCLR                                      ; Clear out the CRC result register
+     120 00000008 A844      MOVL      *-SP[STK_OFF_SRC],XAR4             ; save off source address
+     121 00000009 5208      CMPB      AL, #8                             ; if(len_id > 8)
+     122 0000000a 56C2      BF        _CRCCalcZ1_Error, GT               ;   return -1
+         0000000b 0015 
+     123 0000000c 9CFF      SUBB      AL, #1                             ; else AL = len_id - 1
+     124 0000000d 56C4      BF        _CRCCalcZ1_Error, LT               ; if(AL < 0) return -1
+         0000000e 0012 
+     125 0000000f 59A9      MOVZ      AR1, AL                            ; else AR1 = len_id - 1
+     126 00000010 8D80+     MOVL      XAR2, #_sizeTableSafeCRC
+         00000011 0000 
+     127 00000012 929A      MOV       AL,*+XAR2[AR1]                     ; AL = _sizeTableSafeCRC[len_id-1]
+     128 00000013 FFC0      LSR       AL, #1                             ; AL = _sizeTableSafeCRC[len_id-1]/2
+     129 00000014 58A9      MOVZ      AR0, AL                            ; AR0 = _sizeTableSafeCRC[len_id-1]/2(number of words)
+     130              
+     131 00000015       _CRCCalcZ1_Loop:
+     132 00000015 E2C1      VCRC32L_1 *XAR4
+         00000016 00C4 
+     133 00000017 E2C2      VCRC32H_1 *XAR4++
+         00000018 0084 
+     134 00000019 0BA0      DEC       AR0
+     135 0000001a EDFB      BF        _CRCCalcZ1_Loop, NEQ
+     136              
+     137 0000001b       _CRCCalcZ1_End:
+     138 0000001b A8A9      MOVL      ACC, XAR4
+     139 0000001c 0344      SUBL      ACC, *-SP[STK_OFF_SRC]             ; AL = *curr_ptr - *src
+     140                                                               ; return the number of words processed
+     141 0000001d 56CF      BF        _CRCCalcZ1_Exit, UNC
+         0000001e 0004 
+     142 0000001f       _CRCCalcZ1_Error:
+     143 0000001f 28A9      MOV       AL, #-1                            ; AL = -1 for error
+         00000020 FFFF 
+     144 00000021       _CRCCalcZ1_Exit:
+     145 00000021 E206      VMOV32    *XAR5, VCRC                        ; if AL = -1, VCRC = 0
+         00000022 00C5 
+     146 00000023           CRC_CONTEXT_RESTORE
+1        00000023 E3F2      VMOV32    VCRC, *-SP[STK_OFF_VRX_BASE+STK_OFF_VCRC]
+         00000024 0042 
+1        00000025 FE84      SUBB      SP, #LOCAL_FRAME_SIZE          ; deallocate stack space for local frame
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:26:25 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/secureROM/SafeCRCCalc.asm PAGE    4
+
+1        00000026 82BE      POP       XAR3
+1        00000027 86BE      POP       XAR2
+1        00000028 8BBE      POP       XAR1
+1        00000029 8EBE      POP       XAR0
+     147 0000002a 0006      LRETR
+     148              
+     149              ;; Function for Zone2
+     150              
+     151 00000000           .sect "SCCLZ2"
+     152 00000000       _CRCCalcZ2:
+     153 00000000           CRC_CONTEXT_SAVE
+1        00000000 3ABD      PUSH      XAR0
+1        00000001 B2BD      PUSH      XAR1
+1        00000002 AABD      PUSH      XAR2
+1        00000003 A2BD      PUSH      XAR3
+1        00000004 FE04      ADDB      SP, #LOCAL_FRAME_SIZE            ; allocate stack space for local frame
+1                                                                    ; save VCRC to stack
+1        00000005 E206      VMOV32    *-SP[STK_OFF_VRX_BASE+STK_OFF_VCRC], VCRC
+         00000006 0042 
+     154 00000007 E524      VCRCCLR                                      ; Clear out the CRC result register
+     155 00000008 A844      MOVL      *-SP[STK_OFF_SRC],XAR4             ; save off source address
+     156 00000009 5208      CMPB      AL, #8                             ; if(len_id > 8)
+     157 0000000a 56C2      BF        _CRCCalcZ2_Error, GT               ;   return -1
+         0000000b 0015 
+     158 0000000c 9CFF      SUBB      AL, #1                             ; else AL = len_id - 1
+     159 0000000d 56C4      BF        _CRCCalcZ2_Error, LT               ; if(AL < 0) return -1
+         0000000e 0012 
+     160 0000000f 59A9      MOVZ      AR1, AL                            ; else AR1 = len_id - 1
+     161 00000010 8D80+     MOVL      XAR2, #_sizeTableSafeCRC
+         00000011 0000 
+     162 00000012 929A      MOV       AL,*+XAR2[AR1]                     ; AL = _sizeTableSafeCRC[len_id-1]
+     163 00000013 FFC0      LSR       AL, #1                             ; AL = _sizeTableSafeCRC[len_id-1]/2
+     164 00000014 58A9      MOVZ      AR0, AL                            ; AR0 = _sizeTableSafeCRC[len_id-1]/2(number of words)
+     165              
+     166 00000015       _CRCCalcZ2_Loop:
+     167 00000015 E2C1      VCRC32L_1 *XAR4
+         00000016 00C4 
+     168 00000017 E2C2      VCRC32H_1 *XAR4++
+         00000018 0084 
+     169 00000019 0BA0      DEC       AR0
+     170 0000001a EDFB      BF        _CRCCalcZ2_Loop, NEQ
+     171              
+     172 0000001b       _CRCCalcZ2_End:
+     173 0000001b A8A9      MOVL      ACC, XAR4
+     174 0000001c 0344      SUBL      ACC, *-SP[STK_OFF_SRC]             ; AL = *curr_ptr - *src
+     175                                                               ; return the number of words processed
+     176 0000001d 56CF      BF        _CRCCalcZ2_Exit, UNC
+         0000001e 0004 
+     177 0000001f       _CRCCalcZ2_Error:
+     178 0000001f 28A9      MOV       AL, #-1                            ; AL = -1 for error
+         00000020 FFFF 
+     179 00000021       _CRCCalcZ2_Exit:
+     180 00000021 E206      VMOV32    *XAR5, VCRC                        ; if AL = -1, VCRC = 0
+         00000022 00C5 
+     181 00000023           CRC_CONTEXT_RESTORE
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:26:25 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/secureROM/SafeCRCCalc.asm PAGE    5
+
+1        00000023 E3F2      VMOV32    VCRC, *-SP[STK_OFF_VRX_BASE+STK_OFF_VCRC]
+         00000024 0042 
+1        00000025 FE84      SUBB      SP, #LOCAL_FRAME_SIZE          ; deallocate stack space for local frame
+1        00000026 82BE      POP       XAR3
+1        00000027 86BE      POP       XAR2
+1        00000028 8BBE      POP       XAR1
+1        00000029 8EBE      POP       XAR0
+     182 0000002a 0006      LRETR
+     183              
+     184              ;; End of file
+
+No Assembly Errors, No Assembly Warnings

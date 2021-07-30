@@ -1,0 +1,1 @@
+C28x Start-up Sequences * C28x Flash Memory Sectors * Flash Speed Initialization * Flash Configuration Registers * Flash Programming Procedure * CCS Flash Plug-In * Code Security Mode * Lab Exercise 11 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExportImportMemento.1>
+<VarMeta IMemento.internal.id="tformatData"/>
+<VarMeta IMemento.internal.id="crcResult"/>
+<VarMeta IMemento.internal.id="position"/>
+<VarMeta IMemento.internal.id="turns"/>
+</ExportImportMemento.1>

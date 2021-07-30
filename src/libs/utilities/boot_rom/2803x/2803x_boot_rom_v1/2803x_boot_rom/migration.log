@@ -1,0 +1,27 @@
+
+!CONFIGURATION: 'com.ti.ccstudio.buildDefinitions.C2000.Release.61122182' [Tue Nov 16 08:51:26 CST 2010]
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/flash_api/Flash2803x_API_V100.lib'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/flash_api/Flash2803x_API_V100.lib::-q
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/IQlib/IQmath.lib'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/IQlib/IQmath.lib::-q
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd::-q
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/flash_api/Flash2803x_APIfuncs.cmd'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/flash_api/Flash2803x_APIfuncs.cmd::-q
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/lnk/TMS320x2803x_boot_rom_lnk.cmd'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/lnk/TMS320x2803x_boot_rom_lnk.cmd::-q
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/lnk/TMS320x2803x_iqfuncs.cmd'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1244359607./2803x_boot_rom/lnk/TMS320x2803x_iqfuncs.cmd::-q
+

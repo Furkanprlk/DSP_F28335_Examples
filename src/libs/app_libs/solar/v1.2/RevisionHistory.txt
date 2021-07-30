@@ -1,0 +1,5 @@
+v1.0 Initial Release
+v1.1 Added CLA support to the libraries
+v1.2 1)Adding 3ph blocks,
+	 2)restructuring the code and using library compile for ease of use, 
+	 3)fixing several bugs in SPLL blocks

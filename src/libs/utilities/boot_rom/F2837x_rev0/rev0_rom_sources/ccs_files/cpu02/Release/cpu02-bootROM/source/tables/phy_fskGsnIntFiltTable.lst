@@ -1,0 +1,1797 @@
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.1.3 *
+       3              ;* Date/Time created: Tue Oct 01 15:28:04 2013                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --o
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/work/grepos/device_support/device_support/f2837x/F2837x_bootROM_dev/
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TMS320C2000 C/C++ Codegen PC v6.1.3 Copyright (c) 1996-2012 Texas I
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\work\grepos\device_support\device_support\f2837x\F2837x_bootROM_
+      13                      .global _PHY_fskGsnIntFilt16Table
+      14 00000000               .sect   "sunPhyTable"
+      15                      .align  1
+      16 00000000       _PHY_fskGsnIntFilt16Table:
+      17 00000000 FFFF          .field  -1,16                   ; _PHY_fskGsnIntFilt16Table[0] @ 0
+      18 00000001 FFFC          .field  -4,16                   ; _PHY_fskGsnIntFilt16Table[1] @ 16
+      19 00000002 FFF5          .field  -11,16                  ; _PHY_fskGsnIntFilt16Table[2] @ 32
+      20 00000003 FFE7          .field  -25,16                  ; _PHY_fskGsnIntFilt16Table[3] @ 48
+      21 00000004 FFCB          .field  -53,16                  ; _PHY_fskGsnIntFilt16Table[4] @ 64
+      22 00000005 FF96          .field  -106,16                 ; _PHY_fskGsnIntFilt16Table[5] @ 80
+      23 00000006 FF36          .field  -202,16                 ; _PHY_fskGsnIntFilt16Table[6] @ 96
+      24 00000007 FE94          .field  -364,16                 ; _PHY_fskGsnIntFilt16Table[7] @ 112
+      25 00000008 FD90          .field  -624,16                 ; _PHY_fskGsnIntFilt16Table[8] @ 128
+      26 00000009 FC06          .field  -1018,16                        ; _PHY_fskGsnIntFilt16Table[9] @ 144
+      27 0000000a F9CF          .field  -1585,16                        ; _PHY_fskGsnIntFilt16Table[10] @ 160
+      28 0000000b F6CE          .field  -2354,16                        ; _PHY_fskGsnIntFilt16Table[11] @ 176
+      29 0000000c F2F2          .field  -3342,16                        ; _PHY_fskGsnIntFilt16Table[12] @ 192
+      30 0000000d EE42          .field  -4542,16                        ; _PHY_fskGsnIntFilt16Table[13] @ 208
+      31 0000000e E8DE          .field  -5922,16                        ; _PHY_fskGsnIntFilt16Table[14] @ 224
+      32 0000000f E303          .field  -7421,16                        ; _PHY_fskGsnIntFilt16Table[15] @ 240
+      33 00000010 0001          .field  1,16                    ; _PHY_fskGsnIntFilt16Table[16] @ 256
+      34 00000011 0004          .field  4,16                    ; _PHY_fskGsnIntFilt16Table[17] @ 272
+      35 00000012 000B          .field  11,16                   ; _PHY_fskGsnIntFilt16Table[18] @ 288
+      36 00000013 0019          .field  25,16                   ; _PHY_fskGsnIntFilt16Table[19] @ 304
+      37 00000014 0035          .field  53,16                   ; _PHY_fskGsnIntFilt16Table[20] @ 320
+      38 00000015 006A          .field  106,16                  ; _PHY_fskGsnIntFilt16Table[21] @ 336
+      39 00000016 00CA          .field  202,16                  ; _PHY_fskGsnIntFilt16Table[22] @ 352
+      40 00000017 016C          .field  364,16                  ; _PHY_fskGsnIntFilt16Table[23] @ 368
+      41 00000018 0270          .field  624,16                  ; _PHY_fskGsnIntFilt16Table[24] @ 384
+      42 00000019 03FA          .field  1018,16                 ; _PHY_fskGsnIntFilt16Table[25] @ 400
+      43 0000001a 0631          .field  1585,16                 ; _PHY_fskGsnIntFilt16Table[26] @ 416
+      44 0000001b 0932          .field  2354,16                 ; _PHY_fskGsnIntFilt16Table[27] @ 432
+      45 0000001c 0D0E          .field  3342,16                 ; _PHY_fskGsnIntFilt16Table[28] @ 448
+      46 0000001d 11BE          .field  4542,16                 ; _PHY_fskGsnIntFilt16Table[29] @ 464
+      47 0000001e 1722          .field  5922,16                 ; _PHY_fskGsnIntFilt16Table[30] @ 480
+      48 0000001f 1CFD          .field  7421,16                 ; _PHY_fskGsnIntFilt16Table[31] @ 496
+      49 00000020 DCFD          .field  -8963,16                        ; _PHY_fskGsnIntFilt16Table[32] @ 512
+      50 00000021 D722          .field  -10462,16                       ; _PHY_fskGsnIntFilt16Table[33] @ 528
+      51 00000022 D1BE          .field  -11842,16                       ; _PHY_fskGsnIntFilt16Table[34] @ 544
+      52 00000023 CD0E          .field  -13042,16                       ; _PHY_fskGsnIntFilt16Table[35] @ 560
+      53 00000024 C932          .field  -14030,16                       ; _PHY_fskGsnIntFilt16Table[36] @ 576
+      54 00000025 C631          .field  -14799,16                       ; _PHY_fskGsnIntFilt16Table[37] @ 592
+      55 00000026 C3FA          .field  -15366,16                       ; _PHY_fskGsnIntFilt16Table[38] @ 608
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    2
+
+      56 00000027 C270          .field  -15760,16                       ; _PHY_fskGsnIntFilt16Table[39] @ 624
+      57 00000028 C16C          .field  -16020,16                       ; _PHY_fskGsnIntFilt16Table[40] @ 640
+      58 00000029 C0CA          .field  -16182,16                       ; _PHY_fskGsnIntFilt16Table[41] @ 656
+      59 0000002a C06A          .field  -16278,16                       ; _PHY_fskGsnIntFilt16Table[42] @ 672
+      60 0000002b C035          .field  -16331,16                       ; _PHY_fskGsnIntFilt16Table[43] @ 688
+      61 0000002c C019          .field  -16359,16                       ; _PHY_fskGsnIntFilt16Table[44] @ 704
+      62 0000002d C00B          .field  -16373,16                       ; _PHY_fskGsnIntFilt16Table[45] @ 720
+      63 0000002e C004          .field  -16380,16                       ; _PHY_fskGsnIntFilt16Table[46] @ 736
+      64 0000002f C001          .field  -16383,16                       ; _PHY_fskGsnIntFilt16Table[47] @ 752
+      65 00000030 DD00          .field  -8960,16                        ; _PHY_fskGsnIntFilt16Table[48] @ 768
+      66 00000031 D72A          .field  -10454,16                       ; _PHY_fskGsnIntFilt16Table[49] @ 784
+      67 00000032 D1D4          .field  -11820,16                       ; _PHY_fskGsnIntFilt16Table[50] @ 800
+      68 00000033 CD40          .field  -12992,16                       ; _PHY_fskGsnIntFilt16Table[51] @ 816
+      69 00000034 C99C          .field  -13924,16                       ; _PHY_fskGsnIntFilt16Table[52] @ 832
+      70 00000035 C705          .field  -14587,16                       ; _PHY_fskGsnIntFilt16Table[53] @ 848
+      71 00000036 C58E          .field  -14962,16                       ; _PHY_fskGsnIntFilt16Table[54] @ 864
+      72 00000037 C548          .field  -15032,16                       ; _PHY_fskGsnIntFilt16Table[55] @ 880
+      73 00000038 C64C          .field  -14772,16                       ; _PHY_fskGsnIntFilt16Table[56] @ 896
+      74 00000039 C8BF          .field  -14145,16                       ; _PHY_fskGsnIntFilt16Table[57] @ 912
+      75 0000003a CCCC          .field  -13108,16                       ; _PHY_fskGsnIntFilt16Table[58] @ 928
+      76 0000003b D299          .field  -11623,16                       ; _PHY_fskGsnIntFilt16Table[59] @ 944
+      77 0000003c DA35          .field  -9675,16                        ; _PHY_fskGsnIntFilt16Table[60] @ 960
+      78 0000003d E388          .field  -7288,16                        ; _PHY_fskGsnIntFilt16Table[61] @ 976
+      79 0000003e EE48          .field  -4536,16                        ; _PHY_fskGsnIntFilt16Table[62] @ 992
+      80 0000003f F9FC          .field  -1540,16                        ; _PHY_fskGsnIntFilt16Table[63] @ 1008
+      81 00000040 2300          .field  8960,16                 ; _PHY_fskGsnIntFilt16Table[64] @ 1024
+      82 00000041 28D6          .field  10454,16                        ; _PHY_fskGsnIntFilt16Table[65] @ 1040
+      83 00000042 2E2C          .field  11820,16                        ; _PHY_fskGsnIntFilt16Table[66] @ 1056
+      84 00000043 32C0          .field  12992,16                        ; _PHY_fskGsnIntFilt16Table[67] @ 1072
+      85 00000044 3664          .field  13924,16                        ; _PHY_fskGsnIntFilt16Table[68] @ 1088
+      86 00000045 38FB          .field  14587,16                        ; _PHY_fskGsnIntFilt16Table[69] @ 1104
+      87 00000046 3A72          .field  14962,16                        ; _PHY_fskGsnIntFilt16Table[70] @ 1120
+      88 00000047 3AB8          .field  15032,16                        ; _PHY_fskGsnIntFilt16Table[71] @ 1136
+      89 00000048 39B4          .field  14772,16                        ; _PHY_fskGsnIntFilt16Table[72] @ 1152
+      90 00000049 3741          .field  14145,16                        ; _PHY_fskGsnIntFilt16Table[73] @ 1168
+      91 0000004a 3334          .field  13108,16                        ; _PHY_fskGsnIntFilt16Table[74] @ 1184
+      92 0000004b 2D67          .field  11623,16                        ; _PHY_fskGsnIntFilt16Table[75] @ 1200
+      93 0000004c 25CB          .field  9675,16                 ; _PHY_fskGsnIntFilt16Table[76] @ 1216
+      94 0000004d 1C78          .field  7288,16                 ; _PHY_fskGsnIntFilt16Table[77] @ 1232
+      95 0000004e 11B8          .field  4536,16                 ; _PHY_fskGsnIntFilt16Table[78] @ 1248
+      96 0000004f 0604          .field  1540,16                 ; _PHY_fskGsnIntFilt16Table[79] @ 1264
+      97 00000050 2303          .field  8963,16                 ; _PHY_fskGsnIntFilt16Table[80] @ 1280
+      98 00000051 28DE          .field  10462,16                        ; _PHY_fskGsnIntFilt16Table[81] @ 1296
+      99 00000052 2E42          .field  11842,16                        ; _PHY_fskGsnIntFilt16Table[82] @ 1312
+     100 00000053 32F2          .field  13042,16                        ; _PHY_fskGsnIntFilt16Table[83] @ 1328
+     101 00000054 36CE          .field  14030,16                        ; _PHY_fskGsnIntFilt16Table[84] @ 1344
+     102 00000055 39CF          .field  14799,16                        ; _PHY_fskGsnIntFilt16Table[85] @ 1360
+     103 00000056 3C06          .field  15366,16                        ; _PHY_fskGsnIntFilt16Table[86] @ 1376
+     104 00000057 3D90          .field  15760,16                        ; _PHY_fskGsnIntFilt16Table[87] @ 1392
+     105 00000058 3E94          .field  16020,16                        ; _PHY_fskGsnIntFilt16Table[88] @ 1408
+     106 00000059 3F36          .field  16182,16                        ; _PHY_fskGsnIntFilt16Table[89] @ 1424
+     107 0000005a 3F96          .field  16278,16                        ; _PHY_fskGsnIntFilt16Table[90] @ 1440
+     108 0000005b 3FCB          .field  16331,16                        ; _PHY_fskGsnIntFilt16Table[91] @ 1456
+     109 0000005c 3FE7          .field  16359,16                        ; _PHY_fskGsnIntFilt16Table[92] @ 1472
+     110 0000005d 3FF5          .field  16373,16                        ; _PHY_fskGsnIntFilt16Table[93] @ 1488
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    3
+
+     111 0000005e 3FFC          .field  16380,16                        ; _PHY_fskGsnIntFilt16Table[94] @ 1504
+     112 0000005f 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[95] @ 1520
+     113 00000060 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[96] @ 1536
+     114 00000061 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[97] @ 1552
+     115 00000062 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[98] @ 1568
+     116 00000063 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[99] @ 1584
+     117 00000064 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[100] @ 1600
+     118 00000065 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[101] @ 1616
+     119 00000066 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[102] @ 1632
+     120 00000067 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[103] @ 1648
+     121 00000068 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[104] @ 1664
+     122 00000069 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[105] @ 1680
+     123 0000006a C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[106] @ 1696
+     124 0000006b C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[107] @ 1712
+     125 0000006c C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[108] @ 1728
+     126 0000006d C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[109] @ 1744
+     127 0000006e C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[110] @ 1760
+     128 0000006f C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt16Table[111] @ 1776
+     129 00000070 C002          .field  -16382,16                       ; _PHY_fskGsnIntFilt16Table[112] @ 1792
+     130 00000071 C008          .field  -16376,16                       ; _PHY_fskGsnIntFilt16Table[113] @ 1808
+     131 00000072 C016          .field  -16362,16                       ; _PHY_fskGsnIntFilt16Table[114] @ 1824
+     132 00000073 C032          .field  -16334,16                       ; _PHY_fskGsnIntFilt16Table[115] @ 1840
+     133 00000074 C06A          .field  -16278,16                       ; _PHY_fskGsnIntFilt16Table[116] @ 1856
+     134 00000075 C0D4          .field  -16172,16                       ; _PHY_fskGsnIntFilt16Table[117] @ 1872
+     135 00000076 C194          .field  -15980,16                       ; _PHY_fskGsnIntFilt16Table[118] @ 1888
+     136 00000077 C2D8          .field  -15656,16                       ; _PHY_fskGsnIntFilt16Table[119] @ 1904
+     137 00000078 C4E0          .field  -15136,16                       ; _PHY_fskGsnIntFilt16Table[120] @ 1920
+     138 00000079 C7F5          .field  -14347,16                       ; _PHY_fskGsnIntFilt16Table[121] @ 1936
+     139 0000007a CC62          .field  -13214,16                       ; _PHY_fskGsnIntFilt16Table[122] @ 1952
+     140 0000007b D264          .field  -11676,16                       ; _PHY_fskGsnIntFilt16Table[123] @ 1968
+     141 0000007c DA1C          .field  -9700,16                        ; _PHY_fskGsnIntFilt16Table[124] @ 1984
+     142 0000007d E37D          .field  -7299,16                        ; _PHY_fskGsnIntFilt16Table[125] @ 2000
+     143 0000007e EE44          .field  -4540,16                        ; _PHY_fskGsnIntFilt16Table[126] @ 2016
+     144 0000007f F9FA          .field  -1542,16                        ; _PHY_fskGsnIntFilt16Table[127] @ 2032
+     145 00000080 0603          .field  1539,16                 ; _PHY_fskGsnIntFilt16Table[128] @ 2048
+     146 00000081 11B4          .field  4532,16                 ; _PHY_fskGsnIntFilt16Table[129] @ 2064
+     147 00000082 1C6D          .field  7277,16                 ; _PHY_fskGsnIntFilt16Table[130] @ 2080
+     148 00000083 25B2          .field  9650,16                 ; _PHY_fskGsnIntFilt16Table[131] @ 2096
+     149 00000084 2D32          .field  11570,16                        ; _PHY_fskGsnIntFilt16Table[132] @ 2112
+     150 00000085 32CA          .field  13002,16                        ; _PHY_fskGsnIntFilt16Table[133] @ 2128
+     151 00000086 3678          .field  13944,16                        ; _PHY_fskGsnIntFilt16Table[134] @ 2144
+     152 00000087 3849          .field  14409,16                        ; _PHY_fskGsnIntFilt16Table[135] @ 2160
+     153 00000088 3849          .field  14409,16                        ; _PHY_fskGsnIntFilt16Table[136] @ 2176
+     154 00000089 3678          .field  13944,16                        ; _PHY_fskGsnIntFilt16Table[137] @ 2192
+     155 0000008a 32CA          .field  13002,16                        ; _PHY_fskGsnIntFilt16Table[138] @ 2208
+     156 0000008b 2D32          .field  11570,16                        ; _PHY_fskGsnIntFilt16Table[139] @ 2224
+     157 0000008c 25B2          .field  9650,16                 ; _PHY_fskGsnIntFilt16Table[140] @ 2240
+     158 0000008d 1C6D          .field  7277,16                 ; _PHY_fskGsnIntFilt16Table[141] @ 2256
+     159 0000008e 11B4          .field  4532,16                 ; _PHY_fskGsnIntFilt16Table[142] @ 2272
+     160 0000008f 0603          .field  1539,16                 ; _PHY_fskGsnIntFilt16Table[143] @ 2288
+     161 00000090 0606          .field  1542,16                 ; _PHY_fskGsnIntFilt16Table[144] @ 2304
+     162 00000091 11BC          .field  4540,16                 ; _PHY_fskGsnIntFilt16Table[145] @ 2320
+     163 00000092 1C83          .field  7299,16                 ; _PHY_fskGsnIntFilt16Table[146] @ 2336
+     164 00000093 25E4          .field  9700,16                 ; _PHY_fskGsnIntFilt16Table[147] @ 2352
+     165 00000094 2D9C          .field  11676,16                        ; _PHY_fskGsnIntFilt16Table[148] @ 2368
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    4
+
+     166 00000095 339E          .field  13214,16                        ; _PHY_fskGsnIntFilt16Table[149] @ 2384
+     167 00000096 380B          .field  14347,16                        ; _PHY_fskGsnIntFilt16Table[150] @ 2400
+     168 00000097 3B20          .field  15136,16                        ; _PHY_fskGsnIntFilt16Table[151] @ 2416
+     169 00000098 3D28          .field  15656,16                        ; _PHY_fskGsnIntFilt16Table[152] @ 2432
+     170 00000099 3E6C          .field  15980,16                        ; _PHY_fskGsnIntFilt16Table[153] @ 2448
+     171 0000009a 3F2C          .field  16172,16                        ; _PHY_fskGsnIntFilt16Table[154] @ 2464
+     172 0000009b 3F96          .field  16278,16                        ; _PHY_fskGsnIntFilt16Table[155] @ 2480
+     173 0000009c 3FCE          .field  16334,16                        ; _PHY_fskGsnIntFilt16Table[156] @ 2496
+     174 0000009d 3FEA          .field  16362,16                        ; _PHY_fskGsnIntFilt16Table[157] @ 2512
+     175 0000009e 3FF8          .field  16376,16                        ; _PHY_fskGsnIntFilt16Table[158] @ 2528
+     176 0000009f 3FFE          .field  16382,16                        ; _PHY_fskGsnIntFilt16Table[159] @ 2544
+     177 000000a0 F9FA          .field  -1542,16                        ; _PHY_fskGsnIntFilt16Table[160] @ 2560
+     178 000000a1 EE44          .field  -4540,16                        ; _PHY_fskGsnIntFilt16Table[161] @ 2576
+     179 000000a2 E37D          .field  -7299,16                        ; _PHY_fskGsnIntFilt16Table[162] @ 2592
+     180 000000a3 DA1C          .field  -9700,16                        ; _PHY_fskGsnIntFilt16Table[163] @ 2608
+     181 000000a4 D264          .field  -11676,16                       ; _PHY_fskGsnIntFilt16Table[164] @ 2624
+     182 000000a5 CC62          .field  -13214,16                       ; _PHY_fskGsnIntFilt16Table[165] @ 2640
+     183 000000a6 C7F5          .field  -14347,16                       ; _PHY_fskGsnIntFilt16Table[166] @ 2656
+     184 000000a7 C4E0          .field  -15136,16                       ; _PHY_fskGsnIntFilt16Table[167] @ 2672
+     185 000000a8 C2D8          .field  -15656,16                       ; _PHY_fskGsnIntFilt16Table[168] @ 2688
+     186 000000a9 C194          .field  -15980,16                       ; _PHY_fskGsnIntFilt16Table[169] @ 2704
+     187 000000aa C0D4          .field  -16172,16                       ; _PHY_fskGsnIntFilt16Table[170] @ 2720
+     188 000000ab C06A          .field  -16278,16                       ; _PHY_fskGsnIntFilt16Table[171] @ 2736
+     189 000000ac C032          .field  -16334,16                       ; _PHY_fskGsnIntFilt16Table[172] @ 2752
+     190 000000ad C016          .field  -16362,16                       ; _PHY_fskGsnIntFilt16Table[173] @ 2768
+     191 000000ae C008          .field  -16376,16                       ; _PHY_fskGsnIntFilt16Table[174] @ 2784
+     192 000000af C002          .field  -16382,16                       ; _PHY_fskGsnIntFilt16Table[175] @ 2800
+     193 000000b0 F9FD          .field  -1539,16                        ; _PHY_fskGsnIntFilt16Table[176] @ 2816
+     194 000000b1 EE4C          .field  -4532,16                        ; _PHY_fskGsnIntFilt16Table[177] @ 2832
+     195 000000b2 E393          .field  -7277,16                        ; _PHY_fskGsnIntFilt16Table[178] @ 2848
+     196 000000b3 DA4E          .field  -9650,16                        ; _PHY_fskGsnIntFilt16Table[179] @ 2864
+     197 000000b4 D2CE          .field  -11570,16                       ; _PHY_fskGsnIntFilt16Table[180] @ 2880
+     198 000000b5 CD36          .field  -13002,16                       ; _PHY_fskGsnIntFilt16Table[181] @ 2896
+     199 000000b6 C988          .field  -13944,16                       ; _PHY_fskGsnIntFilt16Table[182] @ 2912
+     200 000000b7 C7B7          .field  -14409,16                       ; _PHY_fskGsnIntFilt16Table[183] @ 2928
+     201 000000b8 C7B7          .field  -14409,16                       ; _PHY_fskGsnIntFilt16Table[184] @ 2944
+     202 000000b9 C988          .field  -13944,16                       ; _PHY_fskGsnIntFilt16Table[185] @ 2960
+     203 000000ba CD36          .field  -13002,16                       ; _PHY_fskGsnIntFilt16Table[186] @ 2976
+     204 000000bb D2CE          .field  -11570,16                       ; _PHY_fskGsnIntFilt16Table[187] @ 2992
+     205 000000bc DA4E          .field  -9650,16                        ; _PHY_fskGsnIntFilt16Table[188] @ 3008
+     206 000000bd E393          .field  -7277,16                        ; _PHY_fskGsnIntFilt16Table[189] @ 3024
+     207 000000be EE4C          .field  -4532,16                        ; _PHY_fskGsnIntFilt16Table[190] @ 3040
+     208 000000bf F9FD          .field  -1539,16                        ; _PHY_fskGsnIntFilt16Table[191] @ 3056
+     209 000000c0 3FFE          .field  16382,16                        ; _PHY_fskGsnIntFilt16Table[192] @ 3072
+     210 000000c1 3FF8          .field  16376,16                        ; _PHY_fskGsnIntFilt16Table[193] @ 3088
+     211 000000c2 3FEA          .field  16362,16                        ; _PHY_fskGsnIntFilt16Table[194] @ 3104
+     212 000000c3 3FCE          .field  16334,16                        ; _PHY_fskGsnIntFilt16Table[195] @ 3120
+     213 000000c4 3F96          .field  16278,16                        ; _PHY_fskGsnIntFilt16Table[196] @ 3136
+     214 000000c5 3F2C          .field  16172,16                        ; _PHY_fskGsnIntFilt16Table[197] @ 3152
+     215 000000c6 3E6C          .field  15980,16                        ; _PHY_fskGsnIntFilt16Table[198] @ 3168
+     216 000000c7 3D28          .field  15656,16                        ; _PHY_fskGsnIntFilt16Table[199] @ 3184
+     217 000000c8 3B20          .field  15136,16                        ; _PHY_fskGsnIntFilt16Table[200] @ 3200
+     218 000000c9 380B          .field  14347,16                        ; _PHY_fskGsnIntFilt16Table[201] @ 3216
+     219 000000ca 339E          .field  13214,16                        ; _PHY_fskGsnIntFilt16Table[202] @ 3232
+     220 000000cb 2D9C          .field  11676,16                        ; _PHY_fskGsnIntFilt16Table[203] @ 3248
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    5
+
+     221 000000cc 25E4          .field  9700,16                 ; _PHY_fskGsnIntFilt16Table[204] @ 3264
+     222 000000cd 1C83          .field  7299,16                 ; _PHY_fskGsnIntFilt16Table[205] @ 3280
+     223 000000ce 11BC          .field  4540,16                 ; _PHY_fskGsnIntFilt16Table[206] @ 3296
+     224 000000cf 0606          .field  1542,16                 ; _PHY_fskGsnIntFilt16Table[207] @ 3312
+     225 000000d0 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[208] @ 3328
+     226 000000d1 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[209] @ 3344
+     227 000000d2 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[210] @ 3360
+     228 000000d3 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[211] @ 3376
+     229 000000d4 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[212] @ 3392
+     230 000000d5 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[213] @ 3408
+     231 000000d6 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[214] @ 3424
+     232 000000d7 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[215] @ 3440
+     233 000000d8 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[216] @ 3456
+     234 000000d9 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[217] @ 3472
+     235 000000da 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[218] @ 3488
+     236 000000db 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[219] @ 3504
+     237 000000dc 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[220] @ 3520
+     238 000000dd 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[221] @ 3536
+     239 000000de 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[222] @ 3552
+     240 000000df 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[223] @ 3568
+     241 000000e0 C001          .field  -16383,16                       ; _PHY_fskGsnIntFilt16Table[224] @ 3584
+     242 000000e1 C004          .field  -16380,16                       ; _PHY_fskGsnIntFilt16Table[225] @ 3600
+     243 000000e2 C00B          .field  -16373,16                       ; _PHY_fskGsnIntFilt16Table[226] @ 3616
+     244 000000e3 C019          .field  -16359,16                       ; _PHY_fskGsnIntFilt16Table[227] @ 3632
+     245 000000e4 C035          .field  -16331,16                       ; _PHY_fskGsnIntFilt16Table[228] @ 3648
+     246 000000e5 C06A          .field  -16278,16                       ; _PHY_fskGsnIntFilt16Table[229] @ 3664
+     247 000000e6 C0CA          .field  -16182,16                       ; _PHY_fskGsnIntFilt16Table[230] @ 3680
+     248 000000e7 C16C          .field  -16020,16                       ; _PHY_fskGsnIntFilt16Table[231] @ 3696
+     249 000000e8 C270          .field  -15760,16                       ; _PHY_fskGsnIntFilt16Table[232] @ 3712
+     250 000000e9 C3FA          .field  -15366,16                       ; _PHY_fskGsnIntFilt16Table[233] @ 3728
+     251 000000ea C631          .field  -14799,16                       ; _PHY_fskGsnIntFilt16Table[234] @ 3744
+     252 000000eb C932          .field  -14030,16                       ; _PHY_fskGsnIntFilt16Table[235] @ 3760
+     253 000000ec CD0E          .field  -13042,16                       ; _PHY_fskGsnIntFilt16Table[236] @ 3776
+     254 000000ed D1BE          .field  -11842,16                       ; _PHY_fskGsnIntFilt16Table[237] @ 3792
+     255 000000ee D722          .field  -10462,16                       ; _PHY_fskGsnIntFilt16Table[238] @ 3808
+     256 000000ef DCFD          .field  -8963,16                        ; _PHY_fskGsnIntFilt16Table[239] @ 3824
+     257 000000f0 0604          .field  1540,16                 ; _PHY_fskGsnIntFilt16Table[240] @ 3840
+     258 000000f1 11B8          .field  4536,16                 ; _PHY_fskGsnIntFilt16Table[241] @ 3856
+     259 000000f2 1C78          .field  7288,16                 ; _PHY_fskGsnIntFilt16Table[242] @ 3872
+     260 000000f3 25CB          .field  9675,16                 ; _PHY_fskGsnIntFilt16Table[243] @ 3888
+     261 000000f4 2D67          .field  11623,16                        ; _PHY_fskGsnIntFilt16Table[244] @ 3904
+     262 000000f5 3334          .field  13108,16                        ; _PHY_fskGsnIntFilt16Table[245] @ 3920
+     263 000000f6 3741          .field  14145,16                        ; _PHY_fskGsnIntFilt16Table[246] @ 3936
+     264 000000f7 39B4          .field  14772,16                        ; _PHY_fskGsnIntFilt16Table[247] @ 3952
+     265 000000f8 3AB8          .field  15032,16                        ; _PHY_fskGsnIntFilt16Table[248] @ 3968
+     266 000000f9 3A72          .field  14962,16                        ; _PHY_fskGsnIntFilt16Table[249] @ 3984
+     267 000000fa 38FB          .field  14587,16                        ; _PHY_fskGsnIntFilt16Table[250] @ 4000
+     268 000000fb 3664          .field  13924,16                        ; _PHY_fskGsnIntFilt16Table[251] @ 4016
+     269 000000fc 32C0          .field  12992,16                        ; _PHY_fskGsnIntFilt16Table[252] @ 4032
+     270 000000fd 2E2C          .field  11820,16                        ; _PHY_fskGsnIntFilt16Table[253] @ 4048
+     271 000000fe 28D6          .field  10454,16                        ; _PHY_fskGsnIntFilt16Table[254] @ 4064
+     272 000000ff 2300          .field  8960,16                 ; _PHY_fskGsnIntFilt16Table[255] @ 4080
+     273 00000100 F9FC          .field  -1540,16                        ; _PHY_fskGsnIntFilt16Table[256] @ 4096
+     274 00000101 EE48          .field  -4536,16                        ; _PHY_fskGsnIntFilt16Table[257] @ 4112
+     275 00000102 E388          .field  -7288,16                        ; _PHY_fskGsnIntFilt16Table[258] @ 4128
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    6
+
+     276 00000103 DA35          .field  -9675,16                        ; _PHY_fskGsnIntFilt16Table[259] @ 4144
+     277 00000104 D299          .field  -11623,16                       ; _PHY_fskGsnIntFilt16Table[260] @ 4160
+     278 00000105 CCCC          .field  -13108,16                       ; _PHY_fskGsnIntFilt16Table[261] @ 4176
+     279 00000106 C8BF          .field  -14145,16                       ; _PHY_fskGsnIntFilt16Table[262] @ 4192
+     280 00000107 C64C          .field  -14772,16                       ; _PHY_fskGsnIntFilt16Table[263] @ 4208
+     281 00000108 C548          .field  -15032,16                       ; _PHY_fskGsnIntFilt16Table[264] @ 4224
+     282 00000109 C58E          .field  -14962,16                       ; _PHY_fskGsnIntFilt16Table[265] @ 4240
+     283 0000010a C705          .field  -14587,16                       ; _PHY_fskGsnIntFilt16Table[266] @ 4256
+     284 0000010b C99C          .field  -13924,16                       ; _PHY_fskGsnIntFilt16Table[267] @ 4272
+     285 0000010c CD40          .field  -12992,16                       ; _PHY_fskGsnIntFilt16Table[268] @ 4288
+     286 0000010d D1D4          .field  -11820,16                       ; _PHY_fskGsnIntFilt16Table[269] @ 4304
+     287 0000010e D72A          .field  -10454,16                       ; _PHY_fskGsnIntFilt16Table[270] @ 4320
+     288 0000010f DD00          .field  -8960,16                        ; _PHY_fskGsnIntFilt16Table[271] @ 4336
+     289 00000110 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt16Table[272] @ 4352
+     290 00000111 3FFC          .field  16380,16                        ; _PHY_fskGsnIntFilt16Table[273] @ 4368
+     291 00000112 3FF5          .field  16373,16                        ; _PHY_fskGsnIntFilt16Table[274] @ 4384
+     292 00000113 3FE7          .field  16359,16                        ; _PHY_fskGsnIntFilt16Table[275] @ 4400
+     293 00000114 3FCB          .field  16331,16                        ; _PHY_fskGsnIntFilt16Table[276] @ 4416
+     294 00000115 3F96          .field  16278,16                        ; _PHY_fskGsnIntFilt16Table[277] @ 4432
+     295 00000116 3F36          .field  16182,16                        ; _PHY_fskGsnIntFilt16Table[278] @ 4448
+     296 00000117 3E94          .field  16020,16                        ; _PHY_fskGsnIntFilt16Table[279] @ 4464
+     297 00000118 3D90          .field  15760,16                        ; _PHY_fskGsnIntFilt16Table[280] @ 4480
+     298 00000119 3C06          .field  15366,16                        ; _PHY_fskGsnIntFilt16Table[281] @ 4496
+     299 0000011a 39CF          .field  14799,16                        ; _PHY_fskGsnIntFilt16Table[282] @ 4512
+     300 0000011b 36CE          .field  14030,16                        ; _PHY_fskGsnIntFilt16Table[283] @ 4528
+     301 0000011c 32F2          .field  13042,16                        ; _PHY_fskGsnIntFilt16Table[284] @ 4544
+     302 0000011d 2E42          .field  11842,16                        ; _PHY_fskGsnIntFilt16Table[285] @ 4560
+     303 0000011e 28DE          .field  10462,16                        ; _PHY_fskGsnIntFilt16Table[286] @ 4576
+     304 0000011f 2303          .field  8963,16                 ; _PHY_fskGsnIntFilt16Table[287] @ 4592
+     305 00000120 E303          .field  -7421,16                        ; _PHY_fskGsnIntFilt16Table[288] @ 4608
+     306 00000121 E8DE          .field  -5922,16                        ; _PHY_fskGsnIntFilt16Table[289] @ 4624
+     307 00000122 EE42          .field  -4542,16                        ; _PHY_fskGsnIntFilt16Table[290] @ 4640
+     308 00000123 F2F2          .field  -3342,16                        ; _PHY_fskGsnIntFilt16Table[291] @ 4656
+     309 00000124 F6CE          .field  -2354,16                        ; _PHY_fskGsnIntFilt16Table[292] @ 4672
+     310 00000125 F9CF          .field  -1585,16                        ; _PHY_fskGsnIntFilt16Table[293] @ 4688
+     311 00000126 FC06          .field  -1018,16                        ; _PHY_fskGsnIntFilt16Table[294] @ 4704
+     312 00000127 FD90          .field  -624,16                 ; _PHY_fskGsnIntFilt16Table[295] @ 4720
+     313 00000128 FE94          .field  -364,16                 ; _PHY_fskGsnIntFilt16Table[296] @ 4736
+     314 00000129 FF36          .field  -202,16                 ; _PHY_fskGsnIntFilt16Table[297] @ 4752
+     315 0000012a FF96          .field  -106,16                 ; _PHY_fskGsnIntFilt16Table[298] @ 4768
+     316 0000012b FFCB          .field  -53,16                  ; _PHY_fskGsnIntFilt16Table[299] @ 4784
+     317 0000012c FFE7          .field  -25,16                  ; _PHY_fskGsnIntFilt16Table[300] @ 4800
+     318 0000012d FFF5          .field  -11,16                  ; _PHY_fskGsnIntFilt16Table[301] @ 4816
+     319 0000012e FFFC          .field  -4,16                   ; _PHY_fskGsnIntFilt16Table[302] @ 4832
+     320 0000012f FFFF          .field  -1,16                   ; _PHY_fskGsnIntFilt16Table[303] @ 4848
+     321 00000130 1CFD          .field  7421,16                 ; _PHY_fskGsnIntFilt16Table[304] @ 4864
+     322 00000131 1722          .field  5922,16                 ; _PHY_fskGsnIntFilt16Table[305] @ 4880
+     323 00000132 11BE          .field  4542,16                 ; _PHY_fskGsnIntFilt16Table[306] @ 4896
+     324 00000133 0D0E          .field  3342,16                 ; _PHY_fskGsnIntFilt16Table[307] @ 4912
+     325 00000134 0932          .field  2354,16                 ; _PHY_fskGsnIntFilt16Table[308] @ 4928
+     326 00000135 0631          .field  1585,16                 ; _PHY_fskGsnIntFilt16Table[309] @ 4944
+     327 00000136 03FA          .field  1018,16                 ; _PHY_fskGsnIntFilt16Table[310] @ 4960
+     328 00000137 0270          .field  624,16                  ; _PHY_fskGsnIntFilt16Table[311] @ 4976
+     329 00000138 016C          .field  364,16                  ; _PHY_fskGsnIntFilt16Table[312] @ 4992
+     330 00000139 00CA          .field  202,16                  ; _PHY_fskGsnIntFilt16Table[313] @ 5008
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    7
+
+     331 0000013a 006A          .field  106,16                  ; _PHY_fskGsnIntFilt16Table[314] @ 5024
+     332 0000013b 0035          .field  53,16                   ; _PHY_fskGsnIntFilt16Table[315] @ 5040
+     333 0000013c 0019          .field  25,16                   ; _PHY_fskGsnIntFilt16Table[316] @ 5056
+     334 0000013d 000B          .field  11,16                   ; _PHY_fskGsnIntFilt16Table[317] @ 5072
+     335 0000013e 0004          .field  4,16                    ; _PHY_fskGsnIntFilt16Table[318] @ 5088
+     336 0000013f 0001          .field  1,16                    ; _PHY_fskGsnIntFilt16Table[319] @ 5104
+     337              
+     338              $C$DW$1 .dwtag  DW_TAG_variable, DW_AT_name("PHY_fskGsnIntFilt16Table")
+     339                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_PHY_fskGsnIntFilt16Table")
+     340                      .dwattr $C$DW$1, DW_AT_location[DW_OP_addr _PHY_fskGsnIntFilt16Table]
+     341                      .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$22)
+     342                      .dwattr $C$DW$1, DW_AT_external
+     343                      .global _PHY_fskGsnIntFilt50Table
+     344 00000140               .sect   "sunPhyTable"
+     345                      .align  1
+     346 00000140       _PHY_fskGsnIntFilt50Table:
+     347 00000140 0000          .field  0,16                    ; _PHY_fskGsnIntFilt50Table[0] @ 0
+     348 00000141 FFFF          .field  -1,16                   ; _PHY_fskGsnIntFilt50Table[1] @ 16
+     349 00000142 FFFE          .field  -2,16                   ; _PHY_fskGsnIntFilt50Table[2] @ 32
+     350 00000143 FFFD          .field  -3,16                   ; _PHY_fskGsnIntFilt50Table[3] @ 48
+     351 00000144 FFFC          .field  -4,16                   ; _PHY_fskGsnIntFilt50Table[4] @ 64
+     352 00000145 FFFB          .field  -5,16                   ; _PHY_fskGsnIntFilt50Table[5] @ 80
+     353 00000146 FFF9          .field  -7,16                   ; _PHY_fskGsnIntFilt50Table[6] @ 96
+     354 00000147 FFF6          .field  -10,16                  ; _PHY_fskGsnIntFilt50Table[7] @ 112
+     355 00000148 FFF3          .field  -13,16                  ; _PHY_fskGsnIntFilt50Table[8] @ 128
+     356 00000149 FFEF          .field  -17,16                  ; _PHY_fskGsnIntFilt50Table[9] @ 144
+     357 0000014a FFEA          .field  -22,16                  ; _PHY_fskGsnIntFilt50Table[10] @ 160
+     358 0000014b FFE3          .field  -29,16                  ; _PHY_fskGsnIntFilt50Table[11] @ 176
+     359 0000014c FFDB          .field  -37,16                  ; _PHY_fskGsnIntFilt50Table[12] @ 192
+     360 0000014d FFD1          .field  -47,16                  ; _PHY_fskGsnIntFilt50Table[13] @ 208
+     361 0000014e FFC5          .field  -59,16                  ; _PHY_fskGsnIntFilt50Table[14] @ 224
+     362 0000014f FFB6          .field  -74,16                  ; _PHY_fskGsnIntFilt50Table[15] @ 240
+     363 00000150 FFA3          .field  -93,16                  ; _PHY_fskGsnIntFilt50Table[16] @ 256
+     364 00000151 FF8D          .field  -115,16                 ; _PHY_fskGsnIntFilt50Table[17] @ 272
+     365 00000152 FF72          .field  -142,16                 ; _PHY_fskGsnIntFilt50Table[18] @ 288
+     366 00000153 FF52          .field  -174,16                 ; _PHY_fskGsnIntFilt50Table[19] @ 304
+     367 00000154 FF2C          .field  -212,16                 ; _PHY_fskGsnIntFilt50Table[20] @ 320
+     368 00000155 FEFF          .field  -257,16                 ; _PHY_fskGsnIntFilt50Table[21] @ 336
+     369 00000156 FECB          .field  -309,16                 ; _PHY_fskGsnIntFilt50Table[22] @ 352
+     370 00000157 FE8D          .field  -371,16                 ; _PHY_fskGsnIntFilt50Table[23] @ 368
+     371 00000158 FE45          .field  -443,16                 ; _PHY_fskGsnIntFilt50Table[24] @ 384
+     372 00000159 FDF2          .field  -526,16                 ; _PHY_fskGsnIntFilt50Table[25] @ 400
+     373 0000015a FD92          .field  -622,16                 ; _PHY_fskGsnIntFilt50Table[26] @ 416
+     374 0000015b FD24          .field  -732,16                 ; _PHY_fskGsnIntFilt50Table[27] @ 432
+     375 0000015c FCA8          .field  -856,16                 ; _PHY_fskGsnIntFilt50Table[28] @ 448
+     376 0000015d FC1C          .field  -996,16                 ; _PHY_fskGsnIntFilt50Table[29] @ 464
+     377 0000015e FB7E          .field  -1154,16                        ; _PHY_fskGsnIntFilt50Table[30] @ 480
+     378 0000015f FACD          .field  -1331,16                        ; _PHY_fskGsnIntFilt50Table[31] @ 496
+     379 00000160 FA09          .field  -1527,16                        ; _PHY_fskGsnIntFilt50Table[32] @ 512
+     380 00000161 F931          .field  -1743,16                        ; _PHY_fskGsnIntFilt50Table[33] @ 528
+     381 00000162 F843          .field  -1981,16                        ; _PHY_fskGsnIntFilt50Table[34] @ 544
+     382 00000163 F73F          .field  -2241,16                        ; _PHY_fskGsnIntFilt50Table[35] @ 560
+     383 00000164 F624          .field  -2524,16                        ; _PHY_fskGsnIntFilt50Table[36] @ 576
+     384 00000165 F4F3          .field  -2829,16                        ; _PHY_fskGsnIntFilt50Table[37] @ 592
+     385 00000166 F3AC          .field  -3156,16                        ; _PHY_fskGsnIntFilt50Table[38] @ 608
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    8
+
+     386 00000167 F24E          .field  -3506,16                        ; _PHY_fskGsnIntFilt50Table[39] @ 624
+     387 00000168 F0DB          .field  -3877,16                        ; _PHY_fskGsnIntFilt50Table[40] @ 640
+     388 00000169 EF54          .field  -4268,16                        ; _PHY_fskGsnIntFilt50Table[41] @ 656
+     389 0000016a EDB8          .field  -4680,16                        ; _PHY_fskGsnIntFilt50Table[42] @ 672
+     390 0000016b EC0B          .field  -5109,16                        ; _PHY_fskGsnIntFilt50Table[43] @ 688
+     391 0000016c EA4E          .field  -5554,16                        ; _PHY_fskGsnIntFilt50Table[44] @ 704
+     392 0000016d E883          .field  -6013,16                        ; _PHY_fskGsnIntFilt50Table[45] @ 720
+     393 0000016e E6AB          .field  -6485,16                        ; _PHY_fskGsnIntFilt50Table[46] @ 736
+     394 0000016f E4CA          .field  -6966,16                        ; _PHY_fskGsnIntFilt50Table[47] @ 752
+     395 00000170 E2E3          .field  -7453,16                        ; _PHY_fskGsnIntFilt50Table[48] @ 768
+     396 00000171 E0F7          .field  -7945,16                        ; _PHY_fskGsnIntFilt50Table[49] @ 784
+     397 00000172 0000          .field  0,16                    ; _PHY_fskGsnIntFilt50Table[50] @ 800
+     398 00000173 0001          .field  1,16                    ; _PHY_fskGsnIntFilt50Table[51] @ 816
+     399 00000174 0002          .field  2,16                    ; _PHY_fskGsnIntFilt50Table[52] @ 832
+     400 00000175 0003          .field  3,16                    ; _PHY_fskGsnIntFilt50Table[53] @ 848
+     401 00000176 0004          .field  4,16                    ; _PHY_fskGsnIntFilt50Table[54] @ 864
+     402 00000177 0005          .field  5,16                    ; _PHY_fskGsnIntFilt50Table[55] @ 880
+     403 00000178 0007          .field  7,16                    ; _PHY_fskGsnIntFilt50Table[56] @ 896
+     404 00000179 000A          .field  10,16                   ; _PHY_fskGsnIntFilt50Table[57] @ 912
+     405 0000017a 000D          .field  13,16                   ; _PHY_fskGsnIntFilt50Table[58] @ 928
+     406 0000017b 0011          .field  17,16                   ; _PHY_fskGsnIntFilt50Table[59] @ 944
+     407 0000017c 0016          .field  22,16                   ; _PHY_fskGsnIntFilt50Table[60] @ 960
+     408 0000017d 001D          .field  29,16                   ; _PHY_fskGsnIntFilt50Table[61] @ 976
+     409 0000017e 0025          .field  37,16                   ; _PHY_fskGsnIntFilt50Table[62] @ 992
+     410 0000017f 002F          .field  47,16                   ; _PHY_fskGsnIntFilt50Table[63] @ 1008
+     411 00000180 003B          .field  59,16                   ; _PHY_fskGsnIntFilt50Table[64] @ 1024
+     412 00000181 004A          .field  74,16                   ; _PHY_fskGsnIntFilt50Table[65] @ 1040
+     413 00000182 005D          .field  93,16                   ; _PHY_fskGsnIntFilt50Table[66] @ 1056
+     414 00000183 0073          .field  115,16                  ; _PHY_fskGsnIntFilt50Table[67] @ 1072
+     415 00000184 008E          .field  142,16                  ; _PHY_fskGsnIntFilt50Table[68] @ 1088
+     416 00000185 00AE          .field  174,16                  ; _PHY_fskGsnIntFilt50Table[69] @ 1104
+     417 00000186 00D4          .field  212,16                  ; _PHY_fskGsnIntFilt50Table[70] @ 1120
+     418 00000187 0101          .field  257,16                  ; _PHY_fskGsnIntFilt50Table[71] @ 1136
+     419 00000188 0135          .field  309,16                  ; _PHY_fskGsnIntFilt50Table[72] @ 1152
+     420 00000189 0173          .field  371,16                  ; _PHY_fskGsnIntFilt50Table[73] @ 1168
+     421 0000018a 01BB          .field  443,16                  ; _PHY_fskGsnIntFilt50Table[74] @ 1184
+     422 0000018b 020E          .field  526,16                  ; _PHY_fskGsnIntFilt50Table[75] @ 1200
+     423 0000018c 026E          .field  622,16                  ; _PHY_fskGsnIntFilt50Table[76] @ 1216
+     424 0000018d 02DC          .field  732,16                  ; _PHY_fskGsnIntFilt50Table[77] @ 1232
+     425 0000018e 0358          .field  856,16                  ; _PHY_fskGsnIntFilt50Table[78] @ 1248
+     426 0000018f 03E4          .field  996,16                  ; _PHY_fskGsnIntFilt50Table[79] @ 1264
+     427 00000190 0482          .field  1154,16                 ; _PHY_fskGsnIntFilt50Table[80] @ 1280
+     428 00000191 0533          .field  1331,16                 ; _PHY_fskGsnIntFilt50Table[81] @ 1296
+     429 00000192 05F7          .field  1527,16                 ; _PHY_fskGsnIntFilt50Table[82] @ 1312
+     430 00000193 06CF          .field  1743,16                 ; _PHY_fskGsnIntFilt50Table[83] @ 1328
+     431 00000194 07BD          .field  1981,16                 ; _PHY_fskGsnIntFilt50Table[84] @ 1344
+     432 00000195 08C1          .field  2241,16                 ; _PHY_fskGsnIntFilt50Table[85] @ 1360
+     433 00000196 09DC          .field  2524,16                 ; _PHY_fskGsnIntFilt50Table[86] @ 1376
+     434 00000197 0B0D          .field  2829,16                 ; _PHY_fskGsnIntFilt50Table[87] @ 1392
+     435 00000198 0C54          .field  3156,16                 ; _PHY_fskGsnIntFilt50Table[88] @ 1408
+     436 00000199 0DB2          .field  3506,16                 ; _PHY_fskGsnIntFilt50Table[89] @ 1424
+     437 0000019a 0F25          .field  3877,16                 ; _PHY_fskGsnIntFilt50Table[90] @ 1440
+     438 0000019b 10AC          .field  4268,16                 ; _PHY_fskGsnIntFilt50Table[91] @ 1456
+     439 0000019c 1248          .field  4680,16                 ; _PHY_fskGsnIntFilt50Table[92] @ 1472
+     440 0000019d 13F5          .field  5109,16                 ; _PHY_fskGsnIntFilt50Table[93] @ 1488
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE    9
+
+     441 0000019e 15B2          .field  5554,16                 ; _PHY_fskGsnIntFilt50Table[94] @ 1504
+     442 0000019f 177D          .field  6013,16                 ; _PHY_fskGsnIntFilt50Table[95] @ 1520
+     443 000001a0 1955          .field  6485,16                 ; _PHY_fskGsnIntFilt50Table[96] @ 1536
+     444 000001a1 1B36          .field  6966,16                 ; _PHY_fskGsnIntFilt50Table[97] @ 1552
+     445 000001a2 1D1D          .field  7453,16                 ; _PHY_fskGsnIntFilt50Table[98] @ 1568
+     446 000001a3 1F09          .field  7945,16                 ; _PHY_fskGsnIntFilt50Table[99] @ 1584
+     447 000001a4 DF09          .field  -8439,16                        ; _PHY_fskGsnIntFilt50Table[100] @ 1600
+     448 000001a5 DD1D          .field  -8931,16                        ; _PHY_fskGsnIntFilt50Table[101] @ 1616
+     449 000001a6 DB36          .field  -9418,16                        ; _PHY_fskGsnIntFilt50Table[102] @ 1632
+     450 000001a7 D955          .field  -9899,16                        ; _PHY_fskGsnIntFilt50Table[103] @ 1648
+     451 000001a8 D77D          .field  -10371,16                       ; _PHY_fskGsnIntFilt50Table[104] @ 1664
+     452 000001a9 D5B2          .field  -10830,16                       ; _PHY_fskGsnIntFilt50Table[105] @ 1680
+     453 000001aa D3F5          .field  -11275,16                       ; _PHY_fskGsnIntFilt50Table[106] @ 1696
+     454 000001ab D248          .field  -11704,16                       ; _PHY_fskGsnIntFilt50Table[107] @ 1712
+     455 000001ac D0AC          .field  -12116,16                       ; _PHY_fskGsnIntFilt50Table[108] @ 1728
+     456 000001ad CF25          .field  -12507,16                       ; _PHY_fskGsnIntFilt50Table[109] @ 1744
+     457 000001ae CDB2          .field  -12878,16                       ; _PHY_fskGsnIntFilt50Table[110] @ 1760
+     458 000001af CC54          .field  -13228,16                       ; _PHY_fskGsnIntFilt50Table[111] @ 1776
+     459 000001b0 CB0D          .field  -13555,16                       ; _PHY_fskGsnIntFilt50Table[112] @ 1792
+     460 000001b1 C9DC          .field  -13860,16                       ; _PHY_fskGsnIntFilt50Table[113] @ 1808
+     461 000001b2 C8C1          .field  -14143,16                       ; _PHY_fskGsnIntFilt50Table[114] @ 1824
+     462 000001b3 C7BD          .field  -14403,16                       ; _PHY_fskGsnIntFilt50Table[115] @ 1840
+     463 000001b4 C6CF          .field  -14641,16                       ; _PHY_fskGsnIntFilt50Table[116] @ 1856
+     464 000001b5 C5F7          .field  -14857,16                       ; _PHY_fskGsnIntFilt50Table[117] @ 1872
+     465 000001b6 C533          .field  -15053,16                       ; _PHY_fskGsnIntFilt50Table[118] @ 1888
+     466 000001b7 C482          .field  -15230,16                       ; _PHY_fskGsnIntFilt50Table[119] @ 1904
+     467 000001b8 C3E4          .field  -15388,16                       ; _PHY_fskGsnIntFilt50Table[120] @ 1920
+     468 000001b9 C358          .field  -15528,16                       ; _PHY_fskGsnIntFilt50Table[121] @ 1936
+     469 000001ba C2DC          .field  -15652,16                       ; _PHY_fskGsnIntFilt50Table[122] @ 1952
+     470 000001bb C26E          .field  -15762,16                       ; _PHY_fskGsnIntFilt50Table[123] @ 1968
+     471 000001bc C20E          .field  -15858,16                       ; _PHY_fskGsnIntFilt50Table[124] @ 1984
+     472 000001bd C1BB          .field  -15941,16                       ; _PHY_fskGsnIntFilt50Table[125] @ 2000
+     473 000001be C173          .field  -16013,16                       ; _PHY_fskGsnIntFilt50Table[126] @ 2016
+     474 000001bf C135          .field  -16075,16                       ; _PHY_fskGsnIntFilt50Table[127] @ 2032
+     475 000001c0 C101          .field  -16127,16                       ; _PHY_fskGsnIntFilt50Table[128] @ 2048
+     476 000001c1 C0D4          .field  -16172,16                       ; _PHY_fskGsnIntFilt50Table[129] @ 2064
+     477 000001c2 C0AE          .field  -16210,16                       ; _PHY_fskGsnIntFilt50Table[130] @ 2080
+     478 000001c3 C08E          .field  -16242,16                       ; _PHY_fskGsnIntFilt50Table[131] @ 2096
+     479 000001c4 C073          .field  -16269,16                       ; _PHY_fskGsnIntFilt50Table[132] @ 2112
+     480 000001c5 C05D          .field  -16291,16                       ; _PHY_fskGsnIntFilt50Table[133] @ 2128
+     481 000001c6 C04A          .field  -16310,16                       ; _PHY_fskGsnIntFilt50Table[134] @ 2144
+     482 000001c7 C03B          .field  -16325,16                       ; _PHY_fskGsnIntFilt50Table[135] @ 2160
+     483 000001c8 C02F          .field  -16337,16                       ; _PHY_fskGsnIntFilt50Table[136] @ 2176
+     484 000001c9 C025          .field  -16347,16                       ; _PHY_fskGsnIntFilt50Table[137] @ 2192
+     485 000001ca C01D          .field  -16355,16                       ; _PHY_fskGsnIntFilt50Table[138] @ 2208
+     486 000001cb C016          .field  -16362,16                       ; _PHY_fskGsnIntFilt50Table[139] @ 2224
+     487 000001cc C011          .field  -16367,16                       ; _PHY_fskGsnIntFilt50Table[140] @ 2240
+     488 000001cd C00D          .field  -16371,16                       ; _PHY_fskGsnIntFilt50Table[141] @ 2256
+     489 000001ce C00A          .field  -16374,16                       ; _PHY_fskGsnIntFilt50Table[142] @ 2272
+     490 000001cf C007          .field  -16377,16                       ; _PHY_fskGsnIntFilt50Table[143] @ 2288
+     491 000001d0 C005          .field  -16379,16                       ; _PHY_fskGsnIntFilt50Table[144] @ 2304
+     492 000001d1 C004          .field  -16380,16                       ; _PHY_fskGsnIntFilt50Table[145] @ 2320
+     493 000001d2 C003          .field  -16381,16                       ; _PHY_fskGsnIntFilt50Table[146] @ 2336
+     494 000001d3 C002          .field  -16382,16                       ; _PHY_fskGsnIntFilt50Table[147] @ 2352
+     495 000001d4 C001          .field  -16383,16                       ; _PHY_fskGsnIntFilt50Table[148] @ 2368
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   10
+
+     496 000001d5 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[149] @ 2384
+     497 000001d6 DF0A          .field  -8438,16                        ; _PHY_fskGsnIntFilt50Table[150] @ 2400
+     498 000001d7 DD1F          .field  -8929,16                        ; _PHY_fskGsnIntFilt50Table[151] @ 2416
+     499 000001d8 DB39          .field  -9415,16                        ; _PHY_fskGsnIntFilt50Table[152] @ 2432
+     500 000001d9 D95A          .field  -9894,16                        ; _PHY_fskGsnIntFilt50Table[153] @ 2448
+     501 000001da D785          .field  -10363,16                       ; _PHY_fskGsnIntFilt50Table[154] @ 2464
+     502 000001db D5BC          .field  -10820,16                       ; _PHY_fskGsnIntFilt50Table[155] @ 2480
+     503 000001dc D403          .field  -11261,16                       ; _PHY_fskGsnIntFilt50Table[156] @ 2496
+     504 000001dd D25B          .field  -11685,16                       ; _PHY_fskGsnIntFilt50Table[157] @ 2512
+     505 000001de D0C7          .field  -12089,16                       ; _PHY_fskGsnIntFilt50Table[158] @ 2528
+     506 000001df CF47          .field  -12473,16                       ; _PHY_fskGsnIntFilt50Table[159] @ 2544
+     507 000001e0 CDDE          .field  -12834,16                       ; _PHY_fskGsnIntFilt50Table[160] @ 2560
+     508 000001e1 CC8E          .field  -13170,16                       ; _PHY_fskGsnIntFilt50Table[161] @ 2576
+     509 000001e2 CB56          .field  -13482,16                       ; _PHY_fskGsnIntFilt50Table[162] @ 2592
+     510 000001e3 CA3A          .field  -13766,16                       ; _PHY_fskGsnIntFilt50Table[163] @ 2608
+     511 000001e4 C938          .field  -14024,16                       ; _PHY_fskGsnIntFilt50Table[164] @ 2624
+     512 000001e5 C852          .field  -14254,16                       ; _PHY_fskGsnIntFilt50Table[165] @ 2640
+     513 000001e6 C789          .field  -14455,16                       ; _PHY_fskGsnIntFilt50Table[166] @ 2656
+     514 000001e7 C6DD          .field  -14627,16                       ; _PHY_fskGsnIntFilt50Table[167] @ 2672
+     515 000001e8 C64E          .field  -14770,16                       ; _PHY_fskGsnIntFilt50Table[168] @ 2688
+     516 000001e9 C5DD          .field  -14883,16                       ; _PHY_fskGsnIntFilt50Table[169] @ 2704
+     517 000001ea C58B          .field  -14965,16                       ; _PHY_fskGsnIntFilt50Table[170] @ 2720
+     518 000001eb C559          .field  -15015,16                       ; _PHY_fskGsnIntFilt50Table[171] @ 2736
+     519 000001ec C546          .field  -15034,16                       ; _PHY_fskGsnIntFilt50Table[172] @ 2752
+     520 000001ed C555          .field  -15019,16                       ; _PHY_fskGsnIntFilt50Table[173] @ 2768
+     521 000001ee C585          .field  -14971,16                       ; _PHY_fskGsnIntFilt50Table[174] @ 2784
+     522 000001ef C5D8          .field  -14888,16                       ; _PHY_fskGsnIntFilt50Table[175] @ 2800
+     523 000001f0 C650          .field  -14768,16                       ; _PHY_fskGsnIntFilt50Table[176] @ 2816
+     524 000001f1 C6EC          .field  -14612,16                       ; _PHY_fskGsnIntFilt50Table[177] @ 2832
+     525 000001f2 C7B0          .field  -14416,16                       ; _PHY_fskGsnIntFilt50Table[178] @ 2848
+     526 000001f3 C89C          .field  -14180,16                       ; _PHY_fskGsnIntFilt50Table[179] @ 2864
+     527 000001f4 C9B2          .field  -13902,16                       ; _PHY_fskGsnIntFilt50Table[180] @ 2880
+     528 000001f5 CAF3          .field  -13581,16                       ; _PHY_fskGsnIntFilt50Table[181] @ 2896
+     529 000001f6 CC61          .field  -13215,16                       ; _PHY_fskGsnIntFilt50Table[182] @ 2912
+     530 000001f7 CDFC          .field  -12804,16                       ; _PHY_fskGsnIntFilt50Table[183] @ 2928
+     531 000001f8 CFC5          .field  -12347,16                       ; _PHY_fskGsnIntFilt50Table[184] @ 2944
+     532 000001f9 D1BE          .field  -11842,16                       ; _PHY_fskGsnIntFilt50Table[185] @ 2960
+     533 000001fa D3E6          .field  -11290,16                       ; _PHY_fskGsnIntFilt50Table[186] @ 2976
+     534 000001fb D63E          .field  -10690,16                       ; _PHY_fskGsnIntFilt50Table[187] @ 2992
+     535 000001fc D8C5          .field  -10043,16                       ; _PHY_fskGsnIntFilt50Table[188] @ 3008
+     536 000001fd DB79          .field  -9351,16                        ; _PHY_fskGsnIntFilt50Table[189] @ 3024
+     537 000001fe DE5B          .field  -8613,16                        ; _PHY_fskGsnIntFilt50Table[190] @ 3040
+     538 000001ff E166          .field  -7834,16                        ; _PHY_fskGsnIntFilt50Table[191] @ 3056
+     539 00000200 E499          .field  -7015,16                        ; _PHY_fskGsnIntFilt50Table[192] @ 3072
+     540 00000201 E7F1          .field  -6159,16                        ; _PHY_fskGsnIntFilt50Table[193] @ 3088
+     541 00000202 EB69          .field  -5271,16                        ; _PHY_fskGsnIntFilt50Table[194] @ 3104
+     542 00000203 EEFE          .field  -4354,16                        ; _PHY_fskGsnIntFilt50Table[195] @ 3120
+     543 00000204 F2AC          .field  -3412,16                        ; _PHY_fskGsnIntFilt50Table[196] @ 3136
+     544 00000205 F66D          .field  -2451,16                        ; _PHY_fskGsnIntFilt50Table[197] @ 3152
+     545 00000206 FA3C          .field  -1476,16                        ; _PHY_fskGsnIntFilt50Table[198] @ 3168
+     546 00000207 FE13          .field  -493,16                 ; _PHY_fskGsnIntFilt50Table[199] @ 3184
+     547 00000208 20F6          .field  8438,16                 ; _PHY_fskGsnIntFilt50Table[200] @ 3200
+     548 00000209 22E1          .field  8929,16                 ; _PHY_fskGsnIntFilt50Table[201] @ 3216
+     549 0000020a 24C7          .field  9415,16                 ; _PHY_fskGsnIntFilt50Table[202] @ 3232
+     550 0000020b 26A6          .field  9894,16                 ; _PHY_fskGsnIntFilt50Table[203] @ 3248
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   11
+
+     551 0000020c 287B          .field  10363,16                        ; _PHY_fskGsnIntFilt50Table[204] @ 3264
+     552 0000020d 2A44          .field  10820,16                        ; _PHY_fskGsnIntFilt50Table[205] @ 3280
+     553 0000020e 2BFD          .field  11261,16                        ; _PHY_fskGsnIntFilt50Table[206] @ 3296
+     554 0000020f 2DA5          .field  11685,16                        ; _PHY_fskGsnIntFilt50Table[207] @ 3312
+     555 00000210 2F39          .field  12089,16                        ; _PHY_fskGsnIntFilt50Table[208] @ 3328
+     556 00000211 30B9          .field  12473,16                        ; _PHY_fskGsnIntFilt50Table[209] @ 3344
+     557 00000212 3222          .field  12834,16                        ; _PHY_fskGsnIntFilt50Table[210] @ 3360
+     558 00000213 3372          .field  13170,16                        ; _PHY_fskGsnIntFilt50Table[211] @ 3376
+     559 00000214 34AA          .field  13482,16                        ; _PHY_fskGsnIntFilt50Table[212] @ 3392
+     560 00000215 35C6          .field  13766,16                        ; _PHY_fskGsnIntFilt50Table[213] @ 3408
+     561 00000216 36C8          .field  14024,16                        ; _PHY_fskGsnIntFilt50Table[214] @ 3424
+     562 00000217 37AE          .field  14254,16                        ; _PHY_fskGsnIntFilt50Table[215] @ 3440
+     563 00000218 3877          .field  14455,16                        ; _PHY_fskGsnIntFilt50Table[216] @ 3456
+     564 00000219 3923          .field  14627,16                        ; _PHY_fskGsnIntFilt50Table[217] @ 3472
+     565 0000021a 39B2          .field  14770,16                        ; _PHY_fskGsnIntFilt50Table[218] @ 3488
+     566 0000021b 3A23          .field  14883,16                        ; _PHY_fskGsnIntFilt50Table[219] @ 3504
+     567 0000021c 3A75          .field  14965,16                        ; _PHY_fskGsnIntFilt50Table[220] @ 3520
+     568 0000021d 3AA7          .field  15015,16                        ; _PHY_fskGsnIntFilt50Table[221] @ 3536
+     569 0000021e 3ABA          .field  15034,16                        ; _PHY_fskGsnIntFilt50Table[222] @ 3552
+     570 0000021f 3AAB          .field  15019,16                        ; _PHY_fskGsnIntFilt50Table[223] @ 3568
+     571 00000220 3A7B          .field  14971,16                        ; _PHY_fskGsnIntFilt50Table[224] @ 3584
+     572 00000221 3A28          .field  14888,16                        ; _PHY_fskGsnIntFilt50Table[225] @ 3600
+     573 00000222 39B0          .field  14768,16                        ; _PHY_fskGsnIntFilt50Table[226] @ 3616
+     574 00000223 3914          .field  14612,16                        ; _PHY_fskGsnIntFilt50Table[227] @ 3632
+     575 00000224 3850          .field  14416,16                        ; _PHY_fskGsnIntFilt50Table[228] @ 3648
+     576 00000225 3764          .field  14180,16                        ; _PHY_fskGsnIntFilt50Table[229] @ 3664
+     577 00000226 364E          .field  13902,16                        ; _PHY_fskGsnIntFilt50Table[230] @ 3680
+     578 00000227 350D          .field  13581,16                        ; _PHY_fskGsnIntFilt50Table[231] @ 3696
+     579 00000228 339F          .field  13215,16                        ; _PHY_fskGsnIntFilt50Table[232] @ 3712
+     580 00000229 3204          .field  12804,16                        ; _PHY_fskGsnIntFilt50Table[233] @ 3728
+     581 0000022a 303B          .field  12347,16                        ; _PHY_fskGsnIntFilt50Table[234] @ 3744
+     582 0000022b 2E42          .field  11842,16                        ; _PHY_fskGsnIntFilt50Table[235] @ 3760
+     583 0000022c 2C1A          .field  11290,16                        ; _PHY_fskGsnIntFilt50Table[236] @ 3776
+     584 0000022d 29C2          .field  10690,16                        ; _PHY_fskGsnIntFilt50Table[237] @ 3792
+     585 0000022e 273B          .field  10043,16                        ; _PHY_fskGsnIntFilt50Table[238] @ 3808
+     586 0000022f 2487          .field  9351,16                 ; _PHY_fskGsnIntFilt50Table[239] @ 3824
+     587 00000230 21A5          .field  8613,16                 ; _PHY_fskGsnIntFilt50Table[240] @ 3840
+     588 00000231 1E9A          .field  7834,16                 ; _PHY_fskGsnIntFilt50Table[241] @ 3856
+     589 00000232 1B67          .field  7015,16                 ; _PHY_fskGsnIntFilt50Table[242] @ 3872
+     590 00000233 180F          .field  6159,16                 ; _PHY_fskGsnIntFilt50Table[243] @ 3888
+     591 00000234 1497          .field  5271,16                 ; _PHY_fskGsnIntFilt50Table[244] @ 3904
+     592 00000235 1102          .field  4354,16                 ; _PHY_fskGsnIntFilt50Table[245] @ 3920
+     593 00000236 0D54          .field  3412,16                 ; _PHY_fskGsnIntFilt50Table[246] @ 3936
+     594 00000237 0993          .field  2451,16                 ; _PHY_fskGsnIntFilt50Table[247] @ 3952
+     595 00000238 05C4          .field  1476,16                 ; _PHY_fskGsnIntFilt50Table[248] @ 3968
+     596 00000239 01ED          .field  493,16                  ; _PHY_fskGsnIntFilt50Table[249] @ 3984
+     597 0000023a 20F7          .field  8439,16                 ; _PHY_fskGsnIntFilt50Table[250] @ 4000
+     598 0000023b 22E3          .field  8931,16                 ; _PHY_fskGsnIntFilt50Table[251] @ 4016
+     599 0000023c 24CA          .field  9418,16                 ; _PHY_fskGsnIntFilt50Table[252] @ 4032
+     600 0000023d 26AB          .field  9899,16                 ; _PHY_fskGsnIntFilt50Table[253] @ 4048
+     601 0000023e 2883          .field  10371,16                        ; _PHY_fskGsnIntFilt50Table[254] @ 4064
+     602 0000023f 2A4E          .field  10830,16                        ; _PHY_fskGsnIntFilt50Table[255] @ 4080
+     603 00000240 2C0B          .field  11275,16                        ; _PHY_fskGsnIntFilt50Table[256] @ 4096
+     604 00000241 2DB8          .field  11704,16                        ; _PHY_fskGsnIntFilt50Table[257] @ 4112
+     605 00000242 2F54          .field  12116,16                        ; _PHY_fskGsnIntFilt50Table[258] @ 4128
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   12
+
+     606 00000243 30DB          .field  12507,16                        ; _PHY_fskGsnIntFilt50Table[259] @ 4144
+     607 00000244 324E          .field  12878,16                        ; _PHY_fskGsnIntFilt50Table[260] @ 4160
+     608 00000245 33AC          .field  13228,16                        ; _PHY_fskGsnIntFilt50Table[261] @ 4176
+     609 00000246 34F3          .field  13555,16                        ; _PHY_fskGsnIntFilt50Table[262] @ 4192
+     610 00000247 3624          .field  13860,16                        ; _PHY_fskGsnIntFilt50Table[263] @ 4208
+     611 00000248 373F          .field  14143,16                        ; _PHY_fskGsnIntFilt50Table[264] @ 4224
+     612 00000249 3843          .field  14403,16                        ; _PHY_fskGsnIntFilt50Table[265] @ 4240
+     613 0000024a 3931          .field  14641,16                        ; _PHY_fskGsnIntFilt50Table[266] @ 4256
+     614 0000024b 3A09          .field  14857,16                        ; _PHY_fskGsnIntFilt50Table[267] @ 4272
+     615 0000024c 3ACD          .field  15053,16                        ; _PHY_fskGsnIntFilt50Table[268] @ 4288
+     616 0000024d 3B7E          .field  15230,16                        ; _PHY_fskGsnIntFilt50Table[269] @ 4304
+     617 0000024e 3C1C          .field  15388,16                        ; _PHY_fskGsnIntFilt50Table[270] @ 4320
+     618 0000024f 3CA8          .field  15528,16                        ; _PHY_fskGsnIntFilt50Table[271] @ 4336
+     619 00000250 3D24          .field  15652,16                        ; _PHY_fskGsnIntFilt50Table[272] @ 4352
+     620 00000251 3D92          .field  15762,16                        ; _PHY_fskGsnIntFilt50Table[273] @ 4368
+     621 00000252 3DF2          .field  15858,16                        ; _PHY_fskGsnIntFilt50Table[274] @ 4384
+     622 00000253 3E45          .field  15941,16                        ; _PHY_fskGsnIntFilt50Table[275] @ 4400
+     623 00000254 3E8D          .field  16013,16                        ; _PHY_fskGsnIntFilt50Table[276] @ 4416
+     624 00000255 3ECB          .field  16075,16                        ; _PHY_fskGsnIntFilt50Table[277] @ 4432
+     625 00000256 3EFF          .field  16127,16                        ; _PHY_fskGsnIntFilt50Table[278] @ 4448
+     626 00000257 3F2C          .field  16172,16                        ; _PHY_fskGsnIntFilt50Table[279] @ 4464
+     627 00000258 3F52          .field  16210,16                        ; _PHY_fskGsnIntFilt50Table[280] @ 4480
+     628 00000259 3F72          .field  16242,16                        ; _PHY_fskGsnIntFilt50Table[281] @ 4496
+     629 0000025a 3F8D          .field  16269,16                        ; _PHY_fskGsnIntFilt50Table[282] @ 4512
+     630 0000025b 3FA3          .field  16291,16                        ; _PHY_fskGsnIntFilt50Table[283] @ 4528
+     631 0000025c 3FB6          .field  16310,16                        ; _PHY_fskGsnIntFilt50Table[284] @ 4544
+     632 0000025d 3FC5          .field  16325,16                        ; _PHY_fskGsnIntFilt50Table[285] @ 4560
+     633 0000025e 3FD1          .field  16337,16                        ; _PHY_fskGsnIntFilt50Table[286] @ 4576
+     634 0000025f 3FDB          .field  16347,16                        ; _PHY_fskGsnIntFilt50Table[287] @ 4592
+     635 00000260 3FE3          .field  16355,16                        ; _PHY_fskGsnIntFilt50Table[288] @ 4608
+     636 00000261 3FEA          .field  16362,16                        ; _PHY_fskGsnIntFilt50Table[289] @ 4624
+     637 00000262 3FEF          .field  16367,16                        ; _PHY_fskGsnIntFilt50Table[290] @ 4640
+     638 00000263 3FF3          .field  16371,16                        ; _PHY_fskGsnIntFilt50Table[291] @ 4656
+     639 00000264 3FF6          .field  16374,16                        ; _PHY_fskGsnIntFilt50Table[292] @ 4672
+     640 00000265 3FF9          .field  16377,16                        ; _PHY_fskGsnIntFilt50Table[293] @ 4688
+     641 00000266 3FFB          .field  16379,16                        ; _PHY_fskGsnIntFilt50Table[294] @ 4704
+     642 00000267 3FFC          .field  16380,16                        ; _PHY_fskGsnIntFilt50Table[295] @ 4720
+     643 00000268 3FFD          .field  16381,16                        ; _PHY_fskGsnIntFilt50Table[296] @ 4736
+     644 00000269 3FFE          .field  16382,16                        ; _PHY_fskGsnIntFilt50Table[297] @ 4752
+     645 0000026a 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[298] @ 4768
+     646 0000026b 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[299] @ 4784
+     647 0000026c C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[300] @ 4800
+     648 0000026d C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[301] @ 4816
+     649 0000026e C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[302] @ 4832
+     650 0000026f C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[303] @ 4848
+     651 00000270 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[304] @ 4864
+     652 00000271 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[305] @ 4880
+     653 00000272 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[306] @ 4896
+     654 00000273 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[307] @ 4912
+     655 00000274 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[308] @ 4928
+     656 00000275 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[309] @ 4944
+     657 00000276 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[310] @ 4960
+     658 00000277 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[311] @ 4976
+     659 00000278 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[312] @ 4992
+     660 00000279 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[313] @ 5008
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   13
+
+     661 0000027a C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[314] @ 5024
+     662 0000027b C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[315] @ 5040
+     663 0000027c C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[316] @ 5056
+     664 0000027d C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[317] @ 5072
+     665 0000027e C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[318] @ 5088
+     666 0000027f C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[319] @ 5104
+     667 00000280 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[320] @ 5120
+     668 00000281 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[321] @ 5136
+     669 00000282 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[322] @ 5152
+     670 00000283 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[323] @ 5168
+     671 00000284 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[324] @ 5184
+     672 00000285 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[325] @ 5200
+     673 00000286 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[326] @ 5216
+     674 00000287 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[327] @ 5232
+     675 00000288 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[328] @ 5248
+     676 00000289 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[329] @ 5264
+     677 0000028a C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[330] @ 5280
+     678 0000028b C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[331] @ 5296
+     679 0000028c C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[332] @ 5312
+     680 0000028d C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[333] @ 5328
+     681 0000028e C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[334] @ 5344
+     682 0000028f C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[335] @ 5360
+     683 00000290 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[336] @ 5376
+     684 00000291 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[337] @ 5392
+     685 00000292 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[338] @ 5408
+     686 00000293 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[339] @ 5424
+     687 00000294 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[340] @ 5440
+     688 00000295 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[341] @ 5456
+     689 00000296 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[342] @ 5472
+     690 00000297 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[343] @ 5488
+     691 00000298 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[344] @ 5504
+     692 00000299 C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[345] @ 5520
+     693 0000029a C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[346] @ 5536
+     694 0000029b C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[347] @ 5552
+     695 0000029c C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[348] @ 5568
+     696 0000029d C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[349] @ 5584
+     697 0000029e C001          .field  -16383,16                       ; _PHY_fskGsnIntFilt50Table[350] @ 5600
+     698 0000029f C002          .field  -16382,16                       ; _PHY_fskGsnIntFilt50Table[351] @ 5616
+     699 000002a0 C003          .field  -16381,16                       ; _PHY_fskGsnIntFilt50Table[352] @ 5632
+     700 000002a1 C005          .field  -16379,16                       ; _PHY_fskGsnIntFilt50Table[353] @ 5648
+     701 000002a2 C007          .field  -16377,16                       ; _PHY_fskGsnIntFilt50Table[354] @ 5664
+     702 000002a3 C00B          .field  -16373,16                       ; _PHY_fskGsnIntFilt50Table[355] @ 5680
+     703 000002a4 C00F          .field  -16369,16                       ; _PHY_fskGsnIntFilt50Table[356] @ 5696
+     704 000002a5 C014          .field  -16364,16                       ; _PHY_fskGsnIntFilt50Table[357] @ 5712
+     705 000002a6 C01A          .field  -16358,16                       ; _PHY_fskGsnIntFilt50Table[358] @ 5728
+     706 000002a7 C022          .field  -16350,16                       ; _PHY_fskGsnIntFilt50Table[359] @ 5744
+     707 000002a8 C02D          .field  -16339,16                       ; _PHY_fskGsnIntFilt50Table[360] @ 5760
+     708 000002a9 C03A          .field  -16326,16                       ; _PHY_fskGsnIntFilt50Table[361] @ 5776
+     709 000002aa C04A          .field  -16310,16                       ; _PHY_fskGsnIntFilt50Table[362] @ 5792
+     710 000002ab C05E          .field  -16290,16                       ; _PHY_fskGsnIntFilt50Table[363] @ 5808
+     711 000002ac C076          .field  -16266,16                       ; _PHY_fskGsnIntFilt50Table[364] @ 5824
+     712 000002ad C095          .field  -16235,16                       ; _PHY_fskGsnIntFilt50Table[365] @ 5840
+     713 000002ae C0B9          .field  -16199,16                       ; _PHY_fskGsnIntFilt50Table[366] @ 5856
+     714 000002af C0E6          .field  -16154,16                       ; _PHY_fskGsnIntFilt50Table[367] @ 5872
+     715 000002b0 C11B          .field  -16101,16                       ; _PHY_fskGsnIntFilt50Table[368] @ 5888
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   14
+
+     716 000002b1 C15B          .field  -16037,16                       ; _PHY_fskGsnIntFilt50Table[369] @ 5904
+     717 000002b2 C1A7          .field  -15961,16                       ; _PHY_fskGsnIntFilt50Table[370] @ 5920
+     718 000002b3 C201          .field  -15871,16                       ; _PHY_fskGsnIntFilt50Table[371] @ 5936
+     719 000002b4 C26B          .field  -15765,16                       ; _PHY_fskGsnIntFilt50Table[372] @ 5952
+     720 000002b5 C2E7          .field  -15641,16                       ; _PHY_fskGsnIntFilt50Table[373] @ 5968
+     721 000002b6 C377          .field  -15497,16                       ; _PHY_fskGsnIntFilt50Table[374] @ 5984
+     722 000002b7 C41D          .field  -15331,16                       ; _PHY_fskGsnIntFilt50Table[375] @ 6000
+     723 000002b8 C4DC          .field  -15140,16                       ; _PHY_fskGsnIntFilt50Table[376] @ 6016
+     724 000002b9 C5B7          .field  -14921,16                       ; _PHY_fskGsnIntFilt50Table[377] @ 6032
+     725 000002ba C6B0          .field  -14672,16                       ; _PHY_fskGsnIntFilt50Table[378] @ 6048
+     726 000002bb C7C9          .field  -14391,16                       ; _PHY_fskGsnIntFilt50Table[379] @ 6064
+     727 000002bc C905          .field  -14075,16                       ; _PHY_fskGsnIntFilt50Table[380] @ 6080
+     728 000002bd CA66          .field  -13722,16                       ; _PHY_fskGsnIntFilt50Table[381] @ 6096
+     729 000002be CBEE          .field  -13330,16                       ; _PHY_fskGsnIntFilt50Table[382] @ 6112
+     730 000002bf CD9F          .field  -12897,16                       ; _PHY_fskGsnIntFilt50Table[383] @ 6128
+     731 000002c0 CF7B          .field  -12421,16                       ; _PHY_fskGsnIntFilt50Table[384] @ 6144
+     732 000002c1 D183          .field  -11901,16                       ; _PHY_fskGsnIntFilt50Table[385] @ 6160
+     733 000002c2 D3B7          .field  -11337,16                       ; _PHY_fskGsnIntFilt50Table[386] @ 6176
+     734 000002c3 D619          .field  -10727,16                       ; _PHY_fskGsnIntFilt50Table[387] @ 6192
+     735 000002c4 D8A8          .field  -10072,16                       ; _PHY_fskGsnIntFilt50Table[388] @ 6208
+     736 000002c5 DB63          .field  -9373,16                        ; _PHY_fskGsnIntFilt50Table[389] @ 6224
+     737 000002c6 DE49          .field  -8631,16                        ; _PHY_fskGsnIntFilt50Table[390] @ 6240
+     738 000002c7 E159          .field  -7847,16                        ; _PHY_fskGsnIntFilt50Table[391] @ 6256
+     739 000002c8 E48F          .field  -7025,16                        ; _PHY_fskGsnIntFilt50Table[392] @ 6272
+     740 000002c9 E7E9          .field  -6167,16                        ; _PHY_fskGsnIntFilt50Table[393] @ 6288
+     741 000002ca EB64          .field  -5276,16                        ; _PHY_fskGsnIntFilt50Table[394] @ 6304
+     742 000002cb EEFB          .field  -4357,16                        ; _PHY_fskGsnIntFilt50Table[395] @ 6320
+     743 000002cc F2A9          .field  -3415,16                        ; _PHY_fskGsnIntFilt50Table[396] @ 6336
+     744 000002cd F66B          .field  -2453,16                        ; _PHY_fskGsnIntFilt50Table[397] @ 6352
+     745 000002ce FA3B          .field  -1477,16                        ; _PHY_fskGsnIntFilt50Table[398] @ 6368
+     746 000002cf FE13          .field  -493,16                 ; _PHY_fskGsnIntFilt50Table[399] @ 6384
+     747 000002d0 01ED          .field  493,16                  ; _PHY_fskGsnIntFilt50Table[400] @ 6400
+     748 000002d1 05C3          .field  1475,16                 ; _PHY_fskGsnIntFilt50Table[401] @ 6416
+     749 000002d2 0992          .field  2450,16                 ; _PHY_fskGsnIntFilt50Table[402] @ 6432
+     750 000002d3 0D51          .field  3409,16                 ; _PHY_fskGsnIntFilt50Table[403] @ 6448
+     751 000002d4 10FE          .field  4350,16                 ; _PHY_fskGsnIntFilt50Table[404] @ 6464
+     752 000002d5 1492          .field  5266,16                 ; _PHY_fskGsnIntFilt50Table[405] @ 6480
+     753 000002d6 1808          .field  6152,16                 ; _PHY_fskGsnIntFilt50Table[406] @ 6496
+     754 000002d7 1B5D          .field  7005,16                 ; _PHY_fskGsnIntFilt50Table[407] @ 6512
+     755 000002d8 1E8D          .field  7821,16                 ; _PHY_fskGsnIntFilt50Table[408] @ 6528
+     756 000002d9 2194          .field  8596,16                 ; _PHY_fskGsnIntFilt50Table[409] @ 6544
+     757 000002da 2470          .field  9328,16                 ; _PHY_fskGsnIntFilt50Table[410] @ 6560
+     758 000002db 271E          .field  10014,16                        ; _PHY_fskGsnIntFilt50Table[411] @ 6576
+     759 000002dc 299D          .field  10653,16                        ; _PHY_fskGsnIntFilt50Table[412] @ 6592
+     760 000002dd 2BEB          .field  11243,16                        ; _PHY_fskGsnIntFilt50Table[413] @ 6608
+     761 000002de 2E07          .field  11783,16                        ; _PHY_fskGsnIntFilt50Table[414] @ 6624
+     762 000002df 2FF0          .field  12272,16                        ; _PHY_fskGsnIntFilt50Table[415] @ 6640
+     763 000002e0 31A8          .field  12712,16                        ; _PHY_fskGsnIntFilt50Table[416] @ 6656
+     764 000002e1 332D          .field  13101,16                        ; _PHY_fskGsnIntFilt50Table[417] @ 6672
+     765 000002e2 347F          .field  13439,16                        ; _PHY_fskGsnIntFilt50Table[418] @ 6688
+     766 000002e3 35A0          .field  13728,16                        ; _PHY_fskGsnIntFilt50Table[419] @ 6704
+     767 000002e4 3690          .field  13968,16                        ; _PHY_fskGsnIntFilt50Table[420] @ 6720
+     768 000002e5 374F          .field  14159,16                        ; _PHY_fskGsnIntFilt50Table[421] @ 6736
+     769 000002e6 37DE          .field  14302,16                        ; _PHY_fskGsnIntFilt50Table[422] @ 6752
+     770 000002e7 383D          .field  14397,16                        ; _PHY_fskGsnIntFilt50Table[423] @ 6768
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   15
+
+     771 000002e8 386C          .field  14444,16                        ; _PHY_fskGsnIntFilt50Table[424] @ 6784
+     772 000002e9 386C          .field  14444,16                        ; _PHY_fskGsnIntFilt50Table[425] @ 6800
+     773 000002ea 383D          .field  14397,16                        ; _PHY_fskGsnIntFilt50Table[426] @ 6816
+     774 000002eb 37DE          .field  14302,16                        ; _PHY_fskGsnIntFilt50Table[427] @ 6832
+     775 000002ec 374F          .field  14159,16                        ; _PHY_fskGsnIntFilt50Table[428] @ 6848
+     776 000002ed 3690          .field  13968,16                        ; _PHY_fskGsnIntFilt50Table[429] @ 6864
+     777 000002ee 35A0          .field  13728,16                        ; _PHY_fskGsnIntFilt50Table[430] @ 6880
+     778 000002ef 347F          .field  13439,16                        ; _PHY_fskGsnIntFilt50Table[431] @ 6896
+     779 000002f0 332D          .field  13101,16                        ; _PHY_fskGsnIntFilt50Table[432] @ 6912
+     780 000002f1 31A8          .field  12712,16                        ; _PHY_fskGsnIntFilt50Table[433] @ 6928
+     781 000002f2 2FF0          .field  12272,16                        ; _PHY_fskGsnIntFilt50Table[434] @ 6944
+     782 000002f3 2E07          .field  11783,16                        ; _PHY_fskGsnIntFilt50Table[435] @ 6960
+     783 000002f4 2BEB          .field  11243,16                        ; _PHY_fskGsnIntFilt50Table[436] @ 6976
+     784 000002f5 299D          .field  10653,16                        ; _PHY_fskGsnIntFilt50Table[437] @ 6992
+     785 000002f6 271E          .field  10014,16                        ; _PHY_fskGsnIntFilt50Table[438] @ 7008
+     786 000002f7 2470          .field  9328,16                 ; _PHY_fskGsnIntFilt50Table[439] @ 7024
+     787 000002f8 2194          .field  8596,16                 ; _PHY_fskGsnIntFilt50Table[440] @ 7040
+     788 000002f9 1E8D          .field  7821,16                 ; _PHY_fskGsnIntFilt50Table[441] @ 7056
+     789 000002fa 1B5D          .field  7005,16                 ; _PHY_fskGsnIntFilt50Table[442] @ 7072
+     790 000002fb 1808          .field  6152,16                 ; _PHY_fskGsnIntFilt50Table[443] @ 7088
+     791 000002fc 1492          .field  5266,16                 ; _PHY_fskGsnIntFilt50Table[444] @ 7104
+     792 000002fd 10FE          .field  4350,16                 ; _PHY_fskGsnIntFilt50Table[445] @ 7120
+     793 000002fe 0D51          .field  3409,16                 ; _PHY_fskGsnIntFilt50Table[446] @ 7136
+     794 000002ff 0992          .field  2450,16                 ; _PHY_fskGsnIntFilt50Table[447] @ 7152
+     795 00000300 05C3          .field  1475,16                 ; _PHY_fskGsnIntFilt50Table[448] @ 7168
+     796 00000301 01ED          .field  493,16                  ; _PHY_fskGsnIntFilt50Table[449] @ 7184
+     797 00000302 01ED          .field  493,16                  ; _PHY_fskGsnIntFilt50Table[450] @ 7200
+     798 00000303 05C5          .field  1477,16                 ; _PHY_fskGsnIntFilt50Table[451] @ 7216
+     799 00000304 0995          .field  2453,16                 ; _PHY_fskGsnIntFilt50Table[452] @ 7232
+     800 00000305 0D57          .field  3415,16                 ; _PHY_fskGsnIntFilt50Table[453] @ 7248
+     801 00000306 1105          .field  4357,16                 ; _PHY_fskGsnIntFilt50Table[454] @ 7264
+     802 00000307 149C          .field  5276,16                 ; _PHY_fskGsnIntFilt50Table[455] @ 7280
+     803 00000308 1817          .field  6167,16                 ; _PHY_fskGsnIntFilt50Table[456] @ 7296
+     804 00000309 1B71          .field  7025,16                 ; _PHY_fskGsnIntFilt50Table[457] @ 7312
+     805 0000030a 1EA7          .field  7847,16                 ; _PHY_fskGsnIntFilt50Table[458] @ 7328
+     806 0000030b 21B7          .field  8631,16                 ; _PHY_fskGsnIntFilt50Table[459] @ 7344
+     807 0000030c 249D          .field  9373,16                 ; _PHY_fskGsnIntFilt50Table[460] @ 7360
+     808 0000030d 2758          .field  10072,16                        ; _PHY_fskGsnIntFilt50Table[461] @ 7376
+     809 0000030e 29E7          .field  10727,16                        ; _PHY_fskGsnIntFilt50Table[462] @ 7392
+     810 0000030f 2C49          .field  11337,16                        ; _PHY_fskGsnIntFilt50Table[463] @ 7408
+     811 00000310 2E7D          .field  11901,16                        ; _PHY_fskGsnIntFilt50Table[464] @ 7424
+     812 00000311 3085          .field  12421,16                        ; _PHY_fskGsnIntFilt50Table[465] @ 7440
+     813 00000312 3261          .field  12897,16                        ; _PHY_fskGsnIntFilt50Table[466] @ 7456
+     814 00000313 3412          .field  13330,16                        ; _PHY_fskGsnIntFilt50Table[467] @ 7472
+     815 00000314 359A          .field  13722,16                        ; _PHY_fskGsnIntFilt50Table[468] @ 7488
+     816 00000315 36FB          .field  14075,16                        ; _PHY_fskGsnIntFilt50Table[469] @ 7504
+     817 00000316 3837          .field  14391,16                        ; _PHY_fskGsnIntFilt50Table[470] @ 7520
+     818 00000317 3950          .field  14672,16                        ; _PHY_fskGsnIntFilt50Table[471] @ 7536
+     819 00000318 3A49          .field  14921,16                        ; _PHY_fskGsnIntFilt50Table[472] @ 7552
+     820 00000319 3B24          .field  15140,16                        ; _PHY_fskGsnIntFilt50Table[473] @ 7568
+     821 0000031a 3BE3          .field  15331,16                        ; _PHY_fskGsnIntFilt50Table[474] @ 7584
+     822 0000031b 3C89          .field  15497,16                        ; _PHY_fskGsnIntFilt50Table[475] @ 7600
+     823 0000031c 3D19          .field  15641,16                        ; _PHY_fskGsnIntFilt50Table[476] @ 7616
+     824 0000031d 3D95          .field  15765,16                        ; _PHY_fskGsnIntFilt50Table[477] @ 7632
+     825 0000031e 3DFF          .field  15871,16                        ; _PHY_fskGsnIntFilt50Table[478] @ 7648
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   16
+
+     826 0000031f 3E59          .field  15961,16                        ; _PHY_fskGsnIntFilt50Table[479] @ 7664
+     827 00000320 3EA5          .field  16037,16                        ; _PHY_fskGsnIntFilt50Table[480] @ 7680
+     828 00000321 3EE5          .field  16101,16                        ; _PHY_fskGsnIntFilt50Table[481] @ 7696
+     829 00000322 3F1A          .field  16154,16                        ; _PHY_fskGsnIntFilt50Table[482] @ 7712
+     830 00000323 3F47          .field  16199,16                        ; _PHY_fskGsnIntFilt50Table[483] @ 7728
+     831 00000324 3F6B          .field  16235,16                        ; _PHY_fskGsnIntFilt50Table[484] @ 7744
+     832 00000325 3F8A          .field  16266,16                        ; _PHY_fskGsnIntFilt50Table[485] @ 7760
+     833 00000326 3FA2          .field  16290,16                        ; _PHY_fskGsnIntFilt50Table[486] @ 7776
+     834 00000327 3FB6          .field  16310,16                        ; _PHY_fskGsnIntFilt50Table[487] @ 7792
+     835 00000328 3FC6          .field  16326,16                        ; _PHY_fskGsnIntFilt50Table[488] @ 7808
+     836 00000329 3FD3          .field  16339,16                        ; _PHY_fskGsnIntFilt50Table[489] @ 7824
+     837 0000032a 3FDE          .field  16350,16                        ; _PHY_fskGsnIntFilt50Table[490] @ 7840
+     838 0000032b 3FE6          .field  16358,16                        ; _PHY_fskGsnIntFilt50Table[491] @ 7856
+     839 0000032c 3FEC          .field  16364,16                        ; _PHY_fskGsnIntFilt50Table[492] @ 7872
+     840 0000032d 3FF1          .field  16369,16                        ; _PHY_fskGsnIntFilt50Table[493] @ 7888
+     841 0000032e 3FF5          .field  16373,16                        ; _PHY_fskGsnIntFilt50Table[494] @ 7904
+     842 0000032f 3FF9          .field  16377,16                        ; _PHY_fskGsnIntFilt50Table[495] @ 7920
+     843 00000330 3FFB          .field  16379,16                        ; _PHY_fskGsnIntFilt50Table[496] @ 7936
+     844 00000331 3FFD          .field  16381,16                        ; _PHY_fskGsnIntFilt50Table[497] @ 7952
+     845 00000332 3FFE          .field  16382,16                        ; _PHY_fskGsnIntFilt50Table[498] @ 7968
+     846 00000333 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[499] @ 7984
+     847 00000334 FE13          .field  -493,16                 ; _PHY_fskGsnIntFilt50Table[500] @ 8000
+     848 00000335 FA3B          .field  -1477,16                        ; _PHY_fskGsnIntFilt50Table[501] @ 8016
+     849 00000336 F66B          .field  -2453,16                        ; _PHY_fskGsnIntFilt50Table[502] @ 8032
+     850 00000337 F2A9          .field  -3415,16                        ; _PHY_fskGsnIntFilt50Table[503] @ 8048
+     851 00000338 EEFB          .field  -4357,16                        ; _PHY_fskGsnIntFilt50Table[504] @ 8064
+     852 00000339 EB64          .field  -5276,16                        ; _PHY_fskGsnIntFilt50Table[505] @ 8080
+     853 0000033a E7E9          .field  -6167,16                        ; _PHY_fskGsnIntFilt50Table[506] @ 8096
+     854 0000033b E48F          .field  -7025,16                        ; _PHY_fskGsnIntFilt50Table[507] @ 8112
+     855 0000033c E159          .field  -7847,16                        ; _PHY_fskGsnIntFilt50Table[508] @ 8128
+     856 0000033d DE49          .field  -8631,16                        ; _PHY_fskGsnIntFilt50Table[509] @ 8144
+     857 0000033e DB63          .field  -9373,16                        ; _PHY_fskGsnIntFilt50Table[510] @ 8160
+     858 0000033f D8A8          .field  -10072,16                       ; _PHY_fskGsnIntFilt50Table[511] @ 8176
+     859 00000340 D619          .field  -10727,16                       ; _PHY_fskGsnIntFilt50Table[512] @ 8192
+     860 00000341 D3B7          .field  -11337,16                       ; _PHY_fskGsnIntFilt50Table[513] @ 8208
+     861 00000342 D183          .field  -11901,16                       ; _PHY_fskGsnIntFilt50Table[514] @ 8224
+     862 00000343 CF7B          .field  -12421,16                       ; _PHY_fskGsnIntFilt50Table[515] @ 8240
+     863 00000344 CD9F          .field  -12897,16                       ; _PHY_fskGsnIntFilt50Table[516] @ 8256
+     864 00000345 CBEE          .field  -13330,16                       ; _PHY_fskGsnIntFilt50Table[517] @ 8272
+     865 00000346 CA66          .field  -13722,16                       ; _PHY_fskGsnIntFilt50Table[518] @ 8288
+     866 00000347 C905          .field  -14075,16                       ; _PHY_fskGsnIntFilt50Table[519] @ 8304
+     867 00000348 C7C9          .field  -14391,16                       ; _PHY_fskGsnIntFilt50Table[520] @ 8320
+     868 00000349 C6B0          .field  -14672,16                       ; _PHY_fskGsnIntFilt50Table[521] @ 8336
+     869 0000034a C5B7          .field  -14921,16                       ; _PHY_fskGsnIntFilt50Table[522] @ 8352
+     870 0000034b C4DC          .field  -15140,16                       ; _PHY_fskGsnIntFilt50Table[523] @ 8368
+     871 0000034c C41D          .field  -15331,16                       ; _PHY_fskGsnIntFilt50Table[524] @ 8384
+     872 0000034d C377          .field  -15497,16                       ; _PHY_fskGsnIntFilt50Table[525] @ 8400
+     873 0000034e C2E7          .field  -15641,16                       ; _PHY_fskGsnIntFilt50Table[526] @ 8416
+     874 0000034f C26B          .field  -15765,16                       ; _PHY_fskGsnIntFilt50Table[527] @ 8432
+     875 00000350 C201          .field  -15871,16                       ; _PHY_fskGsnIntFilt50Table[528] @ 8448
+     876 00000351 C1A7          .field  -15961,16                       ; _PHY_fskGsnIntFilt50Table[529] @ 8464
+     877 00000352 C15B          .field  -16037,16                       ; _PHY_fskGsnIntFilt50Table[530] @ 8480
+     878 00000353 C11B          .field  -16101,16                       ; _PHY_fskGsnIntFilt50Table[531] @ 8496
+     879 00000354 C0E6          .field  -16154,16                       ; _PHY_fskGsnIntFilt50Table[532] @ 8512
+     880 00000355 C0B9          .field  -16199,16                       ; _PHY_fskGsnIntFilt50Table[533] @ 8528
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   17
+
+     881 00000356 C095          .field  -16235,16                       ; _PHY_fskGsnIntFilt50Table[534] @ 8544
+     882 00000357 C076          .field  -16266,16                       ; _PHY_fskGsnIntFilt50Table[535] @ 8560
+     883 00000358 C05E          .field  -16290,16                       ; _PHY_fskGsnIntFilt50Table[536] @ 8576
+     884 00000359 C04A          .field  -16310,16                       ; _PHY_fskGsnIntFilt50Table[537] @ 8592
+     885 0000035a C03A          .field  -16326,16                       ; _PHY_fskGsnIntFilt50Table[538] @ 8608
+     886 0000035b C02D          .field  -16339,16                       ; _PHY_fskGsnIntFilt50Table[539] @ 8624
+     887 0000035c C022          .field  -16350,16                       ; _PHY_fskGsnIntFilt50Table[540] @ 8640
+     888 0000035d C01A          .field  -16358,16                       ; _PHY_fskGsnIntFilt50Table[541] @ 8656
+     889 0000035e C014          .field  -16364,16                       ; _PHY_fskGsnIntFilt50Table[542] @ 8672
+     890 0000035f C00F          .field  -16369,16                       ; _PHY_fskGsnIntFilt50Table[543] @ 8688
+     891 00000360 C00B          .field  -16373,16                       ; _PHY_fskGsnIntFilt50Table[544] @ 8704
+     892 00000361 C007          .field  -16377,16                       ; _PHY_fskGsnIntFilt50Table[545] @ 8720
+     893 00000362 C005          .field  -16379,16                       ; _PHY_fskGsnIntFilt50Table[546] @ 8736
+     894 00000363 C003          .field  -16381,16                       ; _PHY_fskGsnIntFilt50Table[547] @ 8752
+     895 00000364 C002          .field  -16382,16                       ; _PHY_fskGsnIntFilt50Table[548] @ 8768
+     896 00000365 C001          .field  -16383,16                       ; _PHY_fskGsnIntFilt50Table[549] @ 8784
+     897 00000366 FE13          .field  -493,16                 ; _PHY_fskGsnIntFilt50Table[550] @ 8800
+     898 00000367 FA3D          .field  -1475,16                        ; _PHY_fskGsnIntFilt50Table[551] @ 8816
+     899 00000368 F66E          .field  -2450,16                        ; _PHY_fskGsnIntFilt50Table[552] @ 8832
+     900 00000369 F2AF          .field  -3409,16                        ; _PHY_fskGsnIntFilt50Table[553] @ 8848
+     901 0000036a EF02          .field  -4350,16                        ; _PHY_fskGsnIntFilt50Table[554] @ 8864
+     902 0000036b EB6E          .field  -5266,16                        ; _PHY_fskGsnIntFilt50Table[555] @ 8880
+     903 0000036c E7F8          .field  -6152,16                        ; _PHY_fskGsnIntFilt50Table[556] @ 8896
+     904 0000036d E4A3          .field  -7005,16                        ; _PHY_fskGsnIntFilt50Table[557] @ 8912
+     905 0000036e E173          .field  -7821,16                        ; _PHY_fskGsnIntFilt50Table[558] @ 8928
+     906 0000036f DE6C          .field  -8596,16                        ; _PHY_fskGsnIntFilt50Table[559] @ 8944
+     907 00000370 DB90          .field  -9328,16                        ; _PHY_fskGsnIntFilt50Table[560] @ 8960
+     908 00000371 D8E2          .field  -10014,16                       ; _PHY_fskGsnIntFilt50Table[561] @ 8976
+     909 00000372 D663          .field  -10653,16                       ; _PHY_fskGsnIntFilt50Table[562] @ 8992
+     910 00000373 D415          .field  -11243,16                       ; _PHY_fskGsnIntFilt50Table[563] @ 9008
+     911 00000374 D1F9          .field  -11783,16                       ; _PHY_fskGsnIntFilt50Table[564] @ 9024
+     912 00000375 D010          .field  -12272,16                       ; _PHY_fskGsnIntFilt50Table[565] @ 9040
+     913 00000376 CE58          .field  -12712,16                       ; _PHY_fskGsnIntFilt50Table[566] @ 9056
+     914 00000377 CCD3          .field  -13101,16                       ; _PHY_fskGsnIntFilt50Table[567] @ 9072
+     915 00000378 CB81          .field  -13439,16                       ; _PHY_fskGsnIntFilt50Table[568] @ 9088
+     916 00000379 CA60          .field  -13728,16                       ; _PHY_fskGsnIntFilt50Table[569] @ 9104
+     917 0000037a C970          .field  -13968,16                       ; _PHY_fskGsnIntFilt50Table[570] @ 9120
+     918 0000037b C8B1          .field  -14159,16                       ; _PHY_fskGsnIntFilt50Table[571] @ 9136
+     919 0000037c C822          .field  -14302,16                       ; _PHY_fskGsnIntFilt50Table[572] @ 9152
+     920 0000037d C7C3          .field  -14397,16                       ; _PHY_fskGsnIntFilt50Table[573] @ 9168
+     921 0000037e C794          .field  -14444,16                       ; _PHY_fskGsnIntFilt50Table[574] @ 9184
+     922 0000037f C794          .field  -14444,16                       ; _PHY_fskGsnIntFilt50Table[575] @ 9200
+     923 00000380 C7C3          .field  -14397,16                       ; _PHY_fskGsnIntFilt50Table[576] @ 9216
+     924 00000381 C822          .field  -14302,16                       ; _PHY_fskGsnIntFilt50Table[577] @ 9232
+     925 00000382 C8B1          .field  -14159,16                       ; _PHY_fskGsnIntFilt50Table[578] @ 9248
+     926 00000383 C970          .field  -13968,16                       ; _PHY_fskGsnIntFilt50Table[579] @ 9264
+     927 00000384 CA60          .field  -13728,16                       ; _PHY_fskGsnIntFilt50Table[580] @ 9280
+     928 00000385 CB81          .field  -13439,16                       ; _PHY_fskGsnIntFilt50Table[581] @ 9296
+     929 00000386 CCD3          .field  -13101,16                       ; _PHY_fskGsnIntFilt50Table[582] @ 9312
+     930 00000387 CE58          .field  -12712,16                       ; _PHY_fskGsnIntFilt50Table[583] @ 9328
+     931 00000388 D010          .field  -12272,16                       ; _PHY_fskGsnIntFilt50Table[584] @ 9344
+     932 00000389 D1F9          .field  -11783,16                       ; _PHY_fskGsnIntFilt50Table[585] @ 9360
+     933 0000038a D415          .field  -11243,16                       ; _PHY_fskGsnIntFilt50Table[586] @ 9376
+     934 0000038b D663          .field  -10653,16                       ; _PHY_fskGsnIntFilt50Table[587] @ 9392
+     935 0000038c D8E2          .field  -10014,16                       ; _PHY_fskGsnIntFilt50Table[588] @ 9408
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   18
+
+     936 0000038d DB90          .field  -9328,16                        ; _PHY_fskGsnIntFilt50Table[589] @ 9424
+     937 0000038e DE6C          .field  -8596,16                        ; _PHY_fskGsnIntFilt50Table[590] @ 9440
+     938 0000038f E173          .field  -7821,16                        ; _PHY_fskGsnIntFilt50Table[591] @ 9456
+     939 00000390 E4A3          .field  -7005,16                        ; _PHY_fskGsnIntFilt50Table[592] @ 9472
+     940 00000391 E7F8          .field  -6152,16                        ; _PHY_fskGsnIntFilt50Table[593] @ 9488
+     941 00000392 EB6E          .field  -5266,16                        ; _PHY_fskGsnIntFilt50Table[594] @ 9504
+     942 00000393 EF02          .field  -4350,16                        ; _PHY_fskGsnIntFilt50Table[595] @ 9520
+     943 00000394 F2AF          .field  -3409,16                        ; _PHY_fskGsnIntFilt50Table[596] @ 9536
+     944 00000395 F66E          .field  -2450,16                        ; _PHY_fskGsnIntFilt50Table[597] @ 9552
+     945 00000396 FA3D          .field  -1475,16                        ; _PHY_fskGsnIntFilt50Table[598] @ 9568
+     946 00000397 FE13          .field  -493,16                 ; _PHY_fskGsnIntFilt50Table[599] @ 9584
+     947 00000398 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[600] @ 9600
+     948 00000399 3FFE          .field  16382,16                        ; _PHY_fskGsnIntFilt50Table[601] @ 9616
+     949 0000039a 3FFD          .field  16381,16                        ; _PHY_fskGsnIntFilt50Table[602] @ 9632
+     950 0000039b 3FFB          .field  16379,16                        ; _PHY_fskGsnIntFilt50Table[603] @ 9648
+     951 0000039c 3FF9          .field  16377,16                        ; _PHY_fskGsnIntFilt50Table[604] @ 9664
+     952 0000039d 3FF5          .field  16373,16                        ; _PHY_fskGsnIntFilt50Table[605] @ 9680
+     953 0000039e 3FF1          .field  16369,16                        ; _PHY_fskGsnIntFilt50Table[606] @ 9696
+     954 0000039f 3FEC          .field  16364,16                        ; _PHY_fskGsnIntFilt50Table[607] @ 9712
+     955 000003a0 3FE6          .field  16358,16                        ; _PHY_fskGsnIntFilt50Table[608] @ 9728
+     956 000003a1 3FDE          .field  16350,16                        ; _PHY_fskGsnIntFilt50Table[609] @ 9744
+     957 000003a2 3FD3          .field  16339,16                        ; _PHY_fskGsnIntFilt50Table[610] @ 9760
+     958 000003a3 3FC6          .field  16326,16                        ; _PHY_fskGsnIntFilt50Table[611] @ 9776
+     959 000003a4 3FB6          .field  16310,16                        ; _PHY_fskGsnIntFilt50Table[612] @ 9792
+     960 000003a5 3FA2          .field  16290,16                        ; _PHY_fskGsnIntFilt50Table[613] @ 9808
+     961 000003a6 3F8A          .field  16266,16                        ; _PHY_fskGsnIntFilt50Table[614] @ 9824
+     962 000003a7 3F6B          .field  16235,16                        ; _PHY_fskGsnIntFilt50Table[615] @ 9840
+     963 000003a8 3F47          .field  16199,16                        ; _PHY_fskGsnIntFilt50Table[616] @ 9856
+     964 000003a9 3F1A          .field  16154,16                        ; _PHY_fskGsnIntFilt50Table[617] @ 9872
+     965 000003aa 3EE5          .field  16101,16                        ; _PHY_fskGsnIntFilt50Table[618] @ 9888
+     966 000003ab 3EA5          .field  16037,16                        ; _PHY_fskGsnIntFilt50Table[619] @ 9904
+     967 000003ac 3E59          .field  15961,16                        ; _PHY_fskGsnIntFilt50Table[620] @ 9920
+     968 000003ad 3DFF          .field  15871,16                        ; _PHY_fskGsnIntFilt50Table[621] @ 9936
+     969 000003ae 3D95          .field  15765,16                        ; _PHY_fskGsnIntFilt50Table[622] @ 9952
+     970 000003af 3D19          .field  15641,16                        ; _PHY_fskGsnIntFilt50Table[623] @ 9968
+     971 000003b0 3C89          .field  15497,16                        ; _PHY_fskGsnIntFilt50Table[624] @ 9984
+     972 000003b1 3BE3          .field  15331,16                        ; _PHY_fskGsnIntFilt50Table[625] @ 10000
+     973 000003b2 3B24          .field  15140,16                        ; _PHY_fskGsnIntFilt50Table[626] @ 10016
+     974 000003b3 3A49          .field  14921,16                        ; _PHY_fskGsnIntFilt50Table[627] @ 10032
+     975 000003b4 3950          .field  14672,16                        ; _PHY_fskGsnIntFilt50Table[628] @ 10048
+     976 000003b5 3837          .field  14391,16                        ; _PHY_fskGsnIntFilt50Table[629] @ 10064
+     977 000003b6 36FB          .field  14075,16                        ; _PHY_fskGsnIntFilt50Table[630] @ 10080
+     978 000003b7 359A          .field  13722,16                        ; _PHY_fskGsnIntFilt50Table[631] @ 10096
+     979 000003b8 3412          .field  13330,16                        ; _PHY_fskGsnIntFilt50Table[632] @ 10112
+     980 000003b9 3261          .field  12897,16                        ; _PHY_fskGsnIntFilt50Table[633] @ 10128
+     981 000003ba 3085          .field  12421,16                        ; _PHY_fskGsnIntFilt50Table[634] @ 10144
+     982 000003bb 2E7D          .field  11901,16                        ; _PHY_fskGsnIntFilt50Table[635] @ 10160
+     983 000003bc 2C49          .field  11337,16                        ; _PHY_fskGsnIntFilt50Table[636] @ 10176
+     984 000003bd 29E7          .field  10727,16                        ; _PHY_fskGsnIntFilt50Table[637] @ 10192
+     985 000003be 2758          .field  10072,16                        ; _PHY_fskGsnIntFilt50Table[638] @ 10208
+     986 000003bf 249D          .field  9373,16                 ; _PHY_fskGsnIntFilt50Table[639] @ 10224
+     987 000003c0 21B7          .field  8631,16                 ; _PHY_fskGsnIntFilt50Table[640] @ 10240
+     988 000003c1 1EA7          .field  7847,16                 ; _PHY_fskGsnIntFilt50Table[641] @ 10256
+     989 000003c2 1B71          .field  7025,16                 ; _PHY_fskGsnIntFilt50Table[642] @ 10272
+     990 000003c3 1817          .field  6167,16                 ; _PHY_fskGsnIntFilt50Table[643] @ 10288
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   19
+
+     991 000003c4 149C          .field  5276,16                 ; _PHY_fskGsnIntFilt50Table[644] @ 10304
+     992 000003c5 1105          .field  4357,16                 ; _PHY_fskGsnIntFilt50Table[645] @ 10320
+     993 000003c6 0D57          .field  3415,16                 ; _PHY_fskGsnIntFilt50Table[646] @ 10336
+     994 000003c7 0995          .field  2453,16                 ; _PHY_fskGsnIntFilt50Table[647] @ 10352
+     995 000003c8 05C5          .field  1477,16                 ; _PHY_fskGsnIntFilt50Table[648] @ 10368
+     996 000003c9 01ED          .field  493,16                  ; _PHY_fskGsnIntFilt50Table[649] @ 10384
+     997 000003ca 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[650] @ 10400
+     998 000003cb 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[651] @ 10416
+     999 000003cc 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[652] @ 10432
+    1000 000003cd 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[653] @ 10448
+    1001 000003ce 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[654] @ 10464
+    1002 000003cf 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[655] @ 10480
+    1003 000003d0 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[656] @ 10496
+    1004 000003d1 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[657] @ 10512
+    1005 000003d2 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[658] @ 10528
+    1006 000003d3 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[659] @ 10544
+    1007 000003d4 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[660] @ 10560
+    1008 000003d5 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[661] @ 10576
+    1009 000003d6 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[662] @ 10592
+    1010 000003d7 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[663] @ 10608
+    1011 000003d8 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[664] @ 10624
+    1012 000003d9 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[665] @ 10640
+    1013 000003da 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[666] @ 10656
+    1014 000003db 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[667] @ 10672
+    1015 000003dc 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[668] @ 10688
+    1016 000003dd 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[669] @ 10704
+    1017 000003de 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[670] @ 10720
+    1018 000003df 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[671] @ 10736
+    1019 000003e0 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[672] @ 10752
+    1020 000003e1 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[673] @ 10768
+    1021 000003e2 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[674] @ 10784
+    1022 000003e3 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[675] @ 10800
+    1023 000003e4 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[676] @ 10816
+    1024 000003e5 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[677] @ 10832
+    1025 000003e6 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[678] @ 10848
+    1026 000003e7 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[679] @ 10864
+    1027 000003e8 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[680] @ 10880
+    1028 000003e9 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[681] @ 10896
+    1029 000003ea 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[682] @ 10912
+    1030 000003eb 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[683] @ 10928
+    1031 000003ec 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[684] @ 10944
+    1032 000003ed 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[685] @ 10960
+    1033 000003ee 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[686] @ 10976
+    1034 000003ef 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[687] @ 10992
+    1035 000003f0 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[688] @ 11008
+    1036 000003f1 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[689] @ 11024
+    1037 000003f2 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[690] @ 11040
+    1038 000003f3 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[691] @ 11056
+    1039 000003f4 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[692] @ 11072
+    1040 000003f5 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[693] @ 11088
+    1041 000003f6 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[694] @ 11104
+    1042 000003f7 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[695] @ 11120
+    1043 000003f8 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[696] @ 11136
+    1044 000003f9 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[697] @ 11152
+    1045 000003fa 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[698] @ 11168
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   20
+
+    1046 000003fb 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[699] @ 11184
+    1047 000003fc C000          .field  -16384,16                       ; _PHY_fskGsnIntFilt50Table[700] @ 11200
+    1048 000003fd C001          .field  -16383,16                       ; _PHY_fskGsnIntFilt50Table[701] @ 11216
+    1049 000003fe C002          .field  -16382,16                       ; _PHY_fskGsnIntFilt50Table[702] @ 11232
+    1050 000003ff C003          .field  -16381,16                       ; _PHY_fskGsnIntFilt50Table[703] @ 11248
+    1051 00000400 C004          .field  -16380,16                       ; _PHY_fskGsnIntFilt50Table[704] @ 11264
+    1052 00000401 C005          .field  -16379,16                       ; _PHY_fskGsnIntFilt50Table[705] @ 11280
+    1053 00000402 C007          .field  -16377,16                       ; _PHY_fskGsnIntFilt50Table[706] @ 11296
+    1054 00000403 C00A          .field  -16374,16                       ; _PHY_fskGsnIntFilt50Table[707] @ 11312
+    1055 00000404 C00D          .field  -16371,16                       ; _PHY_fskGsnIntFilt50Table[708] @ 11328
+    1056 00000405 C011          .field  -16367,16                       ; _PHY_fskGsnIntFilt50Table[709] @ 11344
+    1057 00000406 C016          .field  -16362,16                       ; _PHY_fskGsnIntFilt50Table[710] @ 11360
+    1058 00000407 C01D          .field  -16355,16                       ; _PHY_fskGsnIntFilt50Table[711] @ 11376
+    1059 00000408 C025          .field  -16347,16                       ; _PHY_fskGsnIntFilt50Table[712] @ 11392
+    1060 00000409 C02F          .field  -16337,16                       ; _PHY_fskGsnIntFilt50Table[713] @ 11408
+    1061 0000040a C03B          .field  -16325,16                       ; _PHY_fskGsnIntFilt50Table[714] @ 11424
+    1062 0000040b C04A          .field  -16310,16                       ; _PHY_fskGsnIntFilt50Table[715] @ 11440
+    1063 0000040c C05D          .field  -16291,16                       ; _PHY_fskGsnIntFilt50Table[716] @ 11456
+    1064 0000040d C073          .field  -16269,16                       ; _PHY_fskGsnIntFilt50Table[717] @ 11472
+    1065 0000040e C08E          .field  -16242,16                       ; _PHY_fskGsnIntFilt50Table[718] @ 11488
+    1066 0000040f C0AE          .field  -16210,16                       ; _PHY_fskGsnIntFilt50Table[719] @ 11504
+    1067 00000410 C0D4          .field  -16172,16                       ; _PHY_fskGsnIntFilt50Table[720] @ 11520
+    1068 00000411 C101          .field  -16127,16                       ; _PHY_fskGsnIntFilt50Table[721] @ 11536
+    1069 00000412 C135          .field  -16075,16                       ; _PHY_fskGsnIntFilt50Table[722] @ 11552
+    1070 00000413 C173          .field  -16013,16                       ; _PHY_fskGsnIntFilt50Table[723] @ 11568
+    1071 00000414 C1BB          .field  -15941,16                       ; _PHY_fskGsnIntFilt50Table[724] @ 11584
+    1072 00000415 C20E          .field  -15858,16                       ; _PHY_fskGsnIntFilt50Table[725] @ 11600
+    1073 00000416 C26E          .field  -15762,16                       ; _PHY_fskGsnIntFilt50Table[726] @ 11616
+    1074 00000417 C2DC          .field  -15652,16                       ; _PHY_fskGsnIntFilt50Table[727] @ 11632
+    1075 00000418 C358          .field  -15528,16                       ; _PHY_fskGsnIntFilt50Table[728] @ 11648
+    1076 00000419 C3E4          .field  -15388,16                       ; _PHY_fskGsnIntFilt50Table[729] @ 11664
+    1077 0000041a C482          .field  -15230,16                       ; _PHY_fskGsnIntFilt50Table[730] @ 11680
+    1078 0000041b C533          .field  -15053,16                       ; _PHY_fskGsnIntFilt50Table[731] @ 11696
+    1079 0000041c C5F7          .field  -14857,16                       ; _PHY_fskGsnIntFilt50Table[732] @ 11712
+    1080 0000041d C6CF          .field  -14641,16                       ; _PHY_fskGsnIntFilt50Table[733] @ 11728
+    1081 0000041e C7BD          .field  -14403,16                       ; _PHY_fskGsnIntFilt50Table[734] @ 11744
+    1082 0000041f C8C1          .field  -14143,16                       ; _PHY_fskGsnIntFilt50Table[735] @ 11760
+    1083 00000420 C9DC          .field  -13860,16                       ; _PHY_fskGsnIntFilt50Table[736] @ 11776
+    1084 00000421 CB0D          .field  -13555,16                       ; _PHY_fskGsnIntFilt50Table[737] @ 11792
+    1085 00000422 CC54          .field  -13228,16                       ; _PHY_fskGsnIntFilt50Table[738] @ 11808
+    1086 00000423 CDB2          .field  -12878,16                       ; _PHY_fskGsnIntFilt50Table[739] @ 11824
+    1087 00000424 CF25          .field  -12507,16                       ; _PHY_fskGsnIntFilt50Table[740] @ 11840
+    1088 00000425 D0AC          .field  -12116,16                       ; _PHY_fskGsnIntFilt50Table[741] @ 11856
+    1089 00000426 D248          .field  -11704,16                       ; _PHY_fskGsnIntFilt50Table[742] @ 11872
+    1090 00000427 D3F5          .field  -11275,16                       ; _PHY_fskGsnIntFilt50Table[743] @ 11888
+    1091 00000428 D5B2          .field  -10830,16                       ; _PHY_fskGsnIntFilt50Table[744] @ 11904
+    1092 00000429 D77D          .field  -10371,16                       ; _PHY_fskGsnIntFilt50Table[745] @ 11920
+    1093 0000042a D955          .field  -9899,16                        ; _PHY_fskGsnIntFilt50Table[746] @ 11936
+    1094 0000042b DB36          .field  -9418,16                        ; _PHY_fskGsnIntFilt50Table[747] @ 11952
+    1095 0000042c DD1D          .field  -8931,16                        ; _PHY_fskGsnIntFilt50Table[748] @ 11968
+    1096 0000042d DF09          .field  -8439,16                        ; _PHY_fskGsnIntFilt50Table[749] @ 11984
+    1097 0000042e 01ED          .field  493,16                  ; _PHY_fskGsnIntFilt50Table[750] @ 12000
+    1098 0000042f 05C4          .field  1476,16                 ; _PHY_fskGsnIntFilt50Table[751] @ 12016
+    1099 00000430 0993          .field  2451,16                 ; _PHY_fskGsnIntFilt50Table[752] @ 12032
+    1100 00000431 0D54          .field  3412,16                 ; _PHY_fskGsnIntFilt50Table[753] @ 12048
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   21
+
+    1101 00000432 1102          .field  4354,16                 ; _PHY_fskGsnIntFilt50Table[754] @ 12064
+    1102 00000433 1497          .field  5271,16                 ; _PHY_fskGsnIntFilt50Table[755] @ 12080
+    1103 00000434 180F          .field  6159,16                 ; _PHY_fskGsnIntFilt50Table[756] @ 12096
+    1104 00000435 1B67          .field  7015,16                 ; _PHY_fskGsnIntFilt50Table[757] @ 12112
+    1105 00000436 1E9A          .field  7834,16                 ; _PHY_fskGsnIntFilt50Table[758] @ 12128
+    1106 00000437 21A5          .field  8613,16                 ; _PHY_fskGsnIntFilt50Table[759] @ 12144
+    1107 00000438 2487          .field  9351,16                 ; _PHY_fskGsnIntFilt50Table[760] @ 12160
+    1108 00000439 273B          .field  10043,16                        ; _PHY_fskGsnIntFilt50Table[761] @ 12176
+    1109 0000043a 29C2          .field  10690,16                        ; _PHY_fskGsnIntFilt50Table[762] @ 12192
+    1110 0000043b 2C1A          .field  11290,16                        ; _PHY_fskGsnIntFilt50Table[763] @ 12208
+    1111 0000043c 2E42          .field  11842,16                        ; _PHY_fskGsnIntFilt50Table[764] @ 12224
+    1112 0000043d 303B          .field  12347,16                        ; _PHY_fskGsnIntFilt50Table[765] @ 12240
+    1113 0000043e 3204          .field  12804,16                        ; _PHY_fskGsnIntFilt50Table[766] @ 12256
+    1114 0000043f 339F          .field  13215,16                        ; _PHY_fskGsnIntFilt50Table[767] @ 12272
+    1115 00000440 350D          .field  13581,16                        ; _PHY_fskGsnIntFilt50Table[768] @ 12288
+    1116 00000441 364E          .field  13902,16                        ; _PHY_fskGsnIntFilt50Table[769] @ 12304
+    1117 00000442 3764          .field  14180,16                        ; _PHY_fskGsnIntFilt50Table[770] @ 12320
+    1118 00000443 3850          .field  14416,16                        ; _PHY_fskGsnIntFilt50Table[771] @ 12336
+    1119 00000444 3914          .field  14612,16                        ; _PHY_fskGsnIntFilt50Table[772] @ 12352
+    1120 00000445 39B0          .field  14768,16                        ; _PHY_fskGsnIntFilt50Table[773] @ 12368
+    1121 00000446 3A28          .field  14888,16                        ; _PHY_fskGsnIntFilt50Table[774] @ 12384
+    1122 00000447 3A7B          .field  14971,16                        ; _PHY_fskGsnIntFilt50Table[775] @ 12400
+    1123 00000448 3AAB          .field  15019,16                        ; _PHY_fskGsnIntFilt50Table[776] @ 12416
+    1124 00000449 3ABA          .field  15034,16                        ; _PHY_fskGsnIntFilt50Table[777] @ 12432
+    1125 0000044a 3AA7          .field  15015,16                        ; _PHY_fskGsnIntFilt50Table[778] @ 12448
+    1126 0000044b 3A75          .field  14965,16                        ; _PHY_fskGsnIntFilt50Table[779] @ 12464
+    1127 0000044c 3A23          .field  14883,16                        ; _PHY_fskGsnIntFilt50Table[780] @ 12480
+    1128 0000044d 39B2          .field  14770,16                        ; _PHY_fskGsnIntFilt50Table[781] @ 12496
+    1129 0000044e 3923          .field  14627,16                        ; _PHY_fskGsnIntFilt50Table[782] @ 12512
+    1130 0000044f 3877          .field  14455,16                        ; _PHY_fskGsnIntFilt50Table[783] @ 12528
+    1131 00000450 37AE          .field  14254,16                        ; _PHY_fskGsnIntFilt50Table[784] @ 12544
+    1132 00000451 36C8          .field  14024,16                        ; _PHY_fskGsnIntFilt50Table[785] @ 12560
+    1133 00000452 35C6          .field  13766,16                        ; _PHY_fskGsnIntFilt50Table[786] @ 12576
+    1134 00000453 34AA          .field  13482,16                        ; _PHY_fskGsnIntFilt50Table[787] @ 12592
+    1135 00000454 3372          .field  13170,16                        ; _PHY_fskGsnIntFilt50Table[788] @ 12608
+    1136 00000455 3222          .field  12834,16                        ; _PHY_fskGsnIntFilt50Table[789] @ 12624
+    1137 00000456 30B9          .field  12473,16                        ; _PHY_fskGsnIntFilt50Table[790] @ 12640
+    1138 00000457 2F39          .field  12089,16                        ; _PHY_fskGsnIntFilt50Table[791] @ 12656
+    1139 00000458 2DA5          .field  11685,16                        ; _PHY_fskGsnIntFilt50Table[792] @ 12672
+    1140 00000459 2BFD          .field  11261,16                        ; _PHY_fskGsnIntFilt50Table[793] @ 12688
+    1141 0000045a 2A44          .field  10820,16                        ; _PHY_fskGsnIntFilt50Table[794] @ 12704
+    1142 0000045b 287B          .field  10363,16                        ; _PHY_fskGsnIntFilt50Table[795] @ 12720
+    1143 0000045c 26A6          .field  9894,16                 ; _PHY_fskGsnIntFilt50Table[796] @ 12736
+    1144 0000045d 24C7          .field  9415,16                 ; _PHY_fskGsnIntFilt50Table[797] @ 12752
+    1145 0000045e 22E1          .field  8929,16                 ; _PHY_fskGsnIntFilt50Table[798] @ 12768
+    1146 0000045f 20F6          .field  8438,16                 ; _PHY_fskGsnIntFilt50Table[799] @ 12784
+    1147 00000460 FE13          .field  -493,16                 ; _PHY_fskGsnIntFilt50Table[800] @ 12800
+    1148 00000461 FA3C          .field  -1476,16                        ; _PHY_fskGsnIntFilt50Table[801] @ 12816
+    1149 00000462 F66D          .field  -2451,16                        ; _PHY_fskGsnIntFilt50Table[802] @ 12832
+    1150 00000463 F2AC          .field  -3412,16                        ; _PHY_fskGsnIntFilt50Table[803] @ 12848
+    1151 00000464 EEFE          .field  -4354,16                        ; _PHY_fskGsnIntFilt50Table[804] @ 12864
+    1152 00000465 EB69          .field  -5271,16                        ; _PHY_fskGsnIntFilt50Table[805] @ 12880
+    1153 00000466 E7F1          .field  -6159,16                        ; _PHY_fskGsnIntFilt50Table[806] @ 12896
+    1154 00000467 E499          .field  -7015,16                        ; _PHY_fskGsnIntFilt50Table[807] @ 12912
+    1155 00000468 E166          .field  -7834,16                        ; _PHY_fskGsnIntFilt50Table[808] @ 12928
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   22
+
+    1156 00000469 DE5B          .field  -8613,16                        ; _PHY_fskGsnIntFilt50Table[809] @ 12944
+    1157 0000046a DB79          .field  -9351,16                        ; _PHY_fskGsnIntFilt50Table[810] @ 12960
+    1158 0000046b D8C5          .field  -10043,16                       ; _PHY_fskGsnIntFilt50Table[811] @ 12976
+    1159 0000046c D63E          .field  -10690,16                       ; _PHY_fskGsnIntFilt50Table[812] @ 12992
+    1160 0000046d D3E6          .field  -11290,16                       ; _PHY_fskGsnIntFilt50Table[813] @ 13008
+    1161 0000046e D1BE          .field  -11842,16                       ; _PHY_fskGsnIntFilt50Table[814] @ 13024
+    1162 0000046f CFC5          .field  -12347,16                       ; _PHY_fskGsnIntFilt50Table[815] @ 13040
+    1163 00000470 CDFC          .field  -12804,16                       ; _PHY_fskGsnIntFilt50Table[816] @ 13056
+    1164 00000471 CC61          .field  -13215,16                       ; _PHY_fskGsnIntFilt50Table[817] @ 13072
+    1165 00000472 CAF3          .field  -13581,16                       ; _PHY_fskGsnIntFilt50Table[818] @ 13088
+    1166 00000473 C9B2          .field  -13902,16                       ; _PHY_fskGsnIntFilt50Table[819] @ 13104
+    1167 00000474 C89C          .field  -14180,16                       ; _PHY_fskGsnIntFilt50Table[820] @ 13120
+    1168 00000475 C7B0          .field  -14416,16                       ; _PHY_fskGsnIntFilt50Table[821] @ 13136
+    1169 00000476 C6EC          .field  -14612,16                       ; _PHY_fskGsnIntFilt50Table[822] @ 13152
+    1170 00000477 C650          .field  -14768,16                       ; _PHY_fskGsnIntFilt50Table[823] @ 13168
+    1171 00000478 C5D8          .field  -14888,16                       ; _PHY_fskGsnIntFilt50Table[824] @ 13184
+    1172 00000479 C585          .field  -14971,16                       ; _PHY_fskGsnIntFilt50Table[825] @ 13200
+    1173 0000047a C555          .field  -15019,16                       ; _PHY_fskGsnIntFilt50Table[826] @ 13216
+    1174 0000047b C546          .field  -15034,16                       ; _PHY_fskGsnIntFilt50Table[827] @ 13232
+    1175 0000047c C559          .field  -15015,16                       ; _PHY_fskGsnIntFilt50Table[828] @ 13248
+    1176 0000047d C58B          .field  -14965,16                       ; _PHY_fskGsnIntFilt50Table[829] @ 13264
+    1177 0000047e C5DD          .field  -14883,16                       ; _PHY_fskGsnIntFilt50Table[830] @ 13280
+    1178 0000047f C64E          .field  -14770,16                       ; _PHY_fskGsnIntFilt50Table[831] @ 13296
+    1179 00000480 C6DD          .field  -14627,16                       ; _PHY_fskGsnIntFilt50Table[832] @ 13312
+    1180 00000481 C789          .field  -14455,16                       ; _PHY_fskGsnIntFilt50Table[833] @ 13328
+    1181 00000482 C852          .field  -14254,16                       ; _PHY_fskGsnIntFilt50Table[834] @ 13344
+    1182 00000483 C938          .field  -14024,16                       ; _PHY_fskGsnIntFilt50Table[835] @ 13360
+    1183 00000484 CA3A          .field  -13766,16                       ; _PHY_fskGsnIntFilt50Table[836] @ 13376
+    1184 00000485 CB56          .field  -13482,16                       ; _PHY_fskGsnIntFilt50Table[837] @ 13392
+    1185 00000486 CC8E          .field  -13170,16                       ; _PHY_fskGsnIntFilt50Table[838] @ 13408
+    1186 00000487 CDDE          .field  -12834,16                       ; _PHY_fskGsnIntFilt50Table[839] @ 13424
+    1187 00000488 CF47          .field  -12473,16                       ; _PHY_fskGsnIntFilt50Table[840] @ 13440
+    1188 00000489 D0C7          .field  -12089,16                       ; _PHY_fskGsnIntFilt50Table[841] @ 13456
+    1189 0000048a D25B          .field  -11685,16                       ; _PHY_fskGsnIntFilt50Table[842] @ 13472
+    1190 0000048b D403          .field  -11261,16                       ; _PHY_fskGsnIntFilt50Table[843] @ 13488
+    1191 0000048c D5BC          .field  -10820,16                       ; _PHY_fskGsnIntFilt50Table[844] @ 13504
+    1192 0000048d D785          .field  -10363,16                       ; _PHY_fskGsnIntFilt50Table[845] @ 13520
+    1193 0000048e D95A          .field  -9894,16                        ; _PHY_fskGsnIntFilt50Table[846] @ 13536
+    1194 0000048f DB39          .field  -9415,16                        ; _PHY_fskGsnIntFilt50Table[847] @ 13552
+    1195 00000490 DD1F          .field  -8929,16                        ; _PHY_fskGsnIntFilt50Table[848] @ 13568
+    1196 00000491 DF0A          .field  -8438,16                        ; _PHY_fskGsnIntFilt50Table[849] @ 13584
+    1197 00000492 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[850] @ 13600
+    1198 00000493 3FFF          .field  16383,16                        ; _PHY_fskGsnIntFilt50Table[851] @ 13616
+    1199 00000494 3FFE          .field  16382,16                        ; _PHY_fskGsnIntFilt50Table[852] @ 13632
+    1200 00000495 3FFD          .field  16381,16                        ; _PHY_fskGsnIntFilt50Table[853] @ 13648
+    1201 00000496 3FFC          .field  16380,16                        ; _PHY_fskGsnIntFilt50Table[854] @ 13664
+    1202 00000497 3FFB          .field  16379,16                        ; _PHY_fskGsnIntFilt50Table[855] @ 13680
+    1203 00000498 3FF9          .field  16377,16                        ; _PHY_fskGsnIntFilt50Table[856] @ 13696
+    1204 00000499 3FF6          .field  16374,16                        ; _PHY_fskGsnIntFilt50Table[857] @ 13712
+    1205 0000049a 3FF3          .field  16371,16                        ; _PHY_fskGsnIntFilt50Table[858] @ 13728
+    1206 0000049b 3FEF          .field  16367,16                        ; _PHY_fskGsnIntFilt50Table[859] @ 13744
+    1207 0000049c 3FEA          .field  16362,16                        ; _PHY_fskGsnIntFilt50Table[860] @ 13760
+    1208 0000049d 3FE3          .field  16355,16                        ; _PHY_fskGsnIntFilt50Table[861] @ 13776
+    1209 0000049e 3FDB          .field  16347,16                        ; _PHY_fskGsnIntFilt50Table[862] @ 13792
+    1210 0000049f 3FD1          .field  16337,16                        ; _PHY_fskGsnIntFilt50Table[863] @ 13808
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   23
+
+    1211 000004a0 3FC5          .field  16325,16                        ; _PHY_fskGsnIntFilt50Table[864] @ 13824
+    1212 000004a1 3FB6          .field  16310,16                        ; _PHY_fskGsnIntFilt50Table[865] @ 13840
+    1213 000004a2 3FA3          .field  16291,16                        ; _PHY_fskGsnIntFilt50Table[866] @ 13856
+    1214 000004a3 3F8D          .field  16269,16                        ; _PHY_fskGsnIntFilt50Table[867] @ 13872
+    1215 000004a4 3F72          .field  16242,16                        ; _PHY_fskGsnIntFilt50Table[868] @ 13888
+    1216 000004a5 3F52          .field  16210,16                        ; _PHY_fskGsnIntFilt50Table[869] @ 13904
+    1217 000004a6 3F2C          .field  16172,16                        ; _PHY_fskGsnIntFilt50Table[870] @ 13920
+    1218 000004a7 3EFF          .field  16127,16                        ; _PHY_fskGsnIntFilt50Table[871] @ 13936
+    1219 000004a8 3ECB          .field  16075,16                        ; _PHY_fskGsnIntFilt50Table[872] @ 13952
+    1220 000004a9 3E8D          .field  16013,16                        ; _PHY_fskGsnIntFilt50Table[873] @ 13968
+    1221 000004aa 3E45          .field  15941,16                        ; _PHY_fskGsnIntFilt50Table[874] @ 13984
+    1222 000004ab 3DF2          .field  15858,16                        ; _PHY_fskGsnIntFilt50Table[875] @ 14000
+    1223 000004ac 3D92          .field  15762,16                        ; _PHY_fskGsnIntFilt50Table[876] @ 14016
+    1224 000004ad 3D24          .field  15652,16                        ; _PHY_fskGsnIntFilt50Table[877] @ 14032
+    1225 000004ae 3CA8          .field  15528,16                        ; _PHY_fskGsnIntFilt50Table[878] @ 14048
+    1226 000004af 3C1C          .field  15388,16                        ; _PHY_fskGsnIntFilt50Table[879] @ 14064
+    1227 000004b0 3B7E          .field  15230,16                        ; _PHY_fskGsnIntFilt50Table[880] @ 14080
+    1228 000004b1 3ACD          .field  15053,16                        ; _PHY_fskGsnIntFilt50Table[881] @ 14096
+    1229 000004b2 3A09          .field  14857,16                        ; _PHY_fskGsnIntFilt50Table[882] @ 14112
+    1230 000004b3 3931          .field  14641,16                        ; _PHY_fskGsnIntFilt50Table[883] @ 14128
+    1231 000004b4 3843          .field  14403,16                        ; _PHY_fskGsnIntFilt50Table[884] @ 14144
+    1232 000004b5 373F          .field  14143,16                        ; _PHY_fskGsnIntFilt50Table[885] @ 14160
+    1233 000004b6 3624          .field  13860,16                        ; _PHY_fskGsnIntFilt50Table[886] @ 14176
+    1234 000004b7 34F3          .field  13555,16                        ; _PHY_fskGsnIntFilt50Table[887] @ 14192
+    1235 000004b8 33AC          .field  13228,16                        ; _PHY_fskGsnIntFilt50Table[888] @ 14208
+    1236 000004b9 324E          .field  12878,16                        ; _PHY_fskGsnIntFilt50Table[889] @ 14224
+    1237 000004ba 30DB          .field  12507,16                        ; _PHY_fskGsnIntFilt50Table[890] @ 14240
+    1238 000004bb 2F54          .field  12116,16                        ; _PHY_fskGsnIntFilt50Table[891] @ 14256
+    1239 000004bc 2DB8          .field  11704,16                        ; _PHY_fskGsnIntFilt50Table[892] @ 14272
+    1240 000004bd 2C0B          .field  11275,16                        ; _PHY_fskGsnIntFilt50Table[893] @ 14288
+    1241 000004be 2A4E          .field  10830,16                        ; _PHY_fskGsnIntFilt50Table[894] @ 14304
+    1242 000004bf 2883          .field  10371,16                        ; _PHY_fskGsnIntFilt50Table[895] @ 14320
+    1243 000004c0 26AB          .field  9899,16                 ; _PHY_fskGsnIntFilt50Table[896] @ 14336
+    1244 000004c1 24CA          .field  9418,16                 ; _PHY_fskGsnIntFilt50Table[897] @ 14352
+    1245 000004c2 22E3          .field  8931,16                 ; _PHY_fskGsnIntFilt50Table[898] @ 14368
+    1246 000004c3 20F7          .field  8439,16                 ; _PHY_fskGsnIntFilt50Table[899] @ 14384
+    1247 000004c4 E0F7          .field  -7945,16                        ; _PHY_fskGsnIntFilt50Table[900] @ 14400
+    1248 000004c5 E2E3          .field  -7453,16                        ; _PHY_fskGsnIntFilt50Table[901] @ 14416
+    1249 000004c6 E4CA          .field  -6966,16                        ; _PHY_fskGsnIntFilt50Table[902] @ 14432
+    1250 000004c7 E6AB          .field  -6485,16                        ; _PHY_fskGsnIntFilt50Table[903] @ 14448
+    1251 000004c8 E883          .field  -6013,16                        ; _PHY_fskGsnIntFilt50Table[904] @ 14464
+    1252 000004c9 EA4E          .field  -5554,16                        ; _PHY_fskGsnIntFilt50Table[905] @ 14480
+    1253 000004ca EC0B          .field  -5109,16                        ; _PHY_fskGsnIntFilt50Table[906] @ 14496
+    1254 000004cb EDB8          .field  -4680,16                        ; _PHY_fskGsnIntFilt50Table[907] @ 14512
+    1255 000004cc EF54          .field  -4268,16                        ; _PHY_fskGsnIntFilt50Table[908] @ 14528
+    1256 000004cd F0DB          .field  -3877,16                        ; _PHY_fskGsnIntFilt50Table[909] @ 14544
+    1257 000004ce F24E          .field  -3506,16                        ; _PHY_fskGsnIntFilt50Table[910] @ 14560
+    1258 000004cf F3AC          .field  -3156,16                        ; _PHY_fskGsnIntFilt50Table[911] @ 14576
+    1259 000004d0 F4F3          .field  -2829,16                        ; _PHY_fskGsnIntFilt50Table[912] @ 14592
+    1260 000004d1 F624          .field  -2524,16                        ; _PHY_fskGsnIntFilt50Table[913] @ 14608
+    1261 000004d2 F73F          .field  -2241,16                        ; _PHY_fskGsnIntFilt50Table[914] @ 14624
+    1262 000004d3 F843          .field  -1981,16                        ; _PHY_fskGsnIntFilt50Table[915] @ 14640
+    1263 000004d4 F931          .field  -1743,16                        ; _PHY_fskGsnIntFilt50Table[916] @ 14656
+    1264 000004d5 FA09          .field  -1527,16                        ; _PHY_fskGsnIntFilt50Table[917] @ 14672
+    1265 000004d6 FACD          .field  -1331,16                        ; _PHY_fskGsnIntFilt50Table[918] @ 14688
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   24
+
+    1266 000004d7 FB7E          .field  -1154,16                        ; _PHY_fskGsnIntFilt50Table[919] @ 14704
+    1267 000004d8 FC1C          .field  -996,16                 ; _PHY_fskGsnIntFilt50Table[920] @ 14720
+    1268 000004d9 FCA8          .field  -856,16                 ; _PHY_fskGsnIntFilt50Table[921] @ 14736
+    1269 000004da FD24          .field  -732,16                 ; _PHY_fskGsnIntFilt50Table[922] @ 14752
+    1270 000004db FD92          .field  -622,16                 ; _PHY_fskGsnIntFilt50Table[923] @ 14768
+    1271 000004dc FDF2          .field  -526,16                 ; _PHY_fskGsnIntFilt50Table[924] @ 14784
+    1272 000004dd FE45          .field  -443,16                 ; _PHY_fskGsnIntFilt50Table[925] @ 14800
+    1273 000004de FE8D          .field  -371,16                 ; _PHY_fskGsnIntFilt50Table[926] @ 14816
+    1274 000004df FECB          .field  -309,16                 ; _PHY_fskGsnIntFilt50Table[927] @ 14832
+    1275 000004e0 FEFF          .field  -257,16                 ; _PHY_fskGsnIntFilt50Table[928] @ 14848
+    1276 000004e1 FF2C          .field  -212,16                 ; _PHY_fskGsnIntFilt50Table[929] @ 14864
+    1277 000004e2 FF52          .field  -174,16                 ; _PHY_fskGsnIntFilt50Table[930] @ 14880
+    1278 000004e3 FF72          .field  -142,16                 ; _PHY_fskGsnIntFilt50Table[931] @ 14896
+    1279 000004e4 FF8D          .field  -115,16                 ; _PHY_fskGsnIntFilt50Table[932] @ 14912
+    1280 000004e5 FFA3          .field  -93,16                  ; _PHY_fskGsnIntFilt50Table[933] @ 14928
+    1281 000004e6 FFB6          .field  -74,16                  ; _PHY_fskGsnIntFilt50Table[934] @ 14944
+    1282 000004e7 FFC5          .field  -59,16                  ; _PHY_fskGsnIntFilt50Table[935] @ 14960
+    1283 000004e8 FFD1          .field  -47,16                  ; _PHY_fskGsnIntFilt50Table[936] @ 14976
+    1284 000004e9 FFDB          .field  -37,16                  ; _PHY_fskGsnIntFilt50Table[937] @ 14992
+    1285 000004ea FFE3          .field  -29,16                  ; _PHY_fskGsnIntFilt50Table[938] @ 15008
+    1286 000004eb FFEA          .field  -22,16                  ; _PHY_fskGsnIntFilt50Table[939] @ 15024
+    1287 000004ec FFEF          .field  -17,16                  ; _PHY_fskGsnIntFilt50Table[940] @ 15040
+    1288 000004ed FFF3          .field  -13,16                  ; _PHY_fskGsnIntFilt50Table[941] @ 15056
+    1289 000004ee FFF6          .field  -10,16                  ; _PHY_fskGsnIntFilt50Table[942] @ 15072
+    1290 000004ef FFF9          .field  -7,16                   ; _PHY_fskGsnIntFilt50Table[943] @ 15088
+    1291 000004f0 FFFB          .field  -5,16                   ; _PHY_fskGsnIntFilt50Table[944] @ 15104
+    1292 000004f1 FFFC          .field  -4,16                   ; _PHY_fskGsnIntFilt50Table[945] @ 15120
+    1293 000004f2 FFFD          .field  -3,16                   ; _PHY_fskGsnIntFilt50Table[946] @ 15136
+    1294 000004f3 FFFE          .field  -2,16                   ; _PHY_fskGsnIntFilt50Table[947] @ 15152
+    1295 000004f4 FFFF          .field  -1,16                   ; _PHY_fskGsnIntFilt50Table[948] @ 15168
+    1296 000004f5 0000          .field  0,16                    ; _PHY_fskGsnIntFilt50Table[949] @ 15184
+    1297 000004f6 1F09          .field  7945,16                 ; _PHY_fskGsnIntFilt50Table[950] @ 15200
+    1298 000004f7 1D1D          .field  7453,16                 ; _PHY_fskGsnIntFilt50Table[951] @ 15216
+    1299 000004f8 1B36          .field  6966,16                 ; _PHY_fskGsnIntFilt50Table[952] @ 15232
+    1300 000004f9 1955          .field  6485,16                 ; _PHY_fskGsnIntFilt50Table[953] @ 15248
+    1301 000004fa 177D          .field  6013,16                 ; _PHY_fskGsnIntFilt50Table[954] @ 15264
+    1302 000004fb 15B2          .field  5554,16                 ; _PHY_fskGsnIntFilt50Table[955] @ 15280
+    1303 000004fc 13F5          .field  5109,16                 ; _PHY_fskGsnIntFilt50Table[956] @ 15296
+    1304 000004fd 1248          .field  4680,16                 ; _PHY_fskGsnIntFilt50Table[957] @ 15312
+    1305 000004fe 10AC          .field  4268,16                 ; _PHY_fskGsnIntFilt50Table[958] @ 15328
+    1306 000004ff 0F25          .field  3877,16                 ; _PHY_fskGsnIntFilt50Table[959] @ 15344
+    1307 00000500 0DB2          .field  3506,16                 ; _PHY_fskGsnIntFilt50Table[960] @ 15360
+    1308 00000501 0C54          .field  3156,16                 ; _PHY_fskGsnIntFilt50Table[961] @ 15376
+    1309 00000502 0B0D          .field  2829,16                 ; _PHY_fskGsnIntFilt50Table[962] @ 15392
+    1310 00000503 09DC          .field  2524,16                 ; _PHY_fskGsnIntFilt50Table[963] @ 15408
+    1311 00000504 08C1          .field  2241,16                 ; _PHY_fskGsnIntFilt50Table[964] @ 15424
+    1312 00000505 07BD          .field  1981,16                 ; _PHY_fskGsnIntFilt50Table[965] @ 15440
+    1313 00000506 06CF          .field  1743,16                 ; _PHY_fskGsnIntFilt50Table[966] @ 15456
+    1314 00000507 05F7          .field  1527,16                 ; _PHY_fskGsnIntFilt50Table[967] @ 15472
+    1315 00000508 0533          .field  1331,16                 ; _PHY_fskGsnIntFilt50Table[968] @ 15488
+    1316 00000509 0482          .field  1154,16                 ; _PHY_fskGsnIntFilt50Table[969] @ 15504
+    1317 0000050a 03E4          .field  996,16                  ; _PHY_fskGsnIntFilt50Table[970] @ 15520
+    1318 0000050b 0358          .field  856,16                  ; _PHY_fskGsnIntFilt50Table[971] @ 15536
+    1319 0000050c 02DC          .field  732,16                  ; _PHY_fskGsnIntFilt50Table[972] @ 15552
+    1320 0000050d 026E          .field  622,16                  ; _PHY_fskGsnIntFilt50Table[973] @ 15568
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   25
+
+    1321 0000050e 020E          .field  526,16                  ; _PHY_fskGsnIntFilt50Table[974] @ 15584
+    1322 0000050f 01BB          .field  443,16                  ; _PHY_fskGsnIntFilt50Table[975] @ 15600
+    1323 00000510 0173          .field  371,16                  ; _PHY_fskGsnIntFilt50Table[976] @ 15616
+    1324 00000511 0135          .field  309,16                  ; _PHY_fskGsnIntFilt50Table[977] @ 15632
+    1325 00000512 0101          .field  257,16                  ; _PHY_fskGsnIntFilt50Table[978] @ 15648
+    1326 00000513 00D4          .field  212,16                  ; _PHY_fskGsnIntFilt50Table[979] @ 15664
+    1327 00000514 00AE          .field  174,16                  ; _PHY_fskGsnIntFilt50Table[980] @ 15680
+    1328 00000515 008E          .field  142,16                  ; _PHY_fskGsnIntFilt50Table[981] @ 15696
+    1329 00000516 0073          .field  115,16                  ; _PHY_fskGsnIntFilt50Table[982] @ 15712
+    1330 00000517 005D          .field  93,16                   ; _PHY_fskGsnIntFilt50Table[983] @ 15728
+    1331 00000518 004A          .field  74,16                   ; _PHY_fskGsnIntFilt50Table[984] @ 15744
+    1332 00000519 003B          .field  59,16                   ; _PHY_fskGsnIntFilt50Table[985] @ 15760
+    1333 0000051a 002F          .field  47,16                   ; _PHY_fskGsnIntFilt50Table[986] @ 15776
+    1334 0000051b 0025          .field  37,16                   ; _PHY_fskGsnIntFilt50Table[987] @ 15792
+    1335 0000051c 001D          .field  29,16                   ; _PHY_fskGsnIntFilt50Table[988] @ 15808
+    1336 0000051d 0016          .field  22,16                   ; _PHY_fskGsnIntFilt50Table[989] @ 15824
+    1337 0000051e 0011          .field  17,16                   ; _PHY_fskGsnIntFilt50Table[990] @ 15840
+    1338 0000051f 000D          .field  13,16                   ; _PHY_fskGsnIntFilt50Table[991] @ 15856
+    1339 00000520 000A          .field  10,16                   ; _PHY_fskGsnIntFilt50Table[992] @ 15872
+    1340 00000521 0007          .field  7,16                    ; _PHY_fskGsnIntFilt50Table[993] @ 15888
+    1341 00000522 0005          .field  5,16                    ; _PHY_fskGsnIntFilt50Table[994] @ 15904
+    1342 00000523 0004          .field  4,16                    ; _PHY_fskGsnIntFilt50Table[995] @ 15920
+    1343 00000524 0003          .field  3,16                    ; _PHY_fskGsnIntFilt50Table[996] @ 15936
+    1344 00000525 0002          .field  2,16                    ; _PHY_fskGsnIntFilt50Table[997] @ 15952
+    1345 00000526 0001          .field  1,16                    ; _PHY_fskGsnIntFilt50Table[998] @ 15968
+    1346 00000527 0000          .field  0,16                    ; _PHY_fskGsnIntFilt50Table[999] @ 15984
+    1347              
+    1348              $C$DW$2 .dwtag  DW_TAG_variable, DW_AT_name("PHY_fskGsnIntFilt50Table")
+    1349                      .dwattr $C$DW$2, DW_AT_TI_symbol_name("_PHY_fskGsnIntFilt50Table")
+    1350                      .dwattr $C$DW$2, DW_AT_location[DW_OP_addr _PHY_fskGsnIntFilt50Table]
+    1351                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$21)
+    1352                      .dwattr $C$DW$2, DW_AT_external
+    1353              ;       C:\ti\ccsv5\tools\compiler\c2000_6.1.3\bin\ac2000.exe -@C:\\Users\\a0272466\\AppData\\Local\\Temp\\06
+    1354              
+    1355              ;***************************************************************
+    1356              ;* TYPE INFORMATION                                            *
+    1357              ;***************************************************************
+    1358              $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1359                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1360                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1361                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1362              $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1363                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1364                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1365                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1366              $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1367                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1368                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1369                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1370              $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1371                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1372                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1373                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+    1374              $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1375                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   26
+
+    1376                      .dwattr $C$DW$T$8, DW_AT_name("short")
+    1377                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+    1378              $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1379                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1380                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1381                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+    1382              $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1383                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1384                      .dwattr $C$DW$T$10, DW_AT_name("int")
+    1385                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+    1386              $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("SINT16")
+    1387                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$10)
+    1388                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+    1389              $C$DW$3 .dwtag  DW_TAG_TI_far_type
+    1390                      .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$19)
+    1391              $C$DW$T$20      .dwtag  DW_TAG_const_type
+    1392                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$3)
+    1393              
+    1394              $C$DW$T$21      .dwtag  DW_TAG_array_type
+    1395                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+    1396                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+    1397                      .dwattr $C$DW$T$21, DW_AT_byte_size(0x3e8)
+    1398              $C$DW$4 .dwtag  DW_TAG_subrange_type
+    1399                      .dwattr $C$DW$4, DW_AT_upper_bound(0x3e7)
+    1400                      .dwendtag $C$DW$T$21
+    1401              
+    1402              
+    1403              $C$DW$T$22      .dwtag  DW_TAG_array_type
+    1404                      .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
+    1405                      .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    1406                      .dwattr $C$DW$T$22, DW_AT_byte_size(0x140)
+    1407              $C$DW$5 .dwtag  DW_TAG_subrange_type
+    1408                      .dwattr $C$DW$5, DW_AT_upper_bound(0x13f)
+    1409                      .dwendtag $C$DW$T$22
+    1410              
+    1411              $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1412                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1413                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1414                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+    1415              $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1416                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1417                      .dwattr $C$DW$T$12, DW_AT_name("long")
+    1418                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+    1419              $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1420                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1421                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1422                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+    1423              $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1424                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1425                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1426                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+    1427              $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1428                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1429                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1430                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   27
+
+    1431              $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1432                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1433                      .dwattr $C$DW$T$16, DW_AT_name("float")
+    1434                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+    1435              $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1436                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1437                      .dwattr $C$DW$T$17, DW_AT_name("double")
+    1438                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+    1439              $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1440                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1441                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1442                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+    1443                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1444              
+    1445              ;***************************************************************
+    1446              ;* DWARF CIE ENTRIES                                           *
+    1447              ;***************************************************************
+    1448              
+    1449              $C$DW$CIE       .dwcie 78
+    1450                      .dwcfi  cfa_register, 20
+    1451                      .dwcfi  cfa_offset, 0
+    1452                      .dwcfi  undefined, 0
+    1453                      .dwcfi  undefined, 1
+    1454                      .dwcfi  undefined, 2
+    1455                      .dwcfi  undefined, 3
+    1456                      .dwcfi  undefined, 22
+    1457                      .dwcfi  undefined, 37
+    1458                      .dwcfi  undefined, 36
+    1459                      .dwcfi  undefined, 23
+    1460                      .dwcfi  undefined, 30
+    1461                      .dwcfi  undefined, 31
+    1462                      .dwcfi  undefined, 32
+    1463                      .dwcfi  undefined, 38
+    1464                      .dwcfi  undefined, 75
+    1465                      .dwcfi  undefined, 24
+    1466                      .dwcfi  undefined, 33
+    1467                      .dwcfi  undefined, 35
+    1468                      .dwcfi  undefined, 34
+    1469                      .dwcfi  undefined, 76
+    1470                      .dwcfi  undefined, 21
+    1471                      .dwcfi  undefined, 20
+    1472                      .dwcfi  undefined, 28
+    1473                      .dwcfi  undefined, 29
+    1474                      .dwcfi  undefined, 25
+    1475                      .dwcfi  undefined, 77
+    1476                      .dwcfi  undefined, 4
+    1477                      .dwcfi  undefined, 6
+    1478                      .dwcfi  undefined, 8
+    1479                      .dwcfi  undefined, 10
+    1480                      .dwcfi  undefined, 12
+    1481                      .dwcfi  undefined, 14
+    1482                      .dwcfi  undefined, 16
+    1483                      .dwcfi  undefined, 17
+    1484                      .dwcfi  undefined, 18
+    1485                      .dwcfi  undefined, 19
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   28
+
+    1486                      .dwcfi  undefined, 5
+    1487                      .dwcfi  undefined, 7
+    1488                      .dwcfi  undefined, 9
+    1489                      .dwcfi  undefined, 11
+    1490                      .dwcfi  undefined, 13
+    1491                      .dwcfi  undefined, 15
+    1492                      .dwcfi  undefined, 43
+    1493                      .dwcfi  undefined, 44
+    1494                      .dwcfi  undefined, 47
+    1495                      .dwcfi  undefined, 48
+    1496                      .dwcfi  undefined, 51
+    1497                      .dwcfi  undefined, 52
+    1498                      .dwcfi  undefined, 55
+    1499                      .dwcfi  undefined, 56
+    1500                      .dwcfi  undefined, 59
+    1501                      .dwcfi  undefined, 60
+    1502                      .dwcfi  undefined, 63
+    1503                      .dwcfi  undefined, 64
+    1504                      .dwcfi  undefined, 67
+    1505                      .dwcfi  undefined, 68
+    1506                      .dwcfi  undefined, 71
+    1507                      .dwcfi  undefined, 72
+    1508                      .dwcfi  undefined, 73
+    1509                      .dwcfi  undefined, 74
+    1510                      .dwcfi  undefined, 39
+    1511                      .dwcfi  undefined, 40
+    1512                      .dwcfi  undefined, 27
+    1513                      .dwcfi  undefined, 78
+    1514                      .dwendentry
+    1515              
+    1516              ;***************************************************************
+    1517              ;* DWARF REGISTER MAP                                          *
+    1518              ;***************************************************************
+    1519              
+    1520              $C$DW$6 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AL")
+    1521                      .dwattr $C$DW$6, DW_AT_location[DW_OP_reg0]
+    1522              $C$DW$7 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AH")
+    1523                      .dwattr $C$DW$7, DW_AT_location[DW_OP_reg1]
+    1524              $C$DW$8 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PL")
+    1525                      .dwattr $C$DW$8, DW_AT_location[DW_OP_reg2]
+    1526              $C$DW$9 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PH")
+    1527                      .dwattr $C$DW$9, DW_AT_location[DW_OP_reg3]
+    1528              $C$DW$10        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("T")
+    1529                      .dwattr $C$DW$10, DW_AT_location[DW_OP_reg22]
+    1530              $C$DW$11        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
+    1531                      .dwattr $C$DW$11, DW_AT_location[DW_OP_regx 0x25]
+    1532              $C$DW$12        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
+    1533                      .dwattr $C$DW$12, DW_AT_location[DW_OP_regx 0x24]
+    1534              $C$DW$13        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST0")
+    1535                      .dwattr $C$DW$13, DW_AT_location[DW_OP_reg23]
+    1536              $C$DW$14        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SXM")
+    1537                      .dwattr $C$DW$14, DW_AT_location[DW_OP_reg30]
+    1538              $C$DW$15        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PM")
+    1539                      .dwattr $C$DW$15, DW_AT_location[DW_OP_reg31]
+    1540              $C$DW$16        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("OVM")
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   29
+
+    1541                      .dwattr $C$DW$16, DW_AT_location[DW_OP_regx 0x20]
+    1542              $C$DW$17        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("V")
+    1543                      .dwattr $C$DW$17, DW_AT_location[DW_OP_regx 0x26]
+    1544              $C$DW$18        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDO")
+    1545                      .dwattr $C$DW$18, DW_AT_location[DW_OP_regx 0x4b]
+    1546              $C$DW$19        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
+    1547                      .dwattr $C$DW$19, DW_AT_location[DW_OP_reg24]
+    1548              $C$DW$20        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PAGE0")
+    1549                      .dwattr $C$DW$20, DW_AT_location[DW_OP_regx 0x21]
+    1550              $C$DW$21        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("INTM")
+    1551                      .dwattr $C$DW$21, DW_AT_location[DW_OP_regx 0x23]
+    1552              $C$DW$22        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AMODE")
+    1553                      .dwattr $C$DW$22, DW_AT_location[DW_OP_regx 0x22]
+    1554              $C$DW$23        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDOH")
+    1555                      .dwattr $C$DW$23, DW_AT_location[DW_OP_regx 0x4c]
+    1556              $C$DW$24        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
+    1557                      .dwattr $C$DW$24, DW_AT_location[DW_OP_reg21]
+    1558              $C$DW$25        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+    1559                      .dwattr $C$DW$25, DW_AT_location[DW_OP_reg20]
+    1560              $C$DW$26        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FP")
+    1561                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg28]
+    1562              $C$DW$27        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("DP")
+    1563                      .dwattr $C$DW$27, DW_AT_location[DW_OP_reg29]
+    1564              $C$DW$28        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+    1565                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg25]
+    1566              $C$DW$29        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("VOL")
+    1567                      .dwattr $C$DW$29, DW_AT_location[DW_OP_regx 0x4d]
+    1568              $C$DW$30        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR0")
+    1569                      .dwattr $C$DW$30, DW_AT_location[DW_OP_reg4]
+    1570              $C$DW$31        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR1")
+    1571                      .dwattr $C$DW$31, DW_AT_location[DW_OP_reg6]
+    1572              $C$DW$32        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR2")
+    1573                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg8]
+    1574              $C$DW$33        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR3")
+    1575                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg10]
+    1576              $C$DW$34        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
+    1577                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg12]
+    1578              $C$DW$35        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR5")
+    1579                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg14]
+    1580              $C$DW$36        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
+    1581                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg16]
+    1582              $C$DW$37        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
+    1583                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg17]
+    1584              $C$DW$38        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR7")
+    1585                      .dwattr $C$DW$38, DW_AT_location[DW_OP_reg18]
+    1586              $C$DW$39        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR7")
+    1587                      .dwattr $C$DW$39, DW_AT_location[DW_OP_reg19]
+    1588              $C$DW$40        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR0")
+    1589                      .dwattr $C$DW$40, DW_AT_location[DW_OP_reg5]
+    1590              $C$DW$41        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR1")
+    1591                      .dwattr $C$DW$41, DW_AT_location[DW_OP_reg7]
+    1592              $C$DW$42        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR2")
+    1593                      .dwattr $C$DW$42, DW_AT_location[DW_OP_reg9]
+    1594              $C$DW$43        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
+    1595                      .dwattr $C$DW$43, DW_AT_location[DW_OP_reg11]
+TMS320C2000 Assembler PC v6.1.3 Tue Oct 01 15:28:05 2013
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0673210                         PAGE   30
+
+    1596              $C$DW$44        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")
+    1597                      .dwattr $C$DW$44, DW_AT_location[DW_OP_reg13]
+    1598              $C$DW$45        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR5")
+    1599                      .dwattr $C$DW$45, DW_AT_location[DW_OP_reg15]
+    1600              $C$DW$46        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0HL")
+    1601                      .dwattr $C$DW$46, DW_AT_location[DW_OP_regx 0x2b]
+    1602              $C$DW$47        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0H")
+    1603                      .dwattr $C$DW$47, DW_AT_location[DW_OP_regx 0x2c]
+    1604              $C$DW$48        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1HL")
+    1605                      .dwattr $C$DW$48, DW_AT_location[DW_OP_regx 0x2f]
+    1606              $C$DW$49        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1H")
+    1607                      .dwattr $C$DW$49, DW_AT_location[DW_OP_regx 0x30]
+    1608              $C$DW$50        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2HL")
+    1609                      .dwattr $C$DW$50, DW_AT_location[DW_OP_regx 0x33]
+    1610              $C$DW$51        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2H")
+    1611                      .dwattr $C$DW$51, DW_AT_location[DW_OP_regx 0x34]
+    1612              $C$DW$52        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3HL")
+    1613                      .dwattr $C$DW$52, DW_AT_location[DW_OP_regx 0x37]
+    1614              $C$DW$53        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3H")
+    1615                      .dwattr $C$DW$53, DW_AT_location[DW_OP_regx 0x38]
+    1616              $C$DW$54        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4HL")
+    1617                      .dwattr $C$DW$54, DW_AT_location[DW_OP_regx 0x3b]
+    1618              $C$DW$55        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4H")
+    1619                      .dwattr $C$DW$55, DW_AT_location[DW_OP_regx 0x3c]
+    1620              $C$DW$56        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5HL")
+    1621                      .dwattr $C$DW$56, DW_AT_location[DW_OP_regx 0x3f]
+    1622              $C$DW$57        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5H")
+    1623                      .dwattr $C$DW$57, DW_AT_location[DW_OP_regx 0x40]
+    1624              $C$DW$58        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6HL")
+    1625                      .dwattr $C$DW$58, DW_AT_location[DW_OP_regx 0x43]
+    1626              $C$DW$59        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6H")
+    1627                      .dwattr $C$DW$59, DW_AT_location[DW_OP_regx 0x44]
+    1628              $C$DW$60        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7HL")
+    1629                      .dwattr $C$DW$60, DW_AT_location[DW_OP_regx 0x47]
+    1630              $C$DW$61        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7H")
+    1631                      .dwattr $C$DW$61, DW_AT_location[DW_OP_regx 0x48]
+    1632              $C$DW$62        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RBL")
+    1633                      .dwattr $C$DW$62, DW_AT_location[DW_OP_regx 0x49]
+    1634              $C$DW$63        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RB")
+    1635                      .dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x4a]
+    1636              $C$DW$64        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STFL")
+    1637                      .dwattr $C$DW$64, DW_AT_location[DW_OP_regx 0x27]
+    1638              $C$DW$65        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STF")
+    1639                      .dwattr $C$DW$65, DW_AT_location[DW_OP_regx 0x28]
+    1640              $C$DW$66        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FPUHAZ")
+    1641                      .dwattr $C$DW$66, DW_AT_location[DW_OP_reg27]
+    1642              $C$DW$67        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+    1643                      .dwattr $C$DW$67, DW_AT_location[DW_OP_regx 0x4e]
+    1644                      .dwendtag $C$DW$CU
+    1645              
+
+No Assembly Errors, No Assembly Warnings

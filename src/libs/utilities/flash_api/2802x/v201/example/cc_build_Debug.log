@@ -1,0 +1,12 @@
+---------------------  Example_Flash28027_API.pjt - Debug  ---------------------
+[Example_Flash2802x_API.c] "C:\Program Files\Texas Instruments\ccsv4\tools\compiler\c2000\bin\cl2000" -g -q -pdr -fr"C:/Flash28_API/Flash2802x_API_V100/example/Debug" -i"../include" -i"./DSP2802x_Headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "Example_Flash2802x_API.c"
+"Example_Flash2802x_API.c", line 727: remark: parameter "Status" was never referenced
+
+[Example_Flash2802x_GlobalVariableDefs.c] "C:\Program Files\Texas Instruments\ccsv4\tools\compiler\c2000\bin\cl2000" -g -q -pdr -fr"C:/Flash28_API/Flash2802x_API_V100/example/Debug" -i"../include" -i"./DSP2802x_Headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "Example_Flash2802x_GlobalVariableDefs.c"
+
+[Linking...] "C:\Program Files\Texas Instruments\ccsv4\tools\compiler\c2000\bin\cl2000" -@"Debug.lkf"
+<Linking>
+warning: entry-point symbol other than "_c_int00" specified:  "code_start"
+
+Build Complete,
+  0 Errors, 1 Warnings, 1 Remarks.

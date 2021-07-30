@@ -1,0 +1,895 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.1.3 *
+       3              ;* Date/Time created: Thu Jan 30 10:24:15 2014                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --o
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TMS320C2000 C/C++ Codegen PC v6.1.3 Copyright (c) 1996-2012 Texas I
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\work\grepos\bootrom\Boot_ROM\F2837x_bootROM-REVB\F2837x_bootROM_
+      13                      .global _PHY_pn9Table
+      14 00000000               .sect   "PLC_PHYPN9TABLE"
+      15                      .align  2
+      16 00000000       _PHY_pn9Table:
+      17 00000000 0000          .field  0,16                    ; _PHY_pn9Table[0] @ 0
+      18 00000001 0000          .field  0,16                    ; _PHY_pn9Table[1] @ 16
+      19 00000002 0000          .field  0,16                    ; _PHY_pn9Table[2] @ 32
+      20 00000003 0000          .field  0,16                    ; _PHY_pn9Table[3] @ 48
+      21 00000004 0001          .field  1,16                    ; _PHY_pn9Table[4] @ 64
+      22 00000005 0001          .field  1,16                    ; _PHY_pn9Table[5] @ 80
+      23 00000006 0001          .field  1,16                    ; _PHY_pn9Table[6] @ 96
+      24 00000007 0001          .field  1,16                    ; _PHY_pn9Table[7] @ 112
+      25 00000008 0000          .field  0,16                    ; _PHY_pn9Table[8] @ 128
+      26 00000009 0001          .field  1,16                    ; _PHY_pn9Table[9] @ 144
+      27 0000000a 0001          .field  1,16                    ; _PHY_pn9Table[10] @ 160
+      28 0000000b 0001          .field  1,16                    ; _PHY_pn9Table[11] @ 176
+      29 0000000c 0000          .field  0,16                    ; _PHY_pn9Table[12] @ 192
+      30 0000000d 0000          .field  0,16                    ; _PHY_pn9Table[13] @ 208
+      31 0000000e 0000          .field  0,16                    ; _PHY_pn9Table[14] @ 224
+      32 0000000f 0000          .field  0,16                    ; _PHY_pn9Table[15] @ 240
+      33 00000010 0001          .field  1,16                    ; _PHY_pn9Table[16] @ 256
+      34 00000011 0000          .field  0,16                    ; _PHY_pn9Table[17] @ 272
+      35 00000012 0001          .field  1,16                    ; _PHY_pn9Table[18] @ 288
+      36 00000013 0001          .field  1,16                    ; _PHY_pn9Table[19] @ 304
+      37 00000014 0000          .field  0,16                    ; _PHY_pn9Table[20] @ 320
+      38 00000015 0000          .field  0,16                    ; _PHY_pn9Table[21] @ 336
+      39 00000016 0001          .field  1,16                    ; _PHY_pn9Table[22] @ 352
+      40 00000017 0001          .field  1,16                    ; _PHY_pn9Table[23] @ 368
+      41 00000018 0000          .field  0,16                    ; _PHY_pn9Table[24] @ 384
+      42 00000019 0001          .field  1,16                    ; _PHY_pn9Table[25] @ 400
+      43 0000001a 0001          .field  1,16                    ; _PHY_pn9Table[26] @ 416
+      44 0000001b 0000          .field  0,16                    ; _PHY_pn9Table[27] @ 432
+      45 0000001c 0001          .field  1,16                    ; _PHY_pn9Table[28] @ 448
+      46 0000001d 0001          .field  1,16                    ; _PHY_pn9Table[29] @ 464
+      47 0000001e 0001          .field  1,16                    ; _PHY_pn9Table[30] @ 480
+      48 0000001f 0001          .field  1,16                    ; _PHY_pn9Table[31] @ 496
+      49 00000020 0000          .field  0,16                    ; _PHY_pn9Table[32] @ 512
+      50 00000021 0001          .field  1,16                    ; _PHY_pn9Table[33] @ 528
+      51 00000022 0000          .field  0,16                    ; _PHY_pn9Table[34] @ 544
+      52 00000023 0000          .field  0,16                    ; _PHY_pn9Table[35] @ 560
+      53 00000024 0000          .field  0,16                    ; _PHY_pn9Table[36] @ 576
+      54 00000025 0000          .field  0,16                    ; _PHY_pn9Table[37] @ 592
+      55 00000026 0001          .field  1,16                    ; _PHY_pn9Table[38] @ 608
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    2
+
+      56 00000027 0001          .field  1,16                    ; _PHY_pn9Table[39] @ 624
+      57 00000028 0001          .field  1,16                    ; _PHY_pn9Table[40] @ 640
+      58 00000029 0000          .field  0,16                    ; _PHY_pn9Table[41] @ 656
+      59 0000002a 0000          .field  0,16                    ; _PHY_pn9Table[42] @ 672
+      60 0000002b 0001          .field  1,16                    ; _PHY_pn9Table[43] @ 688
+      61 0000002c 0001          .field  1,16                    ; _PHY_pn9Table[44] @ 704
+      62 0000002d 0000          .field  0,16                    ; _PHY_pn9Table[45] @ 720
+      63 0000002e 0000          .field  0,16                    ; _PHY_pn9Table[46] @ 736
+      64 0000002f 0000          .field  0,16                    ; _PHY_pn9Table[47] @ 752
+      65 00000030 0000          .field  0,16                    ; _PHY_pn9Table[48] @ 768
+      66 00000031 0001          .field  1,16                    ; _PHY_pn9Table[49] @ 784
+      67 00000032 0000          .field  0,16                    ; _PHY_pn9Table[50] @ 800
+      68 00000033 0000          .field  0,16                    ; _PHY_pn9Table[51] @ 816
+      69 00000034 0001          .field  1,16                    ; _PHY_pn9Table[52] @ 832
+      70 00000035 0000          .field  0,16                    ; _PHY_pn9Table[53] @ 848
+      71 00000036 0000          .field  0,16                    ; _PHY_pn9Table[54] @ 864
+      72 00000037 0000          .field  0,16                    ; _PHY_pn9Table[55] @ 880
+      73 00000038 0001          .field  1,16                    ; _PHY_pn9Table[56] @ 896
+      74 00000039 0000          .field  0,16                    ; _PHY_pn9Table[57] @ 912
+      75 0000003a 0001          .field  1,16                    ; _PHY_pn9Table[58] @ 928
+      76 0000003b 0000          .field  0,16                    ; _PHY_pn9Table[59] @ 944
+      77 0000003c 0001          .field  1,16                    ; _PHY_pn9Table[60] @ 960
+      78 0000003d 0001          .field  1,16                    ; _PHY_pn9Table[61] @ 976
+      79 0000003e 0001          .field  1,16                    ; _PHY_pn9Table[62] @ 992
+      80 0000003f 0000          .field  0,16                    ; _PHY_pn9Table[63] @ 1008
+      81 00000040 0001          .field  1,16                    ; _PHY_pn9Table[64] @ 1024
+      82 00000041 0000          .field  0,16                    ; _PHY_pn9Table[65] @ 1040
+      83 00000042 0001          .field  1,16                    ; _PHY_pn9Table[66] @ 1056
+      84 00000043 0001          .field  1,16                    ; _PHY_pn9Table[67] @ 1072
+      85 00000044 0001          .field  1,16                    ; _PHY_pn9Table[68] @ 1088
+      86 00000045 0001          .field  1,16                    ; _PHY_pn9Table[69] @ 1104
+      87 00000046 0000          .field  0,16                    ; _PHY_pn9Table[70] @ 1120
+      88 00000047 0000          .field  0,16                    ; _PHY_pn9Table[71] @ 1136
+      89 00000048 0001          .field  1,16                    ; _PHY_pn9Table[72] @ 1152
+      90 00000049 0000          .field  0,16                    ; _PHY_pn9Table[73] @ 1168
+      91 0000004a 0000          .field  0,16                    ; _PHY_pn9Table[74] @ 1184
+      92 0000004b 0001          .field  1,16                    ; _PHY_pn9Table[75] @ 1200
+      93 0000004c 0000          .field  0,16                    ; _PHY_pn9Table[76] @ 1216
+      94 0000004d 0001          .field  1,16                    ; _PHY_pn9Table[77] @ 1232
+      95 0000004e 0001          .field  1,16                    ; _PHY_pn9Table[78] @ 1248
+      96 0000004f 0001          .field  1,16                    ; _PHY_pn9Table[79] @ 1264
+      97 00000050 0000          .field  0,16                    ; _PHY_pn9Table[80] @ 1280
+      98 00000051 0000          .field  0,16                    ; _PHY_pn9Table[81] @ 1296
+      99 00000052 0001          .field  1,16                    ; _PHY_pn9Table[82] @ 1312
+     100 00000053 0001          .field  1,16                    ; _PHY_pn9Table[83] @ 1328
+     101 00000054 0001          .field  1,16                    ; _PHY_pn9Table[84] @ 1344
+     102 00000055 0000          .field  0,16                    ; _PHY_pn9Table[85] @ 1360
+     103 00000056 0000          .field  0,16                    ; _PHY_pn9Table[86] @ 1376
+     104 00000057 0000          .field  0,16                    ; _PHY_pn9Table[87] @ 1392
+     105 00000058 0000          .field  0,16                    ; _PHY_pn9Table[88] @ 1408
+     106 00000059 0000          .field  0,16                    ; _PHY_pn9Table[89] @ 1424
+     107 0000005a 0000          .field  0,16                    ; _PHY_pn9Table[90] @ 1440
+     108 0000005b 0001          .field  1,16                    ; _PHY_pn9Table[91] @ 1456
+     109 0000005c 0001          .field  1,16                    ; _PHY_pn9Table[92] @ 1472
+     110 0000005d 0001          .field  1,16                    ; _PHY_pn9Table[93] @ 1488
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    3
+
+     111 0000005e 0000          .field  0,16                    ; _PHY_pn9Table[94] @ 1504
+     112 0000005f 0001          .field  1,16                    ; _PHY_pn9Table[95] @ 1520
+     113 00000060 0001          .field  1,16                    ; _PHY_pn9Table[96] @ 1536
+     114 00000061 0001          .field  1,16                    ; _PHY_pn9Table[97] @ 1552
+     115 00000062 0000          .field  0,16                    ; _PHY_pn9Table[98] @ 1568
+     116 00000063 0001          .field  1,16                    ; _PHY_pn9Table[99] @ 1584
+     117 00000064 0000          .field  0,16                    ; _PHY_pn9Table[100] @ 1600
+     118 00000065 0000          .field  0,16                    ; _PHY_pn9Table[101] @ 1616
+     119 00000066 0001          .field  1,16                    ; _PHY_pn9Table[102] @ 1632
+     120 00000067 0001          .field  1,16                    ; _PHY_pn9Table[103] @ 1648
+     121 00000068 0001          .field  1,16                    ; _PHY_pn9Table[104] @ 1664
+     122 00000069 0001          .field  1,16                    ; _PHY_pn9Table[105] @ 1680
+     123 0000006a 0000          .field  0,16                    ; _PHY_pn9Table[106] @ 1696
+     124 0000006b 0001          .field  1,16                    ; _PHY_pn9Table[107] @ 1712
+     125 0000006c 0000          .field  0,16                    ; _PHY_pn9Table[108] @ 1728
+     126 0000006d 0001          .field  1,16                    ; _PHY_pn9Table[109] @ 1744
+     127 0000006e 0000          .field  0,16                    ; _PHY_pn9Table[110] @ 1760
+     128 0000006f 0000          .field  0,16                    ; _PHY_pn9Table[111] @ 1776
+     129 00000070 0001          .field  1,16                    ; _PHY_pn9Table[112] @ 1792
+     130 00000071 0000          .field  0,16                    ; _PHY_pn9Table[113] @ 1808
+     131 00000072 0001          .field  1,16                    ; _PHY_pn9Table[114] @ 1824
+     132 00000073 0000          .field  0,16                    ; _PHY_pn9Table[115] @ 1840
+     133 00000074 0000          .field  0,16                    ; _PHY_pn9Table[116] @ 1856
+     134 00000075 0000          .field  0,16                    ; _PHY_pn9Table[117] @ 1872
+     135 00000076 0000          .field  0,16                    ; _PHY_pn9Table[118] @ 1888
+     136 00000077 0000          .field  0,16                    ; _PHY_pn9Table[119] @ 1904
+     137 00000078 0000          .field  0,16                    ; _PHY_pn9Table[120] @ 1920
+     138 00000079 0001          .field  1,16                    ; _PHY_pn9Table[121] @ 1936
+     139 0000007a 0000          .field  0,16                    ; _PHY_pn9Table[122] @ 1952
+     140 0000007b 0001          .field  1,16                    ; _PHY_pn9Table[123] @ 1968
+     141 0000007c 0000          .field  0,16                    ; _PHY_pn9Table[124] @ 1984
+     142 0000007d 0001          .field  1,16                    ; _PHY_pn9Table[125] @ 2000
+     143 0000007e 0000          .field  0,16                    ; _PHY_pn9Table[126] @ 2016
+     144 0000007f 0001          .field  1,16                    ; _PHY_pn9Table[127] @ 2032
+     145 00000080 0000          .field  0,16                    ; _PHY_pn9Table[128] @ 2048
+     146 00000081 0001          .field  1,16                    ; _PHY_pn9Table[129] @ 2064
+     147 00000082 0001          .field  1,16                    ; _PHY_pn9Table[130] @ 2080
+     148 00000083 0001          .field  1,16                    ; _PHY_pn9Table[131] @ 2096
+     149 00000084 0001          .field  1,16                    ; _PHY_pn9Table[132] @ 2112
+     150 00000085 0001          .field  1,16                    ; _PHY_pn9Table[133] @ 2128
+     151 00000086 0000          .field  0,16                    ; _PHY_pn9Table[134] @ 2144
+     152 00000087 0001          .field  1,16                    ; _PHY_pn9Table[135] @ 2160
+     153 00000088 0000          .field  0,16                    ; _PHY_pn9Table[136] @ 2176
+     154 00000089 0001          .field  1,16                    ; _PHY_pn9Table[137] @ 2192
+     155 0000008a 0001          .field  1,16                    ; _PHY_pn9Table[138] @ 2208
+     156 0000008b 0000          .field  0,16                    ; _PHY_pn9Table[139] @ 2224
+     157 0000008c 0001          .field  1,16                    ; _PHY_pn9Table[140] @ 2240
+     158 0000008d 0000          .field  0,16                    ; _PHY_pn9Table[141] @ 2256
+     159 0000008e 0000          .field  0,16                    ; _PHY_pn9Table[142] @ 2272
+     160 0000008f 0000          .field  0,16                    ; _PHY_pn9Table[143] @ 2288
+     161 00000090 0000          .field  0,16                    ; _PHY_pn9Table[144] @ 2304
+     162 00000091 0000          .field  0,16                    ; _PHY_pn9Table[145] @ 2320
+     163 00000092 0001          .field  1,16                    ; _PHY_pn9Table[146] @ 2336
+     164 00000093 0001          .field  1,16                    ; _PHY_pn9Table[147] @ 2352
+     165 00000094 0000          .field  0,16                    ; _PHY_pn9Table[148] @ 2368
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    4
+
+     166 00000095 0001          .field  1,16                    ; _PHY_pn9Table[149] @ 2384
+     167 00000096 0001          .field  1,16                    ; _PHY_pn9Table[150] @ 2400
+     168 00000097 0001          .field  1,16                    ; _PHY_pn9Table[151] @ 2416
+     169 00000098 0000          .field  0,16                    ; _PHY_pn9Table[152] @ 2432
+     170 00000099 0001          .field  1,16                    ; _PHY_pn9Table[153] @ 2448
+     171 0000009a 0001          .field  1,16                    ; _PHY_pn9Table[154] @ 2464
+     172 0000009b 0000          .field  0,16                    ; _PHY_pn9Table[155] @ 2480
+     173 0000009c 0001          .field  1,16                    ; _PHY_pn9Table[156] @ 2496
+     174 0000009d 0001          .field  1,16                    ; _PHY_pn9Table[157] @ 2512
+     175 0000009e 0000          .field  0,16                    ; _PHY_pn9Table[158] @ 2528
+     176 0000009f 0001          .field  1,16                    ; _PHY_pn9Table[159] @ 2544
+     177 000000a0 0000          .field  0,16                    ; _PHY_pn9Table[160] @ 2560
+     178 000000a1 0001          .field  1,16                    ; _PHY_pn9Table[161] @ 2576
+     179 000000a2 0001          .field  1,16                    ; _PHY_pn9Table[162] @ 2592
+     180 000000a3 0000          .field  0,16                    ; _PHY_pn9Table[163] @ 2608
+     181 000000a4 0000          .field  0,16                    ; _PHY_pn9Table[164] @ 2624
+     182 000000a5 0000          .field  0,16                    ; _PHY_pn9Table[165] @ 2640
+     183 000000a6 0000          .field  0,16                    ; _PHY_pn9Table[166] @ 2656
+     184 000000a7 0000          .field  0,16                    ; _PHY_pn9Table[167] @ 2672
+     185 000000a8 0001          .field  1,16                    ; _PHY_pn9Table[168] @ 2688
+     186 000000a9 0000          .field  0,16                    ; _PHY_pn9Table[169] @ 2704
+     187 000000aa 0001          .field  1,16                    ; _PHY_pn9Table[170] @ 2720
+     188 000000ab 0001          .field  1,16                    ; _PHY_pn9Table[171] @ 2736
+     189 000000ac 0001          .field  1,16                    ; _PHY_pn9Table[172] @ 2752
+     190 000000ad 0000          .field  0,16                    ; _PHY_pn9Table[173] @ 2768
+     191 000000ae 0001          .field  1,16                    ; _PHY_pn9Table[174] @ 2784
+     192 000000af 0001          .field  1,16                    ; _PHY_pn9Table[175] @ 2800
+     193 000000b0 0001          .field  1,16                    ; _PHY_pn9Table[176] @ 2816
+     194 000000b1 0001          .field  1,16                    ; _PHY_pn9Table[177] @ 2832
+     195 000000b2 0001          .field  1,16                    ; _PHY_pn9Table[178] @ 2848
+     196 000000b3 0000          .field  0,16                    ; _PHY_pn9Table[179] @ 2864
+     197 000000b4 0000          .field  0,16                    ; _PHY_pn9Table[180] @ 2880
+     198 000000b5 0000          .field  0,16                    ; _PHY_pn9Table[181] @ 2896
+     199 000000b6 0001          .field  1,16                    ; _PHY_pn9Table[182] @ 2912
+     200 000000b7 0001          .field  1,16                    ; _PHY_pn9Table[183] @ 2928
+     201 000000b8 0001          .field  1,16                    ; _PHY_pn9Table[184] @ 2944
+     202 000000b9 0001          .field  1,16                    ; _PHY_pn9Table[185] @ 2960
+     203 000000ba 0000          .field  0,16                    ; _PHY_pn9Table[186] @ 2976
+     204 000000bb 0000          .field  0,16                    ; _PHY_pn9Table[187] @ 2992
+     205 000000bc 0001          .field  1,16                    ; _PHY_pn9Table[188] @ 3008
+     206 000000bd 0001          .field  1,16                    ; _PHY_pn9Table[189] @ 3024
+     207 000000be 0000          .field  0,16                    ; _PHY_pn9Table[190] @ 3040
+     208 000000bf 0001          .field  1,16                    ; _PHY_pn9Table[191] @ 3056
+     209 000000c0 0000          .field  0,16                    ; _PHY_pn9Table[192] @ 3072
+     210 000000c1 0000          .field  0,16                    ; _PHY_pn9Table[193] @ 3088
+     211 000000c2 0001          .field  1,16                    ; _PHY_pn9Table[194] @ 3104
+     212 000000c3 0001          .field  1,16                    ; _PHY_pn9Table[195] @ 3120
+     213 000000c4 0000          .field  0,16                    ; _PHY_pn9Table[196] @ 3136
+     214 000000c5 0001          .field  1,16                    ; _PHY_pn9Table[197] @ 3152
+     215 000000c6 0000          .field  0,16                    ; _PHY_pn9Table[198] @ 3168
+     216 000000c7 0001          .field  1,16                    ; _PHY_pn9Table[199] @ 3184
+     217 000000c8 0001          .field  1,16                    ; _PHY_pn9Table[200] @ 3200
+     218 000000c9 0001          .field  1,16                    ; _PHY_pn9Table[201] @ 3216
+     219 000000ca 0000          .field  0,16                    ; _PHY_pn9Table[202] @ 3232
+     220 000000cb 0000          .field  0,16                    ; _PHY_pn9Table[203] @ 3248
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    5
+
+     221 000000cc 0000          .field  0,16                    ; _PHY_pn9Table[204] @ 3264
+     222 000000cd 0001          .field  1,16                    ; _PHY_pn9Table[205] @ 3280
+     223 000000ce 0001          .field  1,16                    ; _PHY_pn9Table[206] @ 3296
+     224 000000cf 0000          .field  0,16                    ; _PHY_pn9Table[207] @ 3312
+     225 000000d0 0001          .field  1,16                    ; _PHY_pn9Table[208] @ 3328
+     226 000000d1 0000          .field  0,16                    ; _PHY_pn9Table[209] @ 3344
+     227 000000d2 0000          .field  0,16                    ; _PHY_pn9Table[210] @ 3360
+     228 000000d3 0000          .field  0,16                    ; _PHY_pn9Table[211] @ 3376
+     229 000000d4 0001          .field  1,16                    ; _PHY_pn9Table[212] @ 3392
+     230 000000d5 0000          .field  0,16                    ; _PHY_pn9Table[213] @ 3408
+     231 000000d6 0001          .field  1,16                    ; _PHY_pn9Table[214] @ 3424
+     232 000000d7 0001          .field  1,16                    ; _PHY_pn9Table[215] @ 3440
+     233 000000d8 0001          .field  1,16                    ; _PHY_pn9Table[216] @ 3456
+     234 000000d9 0001          .field  1,16                    ; _PHY_pn9Table[217] @ 3472
+     235 000000da 0001          .field  1,16                    ; _PHY_pn9Table[218] @ 3488
+     236 000000db 0001          .field  1,16                    ; _PHY_pn9Table[219] @ 3504
+     237 000000dc 0001          .field  1,16                    ; _PHY_pn9Table[220] @ 3520
+     238 000000dd 0000          .field  0,16                    ; _PHY_pn9Table[221] @ 3536
+     239 000000de 0001          .field  1,16                    ; _PHY_pn9Table[222] @ 3552
+     240 000000df 0000          .field  0,16                    ; _PHY_pn9Table[223] @ 3568
+     241 000000e0 0000          .field  0,16                    ; _PHY_pn9Table[224] @ 3584
+     242 000000e1 0001          .field  1,16                    ; _PHY_pn9Table[225] @ 3600
+     243 000000e2 0000          .field  0,16                    ; _PHY_pn9Table[226] @ 3616
+     244 000000e3 0001          .field  1,16                    ; _PHY_pn9Table[227] @ 3632
+     245 000000e4 0001          .field  1,16                    ; _PHY_pn9Table[228] @ 3648
+     246 000000e5 0000          .field  0,16                    ; _PHY_pn9Table[229] @ 3664
+     247 000000e6 0000          .field  0,16                    ; _PHY_pn9Table[230] @ 3680
+     248 000000e7 0000          .field  0,16                    ; _PHY_pn9Table[231] @ 3696
+     249 000000e8 0001          .field  1,16                    ; _PHY_pn9Table[232] @ 3712
+     250 000000e9 0000          .field  0,16                    ; _PHY_pn9Table[233] @ 3728
+     251 000000ea 0001          .field  1,16                    ; _PHY_pn9Table[234] @ 3744
+     252 000000eb 0000          .field  0,16                    ; _PHY_pn9Table[235] @ 3760
+     253 000000ec 0000          .field  0,16                    ; _PHY_pn9Table[236] @ 3776
+     254 000000ed 0001          .field  1,16                    ; _PHY_pn9Table[237] @ 3792
+     255 000000ee 0001          .field  1,16                    ; _PHY_pn9Table[238] @ 3808
+     256 000000ef 0000          .field  0,16                    ; _PHY_pn9Table[239] @ 3824
+     257 000000f0 0000          .field  0,16                    ; _PHY_pn9Table[240] @ 3840
+     258 000000f1 0000          .field  0,16                    ; _PHY_pn9Table[241] @ 3856
+     259 000000f2 0001          .field  1,16                    ; _PHY_pn9Table[242] @ 3872
+     260 000000f3 0001          .field  1,16                    ; _PHY_pn9Table[243] @ 3888
+     261 000000f4 0000          .field  0,16                    ; _PHY_pn9Table[244] @ 3904
+     262 000000f5 0000          .field  0,16                    ; _PHY_pn9Table[245] @ 3920
+     263 000000f6 0000          .field  0,16                    ; _PHY_pn9Table[246] @ 3936
+     264 000000f7 0000          .field  0,16                    ; _PHY_pn9Table[247] @ 3952
+     265 000000f8 0000          .field  0,16                    ; _PHY_pn9Table[248] @ 3968
+     266 000000f9 0000          .field  0,16                    ; _PHY_pn9Table[249] @ 3984
+     267 000000fa 0000          .field  0,16                    ; _PHY_pn9Table[250] @ 4000
+     268 000000fb 0001          .field  1,16                    ; _PHY_pn9Table[251] @ 4016
+     269 000000fc 0001          .field  1,16                    ; _PHY_pn9Table[252] @ 4032
+     270 000000fd 0000          .field  0,16                    ; _PHY_pn9Table[253] @ 4048
+     271 000000fe 0000          .field  0,16                    ; _PHY_pn9Table[254] @ 4064
+     272 000000ff 0001          .field  1,16                    ; _PHY_pn9Table[255] @ 4080
+     273 00000100 0001          .field  1,16                    ; _PHY_pn9Table[256] @ 4096
+     274 00000101 0000          .field  0,16                    ; _PHY_pn9Table[257] @ 4112
+     275 00000102 0000          .field  0,16                    ; _PHY_pn9Table[258] @ 4128
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    6
+
+     276 00000103 0001          .field  1,16                    ; _PHY_pn9Table[259] @ 4144
+     277 00000104 0000          .field  0,16                    ; _PHY_pn9Table[260] @ 4160
+     278 00000105 0001          .field  1,16                    ; _PHY_pn9Table[261] @ 4176
+     279 00000106 0000          .field  0,16                    ; _PHY_pn9Table[262] @ 4192
+     280 00000107 0001          .field  1,16                    ; _PHY_pn9Table[263] @ 4208
+     281 00000108 0001          .field  1,16                    ; _PHY_pn9Table[264] @ 4224
+     282 00000109 0000          .field  0,16                    ; _PHY_pn9Table[265] @ 4240
+     283 0000010a 0000          .field  0,16                    ; _PHY_pn9Table[266] @ 4256
+     284 0000010b 0001          .field  1,16                    ; _PHY_pn9Table[267] @ 4272
+     285 0000010c 0000          .field  0,16                    ; _PHY_pn9Table[268] @ 4288
+     286 0000010d 0000          .field  0,16                    ; _PHY_pn9Table[269] @ 4304
+     287 0000010e 0001          .field  1,16                    ; _PHY_pn9Table[270] @ 4320
+     288 0000010f 0001          .field  1,16                    ; _PHY_pn9Table[271] @ 4336
+     289 00000110 0001          .field  1,16                    ; _PHY_pn9Table[272] @ 4352
+     290 00000111 0001          .field  1,16                    ; _PHY_pn9Table[273] @ 4368
+     291 00000112 0001          .field  1,16                    ; _PHY_pn9Table[274] @ 4384
+     292 00000113 0001          .field  1,16                    ; _PHY_pn9Table[275] @ 4400
+     293 00000114 0000          .field  0,16                    ; _PHY_pn9Table[276] @ 4416
+     294 00000115 0001          .field  1,16                    ; _PHY_pn9Table[277] @ 4432
+     295 00000116 0001          .field  1,16                    ; _PHY_pn9Table[278] @ 4448
+     296 00000117 0000          .field  0,16                    ; _PHY_pn9Table[279] @ 4464
+     297 00000118 0001          .field  1,16                    ; _PHY_pn9Table[280] @ 4480
+     298 00000119 0000          .field  0,16                    ; _PHY_pn9Table[281] @ 4496
+     299 0000011a 0000          .field  0,16                    ; _PHY_pn9Table[282] @ 4512
+     300 0000011b 0001          .field  1,16                    ; _PHY_pn9Table[283] @ 4528
+     301 0000011c 0000          .field  0,16                    ; _PHY_pn9Table[284] @ 4544
+     302 0000011d 0000          .field  0,16                    ; _PHY_pn9Table[285] @ 4560
+     303 0000011e 0001          .field  1,16                    ; _PHY_pn9Table[286] @ 4576
+     304 0000011f 0000          .field  0,16                    ; _PHY_pn9Table[287] @ 4592
+     305 00000120 0000          .field  0,16                    ; _PHY_pn9Table[288] @ 4608
+     306 00000121 0001          .field  1,16                    ; _PHY_pn9Table[289] @ 4624
+     307 00000122 0001          .field  1,16                    ; _PHY_pn9Table[290] @ 4640
+     308 00000123 0000          .field  0,16                    ; _PHY_pn9Table[291] @ 4656
+     309 00000124 0001          .field  1,16                    ; _PHY_pn9Table[292] @ 4672
+     310 00000125 0001          .field  1,16                    ; _PHY_pn9Table[293] @ 4688
+     311 00000126 0001          .field  1,16                    ; _PHY_pn9Table[294] @ 4704
+     312 00000127 0001          .field  1,16                    ; _PHY_pn9Table[295] @ 4720
+     313 00000128 0001          .field  1,16                    ; _PHY_pn9Table[296] @ 4736
+     314 00000129 0001          .field  1,16                    ; _PHY_pn9Table[297] @ 4752
+     315 0000012a 0000          .field  0,16                    ; _PHY_pn9Table[298] @ 4768
+     316 0000012b 0000          .field  0,16                    ; _PHY_pn9Table[299] @ 4784
+     317 0000012c 0001          .field  1,16                    ; _PHY_pn9Table[300] @ 4800
+     318 0000012d 0000          .field  0,16                    ; _PHY_pn9Table[301] @ 4816
+     319 0000012e 0001          .field  1,16                    ; _PHY_pn9Table[302] @ 4832
+     320 0000012f 0001          .field  1,16                    ; _PHY_pn9Table[303] @ 4848
+     321 00000130 0000          .field  0,16                    ; _PHY_pn9Table[304] @ 4864
+     322 00000131 0001          .field  1,16                    ; _PHY_pn9Table[305] @ 4880
+     323 00000132 0000          .field  0,16                    ; _PHY_pn9Table[306] @ 4896
+     324 00000133 0001          .field  1,16                    ; _PHY_pn9Table[307] @ 4912
+     325 00000134 0000          .field  0,16                    ; _PHY_pn9Table[308] @ 4928
+     326 00000135 0000          .field  0,16                    ; _PHY_pn9Table[309] @ 4944
+     327 00000136 0000          .field  0,16                    ; _PHY_pn9Table[310] @ 4960
+     328 00000137 0000          .field  0,16                    ; _PHY_pn9Table[311] @ 4976
+     329 00000138 0001          .field  1,16                    ; _PHY_pn9Table[312] @ 4992
+     330 00000139 0000          .field  0,16                    ; _PHY_pn9Table[313] @ 5008
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    7
+
+     331 0000013a 0001          .field  1,16                    ; _PHY_pn9Table[314] @ 5024
+     332 0000013b 0000          .field  0,16                    ; _PHY_pn9Table[315] @ 5040
+     333 0000013c 0000          .field  0,16                    ; _PHY_pn9Table[316] @ 5056
+     334 0000013d 0000          .field  0,16                    ; _PHY_pn9Table[317] @ 5072
+     335 0000013e 0001          .field  1,16                    ; _PHY_pn9Table[318] @ 5088
+     336 0000013f 0000          .field  0,16                    ; _PHY_pn9Table[319] @ 5104
+     337 00000140 0000          .field  0,16                    ; _PHY_pn9Table[320] @ 5120
+     338 00000141 0001          .field  1,16                    ; _PHY_pn9Table[321] @ 5136
+     339 00000142 0001          .field  1,16                    ; _PHY_pn9Table[322] @ 5152
+     340 00000143 0001          .field  1,16                    ; _PHY_pn9Table[323] @ 5168
+     341 00000144 0000          .field  0,16                    ; _PHY_pn9Table[324] @ 5184
+     342 00000145 0001          .field  1,16                    ; _PHY_pn9Table[325] @ 5200
+     343 00000146 0001          .field  1,16                    ; _PHY_pn9Table[326] @ 5216
+     344 00000147 0000          .field  0,16                    ; _PHY_pn9Table[327] @ 5232
+     345 00000148 0000          .field  0,16                    ; _PHY_pn9Table[328] @ 5248
+     346 00000149 0001          .field  1,16                    ; _PHY_pn9Table[329] @ 5264
+     347 0000014a 0000          .field  0,16                    ; _PHY_pn9Table[330] @ 5280
+     348 0000014b 0001          .field  1,16                    ; _PHY_pn9Table[331] @ 5296
+     349 0000014c 0001          .field  1,16                    ; _PHY_pn9Table[332] @ 5312
+     350 0000014d 0001          .field  1,16                    ; _PHY_pn9Table[333] @ 5328
+     351 0000014e 0001          .field  1,16                    ; _PHY_pn9Table[334] @ 5344
+     352 0000014f 0000          .field  0,16                    ; _PHY_pn9Table[335] @ 5360
+     353 00000150 0001          .field  1,16                    ; _PHY_pn9Table[336] @ 5376
+     354 00000151 0001          .field  1,16                    ; _PHY_pn9Table[337] @ 5392
+     355 00000152 0000          .field  0,16                    ; _PHY_pn9Table[338] @ 5408
+     356 00000153 0000          .field  0,16                    ; _PHY_pn9Table[339] @ 5424
+     357 00000154 0000          .field  0,16                    ; _PHY_pn9Table[340] @ 5440
+     358 00000155 0000          .field  0,16                    ; _PHY_pn9Table[341] @ 5456
+     359 00000156 0001          .field  1,16                    ; _PHY_pn9Table[342] @ 5472
+     360 00000157 0001          .field  1,16                    ; _PHY_pn9Table[343] @ 5488
+     361 00000158 0000          .field  0,16                    ; _PHY_pn9Table[344] @ 5504
+     362 00000159 0001          .field  1,16                    ; _PHY_pn9Table[345] @ 5520
+     363 0000015a 0000          .field  0,16                    ; _PHY_pn9Table[346] @ 5536
+     364 0000015b 0001          .field  1,16                    ; _PHY_pn9Table[347] @ 5552
+     365 0000015c 0000          .field  0,16                    ; _PHY_pn9Table[348] @ 5568
+     366 0000015d 0001          .field  1,16                    ; _PHY_pn9Table[349] @ 5584
+     367 0000015e 0000          .field  0,16                    ; _PHY_pn9Table[350] @ 5600
+     368 0000015f 0000          .field  0,16                    ; _PHY_pn9Table[351] @ 5616
+     369 00000160 0001          .field  1,16                    ; _PHY_pn9Table[352] @ 5632
+     370 00000161 0001          .field  1,16                    ; _PHY_pn9Table[353] @ 5648
+     371 00000162 0001          .field  1,16                    ; _PHY_pn9Table[354] @ 5664
+     372 00000163 0000          .field  0,16                    ; _PHY_pn9Table[355] @ 5680
+     373 00000164 0000          .field  0,16                    ; _PHY_pn9Table[356] @ 5696
+     374 00000165 0001          .field  1,16                    ; _PHY_pn9Table[357] @ 5712
+     375 00000166 0000          .field  0,16                    ; _PHY_pn9Table[358] @ 5728
+     376 00000167 0000          .field  0,16                    ; _PHY_pn9Table[359] @ 5744
+     377 00000168 0000          .field  0,16                    ; _PHY_pn9Table[360] @ 5760
+     378 00000169 0000          .field  0,16                    ; _PHY_pn9Table[361] @ 5776
+     379 0000016a 0001          .field  1,16                    ; _PHY_pn9Table[362] @ 5792
+     380 0000016b 0001          .field  1,16                    ; _PHY_pn9Table[363] @ 5808
+     381 0000016c 0000          .field  0,16                    ; _PHY_pn9Table[364] @ 5824
+     382 0000016d 0000          .field  0,16                    ; _PHY_pn9Table[365] @ 5840
+     383 0000016e 0000          .field  0,16                    ; _PHY_pn9Table[366] @ 5856
+     384 0000016f 0001          .field  1,16                    ; _PHY_pn9Table[367] @ 5872
+     385 00000170 0000          .field  0,16                    ; _PHY_pn9Table[368] @ 5888
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    8
+
+     386 00000171 0000          .field  0,16                    ; _PHY_pn9Table[369] @ 5904
+     387 00000172 0000          .field  0,16                    ; _PHY_pn9Table[370] @ 5920
+     388 00000173 0000          .field  0,16                    ; _PHY_pn9Table[371] @ 5936
+     389 00000174 0001          .field  1,16                    ; _PHY_pn9Table[372] @ 5952
+     390 00000175 0000          .field  0,16                    ; _PHY_pn9Table[373] @ 5968
+     391 00000176 0000          .field  0,16                    ; _PHY_pn9Table[374] @ 5984
+     392 00000177 0000          .field  0,16                    ; _PHY_pn9Table[375] @ 6000
+     393 00000178 0000          .field  0,16                    ; _PHY_pn9Table[376] @ 6016
+     394 00000179 0000          .field  0,16                    ; _PHY_pn9Table[377] @ 6032
+     395 0000017a 0000          .field  0,16                    ; _PHY_pn9Table[378] @ 6048
+     396 0000017b 0000          .field  0,16                    ; _PHY_pn9Table[379] @ 6064
+     397 0000017c 0000          .field  0,16                    ; _PHY_pn9Table[380] @ 6080
+     398 0000017d 0001          .field  1,16                    ; _PHY_pn9Table[381] @ 6096
+     399 0000017e 0000          .field  0,16                    ; _PHY_pn9Table[382] @ 6112
+     400 0000017f 0000          .field  0,16                    ; _PHY_pn9Table[383] @ 6128
+     401 00000180 0000          .field  0,16                    ; _PHY_pn9Table[384] @ 6144
+     402 00000181 0001          .field  1,16                    ; _PHY_pn9Table[385] @ 6160
+     403 00000182 0000          .field  0,16                    ; _PHY_pn9Table[386] @ 6176
+     404 00000183 0000          .field  0,16                    ; _PHY_pn9Table[387] @ 6192
+     405 00000184 0000          .field  0,16                    ; _PHY_pn9Table[388] @ 6208
+     406 00000185 0001          .field  1,16                    ; _PHY_pn9Table[389] @ 6224
+     407 00000186 0001          .field  1,16                    ; _PHY_pn9Table[390] @ 6240
+     408 00000187 0000          .field  0,16                    ; _PHY_pn9Table[391] @ 6256
+     409 00000188 0000          .field  0,16                    ; _PHY_pn9Table[392] @ 6272
+     410 00000189 0001          .field  1,16                    ; _PHY_pn9Table[393] @ 6288
+     411 0000018a 0000          .field  0,16                    ; _PHY_pn9Table[394] @ 6304
+     412 0000018b 0000          .field  0,16                    ; _PHY_pn9Table[395] @ 6320
+     413 0000018c 0000          .field  0,16                    ; _PHY_pn9Table[396] @ 6336
+     414 0000018d 0001          .field  1,16                    ; _PHY_pn9Table[397] @ 6352
+     415 0000018e 0001          .field  1,16                    ; _PHY_pn9Table[398] @ 6368
+     416 0000018f 0001          .field  1,16                    ; _PHY_pn9Table[399] @ 6384
+     417 00000190 0000          .field  0,16                    ; _PHY_pn9Table[400] @ 6400
+     418 00000191 0001          .field  1,16                    ; _PHY_pn9Table[401] @ 6416
+     419 00000192 0000          .field  0,16                    ; _PHY_pn9Table[402] @ 6432
+     420 00000193 0001          .field  1,16                    ; _PHY_pn9Table[403] @ 6448
+     421 00000194 0000          .field  0,16                    ; _PHY_pn9Table[404] @ 6464
+     422 00000195 0001          .field  1,16                    ; _PHY_pn9Table[405] @ 6480
+     423 00000196 0001          .field  1,16                    ; _PHY_pn9Table[406] @ 6496
+     424 00000197 0000          .field  0,16                    ; _PHY_pn9Table[407] @ 6512
+     425 00000198 0001          .field  1,16                    ; _PHY_pn9Table[408] @ 6528
+     426 00000199 0001          .field  1,16                    ; _PHY_pn9Table[409] @ 6544
+     427 0000019a 0000          .field  0,16                    ; _PHY_pn9Table[410] @ 6560
+     428 0000019b 0000          .field  0,16                    ; _PHY_pn9Table[411] @ 6576
+     429 0000019c 0000          .field  0,16                    ; _PHY_pn9Table[412] @ 6592
+     430 0000019d 0001          .field  1,16                    ; _PHY_pn9Table[413] @ 6608
+     431 0000019e 0001          .field  1,16                    ; _PHY_pn9Table[414] @ 6624
+     432 0000019f 0001          .field  1,16                    ; _PHY_pn9Table[415] @ 6640
+     433 000001a0 0000          .field  0,16                    ; _PHY_pn9Table[416] @ 6656
+     434 000001a1 0000          .field  0,16                    ; _PHY_pn9Table[417] @ 6672
+     435 000001a2 0000          .field  0,16                    ; _PHY_pn9Table[418] @ 6688
+     436 000001a3 0001          .field  1,16                    ; _PHY_pn9Table[419] @ 6704
+     437 000001a4 0000          .field  0,16                    ; _PHY_pn9Table[420] @ 6720
+     438 000001a5 0000          .field  0,16                    ; _PHY_pn9Table[421] @ 6736
+     439 000001a6 0001          .field  1,16                    ; _PHY_pn9Table[422] @ 6752
+     440 000001a7 0000          .field  0,16                    ; _PHY_pn9Table[423] @ 6768
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE    9
+
+     441 000001a8 0001          .field  1,16                    ; _PHY_pn9Table[424] @ 6784
+     442 000001a9 0000          .field  0,16                    ; _PHY_pn9Table[425] @ 6800
+     443 000001aa 0001          .field  1,16                    ; _PHY_pn9Table[426] @ 6816
+     444 000001ab 0000          .field  0,16                    ; _PHY_pn9Table[427] @ 6832
+     445 000001ac 0000          .field  0,16                    ; _PHY_pn9Table[428] @ 6848
+     446 000001ad 0000          .field  0,16                    ; _PHY_pn9Table[429] @ 6864
+     447 000001ae 0001          .field  1,16                    ; _PHY_pn9Table[430] @ 6880
+     448 000001af 0001          .field  1,16                    ; _PHY_pn9Table[431] @ 6896
+     449 000001b0 0000          .field  0,16                    ; _PHY_pn9Table[432] @ 6912
+     450 000001b1 0001          .field  1,16                    ; _PHY_pn9Table[433] @ 6928
+     451 000001b2 0001          .field  1,16                    ; _PHY_pn9Table[434] @ 6944
+     452 000001b3 0000          .field  0,16                    ; _PHY_pn9Table[435] @ 6960
+     453 000001b4 0000          .field  0,16                    ; _PHY_pn9Table[436] @ 6976
+     454 000001b5 0001          .field  1,16                    ; _PHY_pn9Table[437] @ 6992
+     455 000001b6 0001          .field  1,16                    ; _PHY_pn9Table[438] @ 7008
+     456 000001b7 0001          .field  1,16                    ; _PHY_pn9Table[439] @ 7024
+     457 000001b8 0001          .field  1,16                    ; _PHY_pn9Table[440] @ 7040
+     458 000001b9 0001          .field  1,16                    ; _PHY_pn9Table[441] @ 7056
+     459 000001ba 0000          .field  0,16                    ; _PHY_pn9Table[442] @ 7072
+     460 000001bb 0000          .field  0,16                    ; _PHY_pn9Table[443] @ 7088
+     461 000001bc 0001          .field  1,16                    ; _PHY_pn9Table[444] @ 7104
+     462 000001bd 0001          .field  1,16                    ; _PHY_pn9Table[445] @ 7120
+     463 000001be 0001          .field  1,16                    ; _PHY_pn9Table[446] @ 7136
+     464 000001bf 0001          .field  1,16                    ; _PHY_pn9Table[447] @ 7152
+     465 000001c0 0000          .field  0,16                    ; _PHY_pn9Table[448] @ 7168
+     466 000001c1 0000          .field  0,16                    ; _PHY_pn9Table[449] @ 7184
+     467 000001c2 0000          .field  0,16                    ; _PHY_pn9Table[450] @ 7200
+     468 000001c3 0001          .field  1,16                    ; _PHY_pn9Table[451] @ 7216
+     469 000001c4 0000          .field  0,16                    ; _PHY_pn9Table[452] @ 7232
+     470 000001c5 0001          .field  1,16                    ; _PHY_pn9Table[453] @ 7248
+     471 000001c6 0001          .field  1,16                    ; _PHY_pn9Table[454] @ 7264
+     472 000001c7 0000          .field  0,16                    ; _PHY_pn9Table[455] @ 7280
+     473 000001c8 0001          .field  1,16                    ; _PHY_pn9Table[456] @ 7296
+     474 000001c9 0001          .field  1,16                    ; _PHY_pn9Table[457] @ 7312
+     475 000001ca 0001          .field  1,16                    ; _PHY_pn9Table[458] @ 7328
+     476 000001cb 0000          .field  0,16                    ; _PHY_pn9Table[459] @ 7344
+     477 000001cc 0000          .field  0,16                    ; _PHY_pn9Table[460] @ 7360
+     478 000001cd 0001          .field  1,16                    ; _PHY_pn9Table[461] @ 7376
+     479 000001ce 0000          .field  0,16                    ; _PHY_pn9Table[462] @ 7392
+     480 000001cf 0001          .field  1,16                    ; _PHY_pn9Table[463] @ 7408
+     481 000001d0 0000          .field  0,16                    ; _PHY_pn9Table[464] @ 7424
+     482 000001d1 0000          .field  0,16                    ; _PHY_pn9Table[465] @ 7440
+     483 000001d2 0001          .field  1,16                    ; _PHY_pn9Table[466] @ 7456
+     484 000001d3 0000          .field  0,16                    ; _PHY_pn9Table[467] @ 7472
+     485 000001d4 0000          .field  0,16                    ; _PHY_pn9Table[468] @ 7488
+     486 000001d5 0000          .field  0,16                    ; _PHY_pn9Table[469] @ 7504
+     487 000001d6 0000          .field  0,16                    ; _PHY_pn9Table[470] @ 7520
+     488 000001d7 0000          .field  0,16                    ; _PHY_pn9Table[471] @ 7536
+     489 000001d8 0001          .field  1,16                    ; _PHY_pn9Table[472] @ 7552
+     490 000001d9 0000          .field  0,16                    ; _PHY_pn9Table[473] @ 7568
+     491 000001da 0000          .field  0,16                    ; _PHY_pn9Table[474] @ 7584
+     492 000001db 0001          .field  1,16                    ; _PHY_pn9Table[475] @ 7600
+     493 000001dc 0001          .field  1,16                    ; _PHY_pn9Table[476] @ 7616
+     494 000001dd 0000          .field  0,16                    ; _PHY_pn9Table[477] @ 7632
+     495 000001de 0000          .field  0,16                    ; _PHY_pn9Table[478] @ 7648
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE   10
+
+     496 000001df 0001          .field  1,16                    ; _PHY_pn9Table[479] @ 7664
+     497 000001e0 0001          .field  1,16                    ; _PHY_pn9Table[480] @ 7680
+     498 000001e1 0001          .field  1,16                    ; _PHY_pn9Table[481] @ 7696
+     499 000001e2 0000          .field  0,16                    ; _PHY_pn9Table[482] @ 7712
+     500 000001e3 0001          .field  1,16                    ; _PHY_pn9Table[483] @ 7728
+     501 000001e4 0000          .field  0,16                    ; _PHY_pn9Table[484] @ 7744
+     502 000001e5 0000          .field  0,16                    ; _PHY_pn9Table[485] @ 7760
+     503 000001e6 0000          .field  0,16                    ; _PHY_pn9Table[486] @ 7776
+     504 000001e7 0001          .field  1,16                    ; _PHY_pn9Table[487] @ 7792
+     505 000001e8 0001          .field  1,16                    ; _PHY_pn9Table[488] @ 7808
+     506 000001e9 0001          .field  1,16                    ; _PHY_pn9Table[489] @ 7824
+     507 000001ea 0001          .field  1,16                    ; _PHY_pn9Table[490] @ 7840
+     508 000001eb 0001          .field  1,16                    ; _PHY_pn9Table[491] @ 7856
+     509 000001ec 0000          .field  0,16                    ; _PHY_pn9Table[492] @ 7872
+     510 000001ed 0001          .field  1,16                    ; _PHY_pn9Table[493] @ 7888
+     511 000001ee 0001          .field  1,16                    ; _PHY_pn9Table[494] @ 7904
+     512 000001ef 0001          .field  1,16                    ; _PHY_pn9Table[495] @ 7920
+     513 000001f0 0001          .field  1,16                    ; _PHY_pn9Table[496] @ 7936
+     514 000001f1 0000          .field  0,16                    ; _PHY_pn9Table[497] @ 7952
+     515 000001f2 0000          .field  0,16                    ; _PHY_pn9Table[498] @ 7968
+     516 000001f3 0000          .field  0,16                    ; _PHY_pn9Table[499] @ 7984
+     517 000001f4 0000          .field  0,16                    ; _PHY_pn9Table[500] @ 8000
+     518 000001f5 0000          .field  0,16                    ; _PHY_pn9Table[501] @ 8016
+     519 000001f6 0001          .field  1,16                    ; _PHY_pn9Table[502] @ 8032
+     520 000001f7 0001          .field  1,16                    ; _PHY_pn9Table[503] @ 8048
+     521 000001f8 0001          .field  1,16                    ; _PHY_pn9Table[504] @ 8064
+     522 000001f9 0001          .field  1,16                    ; _PHY_pn9Table[505] @ 8080
+     523 000001fa 0001          .field  1,16                    ; _PHY_pn9Table[506] @ 8096
+     524 000001fb 0001          .field  1,16                    ; _PHY_pn9Table[507] @ 8112
+     525 000001fc 0001          .field  1,16                    ; _PHY_pn9Table[508] @ 8128
+     526 000001fd 0001          .field  1,16                    ; _PHY_pn9Table[509] @ 8144
+     527 000001fe 0001          .field  1,16                    ; _PHY_pn9Table[510] @ 8160
+     528 000001ff 0000          .field  0,16                    ; _PHY_pn9Table[511] @ 8176
+     529              
+     530              $C$DW$1 .dwtag  DW_TAG_variable, DW_AT_name("PHY_pn9Table")
+     531                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_PHY_pn9Table")
+     532                      .dwattr $C$DW$1, DW_AT_location[DW_OP_addr _PHY_pn9Table]
+     533                      .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$21)
+     534                      .dwattr $C$DW$1, DW_AT_external
+     535              ;       C:\ti\ccsv5\tools\compiler\c2000_6.1.3\bin\ac2000.exe -@C:\\Users\\a0272466\\AppData\\Local\\Temp\\09
+     536              
+     537              ;***************************************************************
+     538              ;* TYPE INFORMATION                                            *
+     539              ;***************************************************************
+     540              $C$DW$T$4       .dwtag  DW_TAG_base_type
+     541                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     542                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+     543                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     544              $C$DW$T$5       .dwtag  DW_TAG_base_type
+     545                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     546                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     547                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     548              $C$DW$T$6       .dwtag  DW_TAG_base_type
+     549                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     550                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE   11
+
+     551                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     552              $C$DW$T$7       .dwtag  DW_TAG_base_type
+     553                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     554                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     555                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+     556              $C$DW$T$8       .dwtag  DW_TAG_base_type
+     557                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     558                      .dwattr $C$DW$T$8, DW_AT_name("short")
+     559                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+     560              $C$DW$T$9       .dwtag  DW_TAG_base_type
+     561                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     562                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     563                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+     564              $C$DW$T$10      .dwtag  DW_TAG_base_type
+     565                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     566                      .dwattr $C$DW$T$10, DW_AT_name("int")
+     567                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+     568              $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("SINT16")
+     569                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$10)
+     570                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+     571              $C$DW$2 .dwtag  DW_TAG_TI_far_type
+     572                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$19)
+     573              $C$DW$T$20      .dwtag  DW_TAG_const_type
+     574                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$2)
+     575              
+     576              $C$DW$T$21      .dwtag  DW_TAG_array_type
+     577                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+     578                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+     579                      .dwattr $C$DW$T$21, DW_AT_byte_size(0x200)
+     580              $C$DW$3 .dwtag  DW_TAG_subrange_type
+     581                      .dwattr $C$DW$3, DW_AT_upper_bound(0x1ff)
+     582                      .dwendtag $C$DW$T$21
+     583              
+     584              $C$DW$T$11      .dwtag  DW_TAG_base_type
+     585                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     586                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     587                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+     588              $C$DW$T$12      .dwtag  DW_TAG_base_type
+     589                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     590                      .dwattr $C$DW$T$12, DW_AT_name("long")
+     591                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+     592              $C$DW$T$13      .dwtag  DW_TAG_base_type
+     593                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     594                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     595                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+     596              $C$DW$T$14      .dwtag  DW_TAG_base_type
+     597                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     598                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+     599                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+     600              $C$DW$T$15      .dwtag  DW_TAG_base_type
+     601                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     602                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     603                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+     604              $C$DW$T$16      .dwtag  DW_TAG_base_type
+     605                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE   12
+
+     606                      .dwattr $C$DW$T$16, DW_AT_name("float")
+     607                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+     608              $C$DW$T$17      .dwtag  DW_TAG_base_type
+     609                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     610                      .dwattr $C$DW$T$17, DW_AT_name("double")
+     611                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+     612              $C$DW$T$18      .dwtag  DW_TAG_base_type
+     613                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     614                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+     615                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+     616                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     617              
+     618              ;***************************************************************
+     619              ;* DWARF CIE ENTRIES                                           *
+     620              ;***************************************************************
+     621              
+     622              $C$DW$CIE       .dwcie 78
+     623                      .dwcfi  cfa_register, 20
+     624                      .dwcfi  cfa_offset, 0
+     625                      .dwcfi  undefined, 0
+     626                      .dwcfi  undefined, 1
+     627                      .dwcfi  undefined, 2
+     628                      .dwcfi  undefined, 3
+     629                      .dwcfi  undefined, 22
+     630                      .dwcfi  undefined, 37
+     631                      .dwcfi  undefined, 36
+     632                      .dwcfi  undefined, 23
+     633                      .dwcfi  undefined, 30
+     634                      .dwcfi  undefined, 31
+     635                      .dwcfi  undefined, 32
+     636                      .dwcfi  undefined, 38
+     637                      .dwcfi  undefined, 75
+     638                      .dwcfi  undefined, 24
+     639                      .dwcfi  undefined, 33
+     640                      .dwcfi  undefined, 35
+     641                      .dwcfi  undefined, 34
+     642                      .dwcfi  undefined, 76
+     643                      .dwcfi  undefined, 21
+     644                      .dwcfi  undefined, 20
+     645                      .dwcfi  undefined, 28
+     646                      .dwcfi  undefined, 29
+     647                      .dwcfi  undefined, 25
+     648                      .dwcfi  undefined, 77
+     649                      .dwcfi  undefined, 4
+     650                      .dwcfi  undefined, 6
+     651                      .dwcfi  undefined, 8
+     652                      .dwcfi  undefined, 10
+     653                      .dwcfi  undefined, 12
+     654                      .dwcfi  undefined, 14
+     655                      .dwcfi  undefined, 16
+     656                      .dwcfi  undefined, 17
+     657                      .dwcfi  undefined, 18
+     658                      .dwcfi  undefined, 19
+     659                      .dwcfi  undefined, 5
+     660                      .dwcfi  undefined, 7
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE   13
+
+     661                      .dwcfi  undefined, 9
+     662                      .dwcfi  undefined, 11
+     663                      .dwcfi  undefined, 13
+     664                      .dwcfi  undefined, 15
+     665                      .dwcfi  undefined, 43
+     666                      .dwcfi  undefined, 44
+     667                      .dwcfi  undefined, 47
+     668                      .dwcfi  undefined, 48
+     669                      .dwcfi  undefined, 51
+     670                      .dwcfi  undefined, 52
+     671                      .dwcfi  undefined, 55
+     672                      .dwcfi  undefined, 56
+     673                      .dwcfi  undefined, 59
+     674                      .dwcfi  undefined, 60
+     675                      .dwcfi  undefined, 63
+     676                      .dwcfi  undefined, 64
+     677                      .dwcfi  undefined, 67
+     678                      .dwcfi  undefined, 68
+     679                      .dwcfi  undefined, 71
+     680                      .dwcfi  undefined, 72
+     681                      .dwcfi  undefined, 73
+     682                      .dwcfi  undefined, 74
+     683                      .dwcfi  undefined, 39
+     684                      .dwcfi  undefined, 40
+     685                      .dwcfi  undefined, 27
+     686                      .dwcfi  undefined, 78
+     687                      .dwendentry
+     688              
+     689              ;***************************************************************
+     690              ;* DWARF REGISTER MAP                                          *
+     691              ;***************************************************************
+     692              
+     693              $C$DW$4 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AL")
+     694                      .dwattr $C$DW$4, DW_AT_location[DW_OP_reg0]
+     695              $C$DW$5 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AH")
+     696                      .dwattr $C$DW$5, DW_AT_location[DW_OP_reg1]
+     697              $C$DW$6 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PL")
+     698                      .dwattr $C$DW$6, DW_AT_location[DW_OP_reg2]
+     699              $C$DW$7 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PH")
+     700                      .dwattr $C$DW$7, DW_AT_location[DW_OP_reg3]
+     701              $C$DW$8 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("T")
+     702                      .dwattr $C$DW$8, DW_AT_location[DW_OP_reg22]
+     703              $C$DW$9 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
+     704                      .dwattr $C$DW$9, DW_AT_location[DW_OP_regx 0x25]
+     705              $C$DW$10        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
+     706                      .dwattr $C$DW$10, DW_AT_location[DW_OP_regx 0x24]
+     707              $C$DW$11        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST0")
+     708                      .dwattr $C$DW$11, DW_AT_location[DW_OP_reg23]
+     709              $C$DW$12        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SXM")
+     710                      .dwattr $C$DW$12, DW_AT_location[DW_OP_reg30]
+     711              $C$DW$13        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PM")
+     712                      .dwattr $C$DW$13, DW_AT_location[DW_OP_reg31]
+     713              $C$DW$14        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("OVM")
+     714                      .dwattr $C$DW$14, DW_AT_location[DW_OP_regx 0x20]
+     715              $C$DW$15        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("V")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE   14
+
+     716                      .dwattr $C$DW$15, DW_AT_location[DW_OP_regx 0x26]
+     717              $C$DW$16        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDO")
+     718                      .dwattr $C$DW$16, DW_AT_location[DW_OP_regx 0x4b]
+     719              $C$DW$17        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
+     720                      .dwattr $C$DW$17, DW_AT_location[DW_OP_reg24]
+     721              $C$DW$18        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PAGE0")
+     722                      .dwattr $C$DW$18, DW_AT_location[DW_OP_regx 0x21]
+     723              $C$DW$19        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("INTM")
+     724                      .dwattr $C$DW$19, DW_AT_location[DW_OP_regx 0x23]
+     725              $C$DW$20        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AMODE")
+     726                      .dwattr $C$DW$20, DW_AT_location[DW_OP_regx 0x22]
+     727              $C$DW$21        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDOH")
+     728                      .dwattr $C$DW$21, DW_AT_location[DW_OP_regx 0x4c]
+     729              $C$DW$22        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
+     730                      .dwattr $C$DW$22, DW_AT_location[DW_OP_reg21]
+     731              $C$DW$23        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+     732                      .dwattr $C$DW$23, DW_AT_location[DW_OP_reg20]
+     733              $C$DW$24        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FP")
+     734                      .dwattr $C$DW$24, DW_AT_location[DW_OP_reg28]
+     735              $C$DW$25        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("DP")
+     736                      .dwattr $C$DW$25, DW_AT_location[DW_OP_reg29]
+     737              $C$DW$26        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+     738                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg25]
+     739              $C$DW$27        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("VOL")
+     740                      .dwattr $C$DW$27, DW_AT_location[DW_OP_regx 0x4d]
+     741              $C$DW$28        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR0")
+     742                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg4]
+     743              $C$DW$29        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR1")
+     744                      .dwattr $C$DW$29, DW_AT_location[DW_OP_reg6]
+     745              $C$DW$30        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR2")
+     746                      .dwattr $C$DW$30, DW_AT_location[DW_OP_reg8]
+     747              $C$DW$31        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR3")
+     748                      .dwattr $C$DW$31, DW_AT_location[DW_OP_reg10]
+     749              $C$DW$32        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
+     750                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg12]
+     751              $C$DW$33        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR5")
+     752                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg14]
+     753              $C$DW$34        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
+     754                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg16]
+     755              $C$DW$35        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
+     756                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg17]
+     757              $C$DW$36        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR7")
+     758                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg18]
+     759              $C$DW$37        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR7")
+     760                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg19]
+     761              $C$DW$38        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR0")
+     762                      .dwattr $C$DW$38, DW_AT_location[DW_OP_reg5]
+     763              $C$DW$39        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR1")
+     764                      .dwattr $C$DW$39, DW_AT_location[DW_OP_reg7]
+     765              $C$DW$40        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR2")
+     766                      .dwattr $C$DW$40, DW_AT_location[DW_OP_reg9]
+     767              $C$DW$41        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
+     768                      .dwattr $C$DW$41, DW_AT_location[DW_OP_reg11]
+     769              $C$DW$42        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")
+     770                      .dwattr $C$DW$42, DW_AT_location[DW_OP_reg13]
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:15 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0914410                         PAGE   15
+
+     771              $C$DW$43        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR5")
+     772                      .dwattr $C$DW$43, DW_AT_location[DW_OP_reg15]
+     773              $C$DW$44        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0HL")
+     774                      .dwattr $C$DW$44, DW_AT_location[DW_OP_regx 0x2b]
+     775              $C$DW$45        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0H")
+     776                      .dwattr $C$DW$45, DW_AT_location[DW_OP_regx 0x2c]
+     777              $C$DW$46        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1HL")
+     778                      .dwattr $C$DW$46, DW_AT_location[DW_OP_regx 0x2f]
+     779              $C$DW$47        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1H")
+     780                      .dwattr $C$DW$47, DW_AT_location[DW_OP_regx 0x30]
+     781              $C$DW$48        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2HL")
+     782                      .dwattr $C$DW$48, DW_AT_location[DW_OP_regx 0x33]
+     783              $C$DW$49        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2H")
+     784                      .dwattr $C$DW$49, DW_AT_location[DW_OP_regx 0x34]
+     785              $C$DW$50        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3HL")
+     786                      .dwattr $C$DW$50, DW_AT_location[DW_OP_regx 0x37]
+     787              $C$DW$51        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3H")
+     788                      .dwattr $C$DW$51, DW_AT_location[DW_OP_regx 0x38]
+     789              $C$DW$52        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4HL")
+     790                      .dwattr $C$DW$52, DW_AT_location[DW_OP_regx 0x3b]
+     791              $C$DW$53        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4H")
+     792                      .dwattr $C$DW$53, DW_AT_location[DW_OP_regx 0x3c]
+     793              $C$DW$54        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5HL")
+     794                      .dwattr $C$DW$54, DW_AT_location[DW_OP_regx 0x3f]
+     795              $C$DW$55        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5H")
+     796                      .dwattr $C$DW$55, DW_AT_location[DW_OP_regx 0x40]
+     797              $C$DW$56        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6HL")
+     798                      .dwattr $C$DW$56, DW_AT_location[DW_OP_regx 0x43]
+     799              $C$DW$57        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6H")
+     800                      .dwattr $C$DW$57, DW_AT_location[DW_OP_regx 0x44]
+     801              $C$DW$58        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7HL")
+     802                      .dwattr $C$DW$58, DW_AT_location[DW_OP_regx 0x47]
+     803              $C$DW$59        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7H")
+     804                      .dwattr $C$DW$59, DW_AT_location[DW_OP_regx 0x48]
+     805              $C$DW$60        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RBL")
+     806                      .dwattr $C$DW$60, DW_AT_location[DW_OP_regx 0x49]
+     807              $C$DW$61        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RB")
+     808                      .dwattr $C$DW$61, DW_AT_location[DW_OP_regx 0x4a]
+     809              $C$DW$62        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STFL")
+     810                      .dwattr $C$DW$62, DW_AT_location[DW_OP_regx 0x27]
+     811              $C$DW$63        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STF")
+     812                      .dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x28]
+     813              $C$DW$64        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FPUHAZ")
+     814                      .dwattr $C$DW$64, DW_AT_location[DW_OP_reg27]
+     815              $C$DW$65        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+     816                      .dwattr $C$DW$65, DW_AT_location[DW_OP_regx 0x4e]
+     817                      .dwendtag $C$DW$CU
+     818              
+
+No Assembly Errors, No Assembly Warnings

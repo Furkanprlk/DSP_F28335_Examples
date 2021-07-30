@@ -1,0 +1,1 @@
+ADC Module Overview * ADC operating modes * ADC in Cascaded Mode * ADC in Dual Sequencer Mode * ADC Conversion Time * ADC Register Block * ADC Result Register Set * Lab 8_1: Convert two Potentiometer Voltages * Lab 8_2: Analogue Speed Control of “LED- counter”

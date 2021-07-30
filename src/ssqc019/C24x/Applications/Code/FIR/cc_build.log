@@ -1,0 +1,34 @@
+dspcl fir.c -g -v2xx -as -frC:\tic2xx\myprojects\Release\FIR
+[fir.c]
+TMS320C2x/C2xx/C5x ANSI C Compiler          Version 7.00
+Copyright (c) 1987-1999  Texas Instruments Incorporated 
+   "fir.c"   ==> init_GPT1
+   "fir.c"   ==> init_GPT2
+   "fir.c"   ==> init_ADC
+   "fir.c"   ==> read_ADC
+   "fir.c"   ==> lowpass_filter
+   "fir.c"   ==> comb_filter
+   "fir.c"   ==> main
+TMS320C2x/C2xx/C5x ANSI C Codegen           Version 7.00
+Copyright (c) 1987-1999  Texas Instruments Incorporated 
+   "fir.c"   ==> init_GPT1
+   "fir.c"   ==> init_GPT2
+   "fir.c"   ==> init_ADC
+   "fir.c"   ==> read_ADC
+   "fir.c"   ==> lowpass_filter
+   "fir.c"   ==> comb_filter
+   "fir.c"   ==> main
+TMS320C1x/C2x/C2xx/C5x COFF Assembler       Version 7.00
+Copyright (c) 1987-1999  Texas Instruments Incorporated 
+
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+dsplnk fir.mak
+TMS320C1x/C2x/C2xx/C5x COFF Linker      Version 7.00
+Copyright (c) 1987-1999  Texas Instruments Incorporated 
+
+Build Complete,
+  0 Errors, 0 Warnings.

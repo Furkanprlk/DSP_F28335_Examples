@@ -1,0 +1,40 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\tidcs\c28\Flash28_API\Flash28332_API_V210\example\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\lib\Flash28332_API_V210.lib"
+Source="DSP2833x_common\source\DSP2833x_CodeStartBranch.asm"
+Source="DSP2833x_common\source\DSP2833x_CSMPasswords.asm"
+Source="Example_Flash2833x_API.c"
+Source="Example_Flash2833x_CsmKeys.asm"
+Source="Example_Flash2833x_GlobalVariableDefs.c"
+Source="DSP2833x_headers\cmd\DSP2833x_Headers_nonBIOS.cmd"
+Source="Example_Flash28332_API.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -pdr -fr"C:\tidcs\c28\Flash28_API\Flash28332_API_V210\example\Debug" -i"../include" -i"./DSP2833x_Headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"C:\tidcs\c28\Flash28_API\Flash28332_API_V210\example\Release" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v28
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v28
+
+["Linker" Settings: "Debug"]
+Options=-q -c -ecode_start -m".\Debug\Example_Flash28332_API.map" -o".\Debug\Example_Flash28332_API.out" -stack0x400 -w -x -i"../lib" -l"rts2800_fpu32.lib" -l"Flash28332_API_V210.lib"
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\Example_Flash28332_API.map" -o".\Release\Example_Flash28332_API.out" -x
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Example_Flash28035_API</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>com.ti.ccstudio.managedbuild.core.ccsNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>2803x_FlashAPI_BootROMSymbols.lib</name>
+			<type>1</type>
+			<locationURI>EXT_ROOT__Example_Flash28035_API/lib/2803x_FlashAPI_BootROMSymbols.lib</locationURI>
+		</link>
+		<link>
+			<name>rts2800_ml.lib</name>
+			<type>1</type>
+			<locationURI>EXT_ROOT__Example_Flash28035_API/lib/rts2800_ml.lib</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

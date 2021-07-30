@@ -1,0 +1,1839 @@
+******************************************************************************
+             TMS320C2000 Linker PC v6.1.3                      
+******************************************************************************
+>> Linked Mon Feb 03 12:31:14 2014
+
+OUTPUT FILE NAME:   <F2837x_cpu02_bootROM_REVB.out>
+ENTRY POINT SYMBOL: "_InitBoot"  address: 003fec52
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  SYSBIOS_FLASH         00082000   00002000  00000824  000017dc  RWIX
+  Z1_SCC_ROM            003f0000   00000800  00000800  00000000  RWIX  ffff
+  Z2_SCC_ROM            003f0800   00000800  00000800  00000000  RWIX  ffff
+  TI_RESERVED           003f1000   00000008  00000008  00000000  RWIX  ffff
+  Z1_SECURE_ROM         003f1008   00006ff8  00006ff8  00000000  RWIX  ffff
+  ROM_SIGNATURE         003f8000   00000002  00000002  00000000  RWIX  ffff
+  SYSBIOS_ROM           003f8002   00001e0e  00001e0e  00000000  RWIX  ffff
+  PLCTABLES             003f9e10   00003a08  00003a08  00000000  RWIX  ffff
+  PLCTABLES2            003fd818   00000600  00000600  00000000  RWIX  ffff
+  BOOT                  003fde18   0000211a  0000211a  00000000  RWIX  ffff
+  CRCTABLE_ROM          003fff32   00000008  00000008  00000000  RWIX  ffff
+  BIST_SIGNATURE        003fff3a   00000040  00000040  00000000  RWIX
+  VERSION               003fff7a   00000002  00000002  00000000  RWIX
+  CHECKSUM              003fff7c   00000042  00000042  00000000  RWIX
+  VECS                  003fffbe   00000042  00000042  00000000  RWIX
+
+PAGE 1:
+  EBSS                  00000002   0000001e  0000000e  00000010  RWIX
+  STACK                 00000020   00000060  00000060  00000000  RWIX
+  SYSBIOS_RAM           00000780   00000080  00000068  00000018  RWIX
+  ADCA_RESULT           00000b00   00000020  00000018  00000008  RWIX
+  ADCB_RESULT           00000b20   00000020  00000018  00000008  RWIX
+  ADCC_RESULT           00000b40   00000020  00000018  00000008  RWIX
+  ADCD_RESULT           00000b60   00000020  00000018  00000008  RWIX
+  CPU_TIMER0            00000c00   00000008  00000008  00000000  RWIX
+  CPU_TIMER1            00000c08   00000008  00000008  00000000  RWIX
+  CPU_TIMER2            00000c10   00000008  00000008  00000000  RWIX
+  PIE_CTRL              00000ce0   00000020  0000001a  00000006  RWIX
+  PIE_VECT              00000d00   00000200  000001c0  00000040  RWIX
+  DMA                   00001000   00000200  000000e0  00000120  RWIX
+  CLA1                  00001400   00000040  00000040  00000000  RWIX
+  EPWM1                 00004000   00000100  00000100  00000000  RWIX
+  EPWM2                 00004100   00000100  00000100  00000000  RWIX
+  EPWM3                 00004200   00000100  00000100  00000000  RWIX
+  EPWM4                 00004300   00000100  00000100  00000000  RWIX
+  EPWM5                 00004400   00000100  00000100  00000000  RWIX
+  EPWM6                 00004500   00000100  00000100  00000000  RWIX
+  EPWM7                 00004600   00000100  00000100  00000000  RWIX
+  EPWM8                 00004700   00000100  00000100  00000000  RWIX
+  EPWM9                 00004800   00000100  00000100  00000000  RWIX
+  EPWM10                00004900   00000100  00000100  00000000  RWIX
+  EPWM11                00004a00   00000100  00000100  00000000  RWIX
+  EPWM12                00004b00   00000100  00000100  00000000  RWIX
+  ECAP1                 00005000   00000020  00000020  00000000  RWIX
+  ECAP2                 00005020   00000020  00000020  00000000  RWIX
+  ECAP3                 00005040   00000020  00000020  00000000  RWIX
+  ECAP4                 00005060   00000020  00000020  00000000  RWIX
+  ECAP5                 00005080   00000020  00000020  00000000  RWIX
+  ECAP6                 000050a0   00000020  00000020  00000000  RWIX
+  EQEP1                 00005100   00000040  00000022  0000001e  RWIX
+  EQEP2                 00005140   00000040  00000022  0000001e  RWIX
+  EQEP3                 00005180   00000040  00000022  0000001e  RWIX
+  DAC1                  00005c00   00000010  00000008  00000008  RWIX
+  DAC2                  00005c10   00000010  00000008  00000008  RWIX
+  DAC3                  00005c20   00000010  00000008  00000008  RWIX
+  CMPSS1                00005c80   00000020  00000020  00000000  RWIX
+  CMPSS2                00005ca0   00000020  00000020  00000000  RWIX
+  CMPSS3                00005cc0   00000020  00000020  00000000  RWIX
+  CMPSS4                00005ce0   00000020  00000020  00000000  RWIX
+  CMPSS5                00005d00   00000020  00000020  00000000  RWIX
+  CMPSS6                00005d20   00000020  00000020  00000000  RWIX
+  CMPSS7                00005d40   00000020  00000020  00000000  RWIX
+  CMPSS8                00005d60   00000020  00000020  00000000  RWIX
+  SDFM1                 00005e00   00000080  00000080  00000000  RWIX
+  SDFM2                 00005e80   00000080  00000080  00000000  RWIX
+  MCBSPA                00006000   00000040  00000024  0000001c  RWIX
+  MCBSPB                00006040   00000040  00000024  0000001c  RWIX
+  SPIA                  00006100   00000010  00000010  00000000  RWIX
+  SPIB                  00006110   00000010  00000010  00000000  RWIX
+  SPIC                  00006120   00000010  00000010  00000000  RWIX
+  WD                    00007000   00000040  0000002b  00000015  RWIX
+  NMIINTRUPT            00007060   00000010  00000007  00000009  RWIX
+  XINT                  00007070   00000010  0000000b  00000005  RWIX
+  SCIA                  00007200   00000010  00000010  00000000  RWIX
+  SCIB                  00007210   00000010  00000010  00000000  RWIX
+  SCIC                  00007220   00000010  00000010  00000000  RWIX
+  SCID                  00007230   00000010  00000010  00000000  RWIX
+  I2CA                  00007300   00000040  00000022  0000001e  RWIX
+  I2CB                  00007340   00000040  00000022  0000001e  RWIX
+  ADCA                  00007400   00000080  00000080  00000000  RWIX
+  ADCB                  00007480   00000080  00000080  00000000  RWIX
+  ADCC                  00007500   00000080  00000080  00000000  RWIX
+  ADCD                  00007580   00000080  00000080  00000000  RWIX
+  TRIG                  00007900   00000050  00000000  00000050  RWIX
+  DMACLASRCSEL          00007980   00000040  0000001a  00000026  RWIX
+  XBAR_CONFIG           00007a00   00000200  00000000  00000200  RWIX
+  GPIOCTRL              00007c00   00000180  00000000  00000180  RWIX
+  GPIODAT               00007f00   00000030  00000030  00000000  RWIX
+  EMIF1                 00047000   00000800  00000070  00000790  RWIX
+  EMIF2                 00047800   00000800  00000070  00000790  RWIX
+  DCANA                 00048000   00001000  00000200  00000e00  RWIX
+  DCANB                 0004a000   00001000  00000200  00000e00  RWIX
+  IPC                   00050000   00001000  00000026  00000fda  RWIX
+  DEV_CFG               0005d000   00000200  00000000  00000200  RWIX
+  CLK_CFG               0005d200   00000100  00000032  000000ce  RWIX
+  CPU_SYS               0005d300   00000100  00000082  0000007e  RWIX
+  HWBIST                0005e000   00000100  000000a2  0000005e  RWIX
+  DCSM_Z1               0005f000   00000030  00000024  0000000c  RWIX
+  DCSM_Z2               0005f040   00000030  00000024  0000000c  RWIX
+  DCSM_COMMON           0005f070   00000010  00000008  00000008  RWIX
+  MEMCFG                0005f400   00000400  00000142  000002be  RWIX
+  FLASH_CTRL            0005f800   00000300  00000182  0000017e  RWIX
+  FLASH_ECC             0005fb00   00000040  00000028  00000018  RWIX
+  DCSM_OTP_Z2           00078000   00000020  0000001a  00000006  RWIX
+  DCSM_OTP_Z1           00078200   00000020  0000001a  00000006  RWIX
+  CLA1_DATAROM_RESERVED 01001000   00000070  00000070  00000000  RWIX  ffff
+  CLA1_FFT_TABLES       01001070   00000800  00000800  00000000  RWIX  ffff
+  CLA1_DATAROM          01001870   0000078a  0000078a  00000000  RWIX  ffff
+  CROM_VERSION          01001ffa   00000006  00000006  00000000  RWIX  ffff
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+SYSBIO_NOLOAD 
+*          1    00000000    00004ee0     DSECT
+                  00000000    0000202a     rom.obj (.text)
+                  0000202a    00000418     rom.obj (.cinit)
+                  00002442    00001ff7     rom.obj (.econst)
+                  00004439    00000001     --HOLE--
+                  0000443a    00000002     rom.obj (.reset)
+                  0000443c    00000004     --HOLE--
+                  00004440    00000952     rom.obj (.ebss)
+                  00004d92    0000002e     --HOLE--
+                  00004dc0    00000120     rom.obj (.cio)
+
+xdc.meta   0    00000000    000000eb     DSECT
+                  00000000    000000eb     rom.obj (xdc.meta)
+
+Cla1SoftIntRegsFile 
+*          1    00000ce0    00000002     DSECT
+                  00000ce0    00000002     F2837x_GlobalVariableDefs.obj (Cla1SoftIntRegsFile)
+
+SYSBIOSFLASH 
+*          0    00082000    00000824     NOLOAD SECTION
+                  00082000    00000824     rom.obj (.sysbios_flash) [fill = 0]
+
+SCCLZ1     0    003f0000    000005ed     
+                  003f0000    000005c2     ti_internal.obj (SCCLZ1)
+                  003f05c2    0000002b     SafeCRCCalc.obj (SCCLZ1)
+
+$fill000   0    003f05ed    00000213     
+                  003f05ed    00000213     --HOLE-- [fill = ffff]
+
+SCCLZ2     0    003f0800    000005ed     
+                  003f0800    000005c2     ti_internal.obj (SCCLZ2)
+                  003f0dc2    0000002b     SafeCRCCalc.obj (SCCLZ2)
+
+$fill001   0    003f0ded    00000213     
+                  003f0ded    00000213     --HOLE-- [fill = ffff]
+
+$fill002   0    003f1000    00000008     
+                  003f1000    00000008     --HOLE-- [fill = ffff]
+
+$fill003   0    003f1008    00006ff8     
+                  003f1008    00006ff8     --HOLE-- [fill = ffff]
+
+.test_signature1 
+*          0    003f8000    00000002     
+                  003f8000    00000002     c2brom_Init_Boot.obj (.test_signature1)
+
+SYSBIOSROM 
+*          0    003f8002    00001d6c     
+                  003f8002    00001d6c     rom.obj (.sysbios_rom)
+
+$fill004   0    003f9d6e    000000a2     
+                  003f9d6e    000000a2     --HOLE-- [fill = ffff]
+
+PLC_TABLE 
+*          0    003f9e10    00001400     
+                  003f9e10    00001400     mac_plc.obj (PLC_TABLE)
+
+PLC_PHYcosinTable 
+*          0    003fb210    00000800     
+                  003fb210    00000800     phy_cosinTable.obj (PLC_PHYcosinTable)
+
+PLC_FSKGSNINT8TABLE 
+*          0    003fba10    000000a0     
+                  003fba10    000000a0     phy_fskGsnIntFiltTable.obj (PLC_FSKGSNINT8TABLE)
+
+PLC_OFDMSTF 
+*          0    003fbab0    00000080     
+                  003fbab0    00000080     phy_ofdmStfTable.obj (PLC_OFDMSTF)
+
+PLC_ODFMLTFBEG 
+*          0    003fbb30    00000020     
+                  003fbb30    00000020     phy_ofdmLtfBegFreqsTable.obj (PLC_ODFMLTFBEG)
+
+PLC_FSKGSNINT50TABLE 
+*          0    003fbb50    000003e8     
+                  003fbb50    000003e8     phy_fskGsnIntFiltTable.obj (PLC_FSKGSNINT50TABLE)
+
+PLC_PHYPN9TABLE 
+*          0    003fbf38    00000200     
+                  003fbf38    00000200     phy_pn9Table.obj (PLC_PHYPN9TABLE)
+
+sunPhyTable 
+*          0    003fc138    00000460     
+                  003fc138    0000021a     phy_ofdmChEstFirTable.obj (sunPhyTable)
+                  003fc352    00000108     phy_ofdmChEstFirTrackingTable.obj (sunPhyTable)
+                  003fc45a    000000c0     phy_fskTxSrcCoefTable.obj (sunPhyTable)
+                  003fc51a    00000060     phy_ofdmIlvTable.obj (sunPhyTable)
+                  003fc57a    0000001e     phy_ofdmLtfEndFreqsTable.obj (sunPhyTable)
+
+twiddleFactors 
+*          0    003fc598    00000df0     
+                  003fc598    000007f0     phy_tf1024pFFTTable.obj (twiddleFactors)
+                  003fcd88    00000600     phy_tf384pFFTTable.obj (twiddleFactors)
+
+primeTxPreamble 
+*          0    003fd388    00000210     
+                  003fd388    00000210     phy_primetxpreamble.obj (primeTxPreamble)
+
+primeRxPreamble 
+*          0    003fd598    00000200     
+                  003fd598    00000200     phy_primrxpreamble.obj (primeRxPreamble)
+
+primePrefTable 
+*          0    003fd798    00000080     
+                  003fd798    00000080     phy_primeprefTable.obj (primePrefTable)
+
+sunPhyTable1 
+*          0    003fd818    00000600     
+                  003fd818    00000600     phy_ofdmLtfTable.obj (sunPhyTable1)
+
+.text      0    003fde18    00000e3a     
+                  003fde18    000003cd     c2core_bootrom_interrupts.obj (.text:retain)
+                  003fe1e5    0000026c     c2brom_boot.obj (.text)
+                  003fe451    0000021a     c2core_bootrom_interrupts.obj (.text)
+                  003fe66b    000000e3     c2core_bootrom_ipc_commands.obj (.text)
+                  003fe74e    000000bc     SPI_Boot.obj (.text)
+                  003fe80a    000000b0     sysctl.obj (.text)
+                  003fe8ba    000000b0     watchdog.obj (.text)
+                  003fe96a    0000008f     I2C_Boot.obj (.text)
+                  003fe9f9    00000088     DCAN_Boot.obj (.text)
+                  003fea81    00000075     SCI_Boot.obj (.text)
+                  003feaf6    00000075     nmi.obj (.text)
+                  003feb6b    00000056     Parallel_Boot.obj (.text)
+                  003febc1    00000046     Shared_Boot.obj (.text)
+                  003fec07    00000045     SelectMode_Boot.obj (.text)
+                  003fec4c    00000006     c2brom_utility_funcs.obj (.text)
+
+.InitBoot 
+*          0    003fec52    00000096     
+                  003fec52    00000096     c2brom_Init_Boot.obj (.InitBoot)
+
+$fill005   0    003fece8    0000124a     
+                  003fece8    0000124a     --HOLE-- [fill = ffff]
+
+.crctable_forsecrom 
+*          0    003fff32    00000008     
+                  003fff32    00000008     SafeCRCCalc.obj (.crctable_forsecrom)
+
+.bist_signature 
+*          0    003fff3a    00000040     
+                  003fff3a    00000040     c2brom_Init_Boot.obj (.bist_signature)
+
+.Version   0    003fff7a    00000002     
+                  003fff7a    00000002     c2brom_Init_Boot.obj (.Version)
+
+.CKSUMLOC 
+*          0    003fff7c    00000042     
+                  003fff7c    00000042     c2brom_checksum.obj (.CKSUMLOC)
+
+.BootVecs 
+*          0    003fffbe    00000042     
+                  003fffbe    00000042     Vectors_Boot.obj (.BootVecs)
+
+.ebss      1    00000002    0000000e     UNINITIALIZED
+                  00000002    00000006     c2brom_boot.obj (.ebss)
+                  00000008    00000006     c2core_bootrom_interrupts.obj (.ebss)
+                  0000000e    00000002     Shared_Boot.obj (.ebss)
+
+.stack     1    00000020    00000060     UNINITIALIZED
+                  00000020    00000060     --HOLE--
+
+SYSBIOSRAM 
+*          1    00000780    00000068     NOLOAD SECTION
+                  00000780    00000068     rom.obj (.sysbios_ram)
+
+AdcaResultFile 
+*          1    00000b00    00000018     UNINITIALIZED
+                  00000b00    00000018     F2837x_GlobalVariableDefs.obj (AdcaResultFile)
+
+AdcbResultFile 
+*          1    00000b20    00000018     UNINITIALIZED
+                  00000b20    00000018     F2837x_GlobalVariableDefs.obj (AdcbResultFile)
+
+AdccResultFile 
+*          1    00000b40    00000018     UNINITIALIZED
+                  00000b40    00000018     F2837x_GlobalVariableDefs.obj (AdccResultFile)
+
+AdcdResultFile 
+*          1    00000b60    00000018     UNINITIALIZED
+                  00000b60    00000018     F2837x_GlobalVariableDefs.obj (AdcdResultFile)
+
+CpuTimer0RegsFile 
+*          1    00000c00    00000008     UNINITIALIZED
+                  00000c00    00000008     F2837x_GlobalVariableDefs.obj (CpuTimer0RegsFile)
+
+CpuTimer1RegsFile 
+*          1    00000c08    00000008     UNINITIALIZED
+                  00000c08    00000008     F2837x_GlobalVariableDefs.obj (CpuTimer1RegsFile)
+
+CpuTimer2RegsFile 
+*          1    00000c10    00000008     UNINITIALIZED
+                  00000c10    00000008     F2837x_GlobalVariableDefs.obj (CpuTimer2RegsFile)
+
+PieCtrlRegsFile 
+*          1    00000ce0    0000001a     UNINITIALIZED
+                  00000ce0    0000001a     F2837x_GlobalVariableDefs.obj (PieCtrlRegsFile)
+
+PieVectTableFile 
+*          1    00000d00    000001c0     UNINITIALIZED
+                  00000d00    000001c0     F2837x_GlobalVariableDefs.obj (PieVectTableFile)
+
+EmuKeyVar 
+*          1    00000d00    00000001     UNINITIALIZED
+                  00000d00    00000001     F2837x_GlobalVariableDefs.obj (EmuKeyVar)
+
+EmuBModeVar 
+*          1    00000d01    00000001     UNINITIALIZED
+                  00000d01    00000001     F2837x_GlobalVariableDefs.obj (EmuBModeVar)
+
+FlashCallbackVar 
+*          1    00000d02    00000000     UNINITIALIZED
+
+FlashScalingVar 
+*          1    00000d02    00000000     UNINITIALIZED
+
+DmaRegsFile 
+*          1    00001000    000000e0     UNINITIALIZED
+                  00001000    000000e0     F2837x_GlobalVariableDefs.obj (DmaRegsFile)
+
+Cla1RegsFile 
+*          1    00001400    00000040     UNINITIALIZED
+                  00001400    00000040     F2837x_GlobalVariableDefs.obj (Cla1RegsFile)
+
+EPwm1RegsFile 
+*          1    00004000    00000100     UNINITIALIZED
+                  00004000    00000100     F2837x_GlobalVariableDefs.obj (EPwm1RegsFile)
+
+EPwm2RegsFile 
+*          1    00004100    00000100     UNINITIALIZED
+                  00004100    00000100     F2837x_GlobalVariableDefs.obj (EPwm2RegsFile)
+
+EPwm3RegsFile 
+*          1    00004200    00000100     UNINITIALIZED
+                  00004200    00000100     F2837x_GlobalVariableDefs.obj (EPwm3RegsFile)
+
+EPwm4RegsFile 
+*          1    00004300    00000100     UNINITIALIZED
+                  00004300    00000100     F2837x_GlobalVariableDefs.obj (EPwm4RegsFile)
+
+EPwm5RegsFile 
+*          1    00004400    00000100     UNINITIALIZED
+                  00004400    00000100     F2837x_GlobalVariableDefs.obj (EPwm5RegsFile)
+
+EPwm6RegsFile 
+*          1    00004500    00000100     UNINITIALIZED
+                  00004500    00000100     F2837x_GlobalVariableDefs.obj (EPwm6RegsFile)
+
+EPwm7RegsFile 
+*          1    00004600    00000100     UNINITIALIZED
+                  00004600    00000100     F2837x_GlobalVariableDefs.obj (EPwm7RegsFile)
+
+EPwm8RegsFile 
+*          1    00004700    00000100     UNINITIALIZED
+                  00004700    00000100     F2837x_GlobalVariableDefs.obj (EPwm8RegsFile)
+
+EPwm9RegsFile 
+*          1    00004800    00000100     UNINITIALIZED
+                  00004800    00000100     F2837x_GlobalVariableDefs.obj (EPwm9RegsFile)
+
+EPwm10RegsFile 
+*          1    00004900    00000100     UNINITIALIZED
+                  00004900    00000100     F2837x_GlobalVariableDefs.obj (EPwm10RegsFile)
+
+EPwm11RegsFile 
+*          1    00004a00    00000100     UNINITIALIZED
+                  00004a00    00000100     F2837x_GlobalVariableDefs.obj (EPwm11RegsFile)
+
+EPwm12RegsFile 
+*          1    00004b00    00000100     UNINITIALIZED
+                  00004b00    00000100     F2837x_GlobalVariableDefs.obj (EPwm12RegsFile)
+
+ECap1RegsFile 
+*          1    00005000    00000020     UNINITIALIZED
+                  00005000    00000020     F2837x_GlobalVariableDefs.obj (ECap1RegsFile)
+
+ECap2RegsFile 
+*          1    00005020    00000020     UNINITIALIZED
+                  00005020    00000020     F2837x_GlobalVariableDefs.obj (ECap2RegsFile)
+
+ECap3RegsFile 
+*          1    00005040    00000020     UNINITIALIZED
+                  00005040    00000020     F2837x_GlobalVariableDefs.obj (ECap3RegsFile)
+
+ECap4RegsFile 
+*          1    00005060    00000020     UNINITIALIZED
+                  00005060    00000020     F2837x_GlobalVariableDefs.obj (ECap4RegsFile)
+
+ECap5RegsFile 
+*          1    00005080    00000020     UNINITIALIZED
+                  00005080    00000020     F2837x_GlobalVariableDefs.obj (ECap5RegsFile)
+
+ECap6RegsFile 
+*          1    000050a0    00000020     UNINITIALIZED
+                  000050a0    00000020     F2837x_GlobalVariableDefs.obj (ECap6RegsFile)
+
+EQep1RegsFile 
+*          1    00005100    00000022     UNINITIALIZED
+                  00005100    00000022     F2837x_GlobalVariableDefs.obj (EQep1RegsFile)
+
+EQep2RegsFile 
+*          1    00005140    00000022     UNINITIALIZED
+                  00005140    00000022     F2837x_GlobalVariableDefs.obj (EQep2RegsFile)
+
+EQep3RegsFile 
+*          1    00005180    00000022     UNINITIALIZED
+                  00005180    00000022     F2837x_GlobalVariableDefs.obj (EQep3RegsFile)
+
+Dac1RegsFile 
+*          1    00005c00    00000008     UNINITIALIZED
+                  00005c00    00000008     F2837x_GlobalVariableDefs.obj (Dac1RegsFile)
+
+Dac2RegsFile 
+*          1    00005c10    00000008     UNINITIALIZED
+                  00005c10    00000008     F2837x_GlobalVariableDefs.obj (Dac2RegsFile)
+
+Dac3RegsFile 
+*          1    00005c20    00000008     UNINITIALIZED
+                  00005c20    00000008     F2837x_GlobalVariableDefs.obj (Dac3RegsFile)
+
+Cmpss1RegsFile 
+*          1    00005c80    00000020     UNINITIALIZED
+                  00005c80    00000020     F2837x_GlobalVariableDefs.obj (Cmpss1RegsFile)
+
+Cmpss2RegsFile 
+*          1    00005ca0    00000020     UNINITIALIZED
+                  00005ca0    00000020     F2837x_GlobalVariableDefs.obj (Cmpss2RegsFile)
+
+Cmpss3RegsFile 
+*          1    00005cc0    00000020     UNINITIALIZED
+                  00005cc0    00000020     F2837x_GlobalVariableDefs.obj (Cmpss3RegsFile)
+
+Cmpss4RegsFile 
+*          1    00005ce0    00000020     UNINITIALIZED
+                  00005ce0    00000020     F2837x_GlobalVariableDefs.obj (Cmpss4RegsFile)
+
+Cmpss5RegsFile 
+*          1    00005d00    00000020     UNINITIALIZED
+                  00005d00    00000020     F2837x_GlobalVariableDefs.obj (Cmpss5RegsFile)
+
+Cmpss6RegsFile 
+*          1    00005d20    00000020     UNINITIALIZED
+                  00005d20    00000020     F2837x_GlobalVariableDefs.obj (Cmpss6RegsFile)
+
+Cmpss7RegsFile 
+*          1    00005d40    00000020     UNINITIALIZED
+                  00005d40    00000020     F2837x_GlobalVariableDefs.obj (Cmpss7RegsFile)
+
+Cmpss8RegsFile 
+*          1    00005d60    00000020     UNINITIALIZED
+                  00005d60    00000020     F2837x_GlobalVariableDefs.obj (Cmpss8RegsFile)
+
+Sdfm1RegsFile 
+*          1    00005e00    00000080     UNINITIALIZED
+                  00005e00    00000080     F2837x_GlobalVariableDefs.obj (Sdfm1RegsFile)
+
+Sdfm2RegsFile 
+*          1    00005e80    00000080     UNINITIALIZED
+                  00005e80    00000080     F2837x_GlobalVariableDefs.obj (Sdfm2RegsFile)
+
+McbspaRegsFile 
+*          1    00006000    00000024     UNINITIALIZED
+                  00006000    00000024     F2837x_GlobalVariableDefs.obj (McbspaRegsFile)
+
+McbspbRegsFile 
+*          1    00006040    00000024     UNINITIALIZED
+                  00006040    00000024     F2837x_GlobalVariableDefs.obj (McbspbRegsFile)
+
+SpiaRegsFile 
+*          1    00006100    00000010     UNINITIALIZED
+                  00006100    00000010     F2837x_GlobalVariableDefs.obj (SpiaRegsFile)
+
+SpibRegsFile 
+*          1    00006110    00000010     UNINITIALIZED
+                  00006110    00000010     F2837x_GlobalVariableDefs.obj (SpibRegsFile)
+
+SpicRegsFile 
+*          1    00006120    00000010     UNINITIALIZED
+                  00006120    00000010     F2837x_GlobalVariableDefs.obj (SpicRegsFile)
+
+WdRegsFile 
+*          1    00007000    0000002b     UNINITIALIZED
+                  00007000    0000002b     F2837x_GlobalVariableDefs.obj (WdRegsFile)
+
+NmiIntruptRegsFile 
+*          1    00007060    00000007     UNINITIALIZED
+                  00007060    00000007     F2837x_GlobalVariableDefs.obj (NmiIntruptRegsFile)
+
+XintRegsFile 
+*          1    00007070    0000000b     UNINITIALIZED
+                  00007070    0000000b     F2837x_GlobalVariableDefs.obj (XintRegsFile)
+
+SciaRegsFile 
+*          1    00007200    00000010     UNINITIALIZED
+                  00007200    00000010     F2837x_GlobalVariableDefs.obj (SciaRegsFile)
+
+ScibRegsFile 
+*          1    00007210    00000010     UNINITIALIZED
+                  00007210    00000010     F2837x_GlobalVariableDefs.obj (ScibRegsFile)
+
+ScicRegsFile 
+*          1    00007220    00000010     UNINITIALIZED
+                  00007220    00000010     F2837x_GlobalVariableDefs.obj (ScicRegsFile)
+
+ScidRegsFile 
+*          1    00007230    00000010     UNINITIALIZED
+                  00007230    00000010     F2837x_GlobalVariableDefs.obj (ScidRegsFile)
+
+I2caRegsFile 
+*          1    00007300    00000022     UNINITIALIZED
+                  00007300    00000022     F2837x_GlobalVariableDefs.obj (I2caRegsFile)
+
+I2cbRegsFile 
+*          1    00007340    00000022     UNINITIALIZED
+                  00007340    00000022     F2837x_GlobalVariableDefs.obj (I2cbRegsFile)
+
+AdcaRegsFile 
+*          1    00007400    00000080     UNINITIALIZED
+                  00007400    00000080     F2837x_GlobalVariableDefs.obj (AdcaRegsFile)
+
+AdcbRegsFile 
+*          1    00007480    00000080     UNINITIALIZED
+                  00007480    00000080     F2837x_GlobalVariableDefs.obj (AdcbRegsFile)
+
+AdccRegsFile 
+*          1    00007500    00000080     UNINITIALIZED
+                  00007500    00000080     F2837x_GlobalVariableDefs.obj (AdccRegsFile)
+
+AdcdRegsFile 
+*          1    00007580    00000080     UNINITIALIZED
+                  00007580    00000080     F2837x_GlobalVariableDefs.obj (AdcdRegsFile)
+
+DmaClaSrcSelRegsFile 
+*          1    00007980    0000001a     UNINITIALIZED
+                  00007980    0000001a     F2837x_GlobalVariableDefs.obj (DmaClaSrcSelRegsFile)
+
+GpioDataRegsFile 
+*          1    00007f00    00000030     UNINITIALIZED
+                  00007f00    00000030     F2837x_GlobalVariableDefs.obj (GpioDataRegsFile)
+
+Emif1RegsFile 
+*          1    00047000    00000070     UNINITIALIZED
+                  00047000    00000070     F2837x_GlobalVariableDefs.obj (Emif1RegsFile)
+
+Emif2RegsFile 
+*          1    00047800    00000070     UNINITIALIZED
+                  00047800    00000070     F2837x_GlobalVariableDefs.obj (Emif2RegsFile)
+
+DcanaRegsFile 
+*          1    00048000    00000200     UNINITIALIZED
+                  00048000    00000200     F2837x_GlobalVariableDefs.obj (DcanaRegsFile)
+
+DcanbRegsFile 
+*          1    0004a000    00000200     UNINITIALIZED
+                  0004a000    00000200     F2837x_GlobalVariableDefs.obj (DcanbRegsFile)
+
+IpcRegsFile 
+*          1    00050000    00000026     UNINITIALIZED
+                  00050000    00000026     F2837x_GlobalVariableDefs.obj (IpcRegsFile)
+
+ClkCfgRegsFile 
+*          1    0005d200    00000032     UNINITIALIZED
+                  0005d200    00000032     F2837x_GlobalVariableDefs.obj (ClkCfgRegsFile)
+
+CpuSysRegsFile 
+*          1    0005d300    00000082     UNINITIALIZED
+                  0005d300    00000082     F2837x_GlobalVariableDefs.obj (CpuSysRegsFile)
+
+HwbistRegsFile 
+*          1    0005e000    000000a2     UNINITIALIZED
+                  0005e000    000000a2     F2837x_GlobalVariableDefs.obj (HwbistRegsFile)
+
+DcsmRegsZ1File 
+*          1    0005f000    00000024     UNINITIALIZED
+                  0005f000    00000024     F2837x_GlobalVariableDefs.obj (DcsmRegsZ1File)
+
+DcsmRegsZ2File 
+*          1    0005f040    00000024     UNINITIALIZED
+                  0005f040    00000024     F2837x_GlobalVariableDefs.obj (DcsmRegsZ2File)
+
+DcsmRegsCommonFile 
+*          1    0005f070    00000008     UNINITIALIZED
+                  0005f070    00000008     F2837x_GlobalVariableDefs.obj (DcsmRegsCommonFile)
+
+MemCfgRegsFile 
+*          1    0005f400    00000142     UNINITIALIZED
+                  0005f400    00000142     F2837x_GlobalVariableDefs.obj (MemCfgRegsFile)
+
+FlashCtrlRegsFile 
+*          1    0005f800    00000182     UNINITIALIZED
+                  0005f800    00000182     F2837x_GlobalVariableDefs.obj (FlashCtrlRegsFile)
+
+FlashEccRegsFile 
+*          1    0005fb00    00000028     UNINITIALIZED
+                  0005fb00    00000028     F2837x_GlobalVariableDefs.obj (FlashEccRegsFile)
+
+DcsmOtpZ2File 
+*          1    00078000    0000001a     UNINITIALIZED
+                  00078000    0000001a     F2837x_GlobalVariableDefs.obj (DcsmOtpZ2File)
+
+DcsmOtpZ1File 
+*          1    00078200    0000001a     UNINITIALIZED
+                  00078200    0000001a     F2837x_GlobalVariableDefs.obj (DcsmOtpZ1File)
+
+$fill006   1    01001000    00000070     
+                  01001000    00000070     --HOLE-- [fill = ffff]
+
+.CLA1fftTables 
+*          1    01001070    00000800     
+                  01001070    00000800     fft_twiddle_bit_reverse.obj (.CLA1fftTables)
+
+CLA1mathTables 
+*          1    01001870    00000784     
+                  01001870    0000018c     CLAatanTable.obj (CLA1mathTables)
+                  010019fc    0000018a     CLAasineTable.obj (CLA1mathTables)
+                  01001b86    00000184     CLAacosineTable.obj (CLA1mathTables)
+                  01001d0a    00000156     CLASinCosTable.obj (CLA1mathTables)
+                  01001e60    000000d2     CLAlnTable.obj (CLA1mathTables)
+                  01001f32    000000c2     CLAexpTable.obj (CLA1mathTables)
+
+$fill007   1    01001ff4    00000006     
+                  01001ff4    00000006     --HOLE-- [fill = ffff]
+
+.CROMVersion 
+*          1    01001ffa    00000002     
+                  01001ffa    00000002     cla_rom_version.obj (.CROMVersion)
+
+$fill008   1    01001ffc    00000004     
+                  01001ffc    00000004     --HOLE-- [fill = ffff]
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+003fde18   .text
+00007400   _AdcaRegs
+00000b00   _AdcaResultRegs
+00007480   _AdcbRegs
+00000b20   _AdcbResultRegs
+00007500   _AdccRegs
+00000b40   _AdccResultRegs
+00007580   _AdcdRegs
+00000b60   _AdcdResultRegs
+01001e66   _CLABIAS
+01001f42   _CLAExpTable
+01001ff4   _CLAExpTableEnd
+01001f32   _CLAINV1
+01001f34   _CLAINV2
+01001874   _CLAINV2PI
+01001f36   _CLAINV3
+01001f38   _CLAINV4
+01001f3a   _CLAINV5
+01001f3c   _CLAINV6
+01001f3e   _CLAINV7
+01001e64   _CLALNV10
+01001e60   _CLALNV2
+01001e62   _CLALNVe
+01001e68   _CLALN_TABLE_MASK1
+01001e6a   _CLALN_TABLE_MASK2
+01001f40   _CLALOG10
+01001e6c   _CLALnTable
+01001f32   _CLALnTableEnd
+01001b86   _CLAacosinHalfPITable
+01001b8a   _CLAacosinTable
+01001d0a   _CLAacosinTableEnd
+010019fc   _CLAasinHalfPITable
+01001a00   _CLAasinTable
+01001b86   _CLAasinTableEnd
+01001870   _CLAatan2HalfPITable
+01001876   _CLAatan2Table
+010019fc   _CLAatan2TableEnd
+01001d4a   _CLAcosTable
+01001e4c   _CLAcosTableEnd
+01001d0a   _CLAsinTable
+01001e0a   _CLAsinTableEnd
+01001d0a   _CLAsincosTable
+01001e60   _CLAsincosTableEnd
+01001e54   _CLAsincosTable_Coef0
+01001e56   _CLAsincosTable_Coef1
+01001e58   _CLAsincosTable_Coef1_pos
+01001e5a   _CLAsincosTable_Coef2
+01001e5c   _CLAsincosTable_Coef3
+01001e5e   _CLAsincosTable_Coef3_neg
+01001d4a   _CLAsincosTable_Cos0
+01001d0a   _CLAsincosTable_Sin0
+01001e52   _CLAsincosTable_TABLE_MASK
+01001e4c   _CLAsincosTable_TABLE_SIZE
+01001e4e   _CLAsincosTable_TABLE_SIZEDivTwoPi
+01001e50   _CLAsincosTable_TwoPiDivTABLE_SIZE
+003f05c2   _CRCCalcZ1
+003f0dc2   _CRCCalcZ2
+00001400   _Cla1Regs
+00000ce0   _Cla1SoftIntRegs
+0005d200   _ClkCfgRegs
+00005c80   _Cmpss1Regs
+00005ca0   _Cmpss2Regs
+00005cc0   _Cmpss3Regs
+00005ce0   _Cmpss4Regs
+00005d00   _Cmpss5Regs
+00005d20   _Cmpss6Regs
+00005d40   _Cmpss7Regs
+00005d60   _Cmpss8Regs
+003febc1   _CopyData
+0005d300   _CpuSysRegs
+00000c00   _CpuTimer0Regs
+00000c08   _CpuTimer1Regs
+00000c10   _CpuTimer2Regs
+003fe9f9   _DCAN_Boot
+003fea2e   _DCAN_Boot_Gpio
+003fea32   _DCAN_Boot_Init
+003fea62   _DCAN_GetWordData
+003fea70   _DCAN_SendWordData
+00005c00   _Dac1Regs
+00005c10   _Dac2Regs
+00005c20   _Dac3Regs
+00048000   _DcanaRegs
+0004a000   _DcanbRegs
+00078200   _DcsmOtpZ1
+00078000   _DcsmOtpZ2
+0005f070   _DcsmRegsCommon
+0005f000   _DcsmRegsZ1
+0005f040   _DcsmRegsZ2
+00007980   _DmaClaSrcSelRegs
+00001000   _DmaRegs
+00005000   _ECap1Regs
+00005020   _ECap2Regs
+00005040   _ECap3Regs
+00005060   _ECap4Regs
+00005080   _ECap5Regs
+000050a0   _ECap6Regs
+00047000   _EMif1Regs
+00047800   _EMif2Regs
+00004900   _EPwm10Regs
+00004a00   _EPwm11Regs
+00004b00   _EPwm12Regs
+00004000   _EPwm1Regs
+00004100   _EPwm2Regs
+00004200   _EPwm3Regs
+00004300   _EPwm4Regs
+00004400   _EPwm5Regs
+00004500   _EPwm6Regs
+00004600   _EPwm7Regs
+00004700   _EPwm8Regs
+00004800   _EPwm9Regs
+00005100   _EQep1Regs
+00005140   _EQep2Regs
+00005180   _EQep3Regs
+00000d01   _EmuBMode
+00000d00   _EmuKey
+0005f800   _FlashCtrlRegs
+0005fb00   _FlashEccRegs
+003febe5   _GetLongData
+0000000e   _GetWordData
+00007f00   _GpioDataRegs
+0005e000   _HwbistRegs
+003fe9a9   _I2C_Boot
+003fe9e6   _I2C_GetWord
+00007300   _I2caRegs
+00007340   _I2cbRegs
+003fec52   _InitBoot
+003fe21e   _InitDCSM
+00050000   _IpcRegs
+00006000   _McbspaRegs
+00006040   _McbspbRegs
+0005f400   _MemCfgRegs
+00007060   _NmiIntruptRegs
+003fb210   _PHY_cosinTable
+003fbb50   _PHY_fskGsnIntFilt50Table
+003fba10   _PHY_fskGsnIntFilt8Table
+003fc45a   _PHY_fskTxSrcCoefTable
+003fc16c   _PHY_ofdmChEstFir
+003fc51a   _PHY_ofdmDeIlvMCS5_6_LUT
+003fc54a   _PHY_ofdmIlvMCS5_6_LUT
+003fbb30   _PHY_ofdmLtfBegFreqs
+003fc57a   _PHY_ofdmLtfEndFreqs
+003fc138   _PHY_ofdmLtfRxTable
+003fd818   _PHY_ofdmLtfm4freq
+003fbab0   _PHY_ofdmStfPreambleTbl
+003fc352   _PHY_ofdmchEstFirTracking
+003fbf38   _PHY_pn9Table
+003fd798   _PHY_primePrefTable
+003fd598   _PHY_primeRXPreamble
+003fd388   _PHY_primeTXPreamble
+003fcae8   _PHY_tf1024pFFTTable_vcu0
+003fc598   _PHY_tf1024pFFTTable_vcu2
+003fcd88   _PHY_tf384pFFTTable
+003feb6b   _Parallel_Boot
+003feb85   _Parallel_GetWordData_8bit
+00000ce0   _PieCtrlRegs
+00000d00   _PieVectTable
+003febf7   _ReadReservedFn
+003feadb   _SCIA_GetWordData
+003fea81   _SCI_Boot
+003fe7de   _SPIA_GetWordData
+003fe7ec   _SPIA_Init
+003fe7bd   _SPIA_SetAddress_KeyChk
+003fe780   _SPI_Boot
+003fe798   _SPI_start_Boot
+003f02c3   _SafeCRCCalcZ1
+003f0ac3   _SafeCRCCalcZ2
+003f0000   _SafeCopyCodeZ1
+003f0800   _SafeCopyCodeZ2
+00007200   _SciaRegs
+00007210   _ScibRegs
+00007220   _ScicRegs
+00007230   _ScidRegs
+00005e00   _Sd1Regs
+00005e80   _Sd2Regs
+003fec07   _SelectBootMode
+00006100   _SpiaRegs
+00006110   _SpibRegs
+00006120   _SpicRegs
+003fa010   _Td0
+003f9e10   _Td1
+003fa410   _Td2
+003fa210   _Td3
+003fa610   _Td4
+003faa10   _Te0
+003fa810   _Te1
+003fae10   _Te2
+003fac10   _Te3
+003fb010   _Te4
+00007000   _WdRegs
+00007070   _XintRegs
+00000080   __STACK_END
+00000060   __STACK_SIZE
+00000001   __TI_args_main
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+003fec52   ___etext__
+ffffffff   ___pinit__
+003fde18   ___text__
+003fec4c   _branch_to_entryaddress
+0000000c   _c1c2_branch_addr
+003fe6a3   _c2brom_c1c2_ipc_clear_bits_16
+003fe6ae   _c2brom_c1c2_ipc_clear_bits_32
+003fe6f7   _c2brom_c1c2_ipc_clear_bits_protected_16
+003fe705   _c2brom_c1c2_ipc_clear_bits_protected_32
+003fe742   _c2brom_c1c2_ipc_func_call_command
+003fe00b   _c2brom_c1c2_ipc_int1_isr
+003fe6ce   _c2brom_c1c2_ipc_read_data_16
+003fe6d5   _c2brom_c1c2_ipc_read_data_32
+003fe72e   _c2brom_c1c2_ipc_read_data_protected_16
+003fe738   _c2brom_c1c2_ipc_read_data_protected_32
+003fe68e   _c2brom_c1c2_ipc_set_bits_16
+003fe698   _c2brom_c1c2_ipc_set_bits_32
+003fe6dc   _c2brom_c1c2_ipc_set_bits_protected_16
+003fe6e9   _c2brom_c1c2_ipc_set_bits_protected_32
+003fe6ba   _c2brom_c1c2_ipc_write_data_16
+003fe6c4   _c2brom_c1c2_ipc_write_data_32
+003fe714   _c2brom_c1c2_ipc_write_data_protected_16
+003fe721   _c2brom_c1c2_ipc_write_data_protected_32
+00000004   _c2brom_current_c1c2_ipc
+003fe2d0   _c2brom_evaluate_bootmode
+003fe44c   _c2brom_handle_idle_lpm
+003fdeaa   _c2brom_handle_nmi
+003fe532   _c2brom_handle_nmi_at_start
+003fe451   _c2brom_handle_nmi_for_pie_mismatch
+003fe1e5   _c2brom_init_boot_env
+003fe647   _c2brom_init_pie_control
+003fe621   _c2brom_init_pie_vect_table
+003fdfc2   _c2brom_itrap_isr
+00000008   _c2brom_nmi_status
+003fde18   _c2brom_pie_isr_not_supported
+003fde61   _c2brom_pie_vect_mismatch_handler
+003fe1f7   _c2brom_powerup_flash_faster
+003fe2ee   _c2brom_read_otp_bootmode
+003fe677   _c2brom_send_ipc_to_c1
+003fe66b   _c2brom_set_c2c1_boot_status
+00000002   _c2brom_status
+003fe309   _c2brom_system_init
+01001470   _cla_bitReversalTable
+01001070   _cla_twiddleFactors
+003fff7c   _csum_rom
+0000000a   _iTrap_addr
+003fec4f   _load_itrap_address
+003feafb   _nmi_global_mask_disable
+003feb0a   _nmi_global_mask_enable
+003feaf6   _nmi_global_mask_status
+003feb4d   _nmi_interrupt_clear
+003feb39   _nmi_interrupt_force_set
+003feb15   _nmi_interrupt_status_get
+003feb27   _nmi_shadow_interrupt_status_get
+003fe8b4   _sysctl_check_trstn_pin_status
+003fe8ae   _sysctl_check_xrsn_pin_status
+003fe893   _sysctl_hib_reset_cause_check
+003fe89b   _sysctl_hib_reset_cause_check_clear
+003fe897   _sysctl_hib_reset_cause_clear
+003fe887   _sysctl_hwbist_reset_cause_check
+003fe88f   _sysctl_hwbist_reset_cause_check_clear
+003fe88b   _sysctl_hwbist_reset_cause_clear
+003fe87b   _sysctl_nmi_wdog_reset_cause_check
+003fe883   _sysctl_nmi_wdog_reset_cause_check_clear
+003fe87f   _sysctl_nmi_wdog_reset_cause_clear
+003fe857   _sysctl_por_reset_cause_check
+003fe85f   _sysctl_por_reset_cause_check_clear
+003fe85b   _sysctl_por_reset_cause_clear
+003fe816   _sysctl_reset_cause_check
+003fe83f   _sysctl_reset_cause_check_clear
+003fe82d   _sysctl_reset_cause_clear
+003fe89f   _sysctl_scc_reset_cause_check
+003fe8a9   _sysctl_scc_reset_cause_check_clear
+003fe8a4   _sysctl_scc_reset_cause_clear
+003fe8e2   _sysctl_wdog_counter_clear
+003fe902   _sysctl_wdog_disable
+003fe917   _sysctl_wdog_enable
+003fe8d2   _sysctl_wdog_interrupt_disable
+003fe8ca   _sysctl_wdog_interrupt_enable
+003fe94f   _sysctl_wdog_interrupt_enable_clear_counter
+003fe8da   _sysctl_wdog_interrupt_status
+003fe8f0   _sysctl_wdog_prescaler_set
+003fe86f   _sysctl_wdog_reset_cause_check
+003fe877   _sysctl_wdog_reset_cause_check_clear
+003fe873   _sysctl_wdog_reset_cause_clear
+003fe95d   _sysctl_wdog_reset_enable_clear_counter
+003fe8ba   _sysctl_wdog_wddis_lock_set
+003fe8c2   _sysctl_wdog_wddis_lock_status_get
+003fe930   _sysctl_wdog_window_min_value_get
+003fe947   _sysctl_wdog_window_min_value_reset
+003fe93b   _sysctl_wdog_window_min_value_set
+003fe863   _sysctl_xrsn_reset_cause_check
+003fe86b   _sysctl_xrsn_reset_cause_check_clear
+003fe867   _sysctl_xrsn_reset_cause_clear
+003f92ea   _ti_sysbios_BIOS_errorRaiseHook__I
+003f94e4   _ti_sysbios_BIOS_exit__E
+003f98fc   _ti_sysbios_BIOS_getCpuFreq__E
+003f9994   _ti_sysbios_BIOS_getThreadType__E
+003f9aa3   _ti_sysbios_BIOS_nullFunc__I
+003f9754   _ti_sysbios_BIOS_registerRTSLock__I
+003f96fb   _ti_sysbios_BIOS_removeRTSLock__I
+003f96db   _ti_sysbios_BIOS_rtsLock__I
+003f9761   _ti_sysbios_BIOS_rtsUnlock__I
+003f9903   _ti_sysbios_BIOS_setCpuFreq__E
+003f98bc   _ti_sysbios_BIOS_setThreadType__E
+003f9980   _ti_sysbios_BIOS_start__E
+003f9ae9   _ti_sysbios_family_c28_Clobber_checkPreservedRegs__F
+003f9aab   _ti_sysbios_family_c28_Clobber_checkScratchRegs__F
+003f9b40   _ti_sysbios_family_c28_Clobber_trashPreservedRegs__F
+003f9b19   _ti_sysbios_family_c28_Clobber_trashScratchRegs__F
+003f962e   _ti_sysbios_family_c28_Hwi_Instance_finalize__F
+003f87b9   _ti_sysbios_family_c28_Hwi_Instance_init__F
+003f8ba3   _ti_sysbios_family_c28_Hwi_Module_startup__F
+003f9847   _ti_sysbios_family_c28_Hwi_ack__I
+003f83e1   _ti_sysbios_family_c28_Hwi_clearInterrupt__E
+003f919c   _ti_sysbios_family_c28_Hwi_disableInterrupt__E
+003f8fee   _ti_sysbios_family_c28_Hwi_disablePIEIER__E
+003f976e   _ti_sysbios_family_c28_Hwi_dispatchC__I
+003f8b58   _ti_sysbios_family_c28_Hwi_dispatchCore__I
+003f9ca7   _ti_sysbios_family_c28_Hwi_dispatchPie
+003f9c4a   _ti_sysbios_family_c28_Hwi_dispatchTable
+003f9bf9   _ti_sysbios_family_c28_Hwi_dispatchZero
+003f9b9c   _ti_sysbios_family_c28_Hwi_dispatchZeroTable
+003f8f5a   _ti_sysbios_family_c28_Hwi_enableInterrupt__E
+003f9077   _ti_sysbios_family_c28_Hwi_enablePIEIER__E
+003f98c4   _ti_sysbios_family_c28_Hwi_getFunc__E
+003f9850   _ti_sysbios_family_c28_Hwi_getHandle__E
+003f9859   _ti_sysbios_family_c28_Hwi_getHookContext__E
+003f970a   _ti_sysbios_family_c28_Hwi_getIERBit__I
+003f9b98   _ti_sysbios_family_c28_Hwi_getIFR__I
+003f904a   _ti_sysbios_family_c28_Hwi_getInterruptFlag__E
+003f9a14   _ti_sysbios_family_c28_Hwi_getIrp__E
+003f90cd   _ti_sysbios_family_c28_Hwi_getStackInfo__E
+003f9998   _ti_sysbios_family_c28_Hwi_getTaskSP__E
+003f9b9b   _ti_sysbios_family_c28_Hwi_interruptReturn__I
+003f97d1   _ti_sysbios_family_c28_Hwi_plug__E
+003f9a83   _ti_sysbios_family_c28_Hwi_postInit__I
+003f881b   _ti_sysbios_family_c28_Hwi_post__E
+003f8d04   _ti_sysbios_family_c28_Hwi_reconfig__E
+003f98cc   _ti_sysbios_family_c28_Hwi_restoreInterrupt__E
+003f90f7   _ti_sysbios_family_c28_Hwi_restorePIEIER__E
+003f990a   _ti_sysbios_family_c28_Hwi_setFunc__E
+003f9862   _ti_sysbios_family_c28_Hwi_setHookContext__E
+003f9b5b   _ti_sysbios_family_c28_Hwi_switchAndDispatch__I
+003f9985   _ti_sysbios_family_c28_Hwi_switchFromBootStack__E
+003f8d46   _ti_sysbios_family_c28_Hwi_unPluggedInterrupt__I
+003f9ce4   _ti_sysbios_family_c28_IntrinsicsSupport_maxbit__E
+003f9cea   _ti_sysbios_family_c28_TaskSupport_buildTaskStack
+003f9829   _ti_sysbios_family_c28_TaskSupport_checkStack__E
+003f999c   _ti_sysbios_family_c28_TaskSupport_getDefaultStackSize__E
+003f99a0   _ti_sysbios_family_c28_TaskSupport_getStackAlignment__E
+003f9d2c   _ti_sysbios_family_c28_TaskSupport_glue
+003f986b   _ti_sysbios_family_c28_TaskSupport_stackUsed__E
+003f8dc8   _ti_sysbios_family_c28_TaskSupport_start__E
+003f9d0f   _ti_sysbios_family_c28_TaskSupport_swap__E
+003f942a   _ti_sysbios_family_c28_Timer_Instance_finalize__F
+003f8002   _ti_sysbios_family_c28_Timer_Instance_init__F
+003f95d6   _ti_sysbios_family_c28_Timer_Module_startup__F
+003f96a5   _ti_sysbios_family_c28_Timer_checkOverflow__I
+003f9833   _ti_sysbios_family_c28_Timer_getCount__E
+003f9121   _ti_sysbios_family_c28_Timer_getExpiredCounts64__E
+003f91c2   _ti_sysbios_family_c28_Timer_getExpiredCounts__E
+003f9911   _ti_sysbios_family_c28_Timer_getFreq__E
+003f9950   _ti_sysbios_family_c28_Timer_getFunc__E
+003f9a85   _ti_sysbios_family_c28_Timer_getMaxTicks__E
+003f9a87   _ti_sysbios_family_c28_Timer_getNumTimers__E
+003f9874   _ti_sysbios_family_c28_Timer_getPeriod__E
+003f9548   _ti_sysbios_family_c28_Timer_getPrescaleCount__F
+003f9560   _ti_sysbios_family_c28_Timer_getPrescale__F
+003f9918   _ti_sysbios_family_c28_Timer_getStatus__E
+003f947c   _ti_sysbios_family_c28_Timer_oneShotStub__I
+003f8bed   _ti_sysbios_family_c28_Timer_postInit__I
+003f84f6   _ti_sysbios_family_c28_Timer_reconfig__E
+003f94fd   _ti_sysbios_family_c28_Timer_setFunc__E
+003f9aa4   _ti_sysbios_family_c28_Timer_setNextTick__E
+003f897c   _ti_sysbios_family_c28_Timer_setPeriodMicroSecs__E
+003f966c   _ti_sysbios_family_c28_Timer_setPeriod__E
+003f91e8   _ti_sysbios_family_c28_Timer_setPrescale__F
+003f8f8d   _ti_sysbios_family_c28_Timer_start__E
+003f95ec   _ti_sysbios_family_c28_Timer_startup__E
+003f85fa   _ti_sysbios_family_c28_Timer_stopAndClear__I
+003f96b7   _ti_sysbios_family_c28_Timer_stop__E
+003f93f0   _ti_sysbios_family_c28_Timer_trigger__E
+003f9a17   _ti_sysbios_family_c28_f2837x_TimestampProvider_Module_startup__F
+003f99a4   _ti_sysbios_family_c28_f2837x_TimestampProvider_get32__E
+003f9746   _ti_sysbios_family_c28_f2837x_TimestampProvider_get64__E
+003f98fc   _ti_sysbios_family_c28_f2837x_TimestampProvider_getFreq__E
+003f9b83   _ti_sysbios_family_xxx_Hwi_switchAndRunFunc
+003f9b76   _ti_sysbios_family_xxx_Hwi_switchToIsrStack
+003f9b8e   _ti_sysbios_family_xxx_Hwi_switchToTaskStack
+003f9aa5   _ti_sysbios_gates_GateHwi_Instance_init__F
+003f998a   _ti_sysbios_gates_GateHwi_enter__E
+003f9a1a   _ti_sysbios_gates_GateHwi_leave__E
+003f9a89   _ti_sysbios_gates_GateHwi_query__F
+003f98d4   _ti_sysbios_gates_GateMutex_Instance_finalize__F
+003f9496   _ti_sysbios_gates_GateMutex_Instance_init__F
+003f94b0   _ti_sysbios_gates_GateMutex_enter__E
+003f9795   _ti_sysbios_gates_GateMutex_leave__E
+003f9a8b   _ti_sysbios_gates_GateMutex_query__F
+003f9956   _ti_sysbios_hal_Hwi_Instance_finalize__F
+003f920e   _ti_sysbios_hal_Hwi_Instance_init__F
+003f987d   _ti_sysbios_hal_Hwi_Module_startup__F
+003f9461   _ti_sysbios_hal_Hwi_checkStack
+003f9a1d   _ti_sysbios_hal_Hwi_clearInterrupt__E
+003f9a20   _ti_sysbios_hal_Hwi_disableInterrupt__E
+003f9a7a   _ti_sysbios_hal_Hwi_disable__E
+003f9a23   _ti_sysbios_hal_Hwi_enableInterrupt__E
+003f9a7d   _ti_sysbios_hal_Hwi_enable__E
+003f99a8   _ti_sysbios_hal_Hwi_getFunc__E
+003f9a26   _ti_sysbios_hal_Hwi_getHookContext__E
+003f99ac   _ti_sysbios_hal_Hwi_getIrp__E
+003f9a29   _ti_sysbios_hal_Hwi_getStackInfo__E
+003f9a2c   _ti_sysbios_hal_Hwi_getTaskSP__E
+003f94ca   _ti_sysbios_hal_Hwi_initStack
+003f9a2f   _ti_sysbios_hal_Hwi_post__E
+003f9a32   _ti_sysbios_hal_Hwi_restoreInterrupt__E
+003f9a80   _ti_sysbios_hal_Hwi_restore__E
+003f99b0   _ti_sysbios_hal_Hwi_setFunc__E
+003f9a35   _ti_sysbios_hal_Hwi_setHookContext__E
+003f9a38   _ti_sysbios_hal_Hwi_startup__E
+003f9a3b   _ti_sysbios_hal_Hwi_switchFromBootStack__E
+003f995c   _ti_sysbios_hal_Timer_Instance_finalize__F
+003f9234   _ti_sysbios_hal_Timer_Instance_init__F
+003f9886   _ti_sysbios_hal_Timer_Module_startup__F
+003f99b4   _ti_sysbios_hal_Timer_getCount__E
+003f99b8   _ti_sysbios_hal_Timer_getExpiredCounts__E
+003f99bc   _ti_sysbios_hal_Timer_getFreq__E
+003f99c0   _ti_sysbios_hal_Timer_getFunc__E
+003f99c4   _ti_sysbios_hal_Timer_getMaxTicks__E
+003f9a3e   _ti_sysbios_hal_Timer_getNumTimers__E
+003f99c8   _ti_sysbios_hal_Timer_getPeriod__E
+003f9a41   _ti_sysbios_hal_Timer_getStatus__E
+003f99cc   _ti_sysbios_hal_Timer_setFunc__E
+003f98dc   _ti_sysbios_hal_Timer_setNextTick__E
+003f99d0   _ti_sysbios_hal_Timer_setPeriodMicroSecs__E
+003f99d4   _ti_sysbios_hal_Timer_setPeriod__E
+003f99d8   _ti_sysbios_hal_Timer_start__E
+003f9a44   _ti_sysbios_hal_Timer_startup__E
+003f99dc   _ti_sysbios_hal_Timer_stop__E
+003f99e0   _ti_sysbios_hal_Timer_trigger__E
+003f9aa6   _ti_sysbios_heaps_HeapNull_Instance_init__F
+003f9a8d   _ti_sysbios_heaps_HeapNull_alloc__F
+003f9aa7   _ti_sysbios_heaps_HeapNull_free__F
+003f991f   _ti_sysbios_heaps_HeapNull_getStats__F
+003f9a8f   _ti_sysbios_heaps_HeapNull_isBlocking__F
+003f97a1   _ti_sysbios_knl_Clock_Instance_finalize__F
+003f92c7   _ti_sysbios_knl_Clock_Instance_init__F
+003f95a8   _ti_sysbios_knl_Clock_Module_startup__F
+003f940d   _ti_sysbios_knl_Clock_addI__E
+003f99e4   _ti_sysbios_knl_Clock_getCompletedTicks__E
+003f9a47   _ti_sysbios_knl_Clock_getPeriod__E
+003f99e8   _ti_sysbios_knl_Clock_getTickPeriod__E
+003f90a2   _ti_sysbios_knl_Clock_getTicks__E
+003f9719   _ti_sysbios_knl_Clock_getTimeout__E
+003f99ec   _ti_sysbios_knl_Clock_getTimerHandle__E
+003f9a4a   _ti_sysbios_knl_Clock_isActive__E
+003f9aa8   _ti_sysbios_knl_Clock_logTick__E
+003f9926   _ti_sysbios_knl_Clock_removeI__E
+003f97ad   _ti_sysbios_knl_Clock_setFunc__E
+003f9a4d   _ti_sysbios_knl_Clock_setPeriod__E
+003f9a91   _ti_sysbios_knl_Clock_setTimeout__E
+003f9602   _ti_sysbios_knl_Clock_setupTimerToSkipTicks__E
+003f8d87   _ti_sysbios_knl_Clock_startI__E
+003f983d   _ti_sysbios_knl_Clock_start__E
+003f9a50   _ti_sysbios_knl_Clock_stop__E
+003f914b   _ti_sysbios_knl_Clock_tickReconfig__E
+003f97dc   _ti_sysbios_knl_Clock_tickStart__E
+003f97e7   _ti_sysbios_knl_Clock_tickStop__E
+003f99f0   _ti_sysbios_knl_Clock_tick__E
+003f8342   _ti_sysbios_knl_Clock_workFuncDynamic__E
+003f8b0c   _ti_sysbios_knl_Clock_workFunc__E
+003f967f   _ti_sysbios_knl_Event_Instance_init__F
+003f9728   _ti_sysbios_knl_Event_checkEvents__I
+003f9a93   _ti_sysbios_knl_Event_getPostedEvents__E
+003f930c   _ti_sysbios_knl_Event_pendTimeout__I
+003f857e   _ti_sysbios_knl_Event_pend__E
+003f8cc0   _ti_sysbios_knl_Event_post__E
+003f992d   _ti_sysbios_knl_Event_sync__E
+003f9a53   _ti_sysbios_knl_Idle_loop__E
+003f927f   _ti_sysbios_knl_Idle_run__E
+003f9a56   _ti_sysbios_knl_Intrinsics_maxbit__E
+003f88d3   _ti_sysbios_knl_Mailbox_Instance_finalize__F
+003f81c7   _ti_sysbios_knl_Mailbox_Instance_init__F
+003f8eb7   _ti_sysbios_knl_Mailbox_Module_startup__F
+003f9a95   _ti_sysbios_knl_Mailbox_getMsgSize__E
+003f9a59   _ti_sysbios_knl_Mailbox_getNumFreeMsgs__E
+003f9934   _ti_sysbios_knl_Mailbox_getNumPendingMsgs__E
+003f8e07   _ti_sysbios_knl_Mailbox_pend__E
+003f9516   _ti_sysbios_knl_Mailbox_postInit__I
+003f8a70   _ti_sysbios_knl_Mailbox_post__E
+003f9a5c   _ti_sysbios_knl_Queue_Instance_init__F
+003f9962   _ti_sysbios_knl_Queue_dequeue__E
+003f9a5f   _ti_sysbios_knl_Queue_elemClear__E
+003f98e4   _ti_sysbios_knl_Queue_empty__E
+003f9968   _ti_sysbios_knl_Queue_enqueue__E
+003f97b9   _ti_sysbios_knl_Queue_get__E
+003f9a97   _ti_sysbios_knl_Queue_head__E
+003f996e   _ti_sysbios_knl_Queue_insert__E
+003f97f2   _ti_sysbios_knl_Queue_isQueued__E
+003f9a99   _ti_sysbios_knl_Queue_next__E
+003f9a9b   _ti_sysbios_knl_Queue_prev__E
+003f97c5   _ti_sysbios_knl_Queue_put__E
+003f993b   _ti_sysbios_knl_Queue_remove__E
+003f98ec   _ti_sysbios_knl_Semaphore_Instance_finalize__F
+003f93b3   _ti_sysbios_knl_Semaphore_Instance_init__F
+003f9a9d   _ti_sysbios_knl_Semaphore_getCount__E
+003f932e   _ti_sysbios_knl_Semaphore_pendTimeout__I
+003f846c   _ti_sysbios_knl_Semaphore_pend__E
+003f8e45   _ti_sysbios_knl_Semaphore_post__E
+003f9aa9   _ti_sysbios_knl_Semaphore_registerEvent__E
+003f9942   _ti_sysbios_knl_Semaphore_reset__E
+003f9aaa   _ti_sysbios_knl_Swi_Instance_finalize__F
+003f8c35   _ti_sysbios_knl_Swi_Instance_init__F
+003f95bf   _ti_sysbios_knl_Swi_Module_startup__F
+003f9643   _ti_sysbios_knl_Swi_andn__E
+003f9658   _ti_sysbios_knl_Swi_dec__E
+003f9974   _ti_sysbios_knl_Swi_disable__E
+003f99f4   _ti_sysbios_knl_Swi_enable__E
+003f9949   _ti_sysbios_knl_Swi_enabled__E
+003f93d2   _ti_sysbios_knl_Swi_getAttrs__E
+003f977b   _ti_sysbios_knl_Swi_getFunc__E
+003f988f   _ti_sysbios_knl_Swi_getHookContext__E
+003f9a62   _ti_sysbios_knl_Swi_getPri__E
+003f99f8   _ti_sysbios_knl_Swi_getTrigger__E
+003f97fd   _ti_sysbios_knl_Swi_inc__E
+003f9808   _ti_sysbios_knl_Swi_or__E
+003f9a9f   _ti_sysbios_knl_Swi_postInit__I
+003f92a3   _ti_sysbios_knl_Swi_post__E
+003f9446   _ti_sysbios_knl_Swi_raisePri__E
+003f8e7f   _ti_sysbios_knl_Swi_restoreHwi__E
+003f96c9   _ti_sysbios_knl_Swi_restorePri__E
+003f952f   _ti_sysbios_knl_Swi_restore__E
+003f8fbf   _ti_sysbios_knl_Swi_runLoop__I
+003f8c7b   _ti_sysbios_knl_Swi_run__I
+003f901c   _ti_sysbios_knl_Swi_schedule__I
+003f99fc   _ti_sysbios_knl_Swi_self__E
+003f8929   _ti_sysbios_knl_Swi_setAttrs__E
+003f9898   _ti_sysbios_knl_Swi_setHookContext__E
+003f9a00   _ti_sysbios_knl_Swi_startup__E
+003f9a04   _ti_sysbios_knl_Swi_unlockSched__E
+003f828c   _ti_sysbios_knl_Task_Instance_finalize__F
+003f80f6   _ti_sysbios_knl_Task_Instance_init__F
+003f8abf   _ti_sysbios_knl_Task_Module_startup__F
+003f9372   _ti_sysbios_knl_Task_allBlockedFunction__I
+003f9350   _ti_sysbios_knl_Task_blockI__E
+003f98f4   _ti_sysbios_knl_Task_block__E
+003f86e4   _ti_sysbios_knl_Task_checkStacks__E
+003f9175   _ti_sysbios_knl_Task_deleteTerminatedTasksFunc__I
+003f997a   _ti_sysbios_knl_Task_disable__E
+003f9a08   _ti_sysbios_knl_Task_enable__E
+003f9813   _ti_sysbios_knl_Task_enabled__E
+003f9788   _ti_sysbios_knl_Task_enter__I
+003f887c   _ti_sysbios_knl_Task_exit__E
+003f9a65   _ti_sysbios_knl_Task_getArg0__E
+003f9a68   _ti_sysbios_knl_Task_getArg1__E
+003f9a6b   _ti_sysbios_knl_Task_getEnv__E
+003f9737   _ti_sysbios_knl_Task_getFunc__E
+003f98a1   _ti_sysbios_knl_Task_getHookContext__E
+003f98aa   _ti_sysbios_knl_Task_getIdleTaskHandle__E
+003f998f   _ti_sysbios_knl_Task_getIdleTask__E
+003f9692   _ti_sysbios_knl_Task_getMode__E
+003f9aa1   _ti_sysbios_knl_Task_getPri__E
+003f8672   _ti_sysbios_knl_Task_postInit__I
+003f9578   _ti_sysbios_knl_Task_processVitalTaskFlag__I
+003f96eb   _ti_sysbios_knl_Task_restoreHwi__E
+003f9618   _ti_sysbios_knl_Task_restore__E
+003f89ce   _ti_sysbios_knl_Task_schedule__I
+003f9a0c   _ti_sysbios_knl_Task_self__E
+003f9a6e   _ti_sysbios_knl_Task_setArg0__E
+003f9a71   _ti_sysbios_knl_Task_setArg1__E
+003f9a74   _ti_sysbios_knl_Task_setEnv__E
+003f98b3   _ti_sysbios_knl_Task_setHookContext__E
+003f8751   _ti_sysbios_knl_Task_setPri__E
+003f9590   _ti_sysbios_knl_Task_sleepTimeout__I
+003f8eee   _ti_sysbios_knl_Task_sleep__E
+003f8a1f   _ti_sysbios_knl_Task_startCore__E
+003f9a77   _ti_sysbios_knl_Task_startup__E
+003f925a   _ti_sysbios_knl_Task_stat__E
+003f8f24   _ti_sysbios_knl_Task_unblockI__E
+003f981e   _ti_sysbios_knl_Task_unblock__E
+003f9a10   _ti_sysbios_knl_Task_unlockSched__E
+003f9393   _ti_sysbios_knl_Task_yield__E
+ffffffff   binit
+003fff3a   c2_bist_signatures_base
+ffffffff   cinit
+003fec52   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000002   _c2brom_status
+00000004   _c2brom_current_c1c2_ipc
+00000008   _c2brom_nmi_status
+0000000a   _iTrap_addr
+0000000c   _c1c2_branch_addr
+0000000e   _GetWordData
+00000060   __STACK_SIZE
+00000080   __STACK_END
+00000b00   _AdcaResultRegs
+00000b20   _AdcbResultRegs
+00000b40   _AdccResultRegs
+00000b60   _AdcdResultRegs
+00000c00   _CpuTimer0Regs
+00000c08   _CpuTimer1Regs
+00000c10   _CpuTimer2Regs
+00000ce0   _Cla1SoftIntRegs
+00000ce0   _PieCtrlRegs
+00000d00   _EmuKey
+00000d00   _PieVectTable
+00000d01   _EmuBMode
+00001000   _DmaRegs
+00001400   _Cla1Regs
+00004000   _EPwm1Regs
+00004100   _EPwm2Regs
+00004200   _EPwm3Regs
+00004300   _EPwm4Regs
+00004400   _EPwm5Regs
+00004500   _EPwm6Regs
+00004600   _EPwm7Regs
+00004700   _EPwm8Regs
+00004800   _EPwm9Regs
+00004900   _EPwm10Regs
+00004a00   _EPwm11Regs
+00004b00   _EPwm12Regs
+00005000   _ECap1Regs
+00005020   _ECap2Regs
+00005040   _ECap3Regs
+00005060   _ECap4Regs
+00005080   _ECap5Regs
+000050a0   _ECap6Regs
+00005100   _EQep1Regs
+00005140   _EQep2Regs
+00005180   _EQep3Regs
+00005c00   _Dac1Regs
+00005c10   _Dac2Regs
+00005c20   _Dac3Regs
+00005c80   _Cmpss1Regs
+00005ca0   _Cmpss2Regs
+00005cc0   _Cmpss3Regs
+00005ce0   _Cmpss4Regs
+00005d00   _Cmpss5Regs
+00005d20   _Cmpss6Regs
+00005d40   _Cmpss7Regs
+00005d60   _Cmpss8Regs
+00005e00   _Sd1Regs
+00005e80   _Sd2Regs
+00006000   _McbspaRegs
+00006040   _McbspbRegs
+00006100   _SpiaRegs
+00006110   _SpibRegs
+00006120   _SpicRegs
+00007000   _WdRegs
+00007060   _NmiIntruptRegs
+00007070   _XintRegs
+00007200   _SciaRegs
+00007210   _ScibRegs
+00007220   _ScicRegs
+00007230   _ScidRegs
+00007300   _I2caRegs
+00007340   _I2cbRegs
+00007400   _AdcaRegs
+00007480   _AdcbRegs
+00007500   _AdccRegs
+00007580   _AdcdRegs
+00007980   _DmaClaSrcSelRegs
+00007f00   _GpioDataRegs
+00047000   _EMif1Regs
+00047800   _EMif2Regs
+00048000   _DcanaRegs
+0004a000   _DcanbRegs
+00050000   _IpcRegs
+0005d200   _ClkCfgRegs
+0005d300   _CpuSysRegs
+0005e000   _HwbistRegs
+0005f000   _DcsmRegsZ1
+0005f040   _DcsmRegsZ2
+0005f070   _DcsmRegsCommon
+0005f400   _MemCfgRegs
+0005f800   _FlashCtrlRegs
+0005fb00   _FlashEccRegs
+00078000   _DcsmOtpZ2
+00078200   _DcsmOtpZ1
+003f0000   _SafeCopyCodeZ1
+003f02c3   _SafeCRCCalcZ1
+003f05c2   _CRCCalcZ1
+003f0800   _SafeCopyCodeZ2
+003f0ac3   _SafeCRCCalcZ2
+003f0dc2   _CRCCalcZ2
+003f8002   _ti_sysbios_family_c28_Timer_Instance_init__F
+003f80f6   _ti_sysbios_knl_Task_Instance_init__F
+003f81c7   _ti_sysbios_knl_Mailbox_Instance_init__F
+003f828c   _ti_sysbios_knl_Task_Instance_finalize__F
+003f8342   _ti_sysbios_knl_Clock_workFuncDynamic__E
+003f83e1   _ti_sysbios_family_c28_Hwi_clearInterrupt__E
+003f846c   _ti_sysbios_knl_Semaphore_pend__E
+003f84f6   _ti_sysbios_family_c28_Timer_reconfig__E
+003f857e   _ti_sysbios_knl_Event_pend__E
+003f85fa   _ti_sysbios_family_c28_Timer_stopAndClear__I
+003f8672   _ti_sysbios_knl_Task_postInit__I
+003f86e4   _ti_sysbios_knl_Task_checkStacks__E
+003f8751   _ti_sysbios_knl_Task_setPri__E
+003f87b9   _ti_sysbios_family_c28_Hwi_Instance_init__F
+003f881b   _ti_sysbios_family_c28_Hwi_post__E
+003f887c   _ti_sysbios_knl_Task_exit__E
+003f88d3   _ti_sysbios_knl_Mailbox_Instance_finalize__F
+003f8929   _ti_sysbios_knl_Swi_setAttrs__E
+003f897c   _ti_sysbios_family_c28_Timer_setPeriodMicroSecs__E
+003f89ce   _ti_sysbios_knl_Task_schedule__I
+003f8a1f   _ti_sysbios_knl_Task_startCore__E
+003f8a70   _ti_sysbios_knl_Mailbox_post__E
+003f8abf   _ti_sysbios_knl_Task_Module_startup__F
+003f8b0c   _ti_sysbios_knl_Clock_workFunc__E
+003f8b58   _ti_sysbios_family_c28_Hwi_dispatchCore__I
+003f8ba3   _ti_sysbios_family_c28_Hwi_Module_startup__F
+003f8bed   _ti_sysbios_family_c28_Timer_postInit__I
+003f8c35   _ti_sysbios_knl_Swi_Instance_init__F
+003f8c7b   _ti_sysbios_knl_Swi_run__I
+003f8cc0   _ti_sysbios_knl_Event_post__E
+003f8d04   _ti_sysbios_family_c28_Hwi_reconfig__E
+003f8d46   _ti_sysbios_family_c28_Hwi_unPluggedInterrupt__I
+003f8d87   _ti_sysbios_knl_Clock_startI__E
+003f8dc8   _ti_sysbios_family_c28_TaskSupport_start__E
+003f8e07   _ti_sysbios_knl_Mailbox_pend__E
+003f8e45   _ti_sysbios_knl_Semaphore_post__E
+003f8e7f   _ti_sysbios_knl_Swi_restoreHwi__E
+003f8eb7   _ti_sysbios_knl_Mailbox_Module_startup__F
+003f8eee   _ti_sysbios_knl_Task_sleep__E
+003f8f24   _ti_sysbios_knl_Task_unblockI__E
+003f8f5a   _ti_sysbios_family_c28_Hwi_enableInterrupt__E
+003f8f8d   _ti_sysbios_family_c28_Timer_start__E
+003f8fbf   _ti_sysbios_knl_Swi_runLoop__I
+003f8fee   _ti_sysbios_family_c28_Hwi_disablePIEIER__E
+003f901c   _ti_sysbios_knl_Swi_schedule__I
+003f904a   _ti_sysbios_family_c28_Hwi_getInterruptFlag__E
+003f9077   _ti_sysbios_family_c28_Hwi_enablePIEIER__E
+003f90a2   _ti_sysbios_knl_Clock_getTicks__E
+003f90cd   _ti_sysbios_family_c28_Hwi_getStackInfo__E
+003f90f7   _ti_sysbios_family_c28_Hwi_restorePIEIER__E
+003f9121   _ti_sysbios_family_c28_Timer_getExpiredCounts64__E
+003f914b   _ti_sysbios_knl_Clock_tickReconfig__E
+003f9175   _ti_sysbios_knl_Task_deleteTerminatedTasksFunc__I
+003f919c   _ti_sysbios_family_c28_Hwi_disableInterrupt__E
+003f91c2   _ti_sysbios_family_c28_Timer_getExpiredCounts__E
+003f91e8   _ti_sysbios_family_c28_Timer_setPrescale__F
+003f920e   _ti_sysbios_hal_Hwi_Instance_init__F
+003f9234   _ti_sysbios_hal_Timer_Instance_init__F
+003f925a   _ti_sysbios_knl_Task_stat__E
+003f927f   _ti_sysbios_knl_Idle_run__E
+003f92a3   _ti_sysbios_knl_Swi_post__E
+003f92c7   _ti_sysbios_knl_Clock_Instance_init__F
+003f92ea   _ti_sysbios_BIOS_errorRaiseHook__I
+003f930c   _ti_sysbios_knl_Event_pendTimeout__I
+003f932e   _ti_sysbios_knl_Semaphore_pendTimeout__I
+003f9350   _ti_sysbios_knl_Task_blockI__E
+003f9372   _ti_sysbios_knl_Task_allBlockedFunction__I
+003f9393   _ti_sysbios_knl_Task_yield__E
+003f93b3   _ti_sysbios_knl_Semaphore_Instance_init__F
+003f93d2   _ti_sysbios_knl_Swi_getAttrs__E
+003f93f0   _ti_sysbios_family_c28_Timer_trigger__E
+003f940d   _ti_sysbios_knl_Clock_addI__E
+003f942a   _ti_sysbios_family_c28_Timer_Instance_finalize__F
+003f9446   _ti_sysbios_knl_Swi_raisePri__E
+003f9461   _ti_sysbios_hal_Hwi_checkStack
+003f947c   _ti_sysbios_family_c28_Timer_oneShotStub__I
+003f9496   _ti_sysbios_gates_GateMutex_Instance_init__F
+003f94b0   _ti_sysbios_gates_GateMutex_enter__E
+003f94ca   _ti_sysbios_hal_Hwi_initStack
+003f94e4   _ti_sysbios_BIOS_exit__E
+003f94fd   _ti_sysbios_family_c28_Timer_setFunc__E
+003f9516   _ti_sysbios_knl_Mailbox_postInit__I
+003f952f   _ti_sysbios_knl_Swi_restore__E
+003f9548   _ti_sysbios_family_c28_Timer_getPrescaleCount__F
+003f9560   _ti_sysbios_family_c28_Timer_getPrescale__F
+003f9578   _ti_sysbios_knl_Task_processVitalTaskFlag__I
+003f9590   _ti_sysbios_knl_Task_sleepTimeout__I
+003f95a8   _ti_sysbios_knl_Clock_Module_startup__F
+003f95bf   _ti_sysbios_knl_Swi_Module_startup__F
+003f95d6   _ti_sysbios_family_c28_Timer_Module_startup__F
+003f95ec   _ti_sysbios_family_c28_Timer_startup__E
+003f9602   _ti_sysbios_knl_Clock_setupTimerToSkipTicks__E
+003f9618   _ti_sysbios_knl_Task_restore__E
+003f962e   _ti_sysbios_family_c28_Hwi_Instance_finalize__F
+003f9643   _ti_sysbios_knl_Swi_andn__E
+003f9658   _ti_sysbios_knl_Swi_dec__E
+003f966c   _ti_sysbios_family_c28_Timer_setPeriod__E
+003f967f   _ti_sysbios_knl_Event_Instance_init__F
+003f9692   _ti_sysbios_knl_Task_getMode__E
+003f96a5   _ti_sysbios_family_c28_Timer_checkOverflow__I
+003f96b7   _ti_sysbios_family_c28_Timer_stop__E
+003f96c9   _ti_sysbios_knl_Swi_restorePri__E
+003f96db   _ti_sysbios_BIOS_rtsLock__I
+003f96eb   _ti_sysbios_knl_Task_restoreHwi__E
+003f96fb   _ti_sysbios_BIOS_removeRTSLock__I
+003f970a   _ti_sysbios_family_c28_Hwi_getIERBit__I
+003f9719   _ti_sysbios_knl_Clock_getTimeout__E
+003f9728   _ti_sysbios_knl_Event_checkEvents__I
+003f9737   _ti_sysbios_knl_Task_getFunc__E
+003f9746   _ti_sysbios_family_c28_f2837x_TimestampProvider_get64__E
+003f9754   _ti_sysbios_BIOS_registerRTSLock__I
+003f9761   _ti_sysbios_BIOS_rtsUnlock__I
+003f976e   _ti_sysbios_family_c28_Hwi_dispatchC__I
+003f977b   _ti_sysbios_knl_Swi_getFunc__E
+003f9788   _ti_sysbios_knl_Task_enter__I
+003f9795   _ti_sysbios_gates_GateMutex_leave__E
+003f97a1   _ti_sysbios_knl_Clock_Instance_finalize__F
+003f97ad   _ti_sysbios_knl_Clock_setFunc__E
+003f97b9   _ti_sysbios_knl_Queue_get__E
+003f97c5   _ti_sysbios_knl_Queue_put__E
+003f97d1   _ti_sysbios_family_c28_Hwi_plug__E
+003f97dc   _ti_sysbios_knl_Clock_tickStart__E
+003f97e7   _ti_sysbios_knl_Clock_tickStop__E
+003f97f2   _ti_sysbios_knl_Queue_isQueued__E
+003f97fd   _ti_sysbios_knl_Swi_inc__E
+003f9808   _ti_sysbios_knl_Swi_or__E
+003f9813   _ti_sysbios_knl_Task_enabled__E
+003f981e   _ti_sysbios_knl_Task_unblock__E
+003f9829   _ti_sysbios_family_c28_TaskSupport_checkStack__E
+003f9833   _ti_sysbios_family_c28_Timer_getCount__E
+003f983d   _ti_sysbios_knl_Clock_start__E
+003f9847   _ti_sysbios_family_c28_Hwi_ack__I
+003f9850   _ti_sysbios_family_c28_Hwi_getHandle__E
+003f9859   _ti_sysbios_family_c28_Hwi_getHookContext__E
+003f9862   _ti_sysbios_family_c28_Hwi_setHookContext__E
+003f986b   _ti_sysbios_family_c28_TaskSupport_stackUsed__E
+003f9874   _ti_sysbios_family_c28_Timer_getPeriod__E
+003f987d   _ti_sysbios_hal_Hwi_Module_startup__F
+003f9886   _ti_sysbios_hal_Timer_Module_startup__F
+003f988f   _ti_sysbios_knl_Swi_getHookContext__E
+003f9898   _ti_sysbios_knl_Swi_setHookContext__E
+003f98a1   _ti_sysbios_knl_Task_getHookContext__E
+003f98aa   _ti_sysbios_knl_Task_getIdleTaskHandle__E
+003f98b3   _ti_sysbios_knl_Task_setHookContext__E
+003f98bc   _ti_sysbios_BIOS_setThreadType__E
+003f98c4   _ti_sysbios_family_c28_Hwi_getFunc__E
+003f98cc   _ti_sysbios_family_c28_Hwi_restoreInterrupt__E
+003f98d4   _ti_sysbios_gates_GateMutex_Instance_finalize__F
+003f98dc   _ti_sysbios_hal_Timer_setNextTick__E
+003f98e4   _ti_sysbios_knl_Queue_empty__E
+003f98ec   _ti_sysbios_knl_Semaphore_Instance_finalize__F
+003f98f4   _ti_sysbios_knl_Task_block__E
+003f98fc   _ti_sysbios_BIOS_getCpuFreq__E
+003f98fc   _ti_sysbios_family_c28_f2837x_TimestampProvider_getFreq__E
+003f9903   _ti_sysbios_BIOS_setCpuFreq__E
+003f990a   _ti_sysbios_family_c28_Hwi_setFunc__E
+003f9911   _ti_sysbios_family_c28_Timer_getFreq__E
+003f9918   _ti_sysbios_family_c28_Timer_getStatus__E
+003f991f   _ti_sysbios_heaps_HeapNull_getStats__F
+003f9926   _ti_sysbios_knl_Clock_removeI__E
+003f992d   _ti_sysbios_knl_Event_sync__E
+003f9934   _ti_sysbios_knl_Mailbox_getNumPendingMsgs__E
+003f993b   _ti_sysbios_knl_Queue_remove__E
+003f9942   _ti_sysbios_knl_Semaphore_reset__E
+003f9949   _ti_sysbios_knl_Swi_enabled__E
+003f9950   _ti_sysbios_family_c28_Timer_getFunc__E
+003f9956   _ti_sysbios_hal_Hwi_Instance_finalize__F
+003f995c   _ti_sysbios_hal_Timer_Instance_finalize__F
+003f9962   _ti_sysbios_knl_Queue_dequeue__E
+003f9968   _ti_sysbios_knl_Queue_enqueue__E
+003f996e   _ti_sysbios_knl_Queue_insert__E
+003f9974   _ti_sysbios_knl_Swi_disable__E
+003f997a   _ti_sysbios_knl_Task_disable__E
+003f9980   _ti_sysbios_BIOS_start__E
+003f9985   _ti_sysbios_family_c28_Hwi_switchFromBootStack__E
+003f998a   _ti_sysbios_gates_GateHwi_enter__E
+003f998f   _ti_sysbios_knl_Task_getIdleTask__E
+003f9994   _ti_sysbios_BIOS_getThreadType__E
+003f9998   _ti_sysbios_family_c28_Hwi_getTaskSP__E
+003f999c   _ti_sysbios_family_c28_TaskSupport_getDefaultStackSize__E
+003f99a0   _ti_sysbios_family_c28_TaskSupport_getStackAlignment__E
+003f99a4   _ti_sysbios_family_c28_f2837x_TimestampProvider_get32__E
+003f99a8   _ti_sysbios_hal_Hwi_getFunc__E
+003f99ac   _ti_sysbios_hal_Hwi_getIrp__E
+003f99b0   _ti_sysbios_hal_Hwi_setFunc__E
+003f99b4   _ti_sysbios_hal_Timer_getCount__E
+003f99b8   _ti_sysbios_hal_Timer_getExpiredCounts__E
+003f99bc   _ti_sysbios_hal_Timer_getFreq__E
+003f99c0   _ti_sysbios_hal_Timer_getFunc__E
+003f99c4   _ti_sysbios_hal_Timer_getMaxTicks__E
+003f99c8   _ti_sysbios_hal_Timer_getPeriod__E
+003f99cc   _ti_sysbios_hal_Timer_setFunc__E
+003f99d0   _ti_sysbios_hal_Timer_setPeriodMicroSecs__E
+003f99d4   _ti_sysbios_hal_Timer_setPeriod__E
+003f99d8   _ti_sysbios_hal_Timer_start__E
+003f99dc   _ti_sysbios_hal_Timer_stop__E
+003f99e0   _ti_sysbios_hal_Timer_trigger__E
+003f99e4   _ti_sysbios_knl_Clock_getCompletedTicks__E
+003f99e8   _ti_sysbios_knl_Clock_getTickPeriod__E
+003f99ec   _ti_sysbios_knl_Clock_getTimerHandle__E
+003f99f0   _ti_sysbios_knl_Clock_tick__E
+003f99f4   _ti_sysbios_knl_Swi_enable__E
+003f99f8   _ti_sysbios_knl_Swi_getTrigger__E
+003f99fc   _ti_sysbios_knl_Swi_self__E
+003f9a00   _ti_sysbios_knl_Swi_startup__E
+003f9a04   _ti_sysbios_knl_Swi_unlockSched__E
+003f9a08   _ti_sysbios_knl_Task_enable__E
+003f9a0c   _ti_sysbios_knl_Task_self__E
+003f9a10   _ti_sysbios_knl_Task_unlockSched__E
+003f9a14   _ti_sysbios_family_c28_Hwi_getIrp__E
+003f9a17   _ti_sysbios_family_c28_f2837x_TimestampProvider_Module_startup__F
+003f9a1a   _ti_sysbios_gates_GateHwi_leave__E
+003f9a1d   _ti_sysbios_hal_Hwi_clearInterrupt__E
+003f9a20   _ti_sysbios_hal_Hwi_disableInterrupt__E
+003f9a23   _ti_sysbios_hal_Hwi_enableInterrupt__E
+003f9a26   _ti_sysbios_hal_Hwi_getHookContext__E
+003f9a29   _ti_sysbios_hal_Hwi_getStackInfo__E
+003f9a2c   _ti_sysbios_hal_Hwi_getTaskSP__E
+003f9a2f   _ti_sysbios_hal_Hwi_post__E
+003f9a32   _ti_sysbios_hal_Hwi_restoreInterrupt__E
+003f9a35   _ti_sysbios_hal_Hwi_setHookContext__E
+003f9a38   _ti_sysbios_hal_Hwi_startup__E
+003f9a3b   _ti_sysbios_hal_Hwi_switchFromBootStack__E
+003f9a3e   _ti_sysbios_hal_Timer_getNumTimers__E
+003f9a41   _ti_sysbios_hal_Timer_getStatus__E
+003f9a44   _ti_sysbios_hal_Timer_startup__E
+003f9a47   _ti_sysbios_knl_Clock_getPeriod__E
+003f9a4a   _ti_sysbios_knl_Clock_isActive__E
+003f9a4d   _ti_sysbios_knl_Clock_setPeriod__E
+003f9a50   _ti_sysbios_knl_Clock_stop__E
+003f9a53   _ti_sysbios_knl_Idle_loop__E
+003f9a56   _ti_sysbios_knl_Intrinsics_maxbit__E
+003f9a59   _ti_sysbios_knl_Mailbox_getNumFreeMsgs__E
+003f9a5c   _ti_sysbios_knl_Queue_Instance_init__F
+003f9a5f   _ti_sysbios_knl_Queue_elemClear__E
+003f9a62   _ti_sysbios_knl_Swi_getPri__E
+003f9a65   _ti_sysbios_knl_Task_getArg0__E
+003f9a68   _ti_sysbios_knl_Task_getArg1__E
+003f9a6b   _ti_sysbios_knl_Task_getEnv__E
+003f9a6e   _ti_sysbios_knl_Task_setArg0__E
+003f9a71   _ti_sysbios_knl_Task_setArg1__E
+003f9a74   _ti_sysbios_knl_Task_setEnv__E
+003f9a77   _ti_sysbios_knl_Task_startup__E
+003f9a7a   _ti_sysbios_hal_Hwi_disable__E
+003f9a7d   _ti_sysbios_hal_Hwi_enable__E
+003f9a80   _ti_sysbios_hal_Hwi_restore__E
+003f9a83   _ti_sysbios_family_c28_Hwi_postInit__I
+003f9a85   _ti_sysbios_family_c28_Timer_getMaxTicks__E
+003f9a87   _ti_sysbios_family_c28_Timer_getNumTimers__E
+003f9a89   _ti_sysbios_gates_GateHwi_query__F
+003f9a8b   _ti_sysbios_gates_GateMutex_query__F
+003f9a8d   _ti_sysbios_heaps_HeapNull_alloc__F
+003f9a8f   _ti_sysbios_heaps_HeapNull_isBlocking__F
+003f9a91   _ti_sysbios_knl_Clock_setTimeout__E
+003f9a93   _ti_sysbios_knl_Event_getPostedEvents__E
+003f9a95   _ti_sysbios_knl_Mailbox_getMsgSize__E
+003f9a97   _ti_sysbios_knl_Queue_head__E
+003f9a99   _ti_sysbios_knl_Queue_next__E
+003f9a9b   _ti_sysbios_knl_Queue_prev__E
+003f9a9d   _ti_sysbios_knl_Semaphore_getCount__E
+003f9a9f   _ti_sysbios_knl_Swi_postInit__I
+003f9aa1   _ti_sysbios_knl_Task_getPri__E
+003f9aa3   _ti_sysbios_BIOS_nullFunc__I
+003f9aa4   _ti_sysbios_family_c28_Timer_setNextTick__E
+003f9aa5   _ti_sysbios_gates_GateHwi_Instance_init__F
+003f9aa6   _ti_sysbios_heaps_HeapNull_Instance_init__F
+003f9aa7   _ti_sysbios_heaps_HeapNull_free__F
+003f9aa8   _ti_sysbios_knl_Clock_logTick__E
+003f9aa9   _ti_sysbios_knl_Semaphore_registerEvent__E
+003f9aaa   _ti_sysbios_knl_Swi_Instance_finalize__F
+003f9aab   _ti_sysbios_family_c28_Clobber_checkScratchRegs__F
+003f9ae9   _ti_sysbios_family_c28_Clobber_checkPreservedRegs__F
+003f9b19   _ti_sysbios_family_c28_Clobber_trashScratchRegs__F
+003f9b40   _ti_sysbios_family_c28_Clobber_trashPreservedRegs__F
+003f9b5b   _ti_sysbios_family_c28_Hwi_switchAndDispatch__I
+003f9b76   _ti_sysbios_family_xxx_Hwi_switchToIsrStack
+003f9b83   _ti_sysbios_family_xxx_Hwi_switchAndRunFunc
+003f9b8e   _ti_sysbios_family_xxx_Hwi_switchToTaskStack
+003f9b98   _ti_sysbios_family_c28_Hwi_getIFR__I
+003f9b9b   _ti_sysbios_family_c28_Hwi_interruptReturn__I
+003f9b9c   _ti_sysbios_family_c28_Hwi_dispatchZeroTable
+003f9bf9   _ti_sysbios_family_c28_Hwi_dispatchZero
+003f9c4a   _ti_sysbios_family_c28_Hwi_dispatchTable
+003f9ca7   _ti_sysbios_family_c28_Hwi_dispatchPie
+003f9ce4   _ti_sysbios_family_c28_IntrinsicsSupport_maxbit__E
+003f9cea   _ti_sysbios_family_c28_TaskSupport_buildTaskStack
+003f9d0f   _ti_sysbios_family_c28_TaskSupport_swap__E
+003f9d2c   _ti_sysbios_family_c28_TaskSupport_glue
+003f9e10   _Td1
+003fa010   _Td0
+003fa210   _Td3
+003fa410   _Td2
+003fa610   _Td4
+003fa810   _Te1
+003faa10   _Te0
+003fac10   _Te3
+003fae10   _Te2
+003fb010   _Te4
+003fb210   _PHY_cosinTable
+003fba10   _PHY_fskGsnIntFilt8Table
+003fbab0   _PHY_ofdmStfPreambleTbl
+003fbb30   _PHY_ofdmLtfBegFreqs
+003fbb50   _PHY_fskGsnIntFilt50Table
+003fbf38   _PHY_pn9Table
+003fc138   _PHY_ofdmLtfRxTable
+003fc16c   _PHY_ofdmChEstFir
+003fc352   _PHY_ofdmchEstFirTracking
+003fc45a   _PHY_fskTxSrcCoefTable
+003fc51a   _PHY_ofdmDeIlvMCS5_6_LUT
+003fc54a   _PHY_ofdmIlvMCS5_6_LUT
+003fc57a   _PHY_ofdmLtfEndFreqs
+003fc598   _PHY_tf1024pFFTTable_vcu2
+003fcae8   _PHY_tf1024pFFTTable_vcu0
+003fcd88   _PHY_tf384pFFTTable
+003fd388   _PHY_primeTXPreamble
+003fd598   _PHY_primeRXPreamble
+003fd798   _PHY_primePrefTable
+003fd818   _PHY_ofdmLtfm4freq
+003fde18   .text
+003fde18   ___text__
+003fde18   _c2brom_pie_isr_not_supported
+003fde61   _c2brom_pie_vect_mismatch_handler
+003fdeaa   _c2brom_handle_nmi
+003fdfc2   _c2brom_itrap_isr
+003fe00b   _c2brom_c1c2_ipc_int1_isr
+003fe1e5   _c2brom_init_boot_env
+003fe1f7   _c2brom_powerup_flash_faster
+003fe21e   _InitDCSM
+003fe2d0   _c2brom_evaluate_bootmode
+003fe2ee   _c2brom_read_otp_bootmode
+003fe309   _c2brom_system_init
+003fe44c   _c2brom_handle_idle_lpm
+003fe451   _c2brom_handle_nmi_for_pie_mismatch
+003fe532   _c2brom_handle_nmi_at_start
+003fe621   _c2brom_init_pie_vect_table
+003fe647   _c2brom_init_pie_control
+003fe66b   _c2brom_set_c2c1_boot_status
+003fe677   _c2brom_send_ipc_to_c1
+003fe68e   _c2brom_c1c2_ipc_set_bits_16
+003fe698   _c2brom_c1c2_ipc_set_bits_32
+003fe6a3   _c2brom_c1c2_ipc_clear_bits_16
+003fe6ae   _c2brom_c1c2_ipc_clear_bits_32
+003fe6ba   _c2brom_c1c2_ipc_write_data_16
+003fe6c4   _c2brom_c1c2_ipc_write_data_32
+003fe6ce   _c2brom_c1c2_ipc_read_data_16
+003fe6d5   _c2brom_c1c2_ipc_read_data_32
+003fe6dc   _c2brom_c1c2_ipc_set_bits_protected_16
+003fe6e9   _c2brom_c1c2_ipc_set_bits_protected_32
+003fe6f7   _c2brom_c1c2_ipc_clear_bits_protected_16
+003fe705   _c2brom_c1c2_ipc_clear_bits_protected_32
+003fe714   _c2brom_c1c2_ipc_write_data_protected_16
+003fe721   _c2brom_c1c2_ipc_write_data_protected_32
+003fe72e   _c2brom_c1c2_ipc_read_data_protected_16
+003fe738   _c2brom_c1c2_ipc_read_data_protected_32
+003fe742   _c2brom_c1c2_ipc_func_call_command
+003fe780   _SPI_Boot
+003fe798   _SPI_start_Boot
+003fe7bd   _SPIA_SetAddress_KeyChk
+003fe7de   _SPIA_GetWordData
+003fe7ec   _SPIA_Init
+003fe816   _sysctl_reset_cause_check
+003fe82d   _sysctl_reset_cause_clear
+003fe83f   _sysctl_reset_cause_check_clear
+003fe857   _sysctl_por_reset_cause_check
+003fe85b   _sysctl_por_reset_cause_clear
+003fe85f   _sysctl_por_reset_cause_check_clear
+003fe863   _sysctl_xrsn_reset_cause_check
+003fe867   _sysctl_xrsn_reset_cause_clear
+003fe86b   _sysctl_xrsn_reset_cause_check_clear
+003fe86f   _sysctl_wdog_reset_cause_check
+003fe873   _sysctl_wdog_reset_cause_clear
+003fe877   _sysctl_wdog_reset_cause_check_clear
+003fe87b   _sysctl_nmi_wdog_reset_cause_check
+003fe87f   _sysctl_nmi_wdog_reset_cause_clear
+003fe883   _sysctl_nmi_wdog_reset_cause_check_clear
+003fe887   _sysctl_hwbist_reset_cause_check
+003fe88b   _sysctl_hwbist_reset_cause_clear
+003fe88f   _sysctl_hwbist_reset_cause_check_clear
+003fe893   _sysctl_hib_reset_cause_check
+003fe897   _sysctl_hib_reset_cause_clear
+003fe89b   _sysctl_hib_reset_cause_check_clear
+003fe89f   _sysctl_scc_reset_cause_check
+003fe8a4   _sysctl_scc_reset_cause_clear
+003fe8a9   _sysctl_scc_reset_cause_check_clear
+003fe8ae   _sysctl_check_xrsn_pin_status
+003fe8b4   _sysctl_check_trstn_pin_status
+003fe8ba   _sysctl_wdog_wddis_lock_set
+003fe8c2   _sysctl_wdog_wddis_lock_status_get
+003fe8ca   _sysctl_wdog_interrupt_enable
+003fe8d2   _sysctl_wdog_interrupt_disable
+003fe8da   _sysctl_wdog_interrupt_status
+003fe8e2   _sysctl_wdog_counter_clear
+003fe8f0   _sysctl_wdog_prescaler_set
+003fe902   _sysctl_wdog_disable
+003fe917   _sysctl_wdog_enable
+003fe930   _sysctl_wdog_window_min_value_get
+003fe93b   _sysctl_wdog_window_min_value_set
+003fe947   _sysctl_wdog_window_min_value_reset
+003fe94f   _sysctl_wdog_interrupt_enable_clear_counter
+003fe95d   _sysctl_wdog_reset_enable_clear_counter
+003fe9a9   _I2C_Boot
+003fe9e6   _I2C_GetWord
+003fe9f9   _DCAN_Boot
+003fea2e   _DCAN_Boot_Gpio
+003fea32   _DCAN_Boot_Init
+003fea62   _DCAN_GetWordData
+003fea70   _DCAN_SendWordData
+003fea81   _SCI_Boot
+003feadb   _SCIA_GetWordData
+003feaf6   _nmi_global_mask_status
+003feafb   _nmi_global_mask_disable
+003feb0a   _nmi_global_mask_enable
+003feb15   _nmi_interrupt_status_get
+003feb27   _nmi_shadow_interrupt_status_get
+003feb39   _nmi_interrupt_force_set
+003feb4d   _nmi_interrupt_clear
+003feb6b   _Parallel_Boot
+003feb85   _Parallel_GetWordData_8bit
+003febc1   _CopyData
+003febe5   _GetLongData
+003febf7   _ReadReservedFn
+003fec07   _SelectBootMode
+003fec4c   _branch_to_entryaddress
+003fec4f   _load_itrap_address
+003fec52   _InitBoot
+003fec52   ___etext__
+003fec52   etext
+003fff3a   c2_bist_signatures_base
+003fff7c   _csum_rom
+01001070   _cla_twiddleFactors
+01001470   _cla_bitReversalTable
+01001870   _CLAatan2HalfPITable
+01001874   _CLAINV2PI
+01001876   _CLAatan2Table
+010019fc   _CLAasinHalfPITable
+010019fc   _CLAatan2TableEnd
+01001a00   _CLAasinTable
+01001b86   _CLAacosinHalfPITable
+01001b86   _CLAasinTableEnd
+01001b8a   _CLAacosinTable
+01001d0a   _CLAacosinTableEnd
+01001d0a   _CLAsinTable
+01001d0a   _CLAsincosTable
+01001d0a   _CLAsincosTable_Sin0
+01001d4a   _CLAcosTable
+01001d4a   _CLAsincosTable_Cos0
+01001e0a   _CLAsinTableEnd
+01001e4c   _CLAcosTableEnd
+01001e4c   _CLAsincosTable_TABLE_SIZE
+01001e4e   _CLAsincosTable_TABLE_SIZEDivTwoPi
+01001e50   _CLAsincosTable_TwoPiDivTABLE_SIZE
+01001e52   _CLAsincosTable_TABLE_MASK
+01001e54   _CLAsincosTable_Coef0
+01001e56   _CLAsincosTable_Coef1
+01001e58   _CLAsincosTable_Coef1_pos
+01001e5a   _CLAsincosTable_Coef2
+01001e5c   _CLAsincosTable_Coef3
+01001e5e   _CLAsincosTable_Coef3_neg
+01001e60   _CLALNV2
+01001e60   _CLAsincosTableEnd
+01001e62   _CLALNVe
+01001e64   _CLALNV10
+01001e66   _CLABIAS
+01001e68   _CLALN_TABLE_MASK1
+01001e6a   _CLALN_TABLE_MASK2
+01001e6c   _CLALnTable
+01001f32   _CLAINV1
+01001f32   _CLALnTableEnd
+01001f34   _CLAINV2
+01001f36   _CLAINV3
+01001f38   _CLAINV4
+01001f3a   _CLAINV5
+01001f3c   _CLAINV6
+01001f3e   _CLAINV7
+01001f40   _CLALOG10
+01001f42   _CLAExpTable
+01001ff4   _CLAExpTableEnd
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   cinit
+ffffffff   pinit
+
+[583 symbols]

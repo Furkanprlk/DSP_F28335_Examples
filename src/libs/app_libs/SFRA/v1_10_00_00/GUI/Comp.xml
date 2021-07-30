@@ -1,0 +1,169 @@
+<MODEL>
+  <!-- Plant ID, 0: Only SFRA , 1: Buck , 2: PFC -->
+  <ID>0</ID>
+  <PLANT>
+    <!-- Only SFRA so no power stage releated parameters-->
+    <!-- Control Frequency -->
+    <Fctrl>200000</Fctrl>
+  </PLANT>
+  <COMP>
+    <COMP1>
+      <!-- Specify whether PID or 3p3z is used for tuning -->
+      <!--  1 for PID, 2 for 2p2z, 3 for 3p3z , 4 for 2p2z with one complex zero-->
+      <!--  5 for 3p3z with 1 complex pole pair, 6 for 3p3z with 1 complex zero-->
+      <!--  7 for 3p3z with 1 complex pole pair & 1 complex zero pair-->
+      <TUNING>2</TUNING>
+      <!-- 3p3z Coefficients-->
+      <A0>1</A0>
+      <A1>1.90999366882427</A1>
+      <A2>-0.909993668824274</A2>
+      <A3>0</A3>
+      <B0>1.76696143233876</B0>
+      <B1>-3.03759917839648</B1>
+      <B2>1.27513806261651</B2>
+      <B3>0</B3>
+      <!-- Pole Zero Location-->
+      <z0>300</z0>
+      <Qz0>3.16227766016838</Qz0>
+      <z1>10000</z1>
+      <z2>1000000</z2>
+      <p0>0</p0>
+      <p1>3000</p1>
+      <Qp1>1</Qp1>
+      <p2>20000000000000</p2>
+      <gain>10000</gain>
+      <!-- PID-->
+      <Kp>1</Kp>
+      <Ti>1E-06</Ti>
+      <Td>0</Td>
+    </COMP1>
+    <COMP2>
+      <!-- Specify whether PID or 3p3z is used for tuning -->
+      <!--  1 for PID, 2 for 2p2z, 3 for 3p3z , 4 for 2p2z with one complex zero-->
+      <!--  5 for 3p3z with 1 complex pole pair, 6 for 3p3z with 1 complex zero-->
+      <!--  7 for 3p3z with 1 complex pole pair & 1 complex zero pair-->
+      <TUNING>2</TUNING>
+      <!-- 3p3z Coefficients-->
+      <A0>1</A0>
+      <A1>0.666666507749268</A1>
+      <A2>0.333333492250732</A2>
+      <A3>0</A3>
+      <B0>1591.59943091885</B0>
+      <B1>-1060.96603434639</B1>
+      <B2>-530.500063223233</B2>
+      <B3>0</B3>
+      <!-- Pole Zero Location-->
+      <z0>1</z0>
+      <Qz0>1</Qz0>
+      <z1>63662</z1>
+      <z2>1000000</z2>
+      <p0>0</p0>
+      <p1>63662</p1>
+      <Qp1>1</Qp1>
+      <p2>20000000000000</p2>
+      <gain>10000</gain>
+      <!-- PID-->
+      <Kp>1</Kp>
+      <Ti>1E-06</Ti>
+      <Td>0</Td>
+    </COMP2>
+    <COMP3>
+      <!-- Specify whether PID or 3p3z is used for tuning -->
+      <!--  1 for PID, 2 for 2p2z, 3 for 3p3z , 4 for 2p2z with one complex zero-->
+      <!--  5 for 3p3z with 1 complex pole pair, 6 for 3p3z with 1 complex zero-->
+      <!--  7 for 3p3z with 1 complex pole pair & 1 complex zero pair-->
+      <TUNING>1</TUNING>
+      <!-- 3p3z Coefficients-->
+      <A0>1</A0>
+      <A1>1</A1>
+      <A2>0</A2>
+      <A3>0</A3>
+      <B0>3.5</B0>
+      <B1>1.5</B1>
+      <B2>0</B2>
+      <B3>0</B3>
+      <!-- Pole Zero Location-->
+      <z0>500</z0>
+      <Qz0>1</Qz0>
+      <z1>63662</z1>
+      <z2>1000000</z2>
+      <p0>0</p0>
+      <p1>63662</p1>
+      <Qp1>1</Qp1>
+      <p2>20000000000000</p2>
+      <gain>10000</gain>
+      <!-- PID-->
+      <Kp>1</Kp>
+      <Ti>1E-06</Ti>
+      <Td>0</Td>
+    </COMP3>
+    <COMP4>
+      <!-- Specify whether PID or 3p3z is used for tuning -->
+      <!--  1 for PID, 2 for 2p2z, 3 for 3p3z , 4 for 2p2z with one complex zero-->
+      <!--  5 for 3p3z with 1 complex pole pair, 6 for 3p3z with 1 complex zero-->
+      <!--  7 for 3p3z with 1 complex pole pair & 1 complex zero pair-->
+      <TUNING>4</TUNING>
+      <!-- 3p3z Coefficients-->
+      <A0>1</A0>
+      <A1>-0.999999821217915</A1>
+      <A2>-1.78782084527726E-07</A2>
+      <A3>0</A3>
+      <B0>1.43108660740246</B0>
+      <B1>-1.38108635154982</B1>
+      <B2>-2.46913542584738E-07</B2>
+      <B3>0</B3>
+      <!-- Pole Zero Location-->
+      <z0>1131.9</z0>
+      <Qz0>1</Qz0>
+      <z1>63662</z1>
+      <z2>1000000</z2>
+      <p0>0</p0>
+      <p1>63662</p1>
+      <Qp1>1</Qp1>
+      <p2>20000000000000</p2>
+      <gain>10000</gain>
+      <!-- PID-->
+      <Kp>1</Kp>
+      <Ti>1E-06</Ti>
+      <Td>0</Td>
+    </COMP4>
+    <COMP5>
+      <!-- Specify whether PID or 3p3z is used for tuning -->
+      <!--  1 for PID, 2 for 2p2z, 3 for 3p3z , 4 for 2p2z with one complex zero-->
+      <!--  5 for 3p3z with 1 complex pole pair, 6 for 3p3z with 1 complex zero-->
+      <!--  7 for 3p3z with 1 complex pole pair & 1 complex zero pair-->
+      <TUNING>5</TUNING>
+      <!-- 3p3z Coefficients-->
+      <A0>1</A0>
+      <A1>2.59507018681166</A1>
+      <A2>-2.53947228615284</A2>
+      <A3>0.944402099341184</A3>
+      <B0>17.8632427698084</B0>
+      <B1>-45.53941953248</B1>
+      <B2>38.486674853614</B2>
+      <B3>-10.7755648996895</B3>
+      <!-- Pole Zero Location-->
+      <z0>1000</z0>
+      <Qz0>1.77827941003892</Qz0>
+      <z1>5000</z1>
+      <z2>2000</z2>
+      <p0>0</p0>
+      <p1>10000</p1>
+      <Qp1>10</Qp1>
+      <p2>20000</p2>
+      <gain>10000</gain>
+      <!-- PID-->
+      <Kp>1</Kp>
+      <Ti>1E-06</Ti>
+      <Td>0</Td>
+    </COMP5>
+  </COMP>
+  <COMP_OPTIONS>
+    <!-- Compensation Design Parameters-->
+    <COMP_NUM>1</COMP_NUM>
+    <!--  Specify Model 0 for mathematical 1 for SFRA Based -->
+    <MODEL_STYLE>1</MODEL_STYLE>
+    <SFRAPATH>SFRAData.csv</SFRAPATH>
+    <COMP_ABS_LIMIT>256</COMP_ABS_LIMIT>
+  </COMP_OPTIONS>
+</MODEL>

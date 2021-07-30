@@ -1,0 +1,91 @@
+******************************************************************************
+TMS320C1x/C2x/C2xx/C5x COFF Linker           Version 7.00                   
+******************************************************************************
+>> Linked Sat Jul 21 21:59:30 2001
+
+OUTPUT FILE NAME:   <template.out>
+ENTRY POINT SYMBOL: "_c_int0"  address: 00000040
+
+
+MEMORY CONFIGURATION
+
+           name     origin    length      used    attributes    fill
+         --------  --------  ---------  --------  ----------  --------
+PAGE 0: VECS      00000000  00000003f  00000037     RWIX      
+         CODE      00000040  000000dc0  000001aa     RWIX      
+
+PAGE 1: Ext_Ram   00008000  000001000  00000423     RWIX      
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+vectors    0    00000000    00000030     
+                  00000000    00000030     Vectors.obj (vectors)
+
+.text      0    00000040    000001aa     
+                  00000040    0000003f     Boot.obj (.text)
+                  0000007f    00000000     Vectors.obj (.text)
+                  0000007f    0000007a     System.obj (.text)
+                  000000f9    000000a1     template.obj (.text)
+                  0000019a    00000050     rts2xx.lib : exit.obj (.text)
+
+.switch    0    00000040    00000000     UNINITIALIZED
+
+.data      1    00008000    00000000     UNINITIALIZED
+                  00008000    00000000     Boot.obj (.data)
+                  00008000    00000000     rts2xx.lib : exit.obj (.data)
+                  00008000    00000000     template.obj (.data)
+                  00008000    00000000     System.obj (.data)
+                  00008000    00000000     Vectors.obj (.data)
+
+.bss       1    00008000    00000023     UNINITIALIZED
+                  00008000    00000022     rts2xx.lib : exit.obj (.bss)
+                  00008022    00000000     Vectors.obj (.bss)
+                  00008022    00000000     template.obj (.bss)
+                  00008022    00000000     Boot.obj (.bss)
+                  00008022    00000001     System.obj (.bss)
+
+.heap      1    00008000    00000000     UNINITIALIZED
+
+.stack     1    00008023    00000400     UNINITIALIZED
+                  00008023    00000000     Boot.obj (.stack)
+
+.cinit     0    00000030    00000007     
+                  00000030    00000006     rts2xx.lib : exit.obj (.cinit)
+                  00000036    00000001     --HOLE-- [fill = 0000]
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+00008000 .bss                             00000000 _vector
+00008000 .data                            00000030 cinit
+00000040 .text                            00000040 .text
+000001e7 C$$EXIT                          00000040 _c_int0
+00000400 __STACK_SIZE                     0000007f _bad_trap
+00008001 __cleanup_ptr                    00000086 _init_system
+000001e7 _abort                           000000a4 _wait_ms
+000001c8 _atexit                          000000f9 _init_GPT1
+0000007f _bad_trap                        0000011b _init_GPT2
+00000040 _c_int0                          0000013c _init_ADC
+00008022 _configdata                      00000157 _read_ADC
+0000019a _exit                            00000167 _main
+0000013c _init_ADC                        0000019a _exit
+000000f9 _init_GPT1                       000001c8 _atexit
+0000011b _init_GPT2                       000001e7 C$$EXIT
+00000086 _init_system                     000001e7 _abort
+00000167 _main                            000001ea etext
+00000157 _read_ADC                        00000400 __STACK_SIZE
+00000000 _vector                          00008000 edata
+000000a4 _wait_ms                         00008000 .bss
+00000030 cinit                            00008000 .data
+00008000 edata                            00008001 __cleanup_ptr
+00008023 end                              00008022 _configdata
+000001ea etext                            00008023 end
+ffffffff pinit                            ffffffff pinit
+
+[25 symbols]

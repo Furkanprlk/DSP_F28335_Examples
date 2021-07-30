@@ -1,0 +1,1 @@
+Floating Point Integer and Fixed Point * IEEE 754 Floating Point Format * Integer Number Basics * Binary Fractions * The “IQ” — Format * Sign Extension * Correcting the redundant sign bit * IQMathLibrary 

@@ -1,0 +1,10 @@
+-z -q -c -ecode_start -m"./Debug/Example_Flash2802x_API.map" -o"./Debug/Example_Flash2802x_API.out" -stack0x200 -w -x -i"C:/CCStudio_v3.3/C2000/xdais/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c2000" -i"C:/Program Files/Texas Instruments/ccsv4/tools/compiler/c2000/lib" -priority
+"C:\Flash28_API\Flash2802x_API_V201_CCS3.3v\lib\rts2800_ml.lib"
+"C:\Flash28_API\Flash2802x_API_V201_CCS3.3v\example\Example_Flash28027_API.cmd"
+"C:\Flash28_API\Flash2802x_API_V201_CCS3.3v\example\DSP2802x_headers\cmd\DSP2802x_Headers_nonBIOS.cmd"
+"C:\Flash28_API\Flash2802x_API_V100\example\Debug\DSP2802x_CodeStartBranch.obj"
+"C:\Flash28_API\Flash2802x_API_V100\example\Debug\DSP2802x_CSMPasswords.obj"
+"C:\Flash28_API\Flash2802x_API_V100\example\Debug\Example_Flash2802x_API.obj"
+"C:\Flash28_API\Flash2802x_API_V100\example\Debug\Example_Flash2802x_CsmKeys.obj"
+"C:\Flash28_API\Flash2802x_API_V100\example\Debug\Example_Flash2802x_GlobalVariableDefs.obj"
+"C:\Flash28_API\Flash2802x_API_V201_CCS3.3v\lib\2802x_FlashAPI_BootROMSymbols_v2.01.lib"

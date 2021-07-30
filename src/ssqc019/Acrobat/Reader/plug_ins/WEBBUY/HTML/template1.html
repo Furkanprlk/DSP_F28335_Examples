@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Adobe Web Buy</title>
+</head>
+
+<body bgcolor="white">
+<basefont face="Arial,Helvetica,sans-serif" size="3">
+<FORM ACTION="$SellerURL$" METHOD="GET">
+<center>
+
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+
+	<tr>
+	<td colspan="2"><nobr>
+	<img src="$ImagePath$/title_adobe.gif" width="150" height="61" border="0" alt="Adobe Logo"><img src="$AltImagePath$" width="300" height="61" border="0" alt="Company Logo"></a><img src="$ImagePath$/title_acrobat.gif" width="150" height="61" border="0" alt="Acrobat Logo"></nobr></td>
+	</tr>
+
+	<tr align="center">
+		<td bgcolor="#cccc99">
+		<p>&nbsp;</p>
+
+		<table width="90%">
+
+			<tr valign="top"> 
+			<td colspan="2">
+			<b><i>$SellerName$</i></b>
+			is requesting the following information about your computer. 
+			This will be used to tie the document you requested to your 
+			computing environment.<br><br></td>
+			</tr>
+
+			<tr> 
+			<td width="41">&nbsp;</td>
+			<td width="92%" align="center">
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="4">
+					
+					$DeviceNames$
+
+					<tr> 
+					<td colspan="2"><font size="2">
+					<br><a href="$Template1Path$">
+					Details about submitting this information
+					</a></font></td>
+					</tr>
+
+				</table>
+			</td>
+			</tr>
+
+			<tr> 
+			<td colspan="2">
+			<br>Click &quot;Submit Data.&quot; to send this information to <i>$SellerName$</i>.</font>
+			<font size="2">
+			(Note: You have not sent any data yet.)
+			</td>
+			</tr>
+
+			<tr> 
+			<td colspan="2">
+			<font color="red" size="2"><br>$HTTPSDisclaimer$<br><br></font>
+			</td>
+			</tr>
+
+			<tr>
+			<td colspan="2" align="center">
+			<input type="image" name="action" src="$ImagePath$/btn_submit.gif" width="97" height="20" border="0" alt="Submit Data"></td>
+			</tr>
+
+		</table>
+		<p>&nbsp;</td>
+	</tr>
+
+	<tr align="center">
+ 	<td><img src="$ImagePath$/table_btm.gif" width="600" height="15" alt="Bottom"></td> 
+	</tr>
+
+</table>
+</center>
+$FormData$
+</form>
+</basefont>
+</body>
+
+</html>

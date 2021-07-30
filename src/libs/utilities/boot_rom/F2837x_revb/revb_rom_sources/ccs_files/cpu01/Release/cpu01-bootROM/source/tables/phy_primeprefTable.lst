@@ -1,0 +1,476 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.1.3 *
+       3              ;* Date/Time created: Thu Jan 30 10:24:19 2014                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --o
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TMS320C2000 C/C++ Codegen PC v6.1.3 Copyright (c) 1996-2012 Texas I
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\work\grepos\bootrom\Boot_ROM\F2837x_bootROM-REVB\F2837x_bootROM_
+      13                      .global _PHY_primePrefTable
+      14 00000000               .sect   "primePrefTable"
+      15                      .align  2
+      16 00000000       _PHY_primePrefTable:
+      17 00000000 0000          .field  0,32                    ; _PHY_primePrefTable[0] @ 0
+         00000001 0000 
+      18 00000002 0000          .field  0,32                    ; _PHY_primePrefTable[1] @ 32
+         00000003 0000 
+      19 00000004 0001          .field  65537,32                        ; _PHY_primePrefTable[2] @ 64
+         00000005 0001 
+      20 00000006 0001          .field  1,32                    ; _PHY_primePrefTable[3] @ 96
+         00000007 0000 
+      21 00000008 0001          .field  65537,32                        ; _PHY_primePrefTable[4] @ 128
+         00000009 0001 
+      22 0000000a 0001          .field  65537,32                        ; _PHY_primePrefTable[5] @ 160
+         0000000b 0001 
+      23 0000000c 0000          .field  0,32                    ; _PHY_primePrefTable[6] @ 192
+         0000000d 0000 
+      24 0000000e 0001          .field  1,32                    ; _PHY_primePrefTable[7] @ 224
+         0000000f 0000 
+      25 00000010 0001          .field  65537,32                        ; _PHY_primePrefTable[8] @ 256
+         00000011 0001 
+      26 00000012 0000          .field  0,32                    ; _PHY_primePrefTable[9] @ 288
+         00000013 0000 
+      27 00000014 0001          .field  1,32                    ; _PHY_primePrefTable[10] @ 320
+         00000015 0000 
+      28 00000016 0000          .field  65536,32                        ; _PHY_primePrefTable[11] @ 352
+         00000017 0001 
+      29 00000018 0000          .field  0,32                    ; _PHY_primePrefTable[12] @ 384
+         00000019 0000 
+      30 0000001a 0000          .field  0,32                    ; _PHY_primePrefTable[13] @ 416
+         0000001b 0000 
+      31 0000001c 0000          .field  0,32                    ; _PHY_primePrefTable[14] @ 448
+         0000001d 0000 
+      32 0000001e 0001          .field  1,32                    ; _PHY_primePrefTable[15] @ 480
+         0000001f 0000 
+      33 00000020 0000          .field  0,32                    ; _PHY_primePrefTable[16] @ 512
+         00000021 0000 
+      34 00000022 0001          .field  1,32                    ; _PHY_primePrefTable[17] @ 544
+         00000023 0000 
+      35 00000024 0000          .field  65536,32                        ; _PHY_primePrefTable[18] @ 576
+         00000025 0001 
+      36 00000026 0001          .field  1,32                    ; _PHY_primePrefTable[19] @ 608
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    2
+
+         00000027 0000 
+      37 00000028 0000          .field  0,32                    ; _PHY_primePrefTable[20] @ 640
+         00000029 0000 
+      38 0000002a 0001          .field  1,32                    ; _PHY_primePrefTable[21] @ 672
+         0000002b 0000 
+      39 0000002c 0001          .field  65537,32                        ; _PHY_primePrefTable[22] @ 704
+         0000002d 0001 
+      40 0000002e 0001          .field  1,32                    ; _PHY_primePrefTable[23] @ 736
+         0000002f 0000 
+      41 00000030 0001          .field  1,32                    ; _PHY_primePrefTable[24] @ 768
+         00000031 0000 
+      42 00000032 0001          .field  65537,32                        ; _PHY_primePrefTable[25] @ 800
+         00000033 0001 
+      43 00000034 0000          .field  65536,32                        ; _PHY_primePrefTable[26] @ 832
+         00000035 0001 
+      44 00000036 0001          .field  1,32                    ; _PHY_primePrefTable[27] @ 864
+         00000037 0000 
+      45 00000038 0000          .field  0,32                    ; _PHY_primePrefTable[28] @ 896
+         00000039 0000 
+      46 0000003a 0000          .field  0,32                    ; _PHY_primePrefTable[29] @ 928
+         0000003b 0000 
+      47 0000003c 0001          .field  65537,32                        ; _PHY_primePrefTable[30] @ 960
+         0000003d 0001 
+      48 0000003e 0000          .field  0,32                    ; _PHY_primePrefTable[31] @ 992
+         0000003f 0000 
+      49 00000040 0001          .field  65537,32                        ; _PHY_primePrefTable[32] @ 1024
+         00000041 0001 
+      50 00000042 0000          .field  65536,32                        ; _PHY_primePrefTable[33] @ 1056
+         00000043 0001 
+      51 00000044 0000          .field  65536,32                        ; _PHY_primePrefTable[34] @ 1088
+         00000045 0001 
+      52 00000046 0000          .field  0,32                    ; _PHY_primePrefTable[35] @ 1120
+         00000047 0000 
+      53 00000048 0001          .field  65537,32                        ; _PHY_primePrefTable[36] @ 1152
+         00000049 0001 
+      54 0000004a 0001          .field  1,32                    ; _PHY_primePrefTable[37] @ 1184
+         0000004b 0000 
+      55 0000004c 0000          .field  65536,32                        ; _PHY_primePrefTable[38] @ 1216
+         0000004d 0001 
+      56 0000004e 0001          .field  65537,32                        ; _PHY_primePrefTable[39] @ 1248
+         0000004f 0001 
+      57 00000050 0001          .field  1,32                    ; _PHY_primePrefTable[40] @ 1280
+         00000051 0000 
+      58 00000052 0001          .field  65537,32                        ; _PHY_primePrefTable[41] @ 1312
+         00000053 0001 
+      59 00000054 0000          .field  65536,32                        ; _PHY_primePrefTable[42] @ 1344
+         00000055 0001 
+      60 00000056 0000          .field  0,32                    ; _PHY_primePrefTable[43] @ 1376
+         00000057 0000 
+      61 00000058 0000          .field  0,32                    ; _PHY_primePrefTable[44] @ 1408
+         00000059 0000 
+      62 0000005a 0001          .field  1,32                    ; _PHY_primePrefTable[45] @ 1440
+         0000005b 0000 
+      63 0000005c 0001          .field  1,32                    ; _PHY_primePrefTable[46] @ 1472
+         0000005d 0000 
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    3
+
+      64 0000005e 0001          .field  1,32                    ; _PHY_primePrefTable[47] @ 1504
+         0000005f 0000 
+      65 00000060 0001          .field  65537,32                        ; _PHY_primePrefTable[48] @ 1536
+         00000061 0001 
+      66 00000062 0001          .field  65537,32                        ; _PHY_primePrefTable[49] @ 1568
+         00000063 0001 
+      67 00000064 0001          .field  1,32                    ; _PHY_primePrefTable[50] @ 1600
+         00000065 0000 
+      68 00000066 0001          .field  1,32                    ; _PHY_primePrefTable[51] @ 1632
+         00000067 0000 
+      69 00000068 0000          .field  65536,32                        ; _PHY_primePrefTable[52] @ 1664
+         00000069 0001 
+      70 0000006a 0000          .field  65536,32                        ; _PHY_primePrefTable[53] @ 1696
+         0000006b 0001 
+      71 0000006c 0000          .field  0,32                    ; _PHY_primePrefTable[54] @ 1728
+         0000006d 0000 
+      72 0000006e 0000          .field  65536,32                        ; _PHY_primePrefTable[55] @ 1760
+         0000006f 0001 
+      73 00000070 0001          .field  1,32                    ; _PHY_primePrefTable[56] @ 1792
+         00000071 0000 
+      74 00000072 0001          .field  65537,32                        ; _PHY_primePrefTable[57] @ 1824
+         00000073 0001 
+      75 00000074 0001          .field  1,32                    ; _PHY_primePrefTable[58] @ 1856
+         00000075 0000 
+      76 00000076 0000          .field  0,32                    ; _PHY_primePrefTable[59] @ 1888
+         00000077 0000 
+      77 00000078 0001          .field  65537,32                        ; _PHY_primePrefTable[60] @ 1920
+         00000079 0001 
+      78 0000007a 0001          .field  65537,32                        ; _PHY_primePrefTable[61] @ 1952
+         0000007b 0001 
+      79 0000007c 0001          .field  65537,32                        ; _PHY_primePrefTable[62] @ 1984
+         0000007d 0001 
+      80 0000007e 0001          .field  1,32                    ; _PHY_primePrefTable[63] @ 2016
+         0000007f 0000 
+      81              
+      82              $C$DW$1 .dwtag  DW_TAG_variable, DW_AT_name("PHY_primePrefTable")
+      83                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_PHY_primePrefTable")
+      84                      .dwattr $C$DW$1, DW_AT_location[DW_OP_addr _PHY_primePrefTable]
+      85                      .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$21)
+      86                      .dwattr $C$DW$1, DW_AT_external
+      87              ;       C:\ti\ccsv5\tools\compiler\c2000_6.1.3\bin\ac2000.exe -@C:\\Users\\a0272466\\AppData\\Local\\Temp\\05
+      88              
+      89              ;***************************************************************
+      90              ;* TYPE INFORMATION                                            *
+      91              ;***************************************************************
+      92              $C$DW$T$4       .dwtag  DW_TAG_base_type
+      93                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+      94                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+      95                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+      96              $C$DW$T$5       .dwtag  DW_TAG_base_type
+      97                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+      98                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+      99                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     100              $C$DW$T$6       .dwtag  DW_TAG_base_type
+     101                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    4
+
+     102                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     103                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     104              $C$DW$T$7       .dwtag  DW_TAG_base_type
+     105                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     106                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     107                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+     108              $C$DW$T$8       .dwtag  DW_TAG_base_type
+     109                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     110                      .dwattr $C$DW$T$8, DW_AT_name("short")
+     111                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+     112              $C$DW$T$9       .dwtag  DW_TAG_base_type
+     113                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     114                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     115                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+     116              $C$DW$T$10      .dwtag  DW_TAG_base_type
+     117                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     118                      .dwattr $C$DW$T$10, DW_AT_name("int")
+     119                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+     120              $C$DW$T$11      .dwtag  DW_TAG_base_type
+     121                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     122                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     123                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+     124              $C$DW$T$12      .dwtag  DW_TAG_base_type
+     125                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     126                      .dwattr $C$DW$T$12, DW_AT_name("long")
+     127                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+     128              $C$DW$T$13      .dwtag  DW_TAG_base_type
+     129                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     130                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     131                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+     132              $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("Uint32")
+     133                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$13)
+     134                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+     135              $C$DW$2 .dwtag  DW_TAG_TI_far_type
+     136                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$19)
+     137              $C$DW$T$20      .dwtag  DW_TAG_const_type
+     138                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$2)
+     139              
+     140              $C$DW$T$21      .dwtag  DW_TAG_array_type
+     141                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+     142                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+     143                      .dwattr $C$DW$T$21, DW_AT_byte_size(0x80)
+     144              $C$DW$3 .dwtag  DW_TAG_subrange_type
+     145                      .dwattr $C$DW$3, DW_AT_upper_bound(0x3f)
+     146                      .dwendtag $C$DW$T$21
+     147              
+     148              $C$DW$T$14      .dwtag  DW_TAG_base_type
+     149                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     150                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+     151                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+     152              $C$DW$T$15      .dwtag  DW_TAG_base_type
+     153                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     154                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     155                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+     156              $C$DW$T$16      .dwtag  DW_TAG_base_type
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    5
+
+     157                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     158                      .dwattr $C$DW$T$16, DW_AT_name("float")
+     159                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+     160              $C$DW$T$17      .dwtag  DW_TAG_base_type
+     161                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     162                      .dwattr $C$DW$T$17, DW_AT_name("double")
+     163                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+     164              $C$DW$T$18      .dwtag  DW_TAG_base_type
+     165                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     166                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+     167                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+     168                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     169              
+     170              ;***************************************************************
+     171              ;* DWARF CIE ENTRIES                                           *
+     172              ;***************************************************************
+     173              
+     174              $C$DW$CIE       .dwcie 78
+     175                      .dwcfi  cfa_register, 20
+     176                      .dwcfi  cfa_offset, 0
+     177                      .dwcfi  undefined, 0
+     178                      .dwcfi  undefined, 1
+     179                      .dwcfi  undefined, 2
+     180                      .dwcfi  undefined, 3
+     181                      .dwcfi  undefined, 22
+     182                      .dwcfi  undefined, 37
+     183                      .dwcfi  undefined, 36
+     184                      .dwcfi  undefined, 23
+     185                      .dwcfi  undefined, 30
+     186                      .dwcfi  undefined, 31
+     187                      .dwcfi  undefined, 32
+     188                      .dwcfi  undefined, 38
+     189                      .dwcfi  undefined, 75
+     190                      .dwcfi  undefined, 24
+     191                      .dwcfi  undefined, 33
+     192                      .dwcfi  undefined, 35
+     193                      .dwcfi  undefined, 34
+     194                      .dwcfi  undefined, 76
+     195                      .dwcfi  undefined, 21
+     196                      .dwcfi  undefined, 20
+     197                      .dwcfi  undefined, 28
+     198                      .dwcfi  undefined, 29
+     199                      .dwcfi  undefined, 25
+     200                      .dwcfi  undefined, 77
+     201                      .dwcfi  undefined, 4
+     202                      .dwcfi  undefined, 6
+     203                      .dwcfi  undefined, 8
+     204                      .dwcfi  undefined, 10
+     205                      .dwcfi  undefined, 12
+     206                      .dwcfi  undefined, 14
+     207                      .dwcfi  undefined, 16
+     208                      .dwcfi  undefined, 17
+     209                      .dwcfi  undefined, 18
+     210                      .dwcfi  undefined, 19
+     211                      .dwcfi  undefined, 5
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    6
+
+     212                      .dwcfi  undefined, 7
+     213                      .dwcfi  undefined, 9
+     214                      .dwcfi  undefined, 11
+     215                      .dwcfi  undefined, 13
+     216                      .dwcfi  undefined, 15
+     217                      .dwcfi  undefined, 43
+     218                      .dwcfi  undefined, 44
+     219                      .dwcfi  undefined, 47
+     220                      .dwcfi  undefined, 48
+     221                      .dwcfi  undefined, 51
+     222                      .dwcfi  undefined, 52
+     223                      .dwcfi  undefined, 55
+     224                      .dwcfi  undefined, 56
+     225                      .dwcfi  undefined, 59
+     226                      .dwcfi  undefined, 60
+     227                      .dwcfi  undefined, 63
+     228                      .dwcfi  undefined, 64
+     229                      .dwcfi  undefined, 67
+     230                      .dwcfi  undefined, 68
+     231                      .dwcfi  undefined, 71
+     232                      .dwcfi  undefined, 72
+     233                      .dwcfi  undefined, 73
+     234                      .dwcfi  undefined, 74
+     235                      .dwcfi  undefined, 39
+     236                      .dwcfi  undefined, 40
+     237                      .dwcfi  undefined, 27
+     238                      .dwcfi  undefined, 78
+     239                      .dwendentry
+     240              
+     241              ;***************************************************************
+     242              ;* DWARF REGISTER MAP                                          *
+     243              ;***************************************************************
+     244              
+     245              $C$DW$4 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AL")
+     246                      .dwattr $C$DW$4, DW_AT_location[DW_OP_reg0]
+     247              $C$DW$5 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AH")
+     248                      .dwattr $C$DW$5, DW_AT_location[DW_OP_reg1]
+     249              $C$DW$6 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PL")
+     250                      .dwattr $C$DW$6, DW_AT_location[DW_OP_reg2]
+     251              $C$DW$7 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PH")
+     252                      .dwattr $C$DW$7, DW_AT_location[DW_OP_reg3]
+     253              $C$DW$8 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("T")
+     254                      .dwattr $C$DW$8, DW_AT_location[DW_OP_reg22]
+     255              $C$DW$9 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
+     256                      .dwattr $C$DW$9, DW_AT_location[DW_OP_regx 0x25]
+     257              $C$DW$10        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
+     258                      .dwattr $C$DW$10, DW_AT_location[DW_OP_regx 0x24]
+     259              $C$DW$11        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST0")
+     260                      .dwattr $C$DW$11, DW_AT_location[DW_OP_reg23]
+     261              $C$DW$12        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SXM")
+     262                      .dwattr $C$DW$12, DW_AT_location[DW_OP_reg30]
+     263              $C$DW$13        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PM")
+     264                      .dwattr $C$DW$13, DW_AT_location[DW_OP_reg31]
+     265              $C$DW$14        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("OVM")
+     266                      .dwattr $C$DW$14, DW_AT_location[DW_OP_regx 0x20]
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    7
+
+     267              $C$DW$15        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("V")
+     268                      .dwattr $C$DW$15, DW_AT_location[DW_OP_regx 0x26]
+     269              $C$DW$16        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDO")
+     270                      .dwattr $C$DW$16, DW_AT_location[DW_OP_regx 0x4b]
+     271              $C$DW$17        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
+     272                      .dwattr $C$DW$17, DW_AT_location[DW_OP_reg24]
+     273              $C$DW$18        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PAGE0")
+     274                      .dwattr $C$DW$18, DW_AT_location[DW_OP_regx 0x21]
+     275              $C$DW$19        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("INTM")
+     276                      .dwattr $C$DW$19, DW_AT_location[DW_OP_regx 0x23]
+     277              $C$DW$20        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AMODE")
+     278                      .dwattr $C$DW$20, DW_AT_location[DW_OP_regx 0x22]
+     279              $C$DW$21        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDOH")
+     280                      .dwattr $C$DW$21, DW_AT_location[DW_OP_regx 0x4c]
+     281              $C$DW$22        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
+     282                      .dwattr $C$DW$22, DW_AT_location[DW_OP_reg21]
+     283              $C$DW$23        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+     284                      .dwattr $C$DW$23, DW_AT_location[DW_OP_reg20]
+     285              $C$DW$24        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FP")
+     286                      .dwattr $C$DW$24, DW_AT_location[DW_OP_reg28]
+     287              $C$DW$25        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("DP")
+     288                      .dwattr $C$DW$25, DW_AT_location[DW_OP_reg29]
+     289              $C$DW$26        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+     290                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg25]
+     291              $C$DW$27        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("VOL")
+     292                      .dwattr $C$DW$27, DW_AT_location[DW_OP_regx 0x4d]
+     293              $C$DW$28        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR0")
+     294                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg4]
+     295              $C$DW$29        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR1")
+     296                      .dwattr $C$DW$29, DW_AT_location[DW_OP_reg6]
+     297              $C$DW$30        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR2")
+     298                      .dwattr $C$DW$30, DW_AT_location[DW_OP_reg8]
+     299              $C$DW$31        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR3")
+     300                      .dwattr $C$DW$31, DW_AT_location[DW_OP_reg10]
+     301              $C$DW$32        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
+     302                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg12]
+     303              $C$DW$33        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR5")
+     304                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg14]
+     305              $C$DW$34        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
+     306                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg16]
+     307              $C$DW$35        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
+     308                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg17]
+     309              $C$DW$36        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR7")
+     310                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg18]
+     311              $C$DW$37        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR7")
+     312                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg19]
+     313              $C$DW$38        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR0")
+     314                      .dwattr $C$DW$38, DW_AT_location[DW_OP_reg5]
+     315              $C$DW$39        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR1")
+     316                      .dwattr $C$DW$39, DW_AT_location[DW_OP_reg7]
+     317              $C$DW$40        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR2")
+     318                      .dwattr $C$DW$40, DW_AT_location[DW_OP_reg9]
+     319              $C$DW$41        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
+     320                      .dwattr $C$DW$41, DW_AT_location[DW_OP_reg11]
+     321              $C$DW$42        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:24:19 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0518010                         PAGE    8
+
+     322                      .dwattr $C$DW$42, DW_AT_location[DW_OP_reg13]
+     323              $C$DW$43        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR5")
+     324                      .dwattr $C$DW$43, DW_AT_location[DW_OP_reg15]
+     325              $C$DW$44        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0HL")
+     326                      .dwattr $C$DW$44, DW_AT_location[DW_OP_regx 0x2b]
+     327              $C$DW$45        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0H")
+     328                      .dwattr $C$DW$45, DW_AT_location[DW_OP_regx 0x2c]
+     329              $C$DW$46        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1HL")
+     330                      .dwattr $C$DW$46, DW_AT_location[DW_OP_regx 0x2f]
+     331              $C$DW$47        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1H")
+     332                      .dwattr $C$DW$47, DW_AT_location[DW_OP_regx 0x30]
+     333              $C$DW$48        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2HL")
+     334                      .dwattr $C$DW$48, DW_AT_location[DW_OP_regx 0x33]
+     335              $C$DW$49        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2H")
+     336                      .dwattr $C$DW$49, DW_AT_location[DW_OP_regx 0x34]
+     337              $C$DW$50        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3HL")
+     338                      .dwattr $C$DW$50, DW_AT_location[DW_OP_regx 0x37]
+     339              $C$DW$51        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3H")
+     340                      .dwattr $C$DW$51, DW_AT_location[DW_OP_regx 0x38]
+     341              $C$DW$52        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4HL")
+     342                      .dwattr $C$DW$52, DW_AT_location[DW_OP_regx 0x3b]
+     343              $C$DW$53        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4H")
+     344                      .dwattr $C$DW$53, DW_AT_location[DW_OP_regx 0x3c]
+     345              $C$DW$54        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5HL")
+     346                      .dwattr $C$DW$54, DW_AT_location[DW_OP_regx 0x3f]
+     347              $C$DW$55        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5H")
+     348                      .dwattr $C$DW$55, DW_AT_location[DW_OP_regx 0x40]
+     349              $C$DW$56        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6HL")
+     350                      .dwattr $C$DW$56, DW_AT_location[DW_OP_regx 0x43]
+     351              $C$DW$57        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6H")
+     352                      .dwattr $C$DW$57, DW_AT_location[DW_OP_regx 0x44]
+     353              $C$DW$58        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7HL")
+     354                      .dwattr $C$DW$58, DW_AT_location[DW_OP_regx 0x47]
+     355              $C$DW$59        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7H")
+     356                      .dwattr $C$DW$59, DW_AT_location[DW_OP_regx 0x48]
+     357              $C$DW$60        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RBL")
+     358                      .dwattr $C$DW$60, DW_AT_location[DW_OP_regx 0x49]
+     359              $C$DW$61        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RB")
+     360                      .dwattr $C$DW$61, DW_AT_location[DW_OP_regx 0x4a]
+     361              $C$DW$62        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STFL")
+     362                      .dwattr $C$DW$62, DW_AT_location[DW_OP_regx 0x27]
+     363              $C$DW$63        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STF")
+     364                      .dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x28]
+     365              $C$DW$64        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FPUHAZ")
+     366                      .dwattr $C$DW$64, DW_AT_location[DW_OP_reg27]
+     367              $C$DW$65        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+     368                      .dwattr $C$DW$65, DW_AT_location[DW_OP_regx 0x4e]
+     369                      .dwendtag $C$DW$CU
+     370              
+
+No Assembly Errors, No Assembly Warnings

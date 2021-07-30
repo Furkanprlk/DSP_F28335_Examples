@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="C28x_VCU_LIB.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.561047332" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+<configuration artifactExtension="lib" artifactName="${INSTALLROOT_TO_VCU}/lib/C28x_VCU_LIB" description="Standard Build Configuration" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.12330831" name="STD" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.0.libraryDebugToolchain.2057035421" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.libraryDebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.librarianDebug.52623902">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1686963989" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.GenericC28xxDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.2"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1777532659" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.0.1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1029564139" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING.2001850464" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.966126989" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL.1461244796" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY.639886644" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.KEEP_UNNEEDED_STATICS.1601994384" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.KEEP_UNNEEDED_STATICS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1230024015" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_2806X_V110}/F2806x_common/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_2806X_V110}/F2806x_headers/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_TO_VCU}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.975933427" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.librarianDebug.52623902" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.librarianDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.archiverID.PRINT_GLOBAL_SYMBOLS.2095918900" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.archiverID.PRINT_GLOBAL_SYMBOLS" value="true" valueType="boolean"/>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.12330831./C28x_VCU_LIB/viterbi/viterbi_K7CRhalf.asm" name="viterbi_K7CRhalf.asm" rcbsApplicability="disable" resourcePath="/C28x_VCU_LIB/viterbi/viterbi_K7CRhalf.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1029564139./C28x_VCU_LIB/viterbi/viterbi_K7CRhalf.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1029564139./C28x_VCU_LIB/viterbi/viterbi_K7CRhalf.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1029564139"/>
+</resourceConfiguration>
+</configuration>
+<configuration artifactExtension="lib" artifactName="${INSTALLROOT_TO_VCU}/lib/C28x_VCU_LIB_fpu32" description="Standard Build Configuration with FPU32 support" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.2084347288" name="STD_FPU32" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000.Debug.ToolchainPlaceholder.1744353444" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.libraryDebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.librarianDebug.52623902">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1626530936" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.GenericC28xxDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.2"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.526022292" name="Code Generation tools version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.0.1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1994932812" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING.1136874355" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.1297858885" name="Processor version (--silicon_version, -v)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL.1766909060" name="Use large memory model (--large_memory_model, -ml)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY.1377613742" name="Unified memory (--unified_memory, -mt)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.KEEP_UNNEEDED_STATICS.482998590" name="Do not delete unreferenced static variables (--keep_unneeded_statics)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.KEEP_UNNEEDED_STATICS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1688275322" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_2806X_V110}/F2806x_common/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_2806X_V110}/F2806x_headers/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_TO_VCU}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.728006644" name="Specify VCU support (--vcu_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.491385247" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.librarianDebug.373921124" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.librarianDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.archiverID.PRINT_GLOBAL_SYMBOLS.489196970" name="Print symbol table contents (s)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.archiverID.PRINT_GLOBAL_SYMBOLS" value="true" valueType="boolean"/>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.2084347288./C28x_VCU_LIB/viterbi/viterbi_K7CRhalf.asm" name="viterbi_K7CRhalf.asm" rcbsApplicability="disable" resourcePath="/C28x_VCU_LIB/viterbi/viterbi_K7CRhalf.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1029564139.288111552">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1029564139.288111552" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.library.compilerDebug.1994932812"/>
+</resourceConfiguration>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

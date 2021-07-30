@@ -1,0 +1,1 @@
+Floating-point, Integer and Fixed-point * IEEE-754 Floating-point Format * Integer Number Basics * Binary Fractions * The “IQ”-Format * Lab4:  Benchmark of Fixed-point and Floating-point

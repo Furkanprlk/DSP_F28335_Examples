@@ -1,0 +1,50 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="f2812_boot_rom"
+ProjectDir="C:\Data\2802x\boot_rom\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Release"
+
+[Source Files]
+Source="DSP2802x_headers\source\DSP2802x_GlobalVariableDefs.c"
+Source="flash_api\Flash2802x_API_V201.lib"
+Source="IQlib\IQmath.lib"
+Source="source\I2C_Boot.c"
+Source="source\Init_Boot.asm"
+Source="source\IQmathTables.ASM"
+Source="source\IQNasinTable.asm"
+Source="source\IQNexpTable.ASM"
+Source="source\ITRAPIsr.asm"
+Source="source\Parallel_Boot.c"
+Source="source\SCI_Boot.c"
+Source="source\SelectMode_Boot.c"
+Source="source\Shared_Boot.c"
+Source="source\SPI_Boot.c"
+Source="source\SysCtrl_Boot.c"
+Source="source\Vectors_Boot.asm"
+Source="DSP2802x_headers\cmd\DSP2802x_Headers_nonBIOS.cmd"
+Source="flash_api\Flash2802x_APIfuncs.cmd"
+Source="lnk\TMS320x2802x_boot_rom_lnk.cmd"
+Source="lnk\TMS320x2802x_iqfuncs.cmd"
+
+["Compiler" Settings: "Release"]
+Options=-g -q -pdr -pdv -fr"C:\Data\2802x\boot_rom\Release" -i"../include" -i"../DSP2802x_headers\include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v28
+
+["Linker" Settings: "Release"]
+Options=-q -e_InitBoot -m".\Release\2802x_boot_rom.map" -o".\Release\TMS320x2802x_boot_rom.out" -stack0x200 -w -x --xml_link_info="boot_rom.xml"
+
+["flash_api\Flash2802x_APIfuncs.cmd" Settings: "Release"]
+LinkOrder=1
+
+["lnk\TMS320x2802x_iqfuncs.cmd" Settings: "Release"]
+LinkOrder=1
+

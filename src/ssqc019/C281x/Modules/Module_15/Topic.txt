@@ -1,0 +1,1 @@
+* Basics of Electrical Motors * Motor Control Principles * FOC Core Math Operations	 * TI Digital Motor Control Library * Lab 15: PMSM control project

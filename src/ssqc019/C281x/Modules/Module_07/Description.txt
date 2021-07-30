@@ -1,0 +1,2 @@
+The TMS320C28x contains built-in features that allow several methods of communication and data exchange between the C28x and other devices. This chapter deals with the Serial Peripheral Interface (SPI). Two other interface techniques (SCI and CAN) will be discussed in later chapters.
+The SPI module is a synchronous serial I/O port that shifts a serial bit stream of variable length and data rate between the 'C28x' and other peripheral devices. Here "synchronous" means that the data transmission is synchronized to a clock signal.

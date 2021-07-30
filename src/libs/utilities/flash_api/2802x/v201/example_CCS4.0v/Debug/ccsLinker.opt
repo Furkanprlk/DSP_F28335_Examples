@@ -1,0 +1,18 @@
+--silicon_version=28 
+-g 
+--define="_DEBUG" --define="LARGE_MODEL" 
+--quiet 
+--diag_warning=225 
+--issue_remarks 
+--large_memory_model 
+--obj_directory="C:/Flash28_API/Flash2802x_API_V100/example/Debug" 
+-z 
+-m"Example_Flash2802x_API.map" 
+--stack_size=0x200 
+--warn_sections 
+-i"C:/Program Files/Texas Instruments/ccsv4/tools/compiler/c2000/lib" -i"C:/Program Files/Texas Instruments/ccsv4/tools/compiler/c2000/include" -i"C:/Flash28_API/Flash2802x_API_V201_CCS4.0v/example" 
+--priority 
+--reread_libs 
+--entry_point=code_start 
+--rom_model 
+"C:/Flash28_API/Flash2802x_API_V201_CCS4.0v/lib/rts2800_ml.lib" "../Example_Flash28027_API.cmd" "../DSP2802x_headers/cmd/DSP2802x_Headers_nonBIOS.cmd" "C:/Flash28_API/Flash2802x_API_V100/example/Debug/DSP2802x_CodeStartBranch.obj" "C:/Flash28_API/Flash2802x_API_V100/example/Debug/DSP2802x_CSMPasswords.obj" "C:/Flash28_API/Flash2802x_API_V100/example/Debug/Example_Flash2802x_GlobalVariableDefs.obj" "C:/Flash28_API/Flash2802x_API_V100/example/Debug/Example_Flash2802x_CsmKeys.obj" "C:/Flash28_API/Flash2802x_API_V100/example/Debug/Example_Flash2802x_API.obj" "C:/Flash28_API/Flash2802x_API_V201_CCS4.0v/lib/2802x_FlashAPI_BootROMSymbols_v2.01.lib" 

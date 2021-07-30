@@ -1,0 +1,40 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\tidcs\c28\C28x_FPU_Lib\beta1\source\"
+ProjectType=Library
+CPUFamily=TMS320C28XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\include\IQmathLib.h"
+Source="RFFT_f32.asm"
+Source="RFFT_f32_mag.asm"
+Source="RFFT_f32_phase.asm"
+Source="RFFT_f32_sincostable_IQ.c"
+Source="RFFT_f32s_mag.asm"
+Source="RFFT_f32u.asm"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o"..\lib\C28x_FPU_Lib_Beta1.lib"
+
+["Archiver" Settings: "Release"]
+Options=-r -o".\Release\C28x_FPU_Lib.lib"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -o3 -fr"$(Proj_dir)\Debug" -i"..\include" -d"alignbuf" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["..\include\IQmathLib.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\include\IQmathLib.h" Settings: "Release"]
+ExcludeFromBuild=true
+

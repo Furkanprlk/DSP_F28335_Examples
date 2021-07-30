@@ -1,0 +1,56 @@
+//###########################################################################
+// Description:
+//
+// Task 1: acos
+//
+//###########################################################################
+// $TI Release:  $
+// $Release Date:  $
+//###########################################################################
+
+
+#include "CLAMath.h"
+#include "CLAShared.h"
+
+//Task 1 : Calculate acos(X) using the tables in ROM
+// Note that the F2837x has 65 triplets in the acos lookup table and the user must 
+// use the special variant of the acos routine i.e CLAacos_spc to use the table 
+// correctly (the first triplet must be skipped in the calculations)
+//           
+interrupt void Cla1Task1 ( void )
+{
+	__mdebugstop();
+    fResult = CLAacos(fVal);
+}
+
+interrupt void Cla1Task2 ( void )
+{
+
+}
+interrupt void Cla1Task3 ( void )
+{
+
+}
+interrupt void Cla1Task4 ( void )
+{
+
+}
+interrupt void Cla1Task5 ( void )
+{
+
+}
+interrupt void Cla1Task6 ( void )
+{
+
+}
+interrupt void Cla1Task7 ( void )
+{
+
+}
+interrupt void Cla1Task8 ( void )
+{
+
+}
+
+// End of file
+

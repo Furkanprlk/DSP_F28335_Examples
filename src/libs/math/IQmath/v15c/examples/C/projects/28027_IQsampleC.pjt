@@ -1,0 +1,38 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="IQsampleC"
+ProjectDir="C:\ti\controlSUITE\libs\math\IQmath\v15b\examples\C\projects\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="..\..\..\lib\IQmath.lib"
+Source="..\..\bootROM_symbols\2802x_IQmath_BootROMSymbols.lib"
+Source="..\source\CodeStartBranch.asm"
+Source="..\source\IQsampleSmall.c"
+Source="..\..\cmd\28027_IQmath_lnk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -k -q -al -as -o3 -fr"C:\ti\controlSUITE\libs\math\IQmath\v15b\examples\C\projects\\Debug" -i"..\..\..\include" -d"_DEBUG" -d"LARGE_MODEL" -ml -mn -mt -v28 -mf
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v28
+
+["Linker" Settings: "Debug"]
+Options=-q -c -ecode_start -heap2000 -m".\Debug\28027_IQsampleC.map" -o".\Debug\28027_IQsampleC.out" -stack400 -x -i"..\..\..\lib" -l"rts2800_ml.lib"
+
+["..\..\..\lib\IQmath.lib" Settings: "Debug"]
+LinkOrder=2
+
+["..\..\bootROM_symbols\2802x_IQmath_BootROMSymbols.lib" Settings: "Debug"]
+LinkOrder=1
+
+["..\..\cmd\28027_IQmath_lnk.cmd" Settings: "Debug"]
+LinkOrder=1
+

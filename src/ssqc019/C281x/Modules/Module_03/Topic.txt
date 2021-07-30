@@ -1,0 +1,1 @@
+Data Memory Mapped Peripherals * Digital I/O Registers * The Peripheral Frames	* C28x Clock Module * Digital I/O Unit * Watchdog Timer * System Control and Status Register * Low Power Mode * Lab 2: Digital Output — 8 LED’s * Lab 2A: Digital Output 8 LED’s * Lab 3: Digital Input * Lab 3A: Digital Input + Output * Lab 3B: Start / Stop Option

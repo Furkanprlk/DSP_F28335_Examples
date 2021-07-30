@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
+<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1885968900">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1885968900" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1885968900" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug" postbuildStep="" prebuildStep="">
+<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1885968900." name="/" resourcePath="">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.DebugToolchain.733592394" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.linkerDebug.505537793">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.464220233" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.CustomC2000Device">
+</listOptionValue>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF">
+</listOptionValue>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.5.0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=">
+</listOptionValue>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=">
+</listOptionValue>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.9719804" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="18.12.2.LTS" valueType="string">
+</option>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerDebug.1530137375" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH.1515724014" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\Users\furka\Desktop\Furkan_dosya\adc_oku">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\Users\furka\Desktop\Furkan_dosya\adc_oku\adc_oku_ert_rtw">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\extern\include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\simulink\include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\rtw\c\src">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\rtw\c\src\ext_mode\common">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\rtw\c\ert">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\inc">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\toolbox\shared\can\src\scanutil">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\src">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\inc">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\shared\externalmode_daemon\include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\toolbox\rtw\targets\common\can\blocks\tlc_c">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE.1045084510" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="MODEL=adc_oku">
+</listOptionValue>
+<listOptionValue builtIn="false" value="NUMST=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="NCSTATES=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="HAVESTDIO">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="CLASSIC_INTERFACE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="ALLOCATIONFCN=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="TID01EQ=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="TERMFCN=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="ONESTEPFCN=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MAT_FILE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MULTI_INSTANCE_CODE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="INTEGER_CODE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MT=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="DAEMON_MODE=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_CUSTOM_PLATFORM">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MW_PIL_SCIFIFOLEN=16">
+</listOptionValue>
+<listOptionValue builtIn="false" value="STACK_SIZE=1024">
+</listOptionValue>
+<listOptionValue builtIn="false" value="__MW_TARGET_USE_HARDWARE_RESOURCES_H__">
+</listOptionValue>
+<listOptionValue builtIn="false" value="RT">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F28335">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MW_FAST_RTS_INCLUDED=0">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
+<listOptionValue builtIn="false" value=" -s -v28 -ml  --preproc_dependency=$(@:%.obj=%.dep) --preproc_with_compile  --large_memory_model --silicon_version=28 -I$(TI_INCLUDE) -v28 --float_support=fpu32 -ml -DF28335 -DBOOT_FROM_FLASH=1">
+</listOptionValue>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.linkerDebug.505537793" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.SEARCH_PATH.236197958" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.SEARCH_PATH" valueType="libPaths">
+<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY.1472299698" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\libs\math\FPUfastRTS\V100\lib\rts2800_fpu32_fast_supplement.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\3P.instrset\tic2000codegentools.instrset\ti-cgt-c2000_18.12.2.LTS\lib\rts2800_fpu32.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\rtlib\IQmath_fpu32.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src\c2833xPeripherals.cmd">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\toolbox\target\extensions\processor\tic2000\lib\SFO_TI_Build_V5_fpu.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src\c28335.cmd">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE.1003708014" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="F28335">
+</listOptionValue>
+<listOptionValue builtIn="false" value="PWM_DMAACCESS=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_USING_BL=0">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS.14752160" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS" valueType="stringList">
+<listOptionValue builtIn="false" value=" -z  --stack_size=1024 --warn_sections --heap_size=1024 --reread_libs --rom_model --priority -madc_oku.map">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE.1457437285" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE" value="${ProjName}.out" valueType="string">
+</option>
+<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD_SRCS.1492860274" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD_SRCS">
+</inputType>
+<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD2_SRCS.780846101" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD2_SRCS">
+</inputType>
+<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__GEN_CMDS.1458696775" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__GEN_CMDS">
+</inputType>
+</tool>
+</toolChain>
+</folderInfo>
+</configuration>
+</storageModule>
+</cconfiguration>
+<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Release.1561317753">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1561317753" moduleId="org.eclipse.cdt.core.settings" name="Release">
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1561317753" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release" postbuildStep="" prebuildStep="">
+<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Release.1561317753." name="/" resourcePath="">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.ReleaseToolchain.854702552" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.linkerRelease.207571367">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1495212616" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.CustomC2000Device">
+</listOptionValue>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF">
+</listOptionValue>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.5.0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=">
+</listOptionValue>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=">
+</listOptionValue>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1784128076" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="18.12.2.LTS" valueType="string">
+</option>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerRelease.1180404667" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH.899964030" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\Users\furka\Desktop\Furkan_dosya\adc_oku">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\Users\furka\Desktop\Furkan_dosya\adc_oku\adc_oku_ert_rtw">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\extern\include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\simulink\include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\rtw\c\src">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\rtw\c\src\ext_mode\common">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\rtw\c\ert">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\inc">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\toolbox\shared\can\src\scanutil">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\src">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\inc">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\shared\externalmode_daemon\include">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\toolbox\rtw\targets\common\can\blocks\tlc_c">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE.1616953459" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="MODEL=adc_oku">
+</listOptionValue>
+<listOptionValue builtIn="false" value="NUMST=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="NCSTATES=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="HAVESTDIO">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="CLASSIC_INTERFACE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="ALLOCATIONFCN=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="TID01EQ=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="TERMFCN=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="ONESTEPFCN=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MAT_FILE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MULTI_INSTANCE_CODE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="INTEGER_CODE=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MT=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="DAEMON_MODE=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_CUSTOM_PLATFORM">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MW_PIL_SCIFIFOLEN=16">
+</listOptionValue>
+<listOptionValue builtIn="false" value="STACK_SIZE=1024">
+</listOptionValue>
+<listOptionValue builtIn="false" value="__MW_TARGET_USE_HARDWARE_RESOURCES_H__">
+</listOptionValue>
+<listOptionValue builtIn="false" value="RT">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F28335">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="MW_FAST_RTS_INCLUDED=0">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
+<listOptionValue builtIn="false" value=" -s -v28 -ml  --preproc_dependency=$(@:%.obj=%.dep) --preproc_with_compile  --large_memory_model --silicon_version=28 -I$(TI_INCLUDE) -v28 --float_support=fpu32 -ml -DF28335 -DBOOT_FROM_FLASH=1">
+</listOptionValue>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.linkerRelease.207571367" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.SEARCH_PATH.1512694342" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.SEARCH_PATH" valueType="libPaths">
+<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY.584832647" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\libs\math\FPUfastRTS\V100\lib\rts2800_fpu32_fast_supplement.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\3P.instrset\tic2000codegentools.instrset\ti-cgt-c2000_18.12.2.LTS\lib\rts2800_fpu32.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\rtlib\IQmath_fpu32.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src\c2833xPeripherals.cmd">
+</listOptionValue>
+<listOptionValue builtIn="false" value="F:\Program Files\Polyspace\R2020b\toolbox\target\extensions\processor\tic2000\lib\SFO_TI_Build_V5_fpu.lib">
+</listOptionValue>
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src\c28335.cmd">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE.1144595131" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="F28335">
+</listOptionValue>
+<listOptionValue builtIn="false" value="PWM_DMAACCESS=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_USING_BL=0">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS.14752160" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS" valueType="stringList">
+<listOptionValue builtIn="false" value=" -z  --stack_size=1024 --warn_sections --heap_size=1024 --reread_libs --rom_model --priority -madc_oku.map">
+</listOptionValue>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE.1598482650" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE" value="${ProjName}.out" valueType="string">
+</option>
+<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD_SRCS.2008399706" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD_SRCS">
+</inputType>
+<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD2_SRCS.1194880793" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__CMD2_SRCS">
+</inputType>
+<inputType id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__GEN_CMDS.328294782" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exeLinker.inputType__GEN_CMDS">
+</inputType>
+</tool>
+</toolChain>
+</folderInfo>
+</configuration>
+</storageModule>
+</cconfiguration>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<project id="LED_Blink.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.460463034" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+</project>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+</storageModule>
+</cproject>

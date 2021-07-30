@@ -1,0 +1,2 @@
+This module introduces the integrated peripherals of the C28x DSP. We have not only a 32-bit DSP core, but also all of the peripheral units needed to build a single chip control system (SOC - “System on Chip”). These integrated peripherals give the C28x an important advantage over other processors.
+We will start with the simplest peripheral unit — Digital I/O. At the end of this chapter we will exercise input lines (switches, buttons) and output lines (LED’s).

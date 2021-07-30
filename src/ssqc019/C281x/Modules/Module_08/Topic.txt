@@ -1,0 +1,1 @@
+* SCI Data Format * SCI Register Set * SCI Multi Processor Wake Up Modes	* Lab 8: Basic SCI — Transmission * Lab 8A: Interrupt SCI — Transmission * Lab 8B: SCI — FIFO Transmission * Lab 8C: SCI — Receive & Transmit		

@@ -1,0 +1,51 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:26:23 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_utility_funcs.asm PAGE    1
+
+       1              ;; TI File $Revision: /main/1 $
+       2              ;; Checkin $Date: August 13, 2012   11:53:45 $
+       3              ;;###########################################################################
+       4              ;;
+       5              ;; FILE:    cbrom_utility_functions.asm
+       6              ;;
+       7              ;; TITLE:   Boot Rom C callable assembly utility functions.
+       8              ;;
+       9              ;; Functions:
+      10              ;;
+      11              ;;
+      12              ;; Notes:
+      13              ;;
+      14              ;;###########################################################################
+      15              ;; $TI Release: F2837x Boot ROM V1.0 $
+      16              ;; $Release Date: October 2013 $
+      17              ;;###########################################################################
+      18              
+      19                      .global _branch_to_entryaddress
+      20                      .global _load_itrap_address
+      21              
+      22              ; C-calling convention: branch_to_entryaddress (unsigned long *entryaddress)
+      23              ; Parameter is stored in XAR4
+      24              ; Function moves the Entry Address into the ISR return from address on the stack
+      25              
+      26 00000000       _branch_to_entryaddress:
+      27                           
+      28 00000000 06C4          MOVL  ACC, *XAR4          ; load ACC with the desired branch address
+      29 00000001 1E5E          MOVL *-SP[30], ACC    ; move branch address to cbrom_mtoc_ipc_int1_isr return address on stack
+      30 00000002 0006      LRETR
+      31              
+      32              ; C-calling convention: load_itrap_address (unsigned long *itrapaddress)
+      33              ; Parameter is stored in XAR4
+      34              ; Function loads the address where the ITRAP occurred stored from the stack and
+      35              ; into the address pointed to by the itrapaddress pointer.
+      36              ; The stack location where the ITRAP return address is stored on the stack will change 
+      37              ; according to compiler optimizations, The below value is without any optimizations - 
+      38              ; if the code uses optimizations please re-check the below value
+      39              ;    
+      40              
+      41 00000003       _load_itrap_address:
+      42 00000003 065E          MOVL ACC, *-SP[30];   ; load ITRAP address location on stack into ACC
+      43 00000004 1EC4          MOVL *XAR4, ACC       ; return ITRAP address back to calling function
+      44 00000005 0006          LRETR
+
+No Assembly Errors, No Assembly Warnings

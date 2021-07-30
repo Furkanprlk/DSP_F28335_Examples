@@ -1,0 +1,1 @@
+Basics of Electrical Motors * Motor Control Principles * 3-Phase Power Switches * Field Oriented Control (FOC) Schematics * F2833x Features for Motor Control * Texas Instruments Digital Motor Control Library * Example: PMSM Framework * C2000 Motor Control Hardware

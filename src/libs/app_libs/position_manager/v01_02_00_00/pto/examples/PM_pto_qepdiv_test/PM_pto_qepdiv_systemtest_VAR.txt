@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExportImportMemento.1>
+<VarMeta IMemento.internal.id="indexWidth"/>
+<VarMeta IMemento.internal.id="divVal"/>
+<VarMeta IMemento.internal.id="divValnext"/>
+</ExportImportMemento.1>

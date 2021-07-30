@@ -1,0 +1,2 @@
+For standalone embedded control applications, we need to store our control code in  NON-Volatile memory. The F2812 is equipped with an internal Flash memory area of 128Kx16.
+Chapter 10 also covers the password feature of the C28x code security module. This module is used to embed dedicated portions of the C28x memory in a secure section with a 128bit-password. If the user does not know the correct combination that was programmed into the password section any access to the secured areas will be denied! This is a security measure to prevent revers-engineering.

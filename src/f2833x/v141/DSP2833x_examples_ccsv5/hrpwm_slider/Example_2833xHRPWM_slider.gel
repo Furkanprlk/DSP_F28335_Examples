@@ -1,0 +1,23 @@
+/*
+// TI File $Revision: /main/1 $
+// Checkin $Date: May 27, 2009   13:29:55 $
+//###########################################################################
+//
+// This .gel file can be used to help load and build the example project.
+// It should be unloaded from Code Composer Studio before loading another
+// project.
+//
+//###########################################################################
+// $TI Release: F2833x/F2823x Header Files and Peripheral Examples V141 $
+// $Release Date: November  6, 2015 $
+// $Copyright: Copyright (C) 2007-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+*/
+
+menuitem "DSP2833x HRPWM FineDutySlider"
+slider FineDutySlider(1, 255, 1, 1, finedutyvalue)
+{
+
+	DutyFine = finedutyvalue;
+}

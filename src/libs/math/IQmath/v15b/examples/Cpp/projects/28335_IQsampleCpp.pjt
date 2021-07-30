@@ -1,0 +1,30 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="IQsampleC"
+ProjectDir="C:\ti\controlSUITE\libs\math\IQmath\v15b\examples\Cpp\projects"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="..\source\CodeStartBranch.asm"
+Source="..\source\IQsample.cpp"
+Source="..\..\cmd\28335_IQmath_lnk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -k -q -al -as -o3 -fr"C:\ti\controlSUITE\libs\math\IQmath\v15b\examples\Cpp\projects\Debug" -i"..\..\..\include" -d"_DEBUG" -d"LARGE_MODEL" -ml -mn -mt -v28 --float_support=fpu32 -mf
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v28
+
+["Linker" Settings: "Debug"]
+Options=-q -c -ecode_start -heap2000 -m".\Debug\28335_IQsampleCpp.map" -o".\Debug\28335_IQsampleCpp.out" -stack400 -x -i"..\..\..\lib" -l"rts2800_fpu32.lib" -l"IQmath_fpu32.lib"
+
+["..\..\cmd\28335_IQmath_lnk.cmd" Settings: "Debug"]
+LinkOrder=1
+

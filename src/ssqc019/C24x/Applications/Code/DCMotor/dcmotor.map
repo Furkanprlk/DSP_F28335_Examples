@@ -1,0 +1,99 @@
+******************************************************************************
+TMS320C1x/C2x/C2xx/C5x COFF Linker           Version 7.00                   
+******************************************************************************
+>> Linked Sat Jul 21 17:02:21 2001
+
+OUTPUT FILE NAME:   <dcmotor.out>
+ENTRY POINT SYMBOL: "_c_int0"  address: 00000040
+
+
+MEMORY CONFIGURATION
+
+           name     origin    length      used    attributes    fill
+         --------  --------  ---------  --------  ----------  --------
+PAGE 0: VECS      00000000  00000003f  00000037     RWIX      
+         CODE      00000040  000000dc0  00000296     RWIX      
+
+PAGE 1: Ext_Ram   00008000  000001000  00000423     RWIX      
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+vectors    0    00000000    00000030     
+                  00000000    00000030     Vectors.obj (vectors)
+
+.text      0    00000040    00000296     
+                  00000040    0000003f     Boot.obj (.text)
+                  0000007f    00000000     Vectors.obj (.text)
+                  0000007f    00000181     dcmotor.obj (.text)
+                  00000200    0000007a     System.obj (.text)
+                  0000027a    0000000c     rts2xx.lib : lmpy.obj (.text)
+                  00000286    00000050                : exit.obj (.text)
+
+.switch    0    00000040    00000000     UNINITIALIZED
+
+.data      1    00008000    00000000     UNINITIALIZED
+                  00008000    00000000     Boot.obj (.data)
+                  00008000    00000000     rts2xx.lib : exit.obj (.data)
+                  00008000    00000000                : lmpy.obj (.data)
+                  00008000    00000000     System.obj (.data)
+                  00008000    00000000     dcmotor.obj (.data)
+                  00008000    00000000     Vectors.obj (.data)
+
+.bss       1    00008000    00000023     UNINITIALIZED
+                  00008000    00000022     rts2xx.lib : exit.obj (.bss)
+                  00008022    00000000     dcmotor.obj (.bss)
+                  00008022    00000000     Vectors.obj (.bss)
+                  00008022    00000000     Boot.obj (.bss)
+                  00008022    00000000     rts2xx.lib : lmpy.obj (.bss)
+                  00008022    00000001     System.obj (.bss)
+
+.heap      1    00008000    00000000     UNINITIALIZED
+
+.stack     1    00008023    00000400     UNINITIALIZED
+                  00008023    00000000     Boot.obj (.stack)
+
+.cinit     0    00000030    00000007     
+                  00000030    00000006     rts2xx.lib : exit.obj (.cinit)
+                  00000036    00000001     --HOLE-- [fill = 0000]
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+00008000 .bss                             00000000 _vector
+00008000 .data                            00000030 cinit
+00000040 .text                            00000040 .text
+000002d3 C$$EXIT                          00000040 _c_int0
+0000027a L$$MPY                           0000007f _init_GPT1
+00000400 __STACK_SIZE                     000000a1 _init_GPT2
+00008001 __cleanup_ptr                    000000c2 _init_ADC
+000002d3 _abort                           000000dd _read_potentiometer
+000002b4 _atexit                          00000100 _control_motor
+00000200 _bad_trap                        0000013b _measure_current
+00000040 _c_int0                          0000015f _measure_voltage
+00000183 _calculate_power                 00000183 _calculate_power
+00008022 _configdata                      000001ad _main
+00000100 _control_motor                   00000200 _bad_trap
+00000286 _exit                            00000207 _init_system
+000000c2 _init_ADC                        00000225 _wait_ms
+0000007f _init_GPT1                       0000027a L$$MPY
+000000a1 _init_GPT2                       00000286 _exit
+00000207 _init_system                     000002b4 _atexit
+000001ad _main                            000002d3 C$$EXIT
+0000013b _measure_current                 000002d3 _abort
+0000015f _measure_voltage                 000002d6 etext
+000000dd _read_potentiometer              00000400 __STACK_SIZE
+00000000 _vector                          00008000 edata
+00000225 _wait_ms                         00008000 .bss
+00000030 cinit                            00008000 .data
+00008000 edata                            00008001 __cleanup_ptr
+00008023 end                              00008022 _configdata
+000002d6 etext                            00008023 end
+ffffffff pinit                            ffffffff pinit
+
+[30 symbols]

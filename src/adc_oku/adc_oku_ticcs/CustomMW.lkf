@@ -1,0 +1,1 @@
+-i"C:/CCStudio_v3.3MCU/C2000/xdais/include" -i"C:/CCStudio_v3.3MCU/bios_5_33_05/packages/ti/bios/include" -i"C:/CCStudio_v3.3MCU/bios_5_33_05/packages/ti/rtdx/include/c2000" -i"C:/CCStudio_v3.3MCU/C2000/cgtools/include"

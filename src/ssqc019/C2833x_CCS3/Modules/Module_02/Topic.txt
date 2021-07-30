@@ -1,0 +1,1 @@
+Internal Bus Structure * Central Processing Unit * Direct Memory Access Controller * Floating-point Arithmetic Unit * Fixed-point Hardware Multiplier * Pipeline Processing of Instructions * Memory Map * Code Security Module

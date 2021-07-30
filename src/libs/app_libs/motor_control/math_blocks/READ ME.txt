@@ -1,0 +1,4 @@
+DMC math blocks update, 10.June.2010
+
+v2.0 include all necessary modules used in PMSM and ACI projects with some minor floating point compatibility updates.
+Functionally the modules in fixed v1.1 and v2.0 are the same.  

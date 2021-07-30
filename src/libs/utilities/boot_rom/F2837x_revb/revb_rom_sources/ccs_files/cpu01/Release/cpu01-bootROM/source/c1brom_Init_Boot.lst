@@ -1,0 +1,598 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    1
+
+       1              ;; TI File $Revision: /main/1 $
+       2              ;; Checkin $Date: August 13, 2012   11:53:42 $
+       3              ;;###########################################################################
+       4              ;;
+       5              ;; FILE:    c1brom_Init_Boot.asm
+       6              ;;
+       7              ;; TITLE:   Boot Rom Initialization and Exit routines.
+       8              ;;
+       9              ;; Functions:
+      10              ;;
+      11              ;;     _InitBoot
+      12              ;;     _ExitBoot
+      13              ;;
+      14              ;; Notes:
+      15              ;;
+      16              ;;###########################################################################
+      17              ;; $TI Release: F2837X Boot ROM V1.0 $
+      18              ;; $Release Date: November 1, 2012 $
+      19              ;;###########################################################################
+      20              
+      21                  .global _InitBoot
+      22                  .ref _c1brom_system_init
+      23                      .ref _c1brom_handle_fuse_err_if_any
+      24                  .ref _c1brom_configure_device_for_fast_boot
+      25                  .ref _c1brom_device_config
+      26                  .ref _sysctl_wdog_disable
+      27              ;    .ref _deviceCal
+      28              
+      29 00000000               .sect ".bist_signature"
+      30                      .global c1_bist_signatures_base
+      31              
+      32 00000000       c1_bist_signatures_base:                
+      33                                                                              ;; 99% coverage
+      34 00000000 FF21          .long   0xb118ff21                      ;;c28x_bist_signature1_bits_31_0:
+         00000001 B118 
+      35 00000002 C534          .long   0xaad1c534              ;;c28x_bist_signature1_bits_63_32:
+         00000003 AAD1 
+      36 00000004 9406          .long   0xf3c29406              ;;c28x_bist_signature1_bits_95_64:
+         00000005 F3C2 
+      37 00000006 A0E6          .long   0xaa4ea0e6              ;;c28x_bist_signature1_bits_127_96:
+         00000007 AA4E 
+      38 00000008 8CDD          .long   0xc2008cdd                      ;;c28x_bist_signature1_bits_159_128:
+         00000009 C200 
+      39 0000000a F8ED          .long   0x48dff8ed              ;;c28x_bist_signature1_bits_192_160:
+         0000000b 48DF 
+      40 0000000c 7AD1          .long   0x2ce37ad1              ;;c28x_bist_signature1_bits_223_192:
+         0000000d 2CE3 
+      41 0000000e 02BA          .long   0xaf0f02ba              ;;c28x_bist_signature1_bits_255_224:
+         0000000f AF0F 
+      42 00000010 AFC0          .long   0x2739afc0                      ;;c28x_bist_signature1_bits_287_256:
+         00000011 2739 
+      43 00000012 869F          .long   0x5977869f                      ;;c28x_bist_signature1_bits_319_288:
+         00000013 5977 
+      44 00000014 9366          .long   0x92af9366                      ;;c28x_bist_signature1_bits_351_320:
+         00000015 92AF 
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    2
+
+      45 00000016 FEBE          .long   0x323cfebe                      ;;c28x_bist_signature1_bits_383_352:
+         00000017 323C 
+      46 00000018 BCB1          .long   0xf8efbcb1                      ;;c28x_bist_signature1_bits_415_384:
+         00000019 F8EF 
+      47 0000001a E166          .long   0xe76ce166                      ;;c28x_bist_signature1_bits_447_416:
+         0000001b E76C 
+      48 0000001c 8125          .long   0x84c38125                      ;;c28x_bist_signature1_bits_479_448:
+         0000001d 84C3 
+      49 0000001e 32F3          .long   0xe80932f3                      ;;c28x_bist_signature1_bits_511_480:
+         0000001f E809 
+      50              
+      51                                                                              ;; 95% coverage
+      52 00000020 6881          .long   0xed486881                      ;;c28x_bist_signature2_bits_31_0:
+         00000021 ED48 
+      53 00000022 B177          .long   0x6046b177                      ;;c28x_bist_signature2_bits_63_32:
+         00000023 6046 
+      54 00000024 6CFA          .long   0x9c0d6cfa                      ;;c28x_bist_signature2_bits_95_64:
+         00000025 9C0D 
+      55 00000026 3876          .long   0xa0073876                      ;;c28x_bist_signature2_bits_127_96:
+         00000027 A007 
+      56 00000028 0D09          .long   0xb0970d09                      ;;c28x_bist_signature2_bits_159_128:
+         00000029 B097 
+      57 0000002a 90CB          .long   0x626890cb                      ;;c28x_bist_signature2_bits_192_160:
+         0000002b 6268 
+      58 0000002c FC59          .long   0xc31dfc59                      ;;c28x_bist_signature2_bits_223_192:
+         0000002d C31D 
+      59 0000002e 176F          .long   0x6d54176f                      ;;c28x_bist_signature2_bits_255_224:
+         0000002f 6D54 
+      60 00000030 D787          .long   0x16d6d787                      ;;c28x_bist_signature2_bits_287_256:
+         00000031 16D6 
+      61 00000032 7DC3          .long   0xc3787dc3                      ;;c28x_bist_signature2_bits_319_288:
+         00000033 C378 
+      62 00000034 E09B          .long   0x4ee3e09b                      ;;c28x_bist_signature2_bits_351_320:
+         00000035 4EE3 
+      63 00000036 8DF4          .long   0xaa8e8df4                      ;;c28x_bist_signature2_bits_383_352:
+         00000037 AA8E 
+      64 00000038 6261          .long   0xb66f6261                      ;;c28x_bist_signature2_bits_415_384:
+         00000039 B66F 
+      65 0000003a 1893          .long   0xf78d1893                      ;;c28x_bist_signature2_bits_447_416:
+         0000003b F78D 
+      66 0000003c 773B          .long   0xeb38773b                      ;;c28x_bist_signature2_bits_479_448:
+         0000003d EB38 
+      67 0000003e 198F          .long   0x55ee198f                      ;;c28x_bist_signature2_bits_511_480:
+         0000003f 55EE 
+      68                      
+      69 00000000               .sect ".test_signature1"
+      70 00000000 FF81          .long   0xFFFFFF81                      ;;~(*(0x3FFFFE)) - used for production testing
+         00000001 FFFF 
+      71              
+      72 00000000           .sect ".Version"
+      73                  .global     _c1brom_version
+      74 00000000       c1brom_version:
+      75 00000000 0101      .word 0x0101     ; Boot ROM Version v1.1
+      76 00000001 0114      .word 0x0114     ; Month/Year: (ex: 0x0109 = 1/09 = Jan 2009)
+      77              
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    3
+
+      78              ;       .sect ".otp_entry_points"
+      79              ;       .global _otp_func_refs
+      80              ;_otp_func_refs:
+      81              ;       .ref    _ccore_brom_otp_dummy_branch_begin_boot
+      82              ;       .long   _ccore_brom_otp_dummy_branch_begin_boot
+      83              ;       .ref    _ccore_brom_otp_dummy_branch_end_boot
+      84              ;       .long   _ccore_brom_otp_dummy_branch_end_boot
+      85              ;       .ref    _ccore_brom_otp_pie_vector_mismatch_handler
+      86              ;       .long   _ccore_brom_otp_pie_vector_mismatch_handler
+      87              ;       .ref    _ccore_brom_otp_unsupported_bmode_handler
+      88              ;       .long   _ccore_brom_otp_unsupported_bmode_handler
+      89              ;       .ref    _ccore_brom_otp_hw_bist_reset_handler
+      90              ;       .long   _ccore_brom_otp_hw_bist_reset_handler
+      91              ;       .ref    _I2C_gpio_init_for_boot
+      92              ;       .long   _I2C_gpio_init_for_boot
+      93              ;       .ref    _SCI_gpio_init_for_boot
+      94              ;       .long   _SCI_gpio_init_for_boot
+      95              ;       .ref    _SPI_gpio_init_for_boot
+      96              ;       .long   _SPI_gpio_init_for_boot
+      97              ;       .ref    _SPI_alt_gpio_init_for_boot
+      98              ;       .long   _SPI_alt_gpio_init_for_boot
+      99              
+     100 00000000           .sect ".InitBoot"
+     101              
+     102              ;-----------------------------------------------
+     103              ; _InitBoot
+     104              ;-----------------------------------------------
+     105              ;-----------------------------------------------
+     106              ; This function performs the initial boot routine
+     107              ; for the boot ROM.
+     108              ;
+     109              ; This module performs the following actions:
+     110              ;
+     111              ;     1) Initalizes the stack pointer
+     112              ;     2) Sets the device for C28x operating mode
+     113              ;     3) Calls the main boot functions
+     114              ;     4) Calls an exit routine
+     115              ;-----------------------------------------------
+     116 00000000       _InitBoot:
+     117              
+     118              ; Initalize the stack pointer.
+     119              
+     120 00000000       __stack:    .usect ".stack",0
+     121              ;; calcualte the Count for 75 uS at 15/4 MHz untrimmed clock, with buffer
+     122              ;. This would result in 83uS blank window for count of 311
+     123 00000000 28AC      MOV     @T,#311
+         00000001 0137 
+     124 00000002 F7AC      RPT      @T
+     125 00000003 7700      ||NOP
+     126              
+     127              ;    MOV     @T,#56
+     128              ;   RPT      @T
+     129              ;    ||NOP
+     130              
+     131 00000004 28AD-     MOV SP, #__stack ; Initalize the stack pointer
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    4
+
+         00000005 0000 
+     132              
+     133              ; Initalize the device for running in C28x mode.
+     134              
+     135              
+     136 00000006 561F      C28OBJ       ; Select C28x object mode
+     137 00000007 5616      C28ADDR      ; Select C27x/C28x addressing
+     138 00000008 561A      C28MAP       ; Set blocks M0/M1 for C28x mode
+     139 00000009 2940      CLRC PAGE0   ; Always use stack addressing mode
+     140 0000000a 761F      MOVW DP,#0   ; Initialize DP to point to the low 64 K
+         0000000b 0000 
+     141 0000000c 2902      CLRC OVM
+     142              
+     143              ; Set PM shift of 0
+     144              
+     145 0000000d FF69      SPM 0
+     146              ; for debug
+     147              ;       SB 0, UNC
+     148 0000000e       c1brom_hwbist_resc_check:
+     149              ;       ADDB         SP, #4
+     150              ;Uint32  EntryAddr = 0xFFFFFFFF;
+     151              ;       MOVB         ACC, #0
+     152              ;       SUBB         ACC, #1
+     153              ;       MOVL         *-SP[2], ACC
+     154              ;57         Uint32  hw_bist_addr = 0xFFFFFFFF;
+     155              ;       MOVB         ACC, #0
+     156              ;       SUBB         ACC, #1
+     157              ;       MOVL         *-SP[4], ACC
+     158              ; 59         if((CpuSysRegs.RESC.bit.HWBISTn) & 0x1)
+     159 0000000e 761F          MOVW         DP, #0x174e
+         0000000f 174E 
+     160 00000010 CC00          AND          AL, @0x0, #0x20
+         00000011 0020 
+     161 00000012 FFC4          LSR          AL, 5
+     162              
+     163 00000013 40A9          TBIT         @AL, #0x0
+     164 00000014 EF13          SBF          c1brom_hwbist_resc_done, NTC
+     165              ; 61             EntryAddr = TI_OTP_C1BROM_ESCAPE_POINT_8;
+     166 00000015 8F07          MOVL         XAR4, #0x703DE
+         00000016 03DE 
+     167              ;       MOVL         ACC, *+XAR4[0]
+     168              ;       MOVL         *-SP[2], ACC
+     169 00000017 83C4          MOVL         XAR5, *+XAR4[0]
+     170              ; 62             if((EntryAddr != 0xFFFFFFFF) && (EntryAddr != 0x00000000))
+     171 00000018 0200          MOVB         ACC, #0
+     172 00000019 1901          SUBB         ACC, #1
+     173              ;       CMPL         ACC, *-SP[2]
+     174 0000001a 0FA5          CMPL         ACC, XAR5
+     175 0000001b EC04          SBF          c1brom_hwbist_resc_no_escape, EQ
+     176              ;       MOVL         ACC, *-SP[2]
+     177 0000001c A0A9          MOVL         ACC, XAR5
+     178 0000001d EC02          SBF          c1brom_hwbist_resc_no_escape, EQ
+     179              ; 66                 ((void (*)(void))EntryAddr)();
+     180              ;       MOVL         XAR7, *-SP[2]
+     181              ;       LCR          *XAR7
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    5
+
+     182 0000001e 3E65          LCR          *XAR5
+     183 0000001f       c1brom_hwbist_resc_no_escape:
+     184              ; Accumualtor = HwbistRegs.CSTCRET.all;
+     185 0000001f 7622          EALLOW
+     186 00000020 761F          MOVW            DP, #0x1780
+         00000021 1780 
+     187 00000022 0634          MOVL            ACC, @0x34
+     188 00000023 EC04          SBF                     c1brom_hwbist_resc_done, EQ     ; check if not ZERO
+     189 00000024 83A9          MOVL            XAR5, ACC
+     190 00000025 FF69          SPM                     #0
+     191 00000026 3E65          LCR                     *XAR5
+     192              
+     193              ; 76     }
+     194 00000027       c1brom_hwbist_resc_done:
+     195              ;       SUBB         SP, #4
+     196              
+     197              ;       LCR _c1brom_handle_fuse_err_if_any
+     198 00000027 761F          MOVW         DP, #0x1741
+         00000028 1741 
+     199 00000029 0634          MOVL         ACC, @0x34
+     200 0000002a EC0D          SBF          c1brom_fuseerr_nope, EQ
+     201 0000002b 0215          MOVB         ACC, #21
+     202 0000002c 0F34          CMPL         ACC, @0x34
+     203 0000002d ED02          SBF          c1brom_fuseerr_reset, NEQ
+     204 0000002e 6F09          SB           c1brom_fuseerr_nope, UNC
+     205              ; 37            EALLOW;
+     206 0000002f       c1brom_fuseerr_reset:
+     207 0000002f 7622          EALLOW
+     208              ; 38            WdRegs.WDCR.all = 0x028;
+     209 00000030 761F          MOVW         DP, #0x1c0
+         00000031 01C0 
+     210 00000032 56BF          MOVB         @0x29, #0x28, UNC
+         00000033 2829 
+     211              ; 39            EDIS;
+     212 00000034 761A          EDIS
+     213 00000035 7625          ESTOP0                  ; to let execution stop here when debugger is connected
+     214              ; 40            while(1);
+     215 00000036 6F00          SB           0, UNC
+     216 00000037       c1brom_fuseerr_nope:
+     217              ; disable WDOG, else we need to keep it feeding
+     218 00000037       c1brom_disable_wdog:
+     219 00000037 7622          EALLOW
+     220              ; 38            WdRegs.WDCR.all = 0x028; - to enable WDOG
+     221              ;       WdRegs.WDCR.all = 0x068; - to disable WDOG
+     222 00000038 761F          MOVW         DP, #0x1c0
+         00000039 01C0 
+     223 0000003a 56BF          MOVB         @0x29, #0x68, UNC
+         0000003b 6829 
+     224              ; 39            EDIS;//get the WDOG enable code in assembly
+     225 0000003c 761A          EDIS
+     226              
+     227              ; check reset cause
+     228              
+     229              ; if NOT debugger or SCC reset
+     230              
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    6
+
+     231                      ; change SYSDIVSEL to /1
+     232              
+     233                      ; change PSLEEP for 10 MHZ
+     234              
+     235                      ; read OTP to power up flash
+     236              
+     237                      ; restore default PSLEEP
+     238              
+     239              ; OTP PMM TRIM LOAD
+     240              ; see if we will enable PLL
+     241              ; end if
+     242 0000003d 7640!         LCR _c1brom_configure_device_for_fast_boot
+         0000003e 0000 
+     243              
+     244              ; OTP device Config
+     245 0000003f 7640!         LCR _c1brom_device_config
+         00000040 0000 
+     246              
+     247              ; check reset cause
+     248              
+     249              ;119     {
+     250 00000041       c1brom_handle_ram_inits:
+     251              ;124         if(CpuSysRegs.RESC.all & (SYSCTL_RESC_POR | SYSCTL_RESC_XRSN ))
+     252 00000041 761F          MOVW         DP, #0x174e
+         00000042 174E 
+     253 00000043 0600          MOVL         ACC, @0x0
+     254 00000044 9B00          MOVB         AH, #0x0
+     255 00000045 9003          ANDB         AL, #0x3
+     256 00000046 FF58          TEST         ACC
+     257 00000047 EC15          SBF          c1brom_ram_init_for_hib_resc, EQ
+     258              ;127             EALLOW;
+     259 00000048 7622          EALLOW
+     260              ;129             MemCfgRegs.DxINIT.all = 0x000F;// bit0-M0, 1-M1,2-D0,3-D1
+     261 00000049 020F          MOVB         ACC, #15
+     262 0000004a 761F          MOVW         DP, #0x17d0
+         0000004b 17D0 
+     263 0000004c 1E12          MOVL         @0x12, ACC
+     264              ;130             MemCfgRegs.LSxINIT.all = 0x003F;    //LS0 - LS5
+     265 0000004d 023F          MOVB         ACC, #63
+     266 0000004e 1E32          MOVL         @0x32, ACC
+     267              ;    *(int *)0x5F452 =0xFFFF;      /* RAM INIT FOR GS0..GS15 Memory    */
+     268 0000004f 761F          MOVW         DP, #0x17d1
+         00000050 17D1 
+     269 00000051 FF20          MOV          ACC, #0xFFFF
+         00000052 FFFF 
+     270 00000053 1E12          MOVL         @0x12, ACC
+     271              
+     272              ;163                 MemCfgRegs.MSGxINIT.all = 0x0007;
+     273 00000054 0207          MOVB         ACC, #7
+     274 00000055 1E32          MOVL         @0x32, ACC
+     275              ;133             EDIS;
+     276 00000056 761A          EDIS
+     277 00000057       ram_init_wait1:                                         ;; wait 2048 + 32(=buffer)cycles for RAM init to comp
+     278 00000057 28AC      MOV     @T,#2080
+         00000058 0820 
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    7
+
+     279 00000059 F7AC      RPT      @T
+     280 0000005a 7700      ||NOP
+     281              ;137         }
+     282 0000005b 6F40          SB           c1brom_handle_ram_inits_done, UNC
+     283              ;138         else if((CpuSysRegs.RESC.bit.HIBRESETn /*sysctl_reset_cause_check(SYSCTL_RESC_HIB)*/) == true) {
+     284 0000005c       c1brom_ram_init_for_hib_resc:
+     285 0000005c CC00          AND          AL, @0x0, #0x40
+         0000005d 0040 
+     286 0000005e FFC5          LSR          AL, 6
+     287 0000005f 5201          CMPB         AL, #0x1
+     288 00000060 ED33          SBF          stack_init, NEQ
+     289              ;140             if((CpuSysRegs.LPMCR.bit.M0M1MODE == 0x01) || (CpuSysRegs.LPMCR.bit.M0M1MODE == 0x3)) {
+     290 00000061 761F          MOVW         DP, #0x174d
+         00000062 174D 
+     291 00000063 9237          MOV          AL, @0x37
+     292 00000064 9003          ANDB         AL, #0x3
+     293 00000065 5201          CMPB         AL, #0x1
+     294 00000066 EC05          SBF          c1brom_all_ram_init_for_hib_resc, EQ
+     295 00000067 9237          MOV          AL, @0x37
+     296 00000068 9003          ANDB         AL, #0x3
+     297 00000069 5203          CMPB         AL, #0x3
+     298 0000006a ED15          SBF          c1brom_skip_mx_ram_init_for_hib_resc, NEQ
+     299              ;142                 EALLOW;
+     300 0000006b       c1brom_all_ram_init_for_hib_resc:
+     301 0000006b 7622          EALLOW
+     302              ;146                 MemCfgRegs.DxINIT.all = 0x000F;// bit0-M0, 1-M1,2-D0,3-D1
+     303 0000006c 020F          MOVB         ACC, #15
+     304 0000006d 761F          MOVW         DP, #0x17d0
+         0000006e 17D0 
+     305 0000006f 1E12          MOVL         @0x12, ACC
+     306              ;147                 MemCfgRegs.LSxINIT.all = 0x003F;    //LS0 - LS5
+     307 00000070 023F          MOVB         ACC, #63
+     308 00000071 1E32          MOVL         @0x32, ACC
+     309              ;    *(int *)0x5F452 =0xFFFF;      /* RAM INIT FOR GS0..GS15 Memory    */
+     310 00000072 761F          MOVW         DP, #0x17d1
+         00000073 17D1 
+     311 00000074 FF20          MOV          ACC, #0xFFFF
+         00000075 FFFF 
+     312 00000076 1E12          MOVL         @0x12, ACC
+     313              ;163                 MemCfgRegs.MSGxINIT.all = 0x0007;
+     314 00000077 0207          MOVB         ACC, #7
+     315 00000078 1E32          MOVL         @0x32, ACC
+     316              ;150                 EDIS;
+     317 00000079 761A          EDIS
+     318 0000007a       ram_init_wait2:                                         ;; wait 2048 + 32(=buffer)cycles for RAM init to comp
+     319 0000007a 28AC      MOV     @T,#2080
+         0000007b 0820 
+     320 0000007c F7AC      RPT      @T
+     321 0000007d 7700      ||NOP
+     322              ;154             }
+     323 0000007e 6F1D          SB           c1brom_handle_ram_inits_done, UNC
+     324              ;157                 EALLOW;
+     325 0000007f       c1brom_skip_mx_ram_init_for_hib_resc:
+     326 0000007f 7622          EALLOW
+     327              ;160                 MemCfgRegs.DxINIT.all = 0x000C;// bit0-M0, 1-M1,2-D0,3-D1
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    8
+
+     328 00000080 020C          MOVB         ACC, #12
+     329 00000081 761F          MOVW         DP, #0x17d0
+         00000082 17D0 
+     330 00000083 1E12          MOVL         @0x12, ACC
+     331              ;161                 MemCfgRegs.LSxINIT.all = 0x003F;    //LS0 - LS5
+     332 00000084 023F          MOVB         ACC, #63
+     333 00000085 1E32          MOVL         @0x32, ACC
+     334              
+     335              ;    *(int *)0x5F452 =0xFFFF;      /* RAM INIT FOR GS0..GS15 Memory    */
+     336 00000086 761F          MOVW         DP, #0x17d1
+         00000087 17D1 
+     337 00000088 FF20          MOV          ACC, #0xFFFF
+         00000089 FFFF 
+     338 0000008a 1E12          MOVL         @0x12, ACC
+     339              ;163                 MemCfgRegs.MSGxINIT.all = 0x0007;
+     340 0000008b 0207          MOVB         ACC, #7
+     341 0000008c 1E32          MOVL         @0x32, ACC
+     342              ;164                 EDIS;
+     343 0000008d 761A          EDIS
+     344 0000008e       ram_init_wait3:                                         ;; wait 2048 + 32(=buffer)cycles for RAM init to comp
+     345 0000008e 28AC      MOV     @T,#2080
+         0000008f 0820 
+     346 00000090 F7AC      RPT      @T
+     347 00000091 7700      ||NOP
+     348              ;170     }
+     349 00000092 6F09          SB           c1brom_handle_ram_inits_done, UNC
+     350              
+     351 00000093       stack_init:                                                     ;; here means this is not POR, so just zero o
+     352 00000093 9AE0          MOV          AL, #0xE0
+     353 00000094 9B00          MOV                      AH, #0
+     354 00000095       ram_zero_loop:
+     355 00000095 2BBD          MOV          *SP++,#0           ;;zero stack
+     356 00000096 1901          SUBB             ACC, #1
+     357 00000097 56C3          BF                       ram_zero_loop,GEQ
+         00000098 FFFE 
+     358 00000099       stack_init_done:
+     359 00000099 28AD-     MOV SP, #__stack ; re-Initalize the stack pointer
+         0000009a 0000 
+     360              
+     361 0000009b       c1brom_handle_ram_inits_done: ; C$L9:
+     362              ; Start C-bootROM
+     363 0000009b 761F      MOVW DP,#0   ; Initialize DP to point to the low 64 K
+         0000009c 0000 
+     364 0000009d 2902      CLRC OVM
+     365              
+     366              ; Set PM shift of 0
+     367              
+     368 0000009e FF69      SPM 0
+     369              
+     370 0000009f 7640!         LCR     _c1brom_system_init
+         000000a0 0000 
+     371              
+     372              ; Cleanup and exit.  At this point the EntryAddr
+     373              ; is located in the ACC register
+     374 000000a1 56CF      BF  _ExitBoot,UNC
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE    9
+
+         000000a2 0002 
+     375              
+     376              ;-----------------------------------------------
+     377              ; _ExitBoot
+     378              ;-----------------------------------------------
+     379              ;-----------------------------------------------
+     380              ;This module cleans up after the boot loader
+     381              ;
+     382              ; 1) Make sure the stack is deallocated.
+     383              ;    SP = 0x400 after exiting the boot
+     384              ;    loader
+     385              ; 2) Push 0 onto the stack so RPC will be
+     386              ;    0 after using LRETR to jump to the
+     387              ;    entry point
+     388              ; 2) Load RPC with the entry point
+     389              ; 3) Clear all XARn registers
+     390              ; 4) Clear ACC, P and XT registers
+     391              ; 5) LRETR - this will also clear the RPC
+     392              ;    register since 0 was on the stack
+     393              ;-----------------------------------------------
+     394              
+     395 000000a3       _ExitBoot:
+     396              
+     397              ;-----------------------------------------------
+     398              ;   Insure that the stack is deallocated
+     399              ;-----------------------------------------------
+     400              
+     401 000000a3 28AD-     MOV SP,#__stack
+         000000a4 0000 
+     402              
+     403              ;-----------------------------------------------
+     404              ; Clear the bottom of the stack.  This will endup
+     405              ; in RPC when we are finished
+     406              ;-----------------------------------------------
+     407              
+     408 000000a5 2BBD      MOV  *SP++,#0
+     409 000000a6 2BBD      MOV  *SP++,#0
+     410              
+     411              ;-----------------------------------------------
+     412              ; Load RPC with the entry point as determined
+     413              ; by the boot mode.  This address will be returned
+     414              ; in the ACC register.
+     415              ;-----------------------------------------------
+     416              
+     417 000000a7 1EBD      PUSH ACC
+     418 000000a8 0007      POP  RPC
+     419              
+     420              ;-----------------------------------------------
+     421              ; Put registers back in their reset state.
+     422              ;
+     423              ; Clear all the XARn, ACC, XT, and P and DP
+     424              ; registers
+     425              ;
+     426              ; NOTE: Leave the device in C28x operating mode
+     427              ;       (OBJMODE = 1, AMODE = 0)
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:25:53 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/F2837x_bootROM/cpu01-bootROM/source/c1brom_Init_Boot.asm PAGE   10
+
+     428              ;-----------------------------------------------
+     429 000000a9 5633      ZAPA
+     430 000000aa 1EAC      MOVL  XT,ACC
+     431 000000ab 58A9      MOVZ  AR0,AL
+     432 000000ac 59A9      MOVZ  AR1,AL
+     433 000000ad 5AA9      MOVZ  AR2,AL
+     434 000000ae 5BA9      MOVZ  AR3,AL
+     435 000000af 5CA9      MOVZ  AR4,AL
+     436 000000b0 5DA9      MOVZ  AR5,AL
+     437 000000b1 88A9      MOVZ  AR6,AL
+     438 000000b2 80A9      MOVZ  AR7,AL
+     439 000000b3 761F      MOVW  DP, #0
+         000000b4 0000 
+     440              
+     441              ;------------------------------------------------
+     442              ;   Restore ST0 and ST1.  Note OBJMODE is
+     443              ;   the only bit not restored to its reset state.
+     444              ;   OBJMODE is left set for C28x object operating
+     445              ;   mode.
+     446              ;
+     447              ;  ST0 = 0x0000     ST1 = 0x0A0B
+     448              ;  15:10 OVC = 0    15:13      ARP = 0
+     449              ;   9: 7  PM = 0       12       XF = 0
+     450              ;      6   V = 0       11  M0M1MAP = 1
+     451              ;      5   N = 0       10  reserved
+     452              ;      4   Z = 0        9  OBJMODE = 1
+     453              ;      3   C = 0        8    AMODE = 0
+     454              ;      2  TC = 0        7 IDLESTAT = 0
+     455              ;      1 OVM = 0        6   EALLOW = 0
+     456              ;      0 SXM = 0        5     LOOP = 0
+     457              ;                       4      SPA = 0
+     458              ;                       3     VMAP = 1
+     459              ;                       2    PAGE0 = 0
+     460              ;                       1     DBGM = 1
+     461              ;                       0     INTM = 1
+     462              ;-----------------------------------------------
+     463              
+     464 000000b5 2BBD      MOV  *SP++,#0
+     465 000000b6 28BD      MOV  *SP++,#0x0A0B
+         000000b7 0A0B 
+     466 000000b8 7600      POP  ST1
+     467 000000b9 7613      POP  ST0
+     468              
+     469              ;------------------------------------------------
+     470              ;   Jump to the EntryAddr as defined by the
+     471              ;   boot mode selected and continue execution
+     472              ;-----------------------------------------------
+     473              
+     474 000000ba 0006      LRETR
+     475              
+     476              ;eof ----------
+
+No Assembly Errors, No Assembly Warnings

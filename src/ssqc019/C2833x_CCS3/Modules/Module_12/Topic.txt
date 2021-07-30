@@ -1,0 +1,1 @@
+Basic I2C Features * F2833x I2C Block Diagram * I2C Clock Generation * I2C Operating Modes * I2C Arbitration * I2C Interrupts * I2C Module Registers * I2C FIFO Buffers * Temperature Sensor TMP100 * Lab 12_1: Read Temperature, 9 bit resolution * Lab12_2: Read Temperature, 12 bit resolution * Lab12_3: use of FIFO registers *  Lab12_4: use of I2C-interrupts

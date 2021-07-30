@@ -1,0 +1,1 @@
+F2833x BOOT-mode Sequences * F2833x Flash Memory Sectors * Flash Speed Initialization * Flash Configuration Registers * Flash Programming Procedure * CCS Flash Plug-In * Code Security Module * Lab Exercise 14: Standalone Project

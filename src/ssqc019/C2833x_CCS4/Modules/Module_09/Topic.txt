@@ -1,0 +1,1 @@
+SCI Data Format * SCI Data Timing * SCI Multi Processor Wake Up Modes * SCI Register Set * Lab 9_1: Basic SCI – Transmission * Lab 9_2: Interrupt SCI – Transmission * Lab 9_3: SCI – FIFO Transmission * Lab 9_4: SCI – Receive & Transmit

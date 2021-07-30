@@ -1,0 +1,1 @@
+* Event Manager Block Diagram	* Interrupt Sources * General Purpose Timer	* GP Timer Registers * Timer Operating Modes	* GP Timer Interrupts * Lab 5: Let’s play a tune! * Event Manager Compare Units * Capture UnitsQuadrature Encoder * Lab 5A: Generate a PWM sine wave  * Optional Exercise

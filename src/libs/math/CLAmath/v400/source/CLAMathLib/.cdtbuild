@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="CLAMathLib.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.1093057898" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+<configuration artifactExtension="lib" artifactName="${INSTALLROOT_TO_CLAMATH_V400}/lib/CLAmath" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.229874949" name="CLAMATHLIB_STD" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.libraryDebugToolchain.173176520" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.libraryDebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianDebug.843464090">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.2008816467" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.GenericC28xxDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1148730472" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1593521836" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.301959061" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.737169334" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.1171199858" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.365108520" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.159804641" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_TO_CLAMATH_V400}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.1252772143" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianDebug.843464090" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS.128274343" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE.1745672029" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE" value="true" valueType="boolean"/>
+</tool>
+<macros/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="lib" artifactName="${INSTALLROOT_TO_CLAMATH_V400}/lib/CLAmath_fpu32" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1240672713" name="CLAMATHLIB_FPU32_SUPPORT" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.ReleaseToolchain.1660213211" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease.1549323646">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.903635572" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.GenericC28xxDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1797254845" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.450947393" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.1281347726" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.650497664" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.864568660" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.2019174231" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.library.release.1871750320" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.library.release" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL._none" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.1451225321" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_TO_CLAMATH_V400}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.1943259498" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT.1682863507" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease.1549323646" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS.1761788428" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE.5571200" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE" value="true" valueType="boolean"/>
+</tool>
+<macros/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="lib" artifactName="${INSTALLROOT_TO_CLAMATH_V400}/lib/CLAmath_dataROM" description="Tables in CLA Data ROM" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353" name="CLAMATHLIB_DATAROM_STD" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.libraryDebugToolchain.818801104" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.libraryDebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianDebug.757974254">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.2078725703" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.GenericC28xxDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1418800346" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.2146674830" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.1397903274" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.1420345260" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.272468615" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.697487550" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_TO_CLAMATH_V400}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.1101476689" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianDebug.757974254" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS.1509590696" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE.936855452" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE" value="true" valueType="boolean"/>
+</tool>
+<macros/>
+</toolChain>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353./CLAMathLib/CLAacosineTable.asm" name="CLAacosineTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAacosineTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAacosineTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAacosineTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353./CLAMathLib/CLAasineTable.asm" name="CLAasineTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAasineTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAasineTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAasineTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353./CLAMathLib/CLAatanTable.asm" name="CLAatanTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAatanTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAatanTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAatanTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353./CLAMathLib/CLAexpTable.asm" name="CLAexpTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAexpTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAexpTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAexpTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353./CLAMathLib/CLAlnTable.asm" name="CLAlnTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAlnTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAlnTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLAlnTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.894191353./CLAMathLib/CLASinCosTable.asm" name="CLASinCosTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLASinCosTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLASinCosTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420./CLAMathLib/CLASinCosTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerDebug.1771567420"/>
+</resourceConfiguration>
+</configuration>
+<configuration artifactExtension="lib" artifactName="${INSTALLROOT_TO_CLAMATH_V400}/lib/CLAmath_dataROM_fpu32" description="Tables in CLA Data ROM + fpu32 support" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274" name="CLAMATHLIB_DATAROM_FPU32_SUPPORT" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.ReleaseToolchain.1420800112" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease.968273523">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1690827131" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C2000.GenericC28xxDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.943250118" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.24203804" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.1838670877" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.1082705328" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.1148146613" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.library.release.1107536318" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.library.release" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL._none" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.1252150939" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_TO_CLAMATH_V400}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.612521184" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT.177949409" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease.968273523" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS.1652720951" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.PRINT_GLOBAL_SYMBOLS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE.345634299" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.archiverID.VERBOSE" value="true" valueType="boolean"/>
+</tool>
+<macros/>
+</toolChain>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274./CLAMathLib/CLAacosineTable.asm" name="CLAacosineTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAacosineTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAacosineTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAacosineTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274./CLAMathLib/CLAasineTable.asm" name="CLAasineTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAasineTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAasineTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAasineTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274./CLAMathLib/CLAatanTable.asm" name="CLAatanTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAatanTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAatanTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAatanTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274./CLAMathLib/CLAexpTable.asm" name="CLAexpTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAexpTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAexpTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAexpTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274./CLAMathLib/CLAlnTable.asm" name="CLAlnTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLAlnTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAlnTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLAlnTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.232698274./CLAMathLib/CLASinCosTable.asm" name="CLASinCosTable.asm" rcbsApplicability="disable" resourcePath="/CLAMathLib/CLASinCosTable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLASinCosTable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862./CLAMathLib/CLASinCosTable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.1522882862"/>
+</resourceConfiguration>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

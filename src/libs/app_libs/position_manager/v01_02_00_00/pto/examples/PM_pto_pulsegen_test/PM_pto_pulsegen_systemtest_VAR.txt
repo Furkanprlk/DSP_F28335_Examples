@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExportImportMemento.1>
+<VarMeta IMemento.internal.id="inumPulses1"/>
+<VarMeta IMemento.internal.id="inumPulses2"/>
+<VarMeta IMemento.internal.id="iPeriod1"/>
+<VarMeta IMemento.internal.id="iPeriod2"/>
+<VarMeta IMemento.internal.id="ptoActivePeriod"/>
+<VarMeta IMemento.internal.id="ptoFullPeriod"/>
+<VarMeta IMemento.internal.id="PulseLo"/>
+<VarMeta IMemento.internal.id="PulseHi"/>
+<VarMeta IMemento.internal.id="ptoInterruptTime"/>
+<VarMeta IMemento.internal.id="pulseFreq"/>
+<VarMeta IMemento.internal.id="reminder"/>
+</ExportImportMemento.1>

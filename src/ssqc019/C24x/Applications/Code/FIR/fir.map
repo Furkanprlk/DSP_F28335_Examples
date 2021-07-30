@@ -1,0 +1,112 @@
+******************************************************************************
+TMS320C1x/C2x/C2xx/C5x COFF Linker           Version 7.00                   
+******************************************************************************
+>> Linked Sun Jul 22 17:48:09 2001
+
+OUTPUT FILE NAME:   <fir.out>
+ENTRY POINT SYMBOL: "_c_int0"  address: 000000ab
+
+
+MEMORY CONFIGURATION
+
+           name     origin    length      used    attributes    fill
+         --------  --------  ---------  --------  ----------  --------
+PAGE 0: VECS      00000000  00000003f  00000030     RWIX      
+         CODE      00000040  000000dc0  00000330     RWIX      
+
+PAGE 1: Ext_Ram   00008000  000001000  00000451     RWIX      
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+vectors    0    00000000    00000030     
+                  00000000    00000030     Vectors.obj (vectors)
+
+.text      0    00000040    000002d4     
+                  00000040    00000000     asmlpass.obj (.text)
+                  00000040    00000000     Vectors.obj (.text)
+                  00000040    0000006b     highpass.obj (.text)
+                  000000ab    0000003f     Boot.obj (.text)
+                  000000ea    00000154     fir.obj (.text)
+                  0000023e    0000007a     System.obj (.text)
+                  000002b8    0000000c     rts2xx.lib : lmpy.obj (.text)
+                  000002c4    00000050                : exit.obj (.text)
+
+.switch    0    00000040    00000000     UNINITIALIZED
+
+.data      1    00008000    0000000c     
+                  00008000    0000000c     asmlpass.obj (.data)
+                  0000800c    00000000     rts2xx.lib : exit.obj (.data)
+                  0000800c    00000000                : lmpy.obj (.data)
+                  0000800c    00000000     System.obj (.data)
+                  0000800c    00000000     fir.obj (.data)
+                  0000800c    00000000     Vectors.obj (.data)
+                  0000800c    00000000     Boot.obj (.data)
+                  0000800c    00000000     highpass.obj (.data)
+
+.bss       1    0000800c    00000045     UNINITIALIZED
+                  0000800c    00000022     rts2xx.lib : exit.obj (.bss)
+                  0000802e    00000000     Vectors.obj (.bss)
+                  0000802e    00000000     Boot.obj (.bss)
+                  0000802e    00000000     asmlpass.obj (.bss)
+                  0000802e    00000000     rts2xx.lib : lmpy.obj (.bss)
+                  0000802e    00000017     fir.obj (.bss)
+                  00008045    0000000b     highpass.obj (.bss)
+                  00008050    00000001     System.obj (.bss)
+
+.heap      1    00008000    00000000     UNINITIALIZED
+
+.stack     1    00008051    00000400     UNINITIALIZED
+                  00008051    00000000     Boot.obj (.stack)
+
+.code      0    00000314    0000002d     
+                  00000314    0000002d     asmlpass.obj (.code)
+
+.cinit     0    00000341    0000002f     
+                  00000341    0000000d     highpass.obj (.cinit)
+                  0000034e    0000001b     fir.obj (.cinit)
+                  00000369    00000006     rts2xx.lib : exit.obj (.cinit)
+                  0000036f    00000001     --HOLE-- [fill = 0000]
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+0000800c .bss                             00000000 _vector
+00008000 .data                            00000040 _highpass_filter
+00000040 .text                            00000040 .text
+00000311 C$$EXIT                          000000ab _c_int0
+000002b8 L$$MPY                           000000ea _init_GPT1
+00000400 __STACK_SIZE                     0000010c _init_GPT2
+0000800d __cleanup_ptr                    0000012d _init_ADC
+00000311 _abort                           00000148 _read_ADC
+0000802e _array                           0000015e _lowpass_filter
+000002f2 _atexit                          000001c8 _comb_filter
+0000023e _bad_trap                        000001f3 _main
+000000ab _c_int0                          0000023e _bad_trap
+000001c8 _comb_filter                     00000245 _init_system
+00008050 _configdata                      00000263 _wait_ms
+0000803a _constants                       000002b8 L$$MPY
+000002c4 _exit                            000002c4 _exit
+00000040 _highpass_filter                 000002f2 _atexit
+0000012d _init_ADC                        00000311 C$$EXIT
+000000ea _init_GPT1                       00000311 _abort
+0000010c _init_GPT2                       00000314 etext
+00000245 _init_system                     00000314 _lowpass_asm
+00000314 _lowpass_asm                     00000341 cinit
+0000015e _lowpass_filter                  00000400 __STACK_SIZE
+000001f3 _main                            00008000 .data
+00000148 _read_ADC                        0000800c .bss
+00000000 _vector                          0000800c edata
+00000263 _wait_ms                         0000800d __cleanup_ptr
+00000341 cinit                            0000802e _array
+0000800c edata                            0000803a _constants
+00008051 end                              00008050 _configdata
+00000314 etext                            00008051 end
+ffffffff pinit                            ffffffff pinit
+
+[32 symbols]

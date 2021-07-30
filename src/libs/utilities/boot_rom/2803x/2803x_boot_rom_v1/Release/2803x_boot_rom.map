@@ -1,0 +1,760 @@
+******************************************************************************
+             TMS320C2000 Linker PC v5.1.2                      
+******************************************************************************
+>> Linked Thu Jan 15 16:34:20 2009
+
+OUTPUT FILE NAME:   <./Release/TMS320x2803x_boot_rom.out>
+ENTRY POINT SYMBOL: "_InitBoot"  address: 003ff8a1
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  IQTABLES              003fe000   00000b50  00000b50  00000000  RWIX
+  IQTABLES2             003feb50   0000008c  0000008c  00000000  RWIX
+  IQTABLES3             003febdc   000000aa  000000aa  00000000  RWIX
+  IQMATH                003fec86   0000082a  0000082a  00000000  RWIX
+  BOOT                  003ff4b0   00000422  00000422  00000000  RWIX  ffff
+  FLASH_API             003ff8d2   000006e7  000006e7  00000000  RWIX  ffff
+  FLASH_CHK             003fffb9   00000001  00000001  00000000  RWIX
+  VERSION               003fffba   00000002  00000002  00000000  RWIX
+  CHECKSUM              003fffbc   00000004  00000004  00000000  RWIX
+  VECS                  003fffc0   00000040  00000040  00000000  RWIX
+
+PAGE 1:
+  EBSS                  00000002   00000002  00000002  00000000  RWIX
+  STACK                 00000004   00000200  00000200  00000000  RWIX
+  DEV_EMU               00000880   00000180  00000180  00000000  RWIX
+  FLASH_REGS            00000a80   00000060  00000008  00000058  RWIX
+  CSM                   00000ae0   00000010  00000010  00000000  RWIX
+  ADC_RESULT            00000b00   00000020  00000020  00000000  RWIX
+  CPU_TIMER0            00000c00   00000008  00000008  00000000  RWIX
+  CPU_TIMER1            00000c08   00000008  00000008  00000000  RWIX
+  CPU_TIMER2            00000c10   00000008  00000008  00000000  RWIX
+  PIE_CTRL              00000ce0   00000020  0000001a  00000006  RWIX
+  PIE_VECT              00000d00   00000100  00000100  00000000  RWIX
+  CLA1                  00001400   00000080  00000040  00000040  RWIX
+  ECANA                 00006000   00000040  00000034  0000000c  RWIX
+  ECANA_LAM             00006040   00000040  00000040  00000000  RWIX
+  ECANA_MOTS            00006080   00000040  00000040  00000000  RWIX
+  ECANA_MOTO            000060c0   00000040  00000040  00000000  RWIX
+  ECANA_MBOX            00006100   00000100  00000100  00000000  RWIX
+  COMP1                 00006400   00000020  00000011  0000000f  RWIX
+  COMP2                 00006420   00000020  00000011  0000000f  RWIX
+  COMP3                 00006440   00000020  00000011  0000000f  RWIX
+  EPWM1                 00006800   00000040  0000003a  00000006  RWIX
+  EPWM2                 00006840   00000040  0000003a  00000006  RWIX
+  EPWM3                 00006880   00000040  0000003a  00000006  RWIX
+  EPWM4                 000068c0   00000040  0000003a  00000006  RWIX
+  EPWM5                 00006900   00000040  0000003a  00000006  RWIX
+  EPWM6                 00006940   00000040  0000003a  00000006  RWIX
+  EPWM7                 00006980   00000040  0000003a  00000006  RWIX
+  ECAP1                 00006a00   00000020  00000020  00000000  RWIX
+  EQEP1                 00006b00   00000040  00000040  00000000  RWIX
+  LINA                  00006c00   00000080  0000004a  00000036  RWIX
+  GPIOCTRL              00006f80   00000040  00000040  00000000  RWIX
+  GPIODAT               00006fc0   00000020  00000020  00000000  RWIX
+  GPIOINT               00006fe0   00000020  0000000c  00000014  RWIX
+  SYSTEM                00007010   00000020  00000020  00000000  RWIX
+  SPIA                  00007040   00000010  00000010  00000000  RWIX
+  SCIA                  00007050   00000010  00000010  00000000  RWIX
+  NMIINTRUPT            00007060   00000010  00000010  00000000  RWIX
+  XINTRUPT              00007070   00000010  00000010  00000000  RWIX
+  ADC                   00007100   00000080  00000050  00000030  RWIX
+  SPIB                  00007740   00000010  00000010  00000000  RWIX
+  I2CA                  00007900   00000040  00000022  0000001e  RWIX
+  PARTID                003d7fff   00000001  00000001  00000000  RWIX
+  CSM_PWL               003f7ff8   00000008  00000008  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+IQmathTables 
+*          0    003fe000    00000b50     
+                  003fe000    00000b50     IQmathTables.obj (IQmathTables)
+
+IQmathTables2 
+*          0    003feb50    0000008c     
+                  003feb50    0000008c     IQNexpTable.obj (IQmathTablesRam)
+
+IQmathTables3 
+*          0    003febdc    000000aa     
+                  003febdc    000000aa     IQNasinTable.obj (IQmathTablesRam)
+
+IQmath     0    003fec86    0000082a     
+                  003fec86    0000007e     IQmath.lib : IQ15atan2.obj (IQmath)
+                  003fed04    0000007b                : IQ20atan2.obj (IQmath)
+                  003fed7f    0000007b                : IQ24atan2.obj (IQmath)
+                  003fedfa    0000007b                : IQ29atan2.obj (IQmath)
+                  003fee75    00000060                : IQ15mag.obj (IQmath)
+                  003feed5    00000060                : IQ20mag.obj (IQmath)
+                  003fef35    00000060                : IQ24mag.obj (IQmath)
+                  003fef95    00000060                : IQ29mag.obj (IQmath)
+                  003feff5    00000047                : IQ15div.obj (IQmath)
+                  003ff03c    00000047                : IQ20div.obj (IQmath)
+                  003ff083    00000047                : IQ24div.obj (IQmath)
+                  003ff0ca    00000047                : IQ29div.obj (IQmath)
+                  003ff111    00000046                : IQ15isqrt.obj (IQmath)
+                  003ff157    00000045                : IQ20isqrt.obj (IQmath)
+                  003ff19c    00000045                : IQ24isqrt.obj (IQmath)
+                  003ff1e1    00000045                : IQ29isqrt.obj (IQmath)
+                  003ff226    00000042                : IQ15sqrt.obj (IQmath)
+                  003ff268    00000042                : IQ20sqrt.obj (IQmath)
+                  003ff2aa    00000042                : IQ24sqrt.obj (IQmath)
+                  003ff2ec    00000042                : IQ29sqrt.obj (IQmath)
+                  003ff32e    00000032                : IQ29sin.obj (IQmath)
+                  003ff360    00000031                : IQ15sin.obj (IQmath)
+                  003ff391    00000031                : IQ20sin.obj (IQmath)
+                  003ff3c2    00000031                : IQ24sin.obj (IQmath)
+                  003ff3f3    00000030                : IQ29cos.obj (IQmath)
+                  003ff423    0000002f                : IQ15cos.obj (IQmath)
+                  003ff452    0000002f                : IQ20cos.obj (IQmath)
+                  003ff481    0000002f                : IQ24cos.obj (IQmath)
+
+.text      0    003ff4b0    000003f1     
+                  003ff4b0    000000eb     SelectMode_Boot.obj (.text)
+                  003ff59b    000000a6     SPI_Boot.obj (.text)
+                  003ff641    000000a1     CAN_Boot.obj (.text)
+                  003ff6e2    0000008c     I2C_Boot.obj (.text)
+                  003ff76e    0000006f     Parallel_Boot.obj (.text)
+                  003ff7dd    00000069     SCI_Boot.obj (.text)
+                  003ff846    00000047     Shared_Boot.obj (.text)
+                  003ff88d    00000014     SysCtrl_Boot.obj (.text)
+
+.InitBoot 
+*          0    003ff8a1    00000026     
+                  003ff8a1    00000026     Init_Boot.obj (.InitBoot)
+
+.Isr       0    003ff8c7    00000007     
+                  003ff8c7    00000007     ITRAPIsr.obj (.Isr)
+
+$fill000   0    003ff8ce    00000004     
+                  003ff8ce    00000004     --HOLE-- [fill = ffff]
+
+FlashAPI   0    003ff8d2    0000063a     
+                  003ff8d2    000000e1     Flash2803x_API_V100.lib : Flash28_Prog.obj (.text)
+                  003ff9b3    000000d0                             : Flash28_Erase.obj (.text)
+                  003ffa83    0000009a                             : Flash28_Erase_Pulse.obj (.text)
+                  003ffb1d    00000084                             : Flash28_Internals.obj (.text)
+                  003ffba1    00000080                             : Flash28_Prog_Pulse.obj (.text)
+                  003ffc21    0000007d                             : Flash28_Compact_Pulse.obj (.text)
+                  003ffc9e    0000005b                             : Flash28_EraseSector.obj (.text)
+                  003ffcf9    00000054                             : Flash28_CompactSector.obj (.text)
+                  003ffd4d    00000047                             : Flash28_DepCompactSector.obj (.text)
+                  003ffd94    00000041                             : Flash28_ClearLoop.obj (.text)
+                  003ffdd5    00000039                             : Flash28_Verify.obj (.text)
+                  003ffe0e    00000033                             : Flash28_ClearSector.obj (.text)
+                  003ffe41    0000002a                             : Flash28_DepRecover.obj (.text)
+                  003ffe6b    00000016                             : Flash28_Init.obj (.text)
+                  003ffe81    00000015                             : Flash28_ToggleTest.obj (.text)
+                  003ffe96    00000014                             : Flash28_Utils.obj (.text)
+                  003ffeaa    0000000d                             : Flash28_Delay.obj (.text)
+                  003ffeb7    00000007                             : Flash28_DisInt.obj (.text)
+                  003ffebe    00000003                             : Flash28_Version.obj (.text)
+                  003ffec1    00000003                             : Flash28_Version_Hex.obj (.text)
+                  003ffec4    00000028                             : Flash28_Erase.obj (.econst)
+                  003ffeec    00000020                             : Flash28_DepRecover.obj (.econst)
+
+$fill001   0    003fff0c    000000ad     
+                  003fff0c    000000ad     --HOLE-- [fill = ffff]
+
+.Flash     0    003fffb9    00000001     
+                  003fffb9    00000001     Init_Boot.obj (.Flash)
+
+.Version   0    003fffba    00000002     
+                  003fffba    00000002     Init_Boot.obj (.Version)
+
+.Checksum 
+*          0    003fffbc    00000004     
+                  003fffbc    00000004     Init_Boot.obj (.Checksum)
+
+.BootVecs 
+*          0    003fffc0    00000040     
+                  003fffc0    00000040     Vectors_Boot.obj (.BootVecs)
+
+.ebss      1    00000002    00000002     UNINITIALIZED
+                  00000002    00000002     Shared_Boot.obj (.ebss)
+
+.stack     1    00000004    00000200     UNINITIALIZED
+                  00000004    00000200     --HOLE--
+
+DevEmuRegsFile 
+*          1    00000880    00000180     UNINITIALIZED
+                  00000880    00000180     DSP2803x_GlobalVariableDefs.obj (DevEmuRegsFile)
+
+FlashRegsFile 
+*          1    00000a80    00000008     UNINITIALIZED
+                  00000a80    00000008     DSP2803x_GlobalVariableDefs.obj (FlashRegsFile)
+
+CsmRegsFile 
+*          1    00000ae0    00000010     UNINITIALIZED
+                  00000ae0    00000010     DSP2803x_GlobalVariableDefs.obj (CsmRegsFile)
+
+AdcResultFile 
+*          1    00000b00    00000020     UNINITIALIZED
+                  00000b00    00000020     DSP2803x_GlobalVariableDefs.obj (AdcResultFile)
+
+CpuTimer0RegsFile 
+*          1    00000c00    00000008     UNINITIALIZED
+                  00000c00    00000008     DSP2803x_GlobalVariableDefs.obj (CpuTimer0RegsFile)
+
+CpuTimer1RegsFile 
+*          1    00000c08    00000008     UNINITIALIZED
+                  00000c08    00000008     DSP2803x_GlobalVariableDefs.obj (CpuTimer1RegsFile)
+
+CpuTimer2RegsFile 
+*          1    00000c10    00000008     UNINITIALIZED
+                  00000c10    00000008     DSP2803x_GlobalVariableDefs.obj (CpuTimer2RegsFile)
+
+PieCtrlRegsFile 
+*          1    00000ce0    0000001a     UNINITIALIZED
+                  00000ce0    0000001a     DSP2803x_GlobalVariableDefs.obj (PieCtrlRegsFile)
+
+EmuKeyVar 
+*          1    00000d00    00000001     UNINITIALIZED
+                  00000d00    00000001     Shared_Boot.obj (EmuKeyVar)
+
+PieVectTableFile 
+*          1    00000d00    00000100     UNINITIALIZED
+                  00000d00    00000100     DSP2803x_GlobalVariableDefs.obj (PieVectTableFile)
+
+EmuBModeVar 
+*          1    00000d01    00000001     UNINITIALIZED
+                  00000d01    00000001     Shared_Boot.obj (EmuBModeVar)
+
+FlashCallbackVar 
+*          1    00000d02    00000002     UNINITIALIZED
+                  00000d02    00000002     Flash2803x_API_V100.lib : Flash28_Globals.obj (FlashCallbackVar)
+
+FlashScalingVar 
+*          1    00000d04    00000002     UNINITIALIZED
+                  00000d04    00000002     Flash2803x_API_V100.lib : Flash28_Globals.obj (FlashScalingVar)
+
+Cla1RegsFile 
+*          1    00001400    00000040     UNINITIALIZED
+                  00001400    00000040     DSP2803x_GlobalVariableDefs.obj (Cla1RegsFile)
+
+ECanaRegsFile 
+*          1    00006000    00000034     UNINITIALIZED
+                  00006000    00000034     DSP2803x_GlobalVariableDefs.obj (ECanaRegsFile)
+
+ECanaLAMRegsFile 
+*          1    00006040    00000040     UNINITIALIZED
+                  00006040    00000040     DSP2803x_GlobalVariableDefs.obj (ECanaLAMRegsFile)
+
+ECanaMOTSRegsFile 
+*          1    00006080    00000040     UNINITIALIZED
+                  00006080    00000040     DSP2803x_GlobalVariableDefs.obj (ECanaMOTSRegsFile)
+
+ECanaMOTORegsFile 
+*          1    000060c0    00000040     UNINITIALIZED
+                  000060c0    00000040     DSP2803x_GlobalVariableDefs.obj (ECanaMOTORegsFile)
+
+ECanaMboxesFile 
+*          1    00006100    00000100     UNINITIALIZED
+                  00006100    00000100     DSP2803x_GlobalVariableDefs.obj (ECanaMboxesFile)
+
+Comp1RegsFile 
+*          1    00006400    00000011     UNINITIALIZED
+                  00006400    00000011     DSP2803x_GlobalVariableDefs.obj (Comp1RegsFile)
+
+Comp2RegsFile 
+*          1    00006420    00000011     UNINITIALIZED
+                  00006420    00000011     DSP2803x_GlobalVariableDefs.obj (Comp2RegsFile)
+
+Comp3RegsFile 
+*          1    00006440    00000011     UNINITIALIZED
+                  00006440    00000011     DSP2803x_GlobalVariableDefs.obj (Comp3RegsFile)
+
+EPwm1RegsFile 
+*          1    00006800    0000003a     UNINITIALIZED
+                  00006800    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm1RegsFile)
+
+EPwm2RegsFile 
+*          1    00006840    0000003a     UNINITIALIZED
+                  00006840    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm2RegsFile)
+
+EPwm3RegsFile 
+*          1    00006880    0000003a     UNINITIALIZED
+                  00006880    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm3RegsFile)
+
+EPwm4RegsFile 
+*          1    000068c0    0000003a     UNINITIALIZED
+                  000068c0    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm4RegsFile)
+
+EPwm5RegsFile 
+*          1    00006900    0000003a     UNINITIALIZED
+                  00006900    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm5RegsFile)
+
+EPwm6RegsFile 
+*          1    00006940    0000003a     UNINITIALIZED
+                  00006940    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm6RegsFile)
+
+EPwm7RegsFile 
+*          1    00006980    0000003a     UNINITIALIZED
+                  00006980    0000003a     DSP2803x_GlobalVariableDefs.obj (EPwm7RegsFile)
+
+ECap1RegsFile 
+*          1    00006a00    00000020     UNINITIALIZED
+                  00006a00    00000020     DSP2803x_GlobalVariableDefs.obj (ECap1RegsFile)
+
+EQep1RegsFile 
+*          1    00006b00    00000040     UNINITIALIZED
+                  00006b00    00000040     DSP2803x_GlobalVariableDefs.obj (EQep1RegsFile)
+
+LinaRegsFile 
+*          1    00006c00    0000004a     UNINITIALIZED
+                  00006c00    0000004a     DSP2803x_GlobalVariableDefs.obj (LinaRegsFile)
+
+GpioCtrlRegsFile 
+*          1    00006f80    00000040     UNINITIALIZED
+                  00006f80    00000040     DSP2803x_GlobalVariableDefs.obj (GpioCtrlRegsFile)
+
+GpioDataRegsFile 
+*          1    00006fc0    00000020     UNINITIALIZED
+                  00006fc0    00000020     DSP2803x_GlobalVariableDefs.obj (GpioDataRegsFile)
+
+GpioIntRegsFile 
+*          1    00006fe0    0000000c     UNINITIALIZED
+                  00006fe0    0000000c     DSP2803x_GlobalVariableDefs.obj (GpioIntRegsFile)
+
+SysCtrlRegsFile 
+*          1    00007010    00000020     UNINITIALIZED
+                  00007010    00000020     DSP2803x_GlobalVariableDefs.obj (SysCtrlRegsFile)
+
+SpiaRegsFile 
+*          1    00007040    00000010     UNINITIALIZED
+                  00007040    00000010     DSP2803x_GlobalVariableDefs.obj (SpiaRegsFile)
+
+SciaRegsFile 
+*          1    00007050    00000010     UNINITIALIZED
+                  00007050    00000010     DSP2803x_GlobalVariableDefs.obj (SciaRegsFile)
+
+NmiIntruptRegsFile 
+*          1    00007060    00000010     UNINITIALIZED
+                  00007060    00000010     DSP2803x_GlobalVariableDefs.obj (NmiIntruptRegsFile)
+
+XIntruptRegsFile 
+*          1    00007070    00000010     UNINITIALIZED
+                  00007070    00000010     DSP2803x_GlobalVariableDefs.obj (XIntruptRegsFile)
+
+AdcRegsFile 
+*          1    00007100    00000050     UNINITIALIZED
+                  00007100    00000050     DSP2803x_GlobalVariableDefs.obj (AdcRegsFile)
+
+SpibRegsFile 
+*          1    00007740    00000010     UNINITIALIZED
+                  00007740    00000010     DSP2803x_GlobalVariableDefs.obj (SpibRegsFile)
+
+I2caRegsFile 
+*          1    00007900    00000022     UNINITIALIZED
+                  00007900    00000022     DSP2803x_GlobalVariableDefs.obj (I2caRegsFile)
+
+PartIdRegsFile 
+*          1    003d7fff    00000001     UNINITIALIZED
+                  003d7fff    00000001     DSP2803x_GlobalVariableDefs.obj (PartIdRegsFile)
+
+CsmPwlFile 
+*          1    003f7ff8    00000008     UNINITIALIZED
+                  003f7ff8    00000008     DSP2803x_GlobalVariableDefs.obj (CsmPwlFile)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+003ff4b0   .text
+00007100   _AdcRegs
+00000b00   _AdcResult
+003ff641   _CAN_Boot
+003ff6c6   _CAN_GetWordData
+003ff664   _CAN_Init
+00001400   _Cla1Regs
+00006400   _Comp1Regs
+00006420   _Comp2Regs
+00006440   _Comp3Regs
+003ff846   _CopyData
+00000c00   _CpuTimer0Regs
+00000c08   _CpuTimer1Regs
+00000c10   _CpuTimer2Regs
+003f7ff8   _CsmPwl
+00000ae0   _CsmRegs
+00000880   _DevEmuRegs
+00006040   _ECanaLAMRegs
+000060c0   _ECanaMOTORegs
+00006080   _ECanaMOTSRegs
+00006100   _ECanaMboxes
+00006000   _ECanaRegs
+00006a00   _ECap1Regs
+00006800   _EPwm1Regs
+00006840   _EPwm2Regs
+00006880   _EPwm3Regs
+000068c0   _EPwm4Regs
+00006900   _EPwm5Regs
+00006940   _EPwm6Regs
+00006980   _EPwm7Regs
+00006b00   _EQep1Regs
+00000d01   _EmuBMode
+00000d00   _EmuKey
+003ffe0e   _Fl2803x_ClearSector
+003ffcf9   _Fl2803x_CompactSector
+003ffc9e   _Fl2803x_EraseSector
+003ffe6b   _Fl2803x_Init
+003ffd94   _Fl28x_ClearLoop
+003ffb7f   _Fl28x_ClosePulse
+003ffc5b   _Fl28x_CompactPulse
+003ffc21   _Fl28x_CompactVerify
+003ffeaa   _Fl28x_Delay
+003ffd4d   _Fl28x_DepRecoverCompactSector
+003ffeb7   _Fl28x_DisableInt
+003ffe9e   _Fl28x_DisableNMI
+003ffb2a   _Fl28x_EnterCmdMode
+003ffacb   _Fl28x_ErasePulse
+003ffa83   _Fl28x_EraseVerify
+003ffb4f   _Fl28x_FlashRegSleep
+003ffb1d   _Fl28x_LeaveCmdMode
+003ffb96   _Fl28x_MaskAll
+003ffb6e   _Fl28x_OpenPulse
+003ffbdf   _Fl28x_ProgPulse
+003ffba1   _Fl28x_ProgVerify
+003ffebb   _Fl28x_RestoreInt
+003ffe96   _Fl28x_WatchDogDisable
+003ffebe   _Flash2803x_APIVersion
+003ffec1   _Flash2803x_APIVersionHex
+003ffe41   _Flash2803x_DepRecover
+003ff9b3   _Flash2803x_Erase
+003ff8d2   _Flash2803x_Program
+003ffe81   _Flash2803x_ToggleTest
+003ffdd5   _Flash2803x_Verify
+00000a80   _FlashRegs
+00000d04   _Flash_CPUScaleFactor
+00000d02   _Flash_CallbackPtr
+003ff86b   _GetLongData
+00000002   _GetWordData
+00006f80   _GpioCtrlRegs
+00006fc0   _GpioDataRegs
+00006fe0   _GpioIntRegs
+003ff723   _I2C_Boot
+003ff75b   _I2C_GetWord
+00007900   _I2caRegs
+003fead8   _IQ10mpyRndSatTable
+003feacc   _IQ11mpyRndSatTable
+003feac0   _IQ12mpyRndSatTable
+003feab4   _IQ13mpyRndSatTable
+003feaa8   _IQ14mpyRndSatTable
+003fea9c   _IQ15mpyRndSatTable
+003fea90   _IQ16mpyRndSatTable
+003fea84   _IQ17mpyRndSatTable
+003fea78   _IQ18mpyRndSatTable
+003fea6c   _IQ19mpyRndSatTable
+003feb44   _IQ1mpyRndSatTable
+003fea60   _IQ20mpyRndSatTable
+003fea54   _IQ21mpyRndSatTable
+003fea48   _IQ22mpyRndSatTable
+003fea3c   _IQ23mpyRndSatTable
+003fea30   _IQ24mpyRndSatTable
+003fea24   _IQ25mpyRndSatTable
+003fea18   _IQ26mpyRndSatTable
+003fea0c   _IQ27mpyRndSatTable
+003fea00   _IQ28mpyRndSatTable
+003fe9f4   _IQ29mpyRndSatTable
+003feb38   _IQ2mpyRndSatTable
+003fe9e8   _IQ30mpyRndSatTable
+003feb2c   _IQ3mpyRndSatTable
+003feb20   _IQ4mpyRndSatTable
+003feb14   _IQ5mpyRndSatTable
+003feb08   _IQ6mpyRndSatTable
+003feafc   _IQ7mpyRndSatTable
+003feaf0   _IQ8mpyRndSatTable
+003feae4   _IQ9mpyRndSatTable
+003febdc   _IQasinTable
+003fe824   _IQatan2HalfPITable
+003fe862   _IQatan2Table
+003fe9e8   _IQatan2TableEnd
+003fe100   _IQcosTable
+003fe502   _IQcosTableEnd
+003fe502   _IQdivRoundSatTable
+003fe510   _IQdivTable
+003fe712   _IQdivTableEnd
+003feb50   _IQexpTable
+003febc8   _IQexpTableCoeff
+003febdc   _IQexpTableCoeffEnd
+003feb50   _IQexpTableMinMax
+003febc8   _IQexpTableMinMaxEnd
+003fe712   _IQisqrtRoundSatTable
+003fe722   _IQisqrtTable
+003fe824   _IQisqrtTableEnd
+003fe9e8   _IQmpyRndSatTable
+003feb50   _IQmpyRndSatTableEnd
+003fe000   _IQsinTable
+003fe400   _IQsinTableEnd
+003fe712   _IQsqrtRoundSatTable
+003fe722   _IQsqrtTable
+003fe824   _IQsqrtTableEnd
+003ff8c7   _ITRAPIsr
+003ff8a1   _InitBoot
+00006c00   _LinaRegs
+00007060   _NmiIntruptRegs
+003ff76e   _Parallel_Boot
+003ff79f   _Parallel_GetWordData_8bit
+003d7fff   _PartIdRegs
+00000ce0   _PieCtrlRegs
+00000d00   _PieVectTable
+003ff87d   _ReadReservedFn
+003ff82b   _SCIA_GetWordData
+003ff7dd   _SCI_Boot
+003ff633   _SPIA_GetWordData
+003ff612   _SPIA_SetAddress_KeyChk
+003ff5cc   _SPI_Boot
+00007050   _SciaRegs
+003ff4b0   _SelectBootMode
+00007040   _SpiaRegs
+00007740   _SpibRegs
+00007010   _SysCtrlRegs
+003ff597   _WaitBoot
+003ff88d   _WatchDogDisable
+003ff895   _WatchDogEnable
+00007070   _XIntruptRegs
+003fec86   __IQ15atan2
+003ff423   __IQ15cos
+003feff5   __IQ15div
+003ff111   __IQ15isqrt
+003fee75   __IQ15mag
+003ff360   __IQ15sin
+003ff226   __IQ15sqrt
+003fed04   __IQ20atan2
+003ff452   __IQ20cos
+003ff03c   __IQ20div
+003ff157   __IQ20isqrt
+003feed5   __IQ20mag
+003ff391   __IQ20sin
+003ff268   __IQ20sqrt
+003fed7f   __IQ24atan2
+003ff481   __IQ24cos
+003ff083   __IQ24div
+003ff19c   __IQ24isqrt
+003fef35   __IQ24mag
+003ff3c2   __IQ24sin
+003ff2aa   __IQ24sqrt
+003fedfa   __IQ29atan2
+003ff3f3   __IQ29cos
+003ff0ca   __IQ29div
+003ff1e1   __IQ29isqrt
+003fef95   __IQ29mag
+003ff32e   __IQ29sin
+003ff2ec   __IQ29sqrt
+00000200   __STACK_SIZE
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+003ff8a1   ___etext__
+ffffffff   ___pinit__
+003ff4b0   ___text__
+ffffffff   binit
+ffffffff   cinit
+003ff8a1   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000002   _GetWordData
+00000200   __STACK_SIZE
+00000880   _DevEmuRegs
+00000a80   _FlashRegs
+00000ae0   _CsmRegs
+00000b00   _AdcResult
+00000c00   _CpuTimer0Regs
+00000c08   _CpuTimer1Regs
+00000c10   _CpuTimer2Regs
+00000ce0   _PieCtrlRegs
+00000d00   _EmuKey
+00000d00   _PieVectTable
+00000d01   _EmuBMode
+00000d02   _Flash_CallbackPtr
+00000d04   _Flash_CPUScaleFactor
+00001400   _Cla1Regs
+00006000   _ECanaRegs
+00006040   _ECanaLAMRegs
+00006080   _ECanaMOTSRegs
+000060c0   _ECanaMOTORegs
+00006100   _ECanaMboxes
+00006400   _Comp1Regs
+00006420   _Comp2Regs
+00006440   _Comp3Regs
+00006800   _EPwm1Regs
+00006840   _EPwm2Regs
+00006880   _EPwm3Regs
+000068c0   _EPwm4Regs
+00006900   _EPwm5Regs
+00006940   _EPwm6Regs
+00006980   _EPwm7Regs
+00006a00   _ECap1Regs
+00006b00   _EQep1Regs
+00006c00   _LinaRegs
+00006f80   _GpioCtrlRegs
+00006fc0   _GpioDataRegs
+00006fe0   _GpioIntRegs
+00007010   _SysCtrlRegs
+00007040   _SpiaRegs
+00007050   _SciaRegs
+00007060   _NmiIntruptRegs
+00007070   _XIntruptRegs
+00007100   _AdcRegs
+00007740   _SpibRegs
+00007900   _I2caRegs
+003d7fff   _PartIdRegs
+003f7ff8   _CsmPwl
+003fe000   _IQsinTable
+003fe100   _IQcosTable
+003fe400   _IQsinTableEnd
+003fe502   _IQcosTableEnd
+003fe502   _IQdivRoundSatTable
+003fe510   _IQdivTable
+003fe712   _IQdivTableEnd
+003fe712   _IQisqrtRoundSatTable
+003fe712   _IQsqrtRoundSatTable
+003fe722   _IQisqrtTable
+003fe722   _IQsqrtTable
+003fe824   _IQatan2HalfPITable
+003fe824   _IQisqrtTableEnd
+003fe824   _IQsqrtTableEnd
+003fe862   _IQatan2Table
+003fe9e8   _IQ30mpyRndSatTable
+003fe9e8   _IQatan2TableEnd
+003fe9e8   _IQmpyRndSatTable
+003fe9f4   _IQ29mpyRndSatTable
+003fea00   _IQ28mpyRndSatTable
+003fea0c   _IQ27mpyRndSatTable
+003fea18   _IQ26mpyRndSatTable
+003fea24   _IQ25mpyRndSatTable
+003fea30   _IQ24mpyRndSatTable
+003fea3c   _IQ23mpyRndSatTable
+003fea48   _IQ22mpyRndSatTable
+003fea54   _IQ21mpyRndSatTable
+003fea60   _IQ20mpyRndSatTable
+003fea6c   _IQ19mpyRndSatTable
+003fea78   _IQ18mpyRndSatTable
+003fea84   _IQ17mpyRndSatTable
+003fea90   _IQ16mpyRndSatTable
+003fea9c   _IQ15mpyRndSatTable
+003feaa8   _IQ14mpyRndSatTable
+003feab4   _IQ13mpyRndSatTable
+003feac0   _IQ12mpyRndSatTable
+003feacc   _IQ11mpyRndSatTable
+003fead8   _IQ10mpyRndSatTable
+003feae4   _IQ9mpyRndSatTable
+003feaf0   _IQ8mpyRndSatTable
+003feafc   _IQ7mpyRndSatTable
+003feb08   _IQ6mpyRndSatTable
+003feb14   _IQ5mpyRndSatTable
+003feb20   _IQ4mpyRndSatTable
+003feb2c   _IQ3mpyRndSatTable
+003feb38   _IQ2mpyRndSatTable
+003feb44   _IQ1mpyRndSatTable
+003feb50   _IQexpTable
+003feb50   _IQexpTableMinMax
+003feb50   _IQmpyRndSatTableEnd
+003febc8   _IQexpTableCoeff
+003febc8   _IQexpTableMinMaxEnd
+003febdc   _IQasinTable
+003febdc   _IQexpTableCoeffEnd
+003fec86   __IQ15atan2
+003fed04   __IQ20atan2
+003fed7f   __IQ24atan2
+003fedfa   __IQ29atan2
+003fee75   __IQ15mag
+003feed5   __IQ20mag
+003fef35   __IQ24mag
+003fef95   __IQ29mag
+003feff5   __IQ15div
+003ff03c   __IQ20div
+003ff083   __IQ24div
+003ff0ca   __IQ29div
+003ff111   __IQ15isqrt
+003ff157   __IQ20isqrt
+003ff19c   __IQ24isqrt
+003ff1e1   __IQ29isqrt
+003ff226   __IQ15sqrt
+003ff268   __IQ20sqrt
+003ff2aa   __IQ24sqrt
+003ff2ec   __IQ29sqrt
+003ff32e   __IQ29sin
+003ff360   __IQ15sin
+003ff391   __IQ20sin
+003ff3c2   __IQ24sin
+003ff3f3   __IQ29cos
+003ff423   __IQ15cos
+003ff452   __IQ20cos
+003ff481   __IQ24cos
+003ff4b0   .text
+003ff4b0   _SelectBootMode
+003ff4b0   ___text__
+003ff597   _WaitBoot
+003ff5cc   _SPI_Boot
+003ff612   _SPIA_SetAddress_KeyChk
+003ff633   _SPIA_GetWordData
+003ff641   _CAN_Boot
+003ff664   _CAN_Init
+003ff6c6   _CAN_GetWordData
+003ff723   _I2C_Boot
+003ff75b   _I2C_GetWord
+003ff76e   _Parallel_Boot
+003ff79f   _Parallel_GetWordData_8bit
+003ff7dd   _SCI_Boot
+003ff82b   _SCIA_GetWordData
+003ff846   _CopyData
+003ff86b   _GetLongData
+003ff87d   _ReadReservedFn
+003ff88d   _WatchDogDisable
+003ff895   _WatchDogEnable
+003ff8a1   _InitBoot
+003ff8a1   ___etext__
+003ff8a1   etext
+003ff8c7   _ITRAPIsr
+003ff8d2   _Flash2803x_Program
+003ff9b3   _Flash2803x_Erase
+003ffa83   _Fl28x_EraseVerify
+003ffacb   _Fl28x_ErasePulse
+003ffb1d   _Fl28x_LeaveCmdMode
+003ffb2a   _Fl28x_EnterCmdMode
+003ffb4f   _Fl28x_FlashRegSleep
+003ffb6e   _Fl28x_OpenPulse
+003ffb7f   _Fl28x_ClosePulse
+003ffb96   _Fl28x_MaskAll
+003ffba1   _Fl28x_ProgVerify
+003ffbdf   _Fl28x_ProgPulse
+003ffc21   _Fl28x_CompactVerify
+003ffc5b   _Fl28x_CompactPulse
+003ffc9e   _Fl2803x_EraseSector
+003ffcf9   _Fl2803x_CompactSector
+003ffd4d   _Fl28x_DepRecoverCompactSector
+003ffd94   _Fl28x_ClearLoop
+003ffdd5   _Flash2803x_Verify
+003ffe0e   _Fl2803x_ClearSector
+003ffe41   _Flash2803x_DepRecover
+003ffe6b   _Fl2803x_Init
+003ffe81   _Flash2803x_ToggleTest
+003ffe96   _Fl28x_WatchDogDisable
+003ffe9e   _Fl28x_DisableNMI
+003ffeaa   _Fl28x_Delay
+003ffeb7   _Fl28x_DisableInt
+003ffebb   _Fl28x_RestoreInt
+003ffebe   _Flash2803x_APIVersion
+003ffec1   _Flash2803x_APIVersionHex
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   cinit
+ffffffff   pinit
+
+[191 symbols]

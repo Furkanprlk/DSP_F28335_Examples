@@ -1,0 +1,20 @@
+//###########################################################################
+// Description:
+//
+// Task 1: atan2
+//
+//###########################################################################
+// $TI Release:  $
+// $Release Date:  $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+#include "CLAMath.h"
+#include "CLAShared.h"
+
+//Task 1 : Calculate atan2(X,Y)
+interrupt void Cla1Task1 ( void )
+{
+	__mdebugstop();
+    fResult = CLAatan2(fVal1,fVal2);
+}

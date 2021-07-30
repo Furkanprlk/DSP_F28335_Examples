@@ -1,0 +1,2 @@
+This module introduces the first integrated peripherals of the F2833x Digital Signal Controller. The device has not only a 32-bit processor core, but also all of the peripheral units needed to build a single chip control system (SOC-“System on Chip”). These integrated peripherals give the F2833x an important advantage over other processors.
+We will start with the simplest peripheral unit-Digital I/O. At the end of this chapter we will exercise input lines (switches, buttons) and output lines (LEDs). 

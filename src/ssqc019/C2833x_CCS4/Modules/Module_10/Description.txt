@@ -1,0 +1,4 @@
+The SPI module is a synchronous serial I/O port that shifts a serial bit stream of variable length and data rate between the ‘F2833x’ and other peripheral devices. Here “synchronous” means that the data transmission is synchronized to a clock signal. During data transfers, one SPI device must be configured as the transfer MASTER, and all other devices configured as SLAVES. The master drives the transfer clock signal for all SLAVES on the bus. SPI communication can be implemented in any of three different modes:
+•	MASTER sends data, SLAVES send dummy data
+•	MASTER sends data, one SLAVE sends data
+•	MASTER sends dummy data, one SLAVE sends data

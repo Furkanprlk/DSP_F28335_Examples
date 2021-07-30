@@ -1,0 +1,48 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\tidcs\c28\Flash28_API_1234\Flash2803x_API_V100_BUILD\example\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\lib\2803x_FlashAPI_BootROMSymbols.lib"
+Source="..\lib\rts2800_ml.lib"
+Source="DSP2803x_common\source\DSP2803x_CodeStartBranch.asm"
+Source="DSP2803x_common\source\DSP2803x_CSMPasswords.asm"
+Source="Example_Flash2803x_API.c"
+Source="Example_Flash2803x_CsmKeys.asm"
+Source="Example_Flash2803x_GlobalVariableDefs.c"
+Source="DSP2803x_headers\cmd\DSP2803x_Headers_nonBIOS.cmd"
+Source="Example_Flash28035_API.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -pdr -fr"C:\tidcs\c28\Flash28_API_1234\Flash2803x_API_V100_BUILD\example\Debug" -i"../include" -i"./DSP2803x_Headers/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"C:\tidcs\c28\Flash28_API_1234\Flash2803x_API_V100_BUILD\example\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-q -c -ecode_start -m".\Debug\Example_Flash2803x_API.map" -o".\Debug\Example_Flash2803x_API.out" -stack0x200 -w -x -priority
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\Example_Flash2803x_API.map" -o".\Release\Example_Flash2803x_API.out" -x
+
+["..\lib\2803x_FlashAPI_BootROMSymbols.lib" Settings: "Debug"]
+LinkOrder=1
+
+["..\lib\rts2800_ml.lib" Settings: "Debug"]
+LinkOrder=2
+
+["DSP2803x_headers\cmd\DSP2803x_Headers_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=4
+
+["Example_Flash28035_API.cmd" Settings: "Debug"]
+LinkOrder=3
+

@@ -1,0 +1,17 @@
+//Add watch window variables
+expRemoveAll
+expAdd "sgen.freq" getQValue(15)
+expAdd "sgen.step_max" getQValue(0)
+expAdd "sgen.alpha" getQValue(16)
+expAdd "sgen.gain" getQValue(15)
+expAdd "sgen.offset" getQValue(15)
+expAdd "sgen.out11" getQValue(15)
+expAdd "sgen.out12" getQValue(15)
+expAdd "sgen.out13" getQValue(15) 
+expAdd "sgen.phase" getQValue(15)
+expAdd "sgen.out21" getQValue(15)
+expAdd "sgen.out22" getQValue(15)
+expAdd "sgen.out23" getQValue(15)
+openAnalysisView('Dual Time','C:/TI/controlSUITE/libs/dsp/SGEN/v101/examples_ccsv4/2833x_SGENT3D/sgent3d_1.graphProp')
+openAnalysisView('Dual Time','C:/TI/controlSUITE/libs/dsp/SGEN/v101/examples_ccsv4/2833x_SGENT3D/sgent3d_2.graphProp')
+openAnalysisView('Dual Time','C:/TI/controlSUITE/libs/dsp/SGEN/v101/examples_ccsv4/2833x_SGENT3D/sgent3d_3.graphProp')

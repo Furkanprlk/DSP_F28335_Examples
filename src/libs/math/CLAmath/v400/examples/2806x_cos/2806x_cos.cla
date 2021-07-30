@@ -1,0 +1,20 @@
+//###########################################################################
+// Description:
+//
+// Task 1: cos
+//
+//###########################################################################
+// $TI Release:  $
+// $Release Date:  $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+#include "CLAMath.h"
+#include "CLAShared.h"
+
+//Task 1 : Calculate cos(X)
+interrupt void Cla1Task1 ( void )
+{
+	__mdebugstop();
+    fResult = CLAcos(fAngle);
+}

@@ -1,0 +1,2050 @@
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.1.3 *
+       3              ;* Date/Time created: Thu Jan 30 10:31:42 2014                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --o
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/work/grepos/bootrom/Boot_ROM/F2837x_bootROM-REVB/F2837x_bootROM_dev/
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TMS320C2000 C/C++ Codegen PC v6.1.3 Copyright (c) 1996-2012 Texas I
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\work\grepos\bootrom\Boot_ROM\F2837x_bootROM-REVB\F2837x_bootROM_
+      13                      .global _PHY_ofdmLtfm4freq
+      14 00000000               .sect   "sunPhyTable1"
+      15                      .align  2
+      16 00000000       _PHY_ofdmLtfm4freq:
+      17 00000000 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][0]._real @ 0
+      18 00000001 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][0]._imag @ 16
+      19 00000002 41F2          .field  16882,16                        ; _PHY_ofdmLtfm4freq[0][1]._real @ 32
+      20 00000003 E947          .field  -5817,16                        ; _PHY_ofdmLtfm4freq[0][1]._imag @ 48
+      21 00000004 4225          .field  16933,16                        ; _PHY_ofdmLtfm4freq[0][2]._real @ 64
+      22 00000005 21E4          .field  8676,16                 ; _PHY_ofdmLtfm4freq[0][2]._imag @ 80
+      23 00000006 183C          .field  6204,16                 ; _PHY_ofdmLtfm4freq[0][3]._real @ 96
+      24 00000007 4598          .field  17816,16                        ; _PHY_ofdmLtfm4freq[0][3]._imag @ 112
+      25 00000008 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][4]._real @ 128
+      26 00000009 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][4]._imag @ 144
+      27 0000000a DA17          .field  -9705,16                        ; _PHY_ofdmLtfm4freq[0][5]._real @ 160
+      28 0000000b 144B          .field  5195,16                 ; _PHY_ofdmLtfm4freq[0][5]._imag @ 176
+      29 0000000c F3DA          .field  -3110,16                        ; _PHY_ofdmLtfm4freq[0][6]._real @ 192
+      30 0000000d 0176          .field  374,16                  ; _PHY_ofdmLtfm4freq[0][6]._imag @ 208
+      31 0000000e 06A2          .field  1698,16                 ; _PHY_ofdmLtfm4freq[0][7]._real @ 224
+      32 0000000f 1B1B          .field  6939,16                 ; _PHY_ofdmLtfm4freq[0][7]._imag @ 240
+      33 00000010 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][8]._real @ 256
+      34 00000011 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][8]._imag @ 272
+      35 00000012 AE83          .field  -20861,16                       ; _PHY_ofdmLtfm4freq[0][9]._real @ 288
+      36 00000013 2658          .field  9816,16                 ; _PHY_ofdmLtfm4freq[0][9]._imag @ 304
+      37 00000014 A22A          .field  -24022,16                       ; _PHY_ofdmLtfm4freq[0][10]._real @ 320
+      38 00000015 DFA0          .field  -8288,16                        ; _PHY_ofdmLtfm4freq[0][10]._imag @ 336
+      39 00000016 D9DA          .field  -9766,16                        ; _PHY_ofdmLtfm4freq[0][11]._real @ 352
+      40 00000017 AEFD          .field  -20739,16                       ; _PHY_ofdmLtfm4freq[0][11]._imag @ 368
+      41 00000018 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][12]._real @ 384
+      42 00000019 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][12]._imag @ 400
+      43 0000001a 1C9C          .field  7324,16                 ; _PHY_ofdmLtfm4freq[0][13]._real @ 416
+      44 0000001b F8BE          .field  -1858,16                        ; _PHY_ofdmLtfm4freq[0][13]._imag @ 432
+      45 0000001c F6D5          .field  -2347,16                        ; _PHY_ofdmLtfm4freq[0][14]._real @ 448
+      46 0000001d 02B2          .field  690,16                  ; _PHY_ofdmLtfm4freq[0][14]._imag @ 464
+      47 0000001e ECDF          .field  -4897,16                        ; _PHY_ofdmLtfm4freq[0][15]._real @ 480
+      48 0000001f DCE7          .field  -8985,16                        ; _PHY_ofdmLtfm4freq[0][15]._imag @ 496
+      49 00000020 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][16]._real @ 512
+      50 00000021 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][16]._imag @ 528
+      51 00000022 4A66          .field  19046,16                        ; _PHY_ofdmLtfm4freq[0][17]._real @ 544
+      52 00000023 E5C6          .field  -6714,16                        ; _PHY_ofdmLtfm4freq[0][17]._imag @ 560
+      53 00000024 4B23          .field  19235,16                        ; _PHY_ofdmLtfm4freq[0][18]._real @ 576
+      54 00000025 259E          .field  9630,16                 ; _PHY_ofdmLtfm4freq[0][18]._imag @ 592
+      55 00000026 1A4F          .field  6735,16                 ; _PHY_ofdmLtfm4freq[0][19]._real @ 608
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    2
+
+      56 00000027 4A99          .field  19097,16                        ; _PHY_ofdmLtfm4freq[0][19]._imag @ 624
+      57 00000028 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][20]._real @ 640
+      58 00000029 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][20]._imag @ 656
+      59 0000002a DD81          .field  -8831,16                        ; _PHY_ofdmLtfm4freq[0][21]._real @ 672
+      60 0000002b 12E1          .field  4833,16                 ; _PHY_ofdmLtfm4freq[0][21]._imag @ 688
+      61 0000002c F7F9          .field  -2055,16                        ; _PHY_ofdmLtfm4freq[0][22]._real @ 704
+      62 0000002d 032B          .field  811,16                  ; _PHY_ofdmLtfm4freq[0][22]._imag @ 720
+      63 0000002e 07AE          .field  1966,16                 ; _PHY_ofdmLtfm4freq[0][23]._real @ 736
+      64 0000002f 1DA0          .field  7584,16                 ; _PHY_ofdmLtfm4freq[0][23]._imag @ 752
+      65 00000030 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][24]._real @ 768
+      66 00000031 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][24]._imag @ 784
+      67 00000032 B071          .field  -20367,16                       ; _PHY_ofdmLtfm4freq[0][25]._real @ 800
+      68 00000033 258C          .field  9612,16                 ; _PHY_ofdmLtfm4freq[0][25]._imag @ 816
+      69 00000034 A48D          .field  -23411,16                       ; _PHY_ofdmLtfm4freq[0][26]._real @ 832
+      70 00000035 E09D          .field  -8035,16                        ; _PHY_ofdmLtfm4freq[0][26]._imag @ 848
+      71 00000036 DA75          .field  -9611,16                        ; _PHY_ofdmLtfm4freq[0][27]._real @ 864
+      72 00000037 B073          .field  -20365,16                       ; _PHY_ofdmLtfm4freq[0][27]._imag @ 880
+      73 00000038 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][28]._real @ 896
+      74 00000039 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][28]._imag @ 912
+      75 0000003a 1D9A          .field  7578,16                 ; _PHY_ofdmLtfm4freq[0][29]._real @ 928
+      76 0000003b F855          .field  -1963,16                        ; _PHY_ofdmLtfm4freq[0][29]._imag @ 944
+      77 0000003c F7DC          .field  -2084,16                        ; _PHY_ofdmLtfm4freq[0][30]._real @ 960
+      78 0000003d 031F          .field  799,16                  ; _PHY_ofdmLtfm4freq[0][30]._imag @ 976
+      79 0000003e ED0A          .field  -4854,16                        ; _PHY_ofdmLtfm4freq[0][31]._real @ 992
+      80 0000003f DD50          .field  -8880,16                        ; _PHY_ofdmLtfm4freq[0][31]._imag @ 1008
+      81 00000040 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][32]._real @ 1024
+      82 00000041 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][32]._imag @ 1040
+      83 00000042 49E4          .field  18916,16                        ; _PHY_ofdmLtfm4freq[0][33]._real @ 1056
+      84 00000043 E5FC          .field  -6660,16                        ; _PHY_ofdmLtfm4freq[0][33]._imag @ 1072
+      85 00000044 4960          .field  18784,16                        ; _PHY_ofdmLtfm4freq[0][34]._real @ 1088
+      86 00000045 24E3          .field  9443,16                 ; _PHY_ofdmLtfm4freq[0][34]._imag @ 1104
+      87 00000046 1955          .field  6485,16                 ; _PHY_ofdmLtfm4freq[0][35]._real @ 1120
+      88 00000047 483E          .field  18494,16                        ; _PHY_ofdmLtfm4freq[0][35]._imag @ 1136
+      89 00000048 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][36]._real @ 1152
+      90 00000049 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][36]._imag @ 1168
+      91 0000004a D5FC          .field  -10756,16                       ; _PHY_ofdmLtfm4freq[0][37]._real @ 1184
+      92 0000004b 15FF          .field  5631,16                 ; _PHY_ofdmLtfm4freq[0][37]._imag @ 1200
+      93 0000004c E2DC          .field  -7460,16                        ; _PHY_ofdmLtfm4freq[0][38]._real @ 1216
+      94 0000004d FA6C          .field  -1428,16                        ; _PHY_ofdmLtfm4freq[0][38]._imag @ 1232
+      95 0000004e F751          .field  -2223,16                        ; _PHY_ofdmLtfm4freq[0][39]._real @ 1248
+      96 0000004f F61F          .field  -2529,16                        ; _PHY_ofdmLtfm4freq[0][39]._imag @ 1264
+      97 00000050 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][40]._real @ 1280
+      98 00000051 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][40]._imag @ 1296
+      99 00000052 FB64          .field  -1180,16                        ; _PHY_ofdmLtfm4freq[0][41]._real @ 1312
+     100 00000053 0680          .field  1664,16                 ; _PHY_ofdmLtfm4freq[0][41]._imag @ 1328
+     101 00000054 F685          .field  -2427,16                        ; _PHY_ofdmLtfm4freq[0][42]._real @ 1344
+     102 00000055 0291          .field  657,16                  ; _PHY_ofdmLtfm4freq[0][42]._imag @ 1360
+     103 00000056 FA4B          .field  -1461,16                        ; _PHY_ofdmLtfm4freq[0][43]._real @ 1376
+     104 00000057 FD50          .field  -688,16                 ; _PHY_ofdmLtfm4freq[0][43]._imag @ 1392
+     105 00000058 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][44]._real @ 1408
+     106 00000059 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][44]._imag @ 1424
+     107 0000005a FE44          .field  -444,16                 ; _PHY_ofdmLtfm4freq[0][45]._real @ 1440
+     108 0000005b 0550          .field  1360,16                 ; _PHY_ofdmLtfm4freq[0][45]._imag @ 1456
+     109 0000005c F966          .field  -1690,16                        ; _PHY_ofdmLtfm4freq[0][46]._real @ 1472
+     110 0000005d 03C3          .field  963,16                  ; _PHY_ofdmLtfm4freq[0][46]._imag @ 1488
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    3
+
+     111 0000005e FAED          .field  -1299,16                        ; _PHY_ofdmLtfm4freq[0][47]._real @ 1504
+     112 0000005f FED5          .field  -299,16                 ; _PHY_ofdmLtfm4freq[0][47]._imag @ 1520
+     113 00000060 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][48]._real @ 1536
+     114 00000061 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][48]._imag @ 1552
+     115 00000062 FF37          .field  -201,16                 ; _PHY_ofdmLtfm4freq[0][49]._real @ 1568
+     116 00000063 04EB          .field  1259,16                 ; _PHY_ofdmLtfm4freq[0][49]._imag @ 1584
+     117 00000064 FA84          .field  -1404,16                        ; _PHY_ofdmLtfm4freq[0][50]._real @ 1600
+     118 00000065 0439          .field  1081,16                 ; _PHY_ofdmLtfm4freq[0][50]._imag @ 1616
+     119 00000066 FB34          .field  -1228,16                        ; _PHY_ofdmLtfm4freq[0][51]._real @ 1632
+     120 00000067 FF81          .field  -127,16                 ; _PHY_ofdmLtfm4freq[0][51]._imag @ 1648
+     121 00000068 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][52]._real @ 1664
+     122 00000069 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][52]._imag @ 1680
+     123 0000006a FFBB          .field  -69,16                  ; _PHY_ofdmLtfm4freq[0][53]._real @ 1696
+     124 0000006b 04B4          .field  1204,16                 ; _PHY_ofdmLtfm4freq[0][53]._imag @ 1712
+     125 0000006c FB2B          .field  -1237,16                        ; _PHY_ofdmLtfm4freq[0][54]._real @ 1728
+     126 0000006d 047E          .field  1150,16                 ; _PHY_ofdmLtfm4freq[0][54]._imag @ 1744
+     127 0000006e FB60          .field  -1184,16                        ; _PHY_ofdmLtfm4freq[0][55]._real @ 1760
+     128 0000006f FFEC          .field  -20,16                  ; _PHY_ofdmLtfm4freq[0][55]._imag @ 1776
+     129 00000070 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][56]._real @ 1792
+     130 00000071 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][56]._imag @ 1808
+     131 00000072 0017          .field  23,16                   ; _PHY_ofdmLtfm4freq[0][57]._real @ 1824
+     132 00000073 048E          .field  1166,16                 ; _PHY_ofdmLtfm4freq[0][57]._imag @ 1840
+     133 00000074 FBA5          .field  -1115,16                        ; _PHY_ofdmLtfm4freq[0][58]._real @ 1856
+     134 00000075 04B1          .field  1201,16                 ; _PHY_ofdmLtfm4freq[0][58]._imag @ 1872
+     135 00000076 FB82          .field  -1150,16                        ; _PHY_ofdmLtfm4freq[0][59]._real @ 1888
+     136 00000077 003E          .field  62,16                   ; _PHY_ofdmLtfm4freq[0][59]._imag @ 1904
+     137 00000078 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][60]._real @ 1920
+     138 00000079 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][60]._imag @ 1936
+     139 0000007a 0061          .field  97,16                   ; _PHY_ofdmLtfm4freq[0][61]._real @ 1952
+     140 0000007b 046F          .field  1135,16                 ; _PHY_ofdmLtfm4freq[0][61]._imag @ 1968
+     141 0000007c FC0A          .field  -1014,16                        ; _PHY_ofdmLtfm4freq[0][62]._real @ 1984
+     142 0000007d 04DA          .field  1242,16                 ; _PHY_ofdmLtfm4freq[0][62]._imag @ 2000
+     143 0000007e FB9E          .field  -1122,16                        ; _PHY_ofdmLtfm4freq[0][63]._real @ 2016
+     144 0000007f 0083          .field  131,16                  ; _PHY_ofdmLtfm4freq[0][63]._imag @ 2032
+     145 00000080 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][64]._real @ 2048
+     146 00000081 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][64]._imag @ 2064
+     147 00000082 00A2          .field  162,16                  ; _PHY_ofdmLtfm4freq[0][65]._real @ 2080
+     148 00000083 0454          .field  1108,16                 ; _PHY_ofdmLtfm4freq[0][65]._imag @ 2096
+     149 00000084 FC63          .field  -925,16                 ; _PHY_ofdmLtfm4freq[0][66]._real @ 2112
+     150 00000085 0500          .field  1280,16                 ; _PHY_ofdmLtfm4freq[0][66]._imag @ 2128
+     151 00000086 FBB8          .field  -1096,16                        ; _PHY_ofdmLtfm4freq[0][67]._real @ 2144
+     152 00000087 00C0          .field  192,16                  ; _PHY_ofdmLtfm4freq[0][67]._imag @ 2160
+     153 00000088 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][68]._real @ 2176
+     154 00000089 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][68]._imag @ 2192
+     155 0000008a 00DE          .field  222,16                  ; _PHY_ofdmLtfm4freq[0][69]._real @ 2208
+     156 0000008b 043C          .field  1084,16                 ; _PHY_ofdmLtfm4freq[0][69]._imag @ 2224
+     157 0000008c FCB6          .field  -842,16                 ; _PHY_ofdmLtfm4freq[0][70]._real @ 2240
+     158 0000008d 0522          .field  1314,16                 ; _PHY_ofdmLtfm4freq[0][70]._imag @ 2256
+     159 0000008e FBD0          .field  -1072,16                        ; _PHY_ofdmLtfm4freq[0][71]._real @ 2272
+     160 0000008f 00FA          .field  250,16                  ; _PHY_ofdmLtfm4freq[0][71]._imag @ 2288
+     161 00000090 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][72]._real @ 2304
+     162 00000091 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][72]._imag @ 2320
+     163 00000092 0116          .field  278,16                  ; _PHY_ofdmLtfm4freq[0][73]._real @ 2336
+     164 00000093 0425          .field  1061,16                 ; _PHY_ofdmLtfm4freq[0][73]._imag @ 2352
+     165 00000094 FD05          .field  -763,16                 ; _PHY_ofdmLtfm4freq[0][74]._real @ 2368
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    4
+
+     166 00000095 0542          .field  1346,16                 ; _PHY_ofdmLtfm4freq[0][74]._imag @ 2384
+     167 00000096 FBE7          .field  -1049,16                        ; _PHY_ofdmLtfm4freq[0][75]._real @ 2400
+     168 00000097 0131          .field  305,16                  ; _PHY_ofdmLtfm4freq[0][75]._imag @ 2416
+     169 00000098 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][76]._real @ 2432
+     170 00000099 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][76]._imag @ 2448
+     171 0000009a 014C          .field  332,16                  ; _PHY_ofdmLtfm4freq[0][77]._real @ 2464
+     172 0000009b 040E          .field  1038,16                 ; _PHY_ofdmLtfm4freq[0][77]._imag @ 2480
+     173 0000009c FD50          .field  -688,16                 ; _PHY_ofdmLtfm4freq[0][78]._real @ 2496
+     174 0000009d 0562          .field  1378,16                 ; _PHY_ofdmLtfm4freq[0][78]._imag @ 2512
+     175 0000009e FBFD          .field  -1027,16                        ; _PHY_ofdmLtfm4freq[0][79]._real @ 2528
+     176 0000009f 0166          .field  358,16                  ; _PHY_ofdmLtfm4freq[0][79]._imag @ 2544
+     177 000000a0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][80]._real @ 2560
+     178 000000a1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][80]._imag @ 2576
+     179 000000a2 0180          .field  384,16                  ; _PHY_ofdmLtfm4freq[0][81]._real @ 2592
+     180 000000a3 03F8          .field  1016,16                 ; _PHY_ofdmLtfm4freq[0][81]._imag @ 2608
+     181 000000a4 FD9A          .field  -614,16                 ; _PHY_ofdmLtfm4freq[0][82]._real @ 2624
+     182 000000a5 0580          .field  1408,16                 ; _PHY_ofdmLtfm4freq[0][82]._imag @ 2640
+     183 000000a6 FC12          .field  -1006,16                        ; _PHY_ofdmLtfm4freq[0][83]._real @ 2656
+     184 000000a7 019A          .field  410,16                  ; _PHY_ofdmLtfm4freq[0][83]._imag @ 2672
+     185 000000a8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][84]._real @ 2688
+     186 000000a9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][84]._imag @ 2704
+     187 000000aa 01B4          .field  436,16                  ; _PHY_ofdmLtfm4freq[0][85]._real @ 2720
+     188 000000ab 03E3          .field  995,16                  ; _PHY_ofdmLtfm4freq[0][85]._imag @ 2736
+     189 000000ac FDE3          .field  -541,16                 ; _PHY_ofdmLtfm4freq[0][86]._real @ 2752
+     190 000000ad 059F          .field  1439,16                 ; _PHY_ofdmLtfm4freq[0][86]._imag @ 2768
+     191 000000ae FC28          .field  -984,16                 ; _PHY_ofdmLtfm4freq[0][87]._real @ 2784
+     192 000000af 01CE          .field  462,16                  ; _PHY_ofdmLtfm4freq[0][87]._imag @ 2800
+     193 000000b0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][88]._real @ 2816
+     194 000000b1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][88]._imag @ 2832
+     195 000000b2 01E8          .field  488,16                  ; _PHY_ofdmLtfm4freq[0][89]._real @ 2848
+     196 000000b3 03CE          .field  974,16                  ; _PHY_ofdmLtfm4freq[0][89]._imag @ 2864
+     197 000000b4 FE2C          .field  -468,16                 ; _PHY_ofdmLtfm4freq[0][90]._real @ 2880
+     198 000000b5 05BD          .field  1469,16                 ; _PHY_ofdmLtfm4freq[0][90]._imag @ 2896
+     199 000000b6 FC3D          .field  -963,16                 ; _PHY_ofdmLtfm4freq[0][91]._real @ 2912
+     200 000000b7 0201          .field  513,16                  ; _PHY_ofdmLtfm4freq[0][91]._imag @ 2928
+     201 000000b8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][92]._real @ 2944
+     202 000000b9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][92]._imag @ 2960
+     203 000000ba 021B          .field  539,16                  ; _PHY_ofdmLtfm4freq[0][93]._real @ 2976
+     204 000000bb 03B8          .field  952,16                  ; _PHY_ofdmLtfm4freq[0][93]._imag @ 2992
+     205 000000bc FE75          .field  -395,16                 ; _PHY_ofdmLtfm4freq[0][94]._real @ 3008
+     206 000000bd 05DB          .field  1499,16                 ; _PHY_ofdmLtfm4freq[0][94]._imag @ 3024
+     207 000000be FC52          .field  -942,16                 ; _PHY_ofdmLtfm4freq[0][95]._real @ 3040
+     208 000000bf 0235          .field  565,16                  ; _PHY_ofdmLtfm4freq[0][95]._imag @ 3056
+     209 000000c0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][96]._real @ 3072
+     210 000000c1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][96]._imag @ 3088
+     211 000000c2 024F          .field  591,16                  ; _PHY_ofdmLtfm4freq[0][97]._real @ 3104
+     212 000000c3 03A3          .field  931,16                  ; _PHY_ofdmLtfm4freq[0][97]._imag @ 3120
+     213 000000c4 FEBF          .field  -321,16                 ; _PHY_ofdmLtfm4freq[0][98]._real @ 3136
+     214 000000c5 05F9          .field  1529,16                 ; _PHY_ofdmLtfm4freq[0][98]._imag @ 3152
+     215 000000c6 FC68          .field  -920,16                 ; _PHY_ofdmLtfm4freq[0][99]._real @ 3168
+     216 000000c7 0269          .field  617,16                  ; _PHY_ofdmLtfm4freq[0][99]._imag @ 3184
+     217 000000c8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][100]._real @ 3200
+     218 000000c9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][100]._imag @ 3216
+     219 000000ca 0284          .field  644,16                  ; _PHY_ofdmLtfm4freq[0][101]._real @ 3232
+     220 000000cb 038D          .field  909,16                  ; _PHY_ofdmLtfm4freq[0][101]._imag @ 3248
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    5
+
+     221 000000cc FF09          .field  -247,16                 ; _PHY_ofdmLtfm4freq[0][102]._real @ 3264
+     222 000000cd 0618          .field  1560,16                 ; _PHY_ofdmLtfm4freq[0][102]._imag @ 3280
+     223 000000ce FC7E          .field  -898,16                 ; _PHY_ofdmLtfm4freq[0][103]._real @ 3296
+     224 000000cf 029E          .field  670,16                  ; _PHY_ofdmLtfm4freq[0][103]._imag @ 3312
+     225 000000d0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][104]._real @ 3328
+     226 000000d1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][104]._imag @ 3344
+     227 000000d2 02B9          .field  697,16                  ; _PHY_ofdmLtfm4freq[0][105]._real @ 3360
+     228 000000d3 0377          .field  887,16                  ; _PHY_ofdmLtfm4freq[0][105]._imag @ 3376
+     229 000000d4 FF56          .field  -170,16                 ; _PHY_ofdmLtfm4freq[0][106]._real @ 3392
+     230 000000d5 0638          .field  1592,16                 ; _PHY_ofdmLtfm4freq[0][106]._imag @ 3408
+     231 000000d6 FC95          .field  -875,16                 ; _PHY_ofdmLtfm4freq[0][107]._real @ 3424
+     232 000000d7 02D5          .field  725,16                  ; _PHY_ofdmLtfm4freq[0][107]._imag @ 3440
+     233 000000d8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][108]._real @ 3456
+     234 000000d9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][108]._imag @ 3472
+     235 000000da 02F0          .field  752,16                  ; _PHY_ofdmLtfm4freq[0][109]._real @ 3488
+     236 000000db 0360          .field  864,16                  ; _PHY_ofdmLtfm4freq[0][109]._imag @ 3504
+     237 000000dc FFA4          .field  -92,16                  ; _PHY_ofdmLtfm4freq[0][110]._real @ 3520
+     238 000000dd 0659          .field  1625,16                 ; _PHY_ofdmLtfm4freq[0][110]._imag @ 3536
+     239 000000de FCAC          .field  -852,16                 ; _PHY_ofdmLtfm4freq[0][111]._real @ 3552
+     240 000000df 030D          .field  781,16                  ; _PHY_ofdmLtfm4freq[0][111]._imag @ 3568
+     241 000000e0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][112]._real @ 3584
+     242 000000e1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][112]._imag @ 3600
+     243 000000e2 0329          .field  809,16                  ; _PHY_ofdmLtfm4freq[0][113]._real @ 3616
+     244 000000e3 0348          .field  840,16                  ; _PHY_ofdmLtfm4freq[0][113]._imag @ 3632
+     245 000000e4 FFF6          .field  -10,16                  ; _PHY_ofdmLtfm4freq[0][114]._real @ 3648
+     246 000000e5 067A          .field  1658,16                 ; _PHY_ofdmLtfm4freq[0][114]._imag @ 3664
+     247 000000e6 FCC4          .field  -828,16                 ; _PHY_ofdmLtfm4freq[0][115]._real @ 3680
+     248 000000e7 0347          .field  839,16                  ; _PHY_ofdmLtfm4freq[0][115]._imag @ 3696
+     249 000000e8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][116]._real @ 3712
+     250 000000e9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][116]._imag @ 3728
+     251 000000ea 0365          .field  869,16                  ; _PHY_ofdmLtfm4freq[0][117]._real @ 3744
+     252 000000eb 0330          .field  816,16                  ; _PHY_ofdmLtfm4freq[0][117]._imag @ 3760
+     253 000000ec 004A          .field  74,16                   ; _PHY_ofdmLtfm4freq[0][118]._real @ 3776
+     254 000000ed 069D          .field  1693,16                 ; _PHY_ofdmLtfm4freq[0][118]._imag @ 3792
+     255 000000ee FCDD          .field  -803,16                 ; _PHY_ofdmLtfm4freq[0][119]._real @ 3808
+     256 000000ef 0383          .field  899,16                  ; _PHY_ofdmLtfm4freq[0][119]._imag @ 3824
+     257 000000f0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][120]._real @ 3840
+     258 000000f1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][120]._imag @ 3856
+     259 000000f2 03A3          .field  931,16                  ; _PHY_ofdmLtfm4freq[0][121]._real @ 3872
+     260 000000f3 0316          .field  790,16                  ; _PHY_ofdmLtfm4freq[0][121]._imag @ 3888
+     261 000000f4 00A3          .field  163,16                  ; _PHY_ofdmLtfm4freq[0][122]._real @ 3904
+     262 000000f5 06C2          .field  1730,16                 ; _PHY_ofdmLtfm4freq[0][122]._imag @ 3920
+     263 000000f6 FCF7          .field  -777,16                 ; _PHY_ofdmLtfm4freq[0][123]._real @ 3936
+     264 000000f7 03C3          .field  963,16                  ; _PHY_ofdmLtfm4freq[0][123]._imag @ 3952
+     265 000000f8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][124]._real @ 3968
+     266 000000f9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][124]._imag @ 3984
+     267 000000fa 03E4          .field  996,16                  ; _PHY_ofdmLtfm4freq[0][125]._real @ 4000
+     268 000000fb 02FB          .field  763,16                  ; _PHY_ofdmLtfm4freq[0][125]._imag @ 4016
+     269 000000fc 0101          .field  257,16                  ; _PHY_ofdmLtfm4freq[0][126]._real @ 4032
+     270 000000fd 06E9          .field  1769,16                 ; _PHY_ofdmLtfm4freq[0][126]._imag @ 4048
+     271 000000fe FD13          .field  -749,16                 ; _PHY_ofdmLtfm4freq[0][127]._real @ 4064
+     272 000000ff 0406          .field  1030,16                 ; _PHY_ofdmLtfm4freq[0][127]._imag @ 4080
+     273 00000100 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][128]._real @ 4096
+     274 00000101 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][128]._imag @ 4112
+     275 00000102 0429          .field  1065,16                 ; _PHY_ofdmLtfm4freq[0][129]._real @ 4128
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    6
+
+     276 00000103 02DE          .field  734,16                  ; _PHY_ofdmLtfm4freq[0][129]._imag @ 4144
+     277 00000104 0164          .field  356,16                  ; _PHY_ofdmLtfm4freq[0][130]._real @ 4160
+     278 00000105 0712          .field  1810,16                 ; _PHY_ofdmLtfm4freq[0][130]._imag @ 4176
+     279 00000106 FD31          .field  -719,16                 ; _PHY_ofdmLtfm4freq[0][131]._real @ 4192
+     280 00000107 044D          .field  1101,16                 ; _PHY_ofdmLtfm4freq[0][131]._imag @ 4208
+     281 00000108 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][132]._real @ 4224
+     282 00000109 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][132]._imag @ 4240
+     283 0000010a 0473          .field  1139,16                 ; _PHY_ofdmLtfm4freq[0][133]._real @ 4256
+     284 0000010b 02C0          .field  704,16                  ; _PHY_ofdmLtfm4freq[0][133]._imag @ 4272
+     285 0000010c 01CF          .field  463,16                  ; _PHY_ofdmLtfm4freq[0][134]._real @ 4288
+     286 0000010d 073E          .field  1854,16                 ; _PHY_ofdmLtfm4freq[0][134]._imag @ 4304
+     287 0000010e FD50          .field  -688,16                 ; _PHY_ofdmLtfm4freq[0][135]._real @ 4320
+     288 0000010f 049A          .field  1178,16                 ; _PHY_ofdmLtfm4freq[0][135]._imag @ 4336
+     289 00000110 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][136]._real @ 4352
+     290 00000111 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][136]._imag @ 4368
+     291 00000112 04C3          .field  1219,16                 ; _PHY_ofdmLtfm4freq[0][137]._real @ 4384
+     292 00000113 029F          .field  671,16                  ; _PHY_ofdmLtfm4freq[0][137]._imag @ 4400
+     293 00000114 0242          .field  578,16                  ; _PHY_ofdmLtfm4freq[0][138]._real @ 4416
+     294 00000115 076E          .field  1902,16                 ; _PHY_ofdmLtfm4freq[0][138]._imag @ 4432
+     295 00000116 FD73          .field  -653,16                 ; _PHY_ofdmLtfm4freq[0][139]._real @ 4448
+     296 00000117 04ED          .field  1261,16                 ; _PHY_ofdmLtfm4freq[0][139]._imag @ 4464
+     297 00000118 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][140]._real @ 4480
+     298 00000119 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][140]._imag @ 4496
+     299 0000011a 0519          .field  1305,16                 ; _PHY_ofdmLtfm4freq[0][141]._real @ 4512
+     300 0000011b 027B          .field  635,16                  ; _PHY_ofdmLtfm4freq[0][141]._imag @ 4528
+     301 0000011c 02BF          .field  703,16                  ; _PHY_ofdmLtfm4freq[0][142]._real @ 4544
+     302 0000011d 07A2          .field  1954,16                 ; _PHY_ofdmLtfm4freq[0][142]._imag @ 4560
+     303 0000011e FD98          .field  -616,16                 ; _PHY_ofdmLtfm4freq[0][143]._real @ 4576
+     304 0000011f 0548          .field  1352,16                 ; _PHY_ofdmLtfm4freq[0][143]._imag @ 4592
+     305 00000120 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][144]._real @ 4608
+     306 00000121 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][144]._imag @ 4624
+     307 00000122 0578          .field  1400,16                 ; _PHY_ofdmLtfm4freq[0][145]._real @ 4640
+     308 00000123 0254          .field  596,16                  ; _PHY_ofdmLtfm4freq[0][145]._imag @ 4656
+     309 00000124 0348          .field  840,16                  ; _PHY_ofdmLtfm4freq[0][146]._real @ 4672
+     310 00000125 07DB          .field  2011,16                 ; _PHY_ofdmLtfm4freq[0][146]._imag @ 4688
+     311 00000126 FDC2          .field  -574,16                 ; _PHY_ofdmLtfm4freq[0][147]._real @ 4704
+     312 00000127 05AC          .field  1452,16                 ; _PHY_ofdmLtfm4freq[0][147]._imag @ 4720
+     313 00000128 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][148]._real @ 4736
+     314 00000129 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][148]._imag @ 4752
+     315 0000012a 05E2          .field  1506,16                 ; _PHY_ofdmLtfm4freq[0][149]._real @ 4768
+     316 0000012b 0228          .field  552,16                  ; _PHY_ofdmLtfm4freq[0][149]._imag @ 4784
+     317 0000012c 03E2          .field  994,16                  ; _PHY_ofdmLtfm4freq[0][150]._real @ 4800
+     318 0000012d 081A          .field  2074,16                 ; _PHY_ofdmLtfm4freq[0][150]._imag @ 4816
+     319 0000012e FDF0          .field  -528,16                 ; _PHY_ofdmLtfm4freq[0][151]._real @ 4832
+     320 0000012f 061B          .field  1563,16                 ; _PHY_ofdmLtfm4freq[0][151]._imag @ 4848
+     321 00000130 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][152]._real @ 4864
+     322 00000131 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][152]._imag @ 4880
+     323 00000132 0658          .field  1624,16                 ; _PHY_ofdmLtfm4freq[0][153]._real @ 4896
+     324 00000133 01F7          .field  503,16                  ; _PHY_ofdmLtfm4freq[0][153]._imag @ 4912
+     325 00000134 048F          .field  1167,16                 ; _PHY_ofdmLtfm4freq[0][154]._real @ 4928
+     326 00000135 0862          .field  2146,16                 ; _PHY_ofdmLtfm4freq[0][154]._imag @ 4944
+     327 00000136 FE24          .field  -476,16                 ; _PHY_ofdmLtfm4freq[0][155]._real @ 4960
+     328 00000137 069A          .field  1690,16                 ; _PHY_ofdmLtfm4freq[0][155]._imag @ 4976
+     329 00000138 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][156]._real @ 4992
+     330 00000139 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][156]._imag @ 5008
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    7
+
+     331 0000013a 06E0          .field  1760,16                 ; _PHY_ofdmLtfm4freq[0][157]._real @ 5024
+     332 0000013b 01BF          .field  447,16                  ; _PHY_ofdmLtfm4freq[0][157]._imag @ 5040
+     333 0000013c 0556          .field  1366,16                 ; _PHY_ofdmLtfm4freq[0][158]._real @ 5056
+     334 0000013d 08B4          .field  2228,16                 ; _PHY_ofdmLtfm4freq[0][158]._imag @ 5072
+     335 0000013e FE61          .field  -415,16                 ; _PHY_ofdmLtfm4freq[0][159]._real @ 5088
+     336 0000013f 072B          .field  1835,16                 ; _PHY_ofdmLtfm4freq[0][159]._imag @ 5104
+     337 00000140 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][160]._real @ 5120
+     338 00000141 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][160]._imag @ 5136
+     339 00000142 077E          .field  1918,16                 ; _PHY_ofdmLtfm4freq[0][161]._real @ 5152
+     340 00000143 017D          .field  381,16                  ; _PHY_ofdmLtfm4freq[0][161]._imag @ 5168
+     341 00000144 063E          .field  1598,16                 ; _PHY_ofdmLtfm4freq[0][162]._real @ 5184
+     342 00000145 0915          .field  2325,16                 ; _PHY_ofdmLtfm4freq[0][162]._imag @ 5200
+     343 00000146 FEA8          .field  -344,16                 ; _PHY_ofdmLtfm4freq[0][163]._real @ 5216
+     344 00000147 07D7          .field  2007,16                 ; _PHY_ofdmLtfm4freq[0][163]._imag @ 5232
+     345 00000148 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][164]._real @ 5248
+     346 00000149 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][164]._imag @ 5264
+     347 0000014a 083A          .field  2106,16                 ; _PHY_ofdmLtfm4freq[0][165]._real @ 5280
+     348 0000014b 012F          .field  303,16                  ; _PHY_ofdmLtfm4freq[0][165]._imag @ 5296
+     349 0000014c 0756          .field  1878,16                 ; _PHY_ofdmLtfm4freq[0][166]._real @ 5312
+     350 0000014d 0989          .field  2441,16                 ; _PHY_ofdmLtfm4freq[0][166]._imag @ 5328
+     351 0000014e FEFE          .field  -258,16                 ; _PHY_ofdmLtfm4freq[0][167]._real @ 5344
+     352 0000014f 08A8          .field  2216,16                 ; _PHY_ofdmLtfm4freq[0][167]._imag @ 5360
+     353 00000150 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][168]._real @ 5376
+     354 00000151 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][168]._imag @ 5392
+     355 00000152 0924          .field  2340,16                 ; _PHY_ofdmLtfm4freq[0][169]._real @ 5408
+     356 00000153 00CF          .field  207,16                  ; _PHY_ofdmLtfm4freq[0][169]._imag @ 5424
+     357 00000154 08B5          .field  2229,16                 ; _PHY_ofdmLtfm4freq[0][170]._real @ 5440
+     358 00000155 0A1A          .field  2586,16                 ; _PHY_ofdmLtfm4freq[0][170]._imag @ 5456
+     359 00000156 FF6C          .field  -148,16                 ; _PHY_ofdmLtfm4freq[0][171]._real @ 5472
+     360 00000157 09B1          .field  2481,16                 ; _PHY_ofdmLtfm4freq[0][171]._imag @ 5488
+     361 00000158 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][172]._real @ 5504
+     362 00000159 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][172]._imag @ 5520
+     363 0000015a 0A55          .field  2645,16                 ; _PHY_ofdmLtfm4freq[0][173]._real @ 5536
+     364 0000015b 0050          .field  80,16                   ; _PHY_ofdmLtfm4freq[0][173]._imag @ 5552
+     365 0000015c 0A89          .field  2697,16                 ; _PHY_ofdmLtfm4freq[0][174]._real @ 5568
+     366 0000015d 0ADC          .field  2780,16                 ; _PHY_ofdmLtfm4freq[0][174]._imag @ 5584
+     367 0000015e 0001          .field  1,16                    ; _PHY_ofdmLtfm4freq[0][175]._real @ 5600
+     368 0000015f 0B19          .field  2841,16                 ; _PHY_ofdmLtfm4freq[0][175]._imag @ 5616
+     369 00000160 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][176]._real @ 5632
+     370 00000161 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][176]._imag @ 5648
+     371 00000162 0C0C          .field  3084,16                 ; _PHY_ofdmLtfm4freq[0][177]._real @ 5664
+     372 00000163 FF9A          .field  -102,16                 ; _PHY_ofdmLtfm4freq[0][177]._imag @ 5680
+     373 00000164 0D42          .field  3394,16                 ; _PHY_ofdmLtfm4freq[0][178]._real @ 5696
+     374 00000165 0BFC          .field  3068,16                 ; _PHY_ofdmLtfm4freq[0][178]._imag @ 5712
+     375 00000166 00EA          .field  234,16                  ; _PHY_ofdmLtfm4freq[0][179]._real @ 5728
+     376 00000167 0D4B          .field  3403,16                 ; _PHY_ofdmLtfm4freq[0][179]._imag @ 5744
+     377 00000168 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][180]._real @ 5760
+     378 00000169 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][180]._imag @ 5776
+     379 0000016a 0F12          .field  3858,16                 ; _PHY_ofdmLtfm4freq[0][181]._real @ 5792
+     380 0000016b FE59          .field  -423,16                 ; _PHY_ofdmLtfm4freq[0][181]._imag @ 5808
+     381 0000016c 1280          .field  4736,16                 ; _PHY_ofdmLtfm4freq[0][182]._real @ 5824
+     382 0000016d 0E28          .field  3624,16                 ; _PHY_ofdmLtfm4freq[0][182]._imag @ 5840
+     383 0000016e 02E1          .field  737,16                  ; _PHY_ofdmLtfm4freq[0][183]._real @ 5856
+     384 0000016f 1209          .field  4617,16                 ; _PHY_ofdmLtfm4freq[0][183]._imag @ 5872
+     385 00000170 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][184]._real @ 5888
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    8
+
+     386 00000171 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][184]._imag @ 5904
+     387 00000172 18AC          .field  6316,16                 ; _PHY_ofdmLtfm4freq[0][185]._real @ 5920
+     388 00000173 FA5F          .field  -1441,16                        ; _PHY_ofdmLtfm4freq[0][185]._imag @ 5936
+     389 00000174 2A18          .field  10776,16                        ; _PHY_ofdmLtfm4freq[0][186]._real @ 5952
+     390 00000175 17EE          .field  6126,16                 ; _PHY_ofdmLtfm4freq[0][186]._imag @ 5968
+     391 00000176 13B9          .field  5049,16                 ; _PHY_ofdmLtfm4freq[0][187]._real @ 5984
+     392 00000177 3AB4          .field  15028,16                        ; _PHY_ofdmLtfm4freq[0][187]._imag @ 6000
+     393 00000178 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][188]._real @ 6016
+     394 00000179 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][188]._imag @ 6032
+     395 0000017a CB58          .field  -13480,16                       ; _PHY_ofdmLtfm4freq[0][189]._real @ 6048
+     396 0000017b 1A67          .field  6759,16                 ; _PHY_ofdmLtfm4freq[0][189]._imag @ 6064
+     397 0000017c CC2D          .field  -13267,16                       ; _PHY_ofdmLtfm4freq[0][190]._real @ 6080
+     398 0000017d F107          .field  -3833,16                        ; _PHY_ofdmLtfm4freq[0][190]._imag @ 6096
+     399 0000017e E70D          .field  -6387,16                        ; _PHY_ofdmLtfm4freq[0][191]._real @ 6112
+     400 0000017f CED9          .field  -12583,16                       ; _PHY_ofdmLtfm4freq[0][191]._imag @ 6128
+     401 00000180 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][192]._real @ 6144
+     402 00000181 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][192]._imag @ 6160
+     403 00000182 47C2          .field  18370,16                        ; _PHY_ofdmLtfm4freq[0][193]._real @ 6176
+     404 00000183 E6DE          .field  -6434,16                        ; _PHY_ofdmLtfm4freq[0][193]._imag @ 6192
+     405 00000184 4A2C          .field  18988,16                        ; _PHY_ofdmLtfm4freq[0][194]._real @ 6208
+     406 00000185 2538          .field  9528,16                 ; _PHY_ofdmLtfm4freq[0][194]._imag @ 6224
+     407 00000186 1A2E          .field  6702,16                 ; _PHY_ofdmLtfm4freq[0][195]._real @ 6240
+     408 00000187 4A4B          .field  19019,16                        ; _PHY_ofdmLtfm4freq[0][195]._imag @ 6256
+     409 00000188 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][196]._real @ 6272
+     410 00000189 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][196]._imag @ 6288
+     411 0000018a D6DC          .field  -10532,16                       ; _PHY_ofdmLtfm4freq[0][197]._real @ 6304
+     412 0000018b 15A2          .field  5538,16                 ; _PHY_ofdmLtfm4freq[0][197]._imag @ 6320
+     413 0000018c DC08          .field  -9208,16                        ; _PHY_ofdmLtfm4freq[0][198]._real @ 6336
+     414 0000018d F799          .field  -2151,16                        ; _PHY_ofdmLtfm4freq[0][198]._imag @ 6352
+     415 0000018e EBD2          .field  -5166,16                        ; _PHY_ofdmLtfm4freq[0][199]._real @ 6368
+     416 0000018f DA5F          .field  -9633,16                        ; _PHY_ofdmLtfm4freq[0][199]._imag @ 6384
+     417 00000190 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][200]._real @ 6400
+     418 00000191 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][200]._imag @ 6416
+     419 00000192 5585          .field  21893,16                        ; _PHY_ofdmLtfm4freq[0][201]._real @ 6432
+     420 00000193 E12B          .field  -7893,16                        ; _PHY_ofdmLtfm4freq[0][201]._imag @ 6448
+     421 00000194 60A5          .field  24741,16                        ; _PHY_ofdmLtfm4freq[0][202]._real @ 6464
+     422 00000195 2E87          .field  11911,16                        ; _PHY_ofdmLtfm4freq[0][202]._imag @ 6480
+     423 00000196 2217          .field  8727,16                 ; _PHY_ofdmLtfm4freq[0][203]._real @ 6496
+     424 00000197 5D64          .field  23908,16                        ; _PHY_ofdmLtfm4freq[0][203]._imag @ 6512
+     425 00000198 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][204]._real @ 6528
+     426 00000199 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][204]._imag @ 6544
+     427 0000019a F793          .field  -2157,16                        ; _PHY_ofdmLtfm4freq[0][205]._real @ 6560
+     428 0000019b 0815          .field  2069,16                 ; _PHY_ofdmLtfm4freq[0][205]._imag @ 6576
+     429 0000019c 2309          .field  8969,16                 ; _PHY_ofdmLtfm4freq[0][206]._real @ 6592
+     430 0000019d 1501          .field  5377,16                 ; _PHY_ofdmLtfm4freq[0][206]._imag @ 6608
+     431 0000019e 1691          .field  5777,16                 ; _PHY_ofdmLtfm4freq[0][207]._real @ 6624
+     432 0000019f 4191          .field  16785,16                        ; _PHY_ofdmLtfm4freq[0][207]._imag @ 6640
+     433 000001a0 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][208]._real @ 6656
+     434 000001a1 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][208]._imag @ 6672
+     435 000001a2 E74D          .field  -6323,16                        ; _PHY_ofdmLtfm4freq[0][209]._real @ 6688
+     436 000001a3 0ED3          .field  3795,16                 ; _PHY_ofdmLtfm4freq[0][209]._imag @ 6704
+     437 000001a4 0FB7          .field  4023,16                 ; _PHY_ofdmLtfm4freq[0][210]._real @ 6720
+     438 000001a5 0D01          .field  3329,16                 ; _PHY_ofdmLtfm4freq[0][210]._imag @ 6736
+     439 000001a6 11A2          .field  4514,16                 ; _PHY_ofdmLtfm4freq[0][211]._real @ 6752
+     440 000001a7 35A9          .field  13737,16                        ; _PHY_ofdmLtfm4freq[0][211]._imag @ 6768
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE    9
+
+     441 000001a8 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][212]._real @ 6784
+     442 000001a9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][212]._imag @ 6800
+     443 000001aa DD82          .field  -8830,16                        ; _PHY_ofdmLtfm4freq[0][213]._real @ 6816
+     444 000001ab 12E1          .field  4833,16                 ; _PHY_ofdmLtfm4freq[0][213]._imag @ 6832
+     445 000001ac 02C8          .field  712,16                  ; _PHY_ofdmLtfm4freq[0][214]._real @ 6848
+     446 000001ad 07A5          .field  1957,16                 ; _PHY_ofdmLtfm4freq[0][214]._imag @ 6864
+     447 000001ae 0E0B          .field  3595,16                 ; _PHY_ofdmLtfm4freq[0][215]._real @ 6880
+     448 000001af 2CFC          .field  11516,16                        ; _PHY_ofdmLtfm4freq[0][215]._imag @ 6896
+     449 000001b0 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][216]._real @ 6912
+     450 000001b1 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][216]._imag @ 6928
+     451 000001b2 D566          .field  -10906,16                       ; _PHY_ofdmLtfm4freq[0][217]._real @ 6944
+     452 000001b3 163D          .field  5693,16                 ; _PHY_ofdmLtfm4freq[0][217]._imag @ 6960
+     453 000001b4 F781          .field  -2175,16                        ; _PHY_ofdmLtfm4freq[0][218]._real @ 6976
+     454 000001b5 02FA          .field  762,16                  ; _PHY_ofdmLtfm4freq[0][218]._imag @ 6992
+     455 000001b6 0AC3          .field  2755,16                 ; _PHY_ofdmLtfm4freq[0][219]._real @ 7008
+     456 000001b7 2511          .field  9489,16                 ; _PHY_ofdmLtfm4freq[0][219]._imag @ 7024
+     457 000001b8 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][220]._real @ 7040
+     458 000001b9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][220]._imag @ 7056
+     459 000001ba CD5A          .field  -12966,16                       ; _PHY_ofdmLtfm4freq[0][221]._real @ 7072
+     460 000001bb 1992          .field  6546,16                 ; _PHY_ofdmLtfm4freq[0][221]._imag @ 7088
+     461 000001bc EBDE          .field  -5154,16                        ; _PHY_ofdmLtfm4freq[0][222]._real @ 7104
+     462 000001bd FE28          .field  -472,16                 ; _PHY_ofdmLtfm4freq[0][222]._imag @ 7120
+     463 000001be 073D          .field  1853,16                 ; _PHY_ofdmLtfm4freq[0][223]._real @ 7136
+     464 000001bf 1C91          .field  7313,16                 ; _PHY_ofdmLtfm4freq[0][223]._imag @ 7152
+     465 000001c0 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][224]._real @ 7168
+     466 000001c1 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][224]._imag @ 7184
+     467 000001c2 C3FD          .field  -15363,16                       ; _PHY_ofdmLtfm4freq[0][225]._real @ 7200
+     468 000001c3 1D73          .field  7539,16                 ; _PHY_ofdmLtfm4freq[0][225]._imag @ 7216
+     469 000001c4 DDB5          .field  -8779,16                        ; _PHY_ofdmLtfm4freq[0][226]._real @ 7232
+     470 000001c5 F84A          .field  -1974,16                        ; _PHY_ofdmLtfm4freq[0][226]._imag @ 7248
+     471 000001c6 02BE          .field  702,16                  ; _PHY_ofdmLtfm4freq[0][227]._real @ 7264
+     472 000001c7 11B6          .field  4534,16                 ; _PHY_ofdmLtfm4freq[0][227]._imag @ 7280
+     473 000001c8 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][228]._real @ 7296
+     474 000001c9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][228]._imag @ 7312
+     475 000001ca B683          .field  -18813,16                       ; _PHY_ofdmLtfm4freq[0][229]._real @ 7328
+     476 000001cb 2308          .field  8968,16                 ; _PHY_ofdmLtfm4freq[0][229]._imag @ 7344
+     477 000001cc C7B5          .field  -14411,16                       ; _PHY_ofdmLtfm4freq[0][230]._real @ 7360
+     478 000001cd EF2D          .field  -4307,16                        ; _PHY_ofdmLtfm4freq[0][230]._imag @ 7376
+     479 000001ce FB0C          .field  -1268,16                        ; _PHY_ofdmLtfm4freq[0][231]._real @ 7392
+     480 000001cf FF21          .field  -223,16                 ; _PHY_ofdmLtfm4freq[0][231]._imag @ 7408
+     481 000001d0 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][232]._real @ 7424
+     482 000001d1 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][232]._imag @ 7440
+     483 000001d2 972B          .field  -26837,16                       ; _PHY_ofdmLtfm4freq[0][233]._real @ 7456
+     484 000001d3 3004          .field  12292,16                        ; _PHY_ofdmLtfm4freq[0][233]._imag @ 7472
+     485 000001d4 83C5          .field  -31803,16                       ; _PHY_ofdmLtfm4freq[0][234]._real @ 7488
+     486 000001d5 D309          .field  -11511,16                       ; _PHY_ofdmLtfm4freq[0][234]._imag @ 7504
+     487 000001d6 D1B5          .field  -11851,16                       ; _PHY_ofdmLtfm4freq[0][235]._real @ 7520
+     488 000001d7 9B53          .field  -25773,16                       ; _PHY_ofdmLtfm4freq[0][235]._imag @ 7536
+     489 000001d8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][236]._real @ 7552
+     490 000001d9 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][236]._imag @ 7568
+     491 000001da 0E5D          .field  3677,16                 ; _PHY_ofdmLtfm4freq[0][237]._real @ 7584
+     492 000001db FEA4          .field  -348,16                 ; _PHY_ofdmLtfm4freq[0][237]._imag @ 7600
+     493 000001dc EC5A          .field  -5030,16                        ; _PHY_ofdmLtfm4freq[0][238]._real @ 7616
+     494 000001dd FE5B          .field  -421,16                 ; _PHY_ofdmLtfm4freq[0][238]._imag @ 7632
+     495 000001de F376          .field  -3210,16                        ; _PHY_ofdmLtfm4freq[0][239]._real @ 7648
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   10
+
+     496 000001df ECD0          .field  -4912,16                        ; _PHY_ofdmLtfm4freq[0][239]._imag @ 7664
+     497 000001e0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][240]._real @ 7680
+     498 000001e1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[0][240]._imag @ 7696
+     499 000001e2 E132          .field  -7886,16                        ; _PHY_ofdmLtfm4freq[0][241]._real @ 7712
+     500 000001e3 115A          .field  4442,16                 ; _PHY_ofdmLtfm4freq[0][241]._imag @ 7728
+     501 000001e4 C18F          .field  -15985,16                       ; _PHY_ofdmLtfm4freq[0][242]._real @ 7744
+     502 000001e5 ECA1          .field  -4959,16                        ; _PHY_ofdmLtfm4freq[0][242]._imag @ 7760
+     503 000001e6 DEE4          .field  -8476,16                        ; _PHY_ofdmLtfm4freq[0][243]._real @ 7776
+     504 000001e7 BB27          .field  -17625,16                       ; _PHY_ofdmLtfm4freq[0][243]._imag @ 7792
+     505 000001e8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][244]._real @ 7808
+     506 000001e9 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][244]._imag @ 7824
+     507 000001ea 2046          .field  8262,16                 ; _PHY_ofdmLtfm4freq[0][245]._real @ 7840
+     508 000001eb F739          .field  -2247,16                        ; _PHY_ofdmLtfm4freq[0][245]._imag @ 7856
+     509 000001ec F8BF          .field  -1857,16                        ; _PHY_ofdmLtfm4freq[0][246]._real @ 7872
+     510 000001ed 037D          .field  893,16                  ; _PHY_ofdmLtfm4freq[0][246]._imag @ 7888
+     511 000001ee ECAD          .field  -4947,16                        ; _PHY_ofdmLtfm4freq[0][247]._real @ 7904
+     512 000001ef DC6E          .field  -9106,16                        ; _PHY_ofdmLtfm4freq[0][247]._imag @ 7920
+     513 000001f0 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[0][248]._real @ 7936
+     514 000001f1 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[0][248]._imag @ 7952
+     515 000001f2 46A8          .field  18088,16                        ; _PHY_ofdmLtfm4freq[0][249]._real @ 7968
+     516 000001f3 E753          .field  -6317,16                        ; _PHY_ofdmLtfm4freq[0][249]._imag @ 7984
+     517 000001f4 4323          .field  17187,16                        ; _PHY_ofdmLtfm4freq[0][250]._real @ 8000
+     518 000001f5 224E          .field  8782,16                 ; _PHY_ofdmLtfm4freq[0][250]._imag @ 8016
+     519 000001f6 16E9          .field  5865,16                 ; _PHY_ofdmLtfm4freq[0][251]._real @ 8032
+     520 000001f7 4265          .field  16997,16                        ; _PHY_ofdmLtfm4freq[0][251]._imag @ 8048
+     521 000001f8 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[0][252]._real @ 8064
+     522 000001f9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[0][252]._imag @ 8080
+     523 000001fa CA8B          .field  -13685,16                       ; _PHY_ofdmLtfm4freq[0][253]._real @ 8096
+     524 000001fb 1ABC          .field  6844,16                 ; _PHY_ofdmLtfm4freq[0][253]._imag @ 8112
+     525 000001fc C7FC          .field  -14340,16                       ; _PHY_ofdmLtfm4freq[0][254]._real @ 8128
+     526 000001fd EF4B          .field  -4277,16                        ; _PHY_ofdmLtfm4freq[0][254]._imag @ 8144
+     527 000001fe E537          .field  -6857,16                        ; _PHY_ofdmLtfm4freq[0][255]._real @ 8160
+     528 000001ff CA6B          .field  -13717,16                       ; _PHY_ofdmLtfm4freq[0][255]._imag @ 8176
+     529 00000200 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][0]._real @ 8192
+     530 00000201 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][0]._imag @ 8208
+     531 00000202 EA2E          .field  -5586,16                        ; _PHY_ofdmLtfm4freq[1][1]._real @ 8224
+     532 00000203 1BD2          .field  7122,16                 ; _PHY_ofdmLtfm4freq[1][1]._imag @ 8240
+     533 00000204 BEE6          .field  -16666,16                       ; _PHY_ofdmLtfm4freq[1][2]._real @ 8256
+     534 00000205 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][2]._imag @ 8272
+     535 00000206 C710          .field  -14576,16                       ; _PHY_ofdmLtfm4freq[1][3]._real @ 8288
+     536 00000207 CD10          .field  -13040,16                       ; _PHY_ofdmLtfm4freq[1][3]._imag @ 8304
+     537 00000208 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][4]._real @ 8320
+     538 00000209 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][4]._imag @ 8336
+     539 0000020a 1A75          .field  6773,16                 ; _PHY_ofdmLtfm4freq[1][5]._real @ 8352
+     540 0000020b EB8B          .field  -5237,16                        ; _PHY_ofdmLtfm4freq[1][5]._imag @ 8368
+     541 0000020c FAA2          .field  -1374,16                        ; _PHY_ofdmLtfm4freq[1][6]._real @ 8384
+     542 0000020d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][6]._imag @ 8400
+     543 0000020e E088          .field  -8056,16                        ; _PHY_ofdmLtfm4freq[1][7]._real @ 8416
+     544 0000020f E688          .field  -6520,16                        ; _PHY_ofdmLtfm4freq[1][7]._imag @ 8432
+     545 00000210 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][8]._real @ 8448
+     546 00000211 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][8]._imag @ 8464
+     547 00000212 37D6          .field  14294,16                        ; _PHY_ofdmLtfm4freq[1][9]._real @ 8480
+     548 00000213 CE2A          .field  -12758,16                       ; _PHY_ofdmLtfm4freq[1][9]._imag @ 8496
+     549 00000214 4B28          .field  19240,16                        ; _PHY_ofdmLtfm4freq[1][10]._real @ 8512
+     550 00000215 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][10]._imag @ 8528
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   11
+
+     551 00000216 2E93          .field  11923,16                        ; _PHY_ofdmLtfm4freq[1][11]._real @ 8544
+     552 00000217 3493          .field  13459,16                        ; _PHY_ofdmLtfm4freq[1][11]._imag @ 8560
+     553 00000218 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][12]._real @ 8576
+     554 00000219 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][12]._imag @ 8592
+     555 0000021a D8D7          .field  -10025,16                       ; _PHY_ofdmLtfm4freq[1][13]._real @ 8608
+     556 0000021b 2D29          .field  11561,16                        ; _PHY_ofdmLtfm4freq[1][13]._imag @ 8624
+     557 0000021c C5DB          .field  -14885,16                       ; _PHY_ofdmLtfm4freq[1][14]._real @ 8640
+     558 0000021d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][14]._imag @ 8656
+     559 0000021e D2C0          .field  -11584,16                       ; _PHY_ofdmLtfm4freq[1][15]._real @ 8672
+     560 0000021f D8C0          .field  -10048,16                       ; _PHY_ofdmLtfm4freq[1][15]._imag @ 8688
+     561 00000220 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][16]._real @ 8704
+     562 00000221 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][16]._imag @ 8720
+     563 00000222 343B          .field  13371,16                        ; _PHY_ofdmLtfm4freq[1][17]._real @ 8736
+     564 00000223 D1C5          .field  -11835,16                       ; _PHY_ofdmLtfm4freq[1][17]._imag @ 8752
+     565 00000224 4A14          .field  18964,16                        ; _PHY_ofdmLtfm4freq[1][18]._real @ 8768
+     566 00000225 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][18]._imag @ 8784
+     567 00000226 3105          .field  12549,16                        ; _PHY_ofdmLtfm4freq[1][19]._real @ 8800
+     568 00000227 3705          .field  14085,16                        ; _PHY_ofdmLtfm4freq[1][19]._imag @ 8816
+     569 00000228 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][20]._real @ 8832
+     570 00000229 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][20]._imag @ 8848
+     571 0000022a E4BE          .field  -6978,16                        ; _PHY_ofdmLtfm4freq[1][21]._real @ 8864
+     572 0000022b 2142          .field  8514,16                 ; _PHY_ofdmLtfm4freq[1][21]._imag @ 8880
+     573 0000022c F556          .field  -2730,16                        ; _PHY_ofdmLtfm4freq[1][22]._real @ 8896
+     574 0000022d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][22]._imag @ 8912
+     575 0000022e 1080          .field  4224,16                 ; _PHY_ofdmLtfm4freq[1][23]._real @ 8928
+     576 0000022f 1680          .field  5760,16                 ; _PHY_ofdmLtfm4freq[1][23]._imag @ 8944
+     577 00000230 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][24]._real @ 8960
+     578 00000231 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][24]._imag @ 8976
+     579 00000232 C364          .field  -15516,16                       ; _PHY_ofdmLtfm4freq[1][25]._real @ 8992
+     580 00000233 429C          .field  17052,16                        ; _PHY_ofdmLtfm4freq[1][25]._imag @ 9008
+     581 00000234 9CEB          .field  -25365,16                       ; _PHY_ofdmLtfm4freq[1][26]._real @ 9024
+     582 00000235 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][26]._imag @ 9040
+     583 00000236 BDC1          .field  -16959,16                       ; _PHY_ofdmLtfm4freq[1][27]._real @ 9056
+     584 00000237 C3C1          .field  -15423,16                       ; _PHY_ofdmLtfm4freq[1][27]._imag @ 9072
+     585 00000238 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][28]._real @ 9088
+     586 00000239 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][28]._imag @ 9104
+     587 0000023a 17A8          .field  6056,16                 ; _PHY_ofdmLtfm4freq[1][29]._real @ 9120
+     588 0000023b EE58          .field  -4520,16                        ; _PHY_ofdmLtfm4freq[1][29]._imag @ 9136
+     589 0000023c F890          .field  -1904,16                        ; _PHY_ofdmLtfm4freq[1][30]._real @ 9152
+     590 0000023d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][30]._imag @ 9168
+     591 0000023e E0E5          .field  -7963,16                        ; _PHY_ofdmLtfm4freq[1][31]._real @ 9184
+     592 0000023f E6E5          .field  -6427,16                        ; _PHY_ofdmLtfm4freq[1][31]._imag @ 9200
+     593 00000240 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][32]._real @ 9216
+     594 00000241 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][32]._imag @ 9232
+     595 00000242 3AB3          .field  15027,16                        ; _PHY_ofdmLtfm4freq[1][33]._real @ 9248
+     596 00000243 CB4D          .field  -13491,16                       ; _PHY_ofdmLtfm4freq[1][33]._imag @ 9264
+     597 00000244 53D0          .field  21456,16                        ; _PHY_ofdmLtfm4freq[1][34]._real @ 9280
+     598 00000245 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][34]._imag @ 9296
+     599 00000246 34DA          .field  13530,16                        ; _PHY_ofdmLtfm4freq[1][35]._real @ 9312
+     600 00000247 3ADA          .field  15066,16                        ; _PHY_ofdmLtfm4freq[1][35]._imag @ 9328
+     601 00000248 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][36]._real @ 9344
+     602 00000249 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][36]._imag @ 9360
+     603 0000024a E75B          .field  -6309,16                        ; _PHY_ofdmLtfm4freq[1][37]._real @ 9376
+     604 0000024b 1EA5          .field  7845,16                 ; _PHY_ofdmLtfm4freq[1][37]._imag @ 9392
+     605 0000024c F9CC          .field  -1588,16                        ; _PHY_ofdmLtfm4freq[1][38]._real @ 9408
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   12
+
+     606 0000024d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][38]._imag @ 9424
+     607 0000024e 126F          .field  4719,16                 ; _PHY_ofdmLtfm4freq[1][39]._real @ 9440
+     608 0000024f 186F          .field  6255,16                 ; _PHY_ofdmLtfm4freq[1][39]._imag @ 9456
+     609 00000250 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][40]._real @ 9472
+     610 00000251 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][40]._imag @ 9488
+     611 00000252 C4DE          .field  -15138,16                       ; _PHY_ofdmLtfm4freq[1][41]._real @ 9504
+     612 00000253 4122          .field  16674,16                        ; _PHY_ofdmLtfm4freq[1][41]._imag @ 9520
+     613 00000254 9F80          .field  -24704,16                       ; _PHY_ofdmLtfm4freq[1][42]._real @ 9536
+     614 00000255 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][42]._imag @ 9552
+     615 00000256 BEDF          .field  -16673,16                       ; _PHY_ofdmLtfm4freq[1][43]._real @ 9568
+     616 00000257 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[1][43]._imag @ 9584
+     617 00000258 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][44]._real @ 9600
+     618 00000259 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][44]._imag @ 9616
+     619 0000025a 186A          .field  6250,16                 ; _PHY_ofdmLtfm4freq[1][45]._real @ 9632
+     620 0000025b ED96          .field  -4714,16                        ; _PHY_ofdmLtfm4freq[1][45]._imag @ 9648
+     621 0000025c F9AC          .field  -1620,16                        ; _PHY_ofdmLtfm4freq[1][46]._real @ 9664
+     622 0000025d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][46]._imag @ 9680
+     623 0000025e E136          .field  -7882,16                        ; _PHY_ofdmLtfm4freq[1][47]._real @ 9696
+     624 0000025f E736          .field  -6346,16                        ; _PHY_ofdmLtfm4freq[1][47]._imag @ 9712
+     625 00000260 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][48]._real @ 9728
+     626 00000261 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][48]._imag @ 9744
+     627 00000262 3A50          .field  14928,16                        ; _PHY_ofdmLtfm4freq[1][49]._real @ 9760
+     628 00000263 CBB0          .field  -13392,16                       ; _PHY_ofdmLtfm4freq[1][49]._imag @ 9776
+     629 00000264 51E8          .field  20968,16                        ; _PHY_ofdmLtfm4freq[1][50]._real @ 9792
+     630 00000265 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][50]._imag @ 9808
+     631 00000266 330C          .field  13068,16                        ; _PHY_ofdmLtfm4freq[1][51]._real @ 9824
+     632 00000267 390C          .field  14604,16                        ; _PHY_ofdmLtfm4freq[1][51]._imag @ 9840
+     633 00000268 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][52]._real @ 9856
+     634 00000269 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][52]._imag @ 9872
+     635 0000026a E19A          .field  -7782,16                        ; _PHY_ofdmLtfm4freq[1][53]._real @ 9888
+     636 0000026b 2466          .field  9318,16                 ; _PHY_ofdmLtfm4freq[1][53]._imag @ 9904
+     637 0000026c E2F1          .field  -7439,16                        ; _PHY_ofdmLtfm4freq[1][54]._real @ 9920
+     638 0000026d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][54]._imag @ 9936
+     639 0000026e F432          .field  -3022,16                        ; _PHY_ofdmLtfm4freq[1][55]._real @ 9952
+     640 0000026f FA32          .field  -1486,16                        ; _PHY_ofdmLtfm4freq[1][55]._imag @ 9968
+     641 00000270 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][56]._real @ 9984
+     642 00000271 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][56]._imag @ 10000
+     643 00000272 FE3B          .field  -453,16                 ; _PHY_ofdmLtfm4freq[1][57]._real @ 10016
+     644 00000273 07C5          .field  1989,16                 ; _PHY_ofdmLtfm4freq[1][57]._imag @ 10032
+     645 00000274 F839          .field  -1991,16                        ; _PHY_ofdmLtfm4freq[1][58]._real @ 10048
+     646 00000275 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][58]._imag @ 10064
+     647 00000276 F9B3          .field  -1613,16                        ; _PHY_ofdmLtfm4freq[1][59]._real @ 10080
+     648 00000277 FFB3          .field  -77,16                  ; _PHY_ofdmLtfm4freq[1][59]._imag @ 10096
+     649 00000278 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][60]._real @ 10112
+     650 00000279 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][60]._imag @ 10128
+     651 0000027a 006E          .field  110,16                  ; _PHY_ofdmLtfm4freq[1][61]._real @ 10144
+     652 0000027b 0592          .field  1426,16                 ; _PHY_ofdmLtfm4freq[1][61]._imag @ 10160
+     653 0000027c FB57          .field  -1193,16                        ; _PHY_ofdmLtfm4freq[1][62]._real @ 10176
+     654 0000027d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][62]._imag @ 10192
+     655 0000027e FADD          .field  -1315,16                        ; _PHY_ofdmLtfm4freq[1][63]._real @ 10208
+     656 0000027f 00DD          .field  221,16                  ; _PHY_ofdmLtfm4freq[1][63]._imag @ 10224
+     657 00000280 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][64]._real @ 10240
+     658 00000281 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][64]._imag @ 10256
+     659 00000282 0128          .field  296,16                  ; _PHY_ofdmLtfm4freq[1][65]._real @ 10272
+     660 00000283 04D8          .field  1240,16                 ; _PHY_ofdmLtfm4freq[1][65]._imag @ 10288
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   13
+
+     661 00000284 FC8C          .field  -884,16                 ; _PHY_ofdmLtfm4freq[1][66]._real @ 10304
+     662 00000285 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][66]._imag @ 10320
+     663 00000286 FB60          .field  -1184,16                        ; _PHY_ofdmLtfm4freq[1][67]._real @ 10336
+     664 00000287 0160          .field  352,16                  ; _PHY_ofdmLtfm4freq[1][67]._imag @ 10352
+     665 00000288 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][68]._real @ 10368
+     666 00000289 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][68]._imag @ 10384
+     667 0000028a 018D          .field  397,16                  ; _PHY_ofdmLtfm4freq[1][69]._real @ 10400
+     668 0000028b 0473          .field  1139,16                 ; _PHY_ofdmLtfm4freq[1][69]._imag @ 10416
+     669 0000028c FD41          .field  -703,16                 ; _PHY_ofdmLtfm4freq[1][70]._real @ 10432
+     670 0000028d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][70]._imag @ 10448
+     671 0000028e FBB3          .field  -1101,16                        ; _PHY_ofdmLtfm4freq[1][71]._real @ 10464
+     672 0000028f 01B3          .field  435,16                  ; _PHY_ofdmLtfm4freq[1][71]._imag @ 10480
+     673 00000290 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][72]._real @ 10496
+     674 00000291 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][72]._imag @ 10512
+     675 00000292 01D3          .field  467,16                  ; _PHY_ofdmLtfm4freq[1][73]._real @ 10528
+     676 00000293 042D          .field  1069,16                 ; _PHY_ofdmLtfm4freq[1][73]._imag @ 10544
+     677 00000294 FDC5          .field  -571,16                 ; _PHY_ofdmLtfm4freq[1][74]._real @ 10560
+     678 00000295 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][74]._imag @ 10576
+     679 00000296 FBF1          .field  -1039,16                        ; _PHY_ofdmLtfm4freq[1][75]._real @ 10592
+     680 00000297 01F1          .field  497,16                  ; _PHY_ofdmLtfm4freq[1][75]._imag @ 10608
+     681 00000298 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][76]._real @ 10624
+     682 00000299 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][76]._imag @ 10640
+     683 0000029a 020C          .field  524,16                  ; _PHY_ofdmLtfm4freq[1][77]._real @ 10656
+     684 0000029b 03F4          .field  1012,16                 ; _PHY_ofdmLtfm4freq[1][77]._imag @ 10672
+     685 0000029c FE32          .field  -462,16                 ; _PHY_ofdmLtfm4freq[1][78]._real @ 10688
+     686 0000029d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][78]._imag @ 10704
+     687 0000029e FC26          .field  -986,16                 ; _PHY_ofdmLtfm4freq[1][79]._real @ 10720
+     688 0000029f 0226          .field  550,16                  ; _PHY_ofdmLtfm4freq[1][79]._imag @ 10736
+     689 000002a0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][80]._real @ 10752
+     690 000002a1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][80]._imag @ 10768
+     691 000002a2 023E          .field  574,16                  ; _PHY_ofdmLtfm4freq[1][81]._real @ 10784
+     692 000002a3 03C2          .field  962,16                  ; _PHY_ofdmLtfm4freq[1][81]._imag @ 10800
+     693 000002a4 FE93          .field  -365,16                 ; _PHY_ofdmLtfm4freq[1][82]._real @ 10816
+     694 000002a5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][82]._imag @ 10832
+     695 000002a6 FC55          .field  -939,16                 ; _PHY_ofdmLtfm4freq[1][83]._real @ 10848
+     696 000002a7 0255          .field  597,16                  ; _PHY_ofdmLtfm4freq[1][83]._imag @ 10864
+     697 000002a8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][84]._real @ 10880
+     698 000002a9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][84]._imag @ 10896
+     699 000002aa 026C          .field  620,16                  ; _PHY_ofdmLtfm4freq[1][85]._real @ 10912
+     700 000002ab 0394          .field  916,16                  ; _PHY_ofdmLtfm4freq[1][85]._imag @ 10928
+     701 000002ac FEED          .field  -275,16                 ; _PHY_ofdmLtfm4freq[1][86]._real @ 10944
+     702 000002ad 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][86]._imag @ 10960
+     703 000002ae FC81          .field  -895,16                 ; _PHY_ofdmLtfm4freq[1][87]._real @ 10976
+     704 000002af 0281          .field  641,16                  ; _PHY_ofdmLtfm4freq[1][87]._imag @ 10992
+     705 000002b0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][88]._real @ 11008
+     706 000002b1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][88]._imag @ 11024
+     707 000002b2 0296          .field  662,16                  ; _PHY_ofdmLtfm4freq[1][89]._real @ 11040
+     708 000002b3 036A          .field  874,16                  ; _PHY_ofdmLtfm4freq[1][89]._imag @ 11056
+     709 000002b4 FF42          .field  -190,16                 ; _PHY_ofdmLtfm4freq[1][90]._real @ 11072
+     710 000002b5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][90]._imag @ 11088
+     711 000002b6 FCAB          .field  -853,16                 ; _PHY_ofdmLtfm4freq[1][91]._real @ 11104
+     712 000002b7 02AB          .field  683,16                  ; _PHY_ofdmLtfm4freq[1][91]._imag @ 11120
+     713 000002b8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][92]._real @ 11136
+     714 000002b9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][92]._imag @ 11152
+     715 000002ba 02C0          .field  704,16                  ; _PHY_ofdmLtfm4freq[1][93]._real @ 11168
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   14
+
+     716 000002bb 0340          .field  832,16                  ; _PHY_ofdmLtfm4freq[1][93]._imag @ 11184
+     717 000002bc FF94          .field  -108,16                 ; _PHY_ofdmLtfm4freq[1][94]._real @ 11200
+     718 000002bd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][94]._imag @ 11216
+     719 000002be FCD4          .field  -812,16                 ; _PHY_ofdmLtfm4freq[1][95]._real @ 11232
+     720 000002bf 02D4          .field  724,16                  ; _PHY_ofdmLtfm4freq[1][95]._imag @ 11248
+     721 000002c0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][96]._real @ 11264
+     722 000002c1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][96]._imag @ 11280
+     723 000002c2 02E8          .field  744,16                  ; _PHY_ofdmLtfm4freq[1][97]._real @ 11296
+     724 000002c3 0318          .field  792,16                  ; _PHY_ofdmLtfm4freq[1][97]._imag @ 11312
+     725 000002c4 FFE4          .field  -28,16                  ; _PHY_ofdmLtfm4freq[1][98]._real @ 11328
+     726 000002c5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][98]._imag @ 11344
+     727 000002c6 FCFC          .field  -772,16                 ; _PHY_ofdmLtfm4freq[1][99]._real @ 11360
+     728 000002c7 02FC          .field  764,16                  ; _PHY_ofdmLtfm4freq[1][99]._imag @ 11376
+     729 000002c8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][100]._real @ 11392
+     730 000002c9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][100]._imag @ 11408
+     731 000002ca 0310          .field  784,16                  ; _PHY_ofdmLtfm4freq[1][101]._real @ 11424
+     732 000002cb 02F0          .field  752,16                  ; _PHY_ofdmLtfm4freq[1][101]._imag @ 11440
+     733 000002cc 0033          .field  51,16                   ; _PHY_ofdmLtfm4freq[1][102]._real @ 11456
+     734 000002cd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][102]._imag @ 11472
+     735 000002ce FD23          .field  -733,16                 ; _PHY_ofdmLtfm4freq[1][103]._real @ 11488
+     736 000002cf 0323          .field  803,16                  ; _PHY_ofdmLtfm4freq[1][103]._imag @ 11504
+     737 000002d0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][104]._real @ 11520
+     738 000002d1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][104]._imag @ 11536
+     739 000002d2 0337          .field  823,16                  ; _PHY_ofdmLtfm4freq[1][105]._real @ 11552
+     740 000002d3 02C9          .field  713,16                  ; _PHY_ofdmLtfm4freq[1][105]._imag @ 11568
+     741 000002d4 0082          .field  130,16                  ; _PHY_ofdmLtfm4freq[1][106]._real @ 11584
+     742 000002d5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][106]._imag @ 11600
+     743 000002d6 FD4B          .field  -693,16                 ; _PHY_ofdmLtfm4freq[1][107]._real @ 11616
+     744 000002d7 034B          .field  843,16                  ; _PHY_ofdmLtfm4freq[1][107]._imag @ 11632
+     745 000002d8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][108]._real @ 11648
+     746 000002d9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][108]._imag @ 11664
+     747 000002da 035E          .field  862,16                  ; _PHY_ofdmLtfm4freq[1][109]._real @ 11680
+     748 000002db 02A2          .field  674,16                  ; _PHY_ofdmLtfm4freq[1][109]._imag @ 11696
+     749 000002dc 00D1          .field  209,16                  ; _PHY_ofdmLtfm4freq[1][110]._real @ 11712
+     750 000002dd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][110]._imag @ 11728
+     751 000002de FD72          .field  -654,16                 ; _PHY_ofdmLtfm4freq[1][111]._real @ 11744
+     752 000002df 0372          .field  882,16                  ; _PHY_ofdmLtfm4freq[1][111]._imag @ 11760
+     753 000002e0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][112]._real @ 11776
+     754 000002e1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][112]._imag @ 11792
+     755 000002e2 0386          .field  902,16                  ; _PHY_ofdmLtfm4freq[1][113]._real @ 11808
+     756 000002e3 027A          .field  634,16                  ; _PHY_ofdmLtfm4freq[1][113]._imag @ 11824
+     757 000002e4 0120          .field  288,16                  ; _PHY_ofdmLtfm4freq[1][114]._real @ 11840
+     758 000002e5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][114]._imag @ 11856
+     759 000002e6 FD9A          .field  -614,16                 ; _PHY_ofdmLtfm4freq[1][115]._real @ 11872
+     760 000002e7 039A          .field  922,16                  ; _PHY_ofdmLtfm4freq[1][115]._imag @ 11888
+     761 000002e8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][116]._real @ 11904
+     762 000002e9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][116]._imag @ 11920
+     763 000002ea 03AE          .field  942,16                  ; _PHY_ofdmLtfm4freq[1][117]._real @ 11936
+     764 000002eb 0252          .field  594,16                  ; _PHY_ofdmLtfm4freq[1][117]._imag @ 11952
+     765 000002ec 0171          .field  369,16                  ; _PHY_ofdmLtfm4freq[1][118]._real @ 11968
+     766 000002ed 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][118]._imag @ 11984
+     767 000002ee FDC3          .field  -573,16                 ; _PHY_ofdmLtfm4freq[1][119]._real @ 12000
+     768 000002ef 03C3          .field  963,16                  ; _PHY_ofdmLtfm4freq[1][119]._imag @ 12016
+     769 000002f0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][120]._real @ 12032
+     770 000002f1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][120]._imag @ 12048
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   15
+
+     771 000002f2 03D8          .field  984,16                  ; _PHY_ofdmLtfm4freq[1][121]._real @ 12064
+     772 000002f3 0228          .field  552,16                  ; _PHY_ofdmLtfm4freq[1][121]._imag @ 12080
+     773 000002f4 01C4          .field  452,16                  ; _PHY_ofdmLtfm4freq[1][122]._real @ 12096
+     774 000002f5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][122]._imag @ 12112
+     775 000002f6 FDED          .field  -531,16                 ; _PHY_ofdmLtfm4freq[1][123]._real @ 12128
+     776 000002f7 03ED          .field  1005,16                 ; _PHY_ofdmLtfm4freq[1][123]._imag @ 12144
+     777 000002f8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][124]._real @ 12160
+     778 000002f9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][124]._imag @ 12176
+     779 000002fa 0402          .field  1026,16                 ; _PHY_ofdmLtfm4freq[1][125]._real @ 12192
+     780 000002fb 01FE          .field  510,16                  ; _PHY_ofdmLtfm4freq[1][125]._imag @ 12208
+     781 000002fc 0219          .field  537,16                  ; _PHY_ofdmLtfm4freq[1][126]._real @ 12224
+     782 000002fd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][126]._imag @ 12240
+     783 000002fe FE17          .field  -489,16                 ; _PHY_ofdmLtfm4freq[1][127]._real @ 12256
+     784 000002ff 0417          .field  1047,16                 ; _PHY_ofdmLtfm4freq[1][127]._imag @ 12272
+     785 00000300 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][128]._real @ 12288
+     786 00000301 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][128]._imag @ 12304
+     787 00000302 042D          .field  1069,16                 ; _PHY_ofdmLtfm4freq[1][129]._real @ 12320
+     788 00000303 01D3          .field  467,16                  ; _PHY_ofdmLtfm4freq[1][129]._imag @ 12336
+     789 00000304 0271          .field  625,16                  ; _PHY_ofdmLtfm4freq[1][130]._real @ 12352
+     790 00000305 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][130]._imag @ 12368
+     791 00000306 FE44          .field  -444,16                 ; _PHY_ofdmLtfm4freq[1][131]._real @ 12384
+     792 00000307 0444          .field  1092,16                 ; _PHY_ofdmLtfm4freq[1][131]._imag @ 12400
+     793 00000308 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][132]._real @ 12416
+     794 00000309 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][132]._imag @ 12432
+     795 0000030a 045B          .field  1115,16                 ; _PHY_ofdmLtfm4freq[1][133]._real @ 12448
+     796 0000030b 01A5          .field  421,16                  ; _PHY_ofdmLtfm4freq[1][133]._imag @ 12464
+     797 0000030c 02CD          .field  717,16                  ; _PHY_ofdmLtfm4freq[1][134]._real @ 12480
+     798 0000030d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][134]._imag @ 12496
+     799 0000030e FE72          .field  -398,16                 ; _PHY_ofdmLtfm4freq[1][135]._real @ 12512
+     800 0000030f 0472          .field  1138,16                 ; _PHY_ofdmLtfm4freq[1][135]._imag @ 12528
+     801 00000310 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][136]._real @ 12544
+     802 00000311 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][136]._imag @ 12560
+     803 00000312 048A          .field  1162,16                 ; _PHY_ofdmLtfm4freq[1][137]._real @ 12576
+     804 00000313 0176          .field  374,16                  ; _PHY_ofdmLtfm4freq[1][137]._imag @ 12592
+     805 00000314 032D          .field  813,16                  ; _PHY_ofdmLtfm4freq[1][138]._real @ 12608
+     806 00000315 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][138]._imag @ 12624
+     807 00000316 FEA3          .field  -349,16                 ; _PHY_ofdmLtfm4freq[1][139]._real @ 12640
+     808 00000317 04A3          .field  1187,16                 ; _PHY_ofdmLtfm4freq[1][139]._imag @ 12656
+     809 00000318 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][140]._real @ 12672
+     810 00000319 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][140]._imag @ 12688
+     811 0000031a 04BC          .field  1212,16                 ; _PHY_ofdmLtfm4freq[1][141]._real @ 12704
+     812 0000031b 0144          .field  324,16                  ; _PHY_ofdmLtfm4freq[1][141]._imag @ 12720
+     813 0000031c 0392          .field  914,16                  ; _PHY_ofdmLtfm4freq[1][142]._real @ 12736
+     814 0000031d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][142]._imag @ 12752
+     815 0000031e FED6          .field  -298,16                 ; _PHY_ofdmLtfm4freq[1][143]._real @ 12768
+     816 0000031f 04D6          .field  1238,16                 ; _PHY_ofdmLtfm4freq[1][143]._imag @ 12784
+     817 00000320 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][144]._real @ 12800
+     818 00000321 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][144]._imag @ 12816
+     819 00000322 04F1          .field  1265,16                 ; _PHY_ofdmLtfm4freq[1][145]._real @ 12832
+     820 00000323 010F          .field  271,16                  ; _PHY_ofdmLtfm4freq[1][145]._imag @ 12848
+     821 00000324 03FE          .field  1022,16                 ; _PHY_ofdmLtfm4freq[1][146]._real @ 12864
+     822 00000325 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][146]._imag @ 12880
+     823 00000326 FF0D          .field  -243,16                 ; _PHY_ofdmLtfm4freq[1][147]._real @ 12896
+     824 00000327 050D          .field  1293,16                 ; _PHY_ofdmLtfm4freq[1][147]._imag @ 12912
+     825 00000328 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][148]._real @ 12928
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   16
+
+     826 00000329 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][148]._imag @ 12944
+     827 0000032a 052A          .field  1322,16                 ; _PHY_ofdmLtfm4freq[1][149]._real @ 12960
+     828 0000032b 00D6          .field  214,16                  ; _PHY_ofdmLtfm4freq[1][149]._imag @ 12976
+     829 0000032c 0471          .field  1137,16                 ; _PHY_ofdmLtfm4freq[1][150]._real @ 12992
+     830 0000032d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][150]._imag @ 13008
+     831 0000032e FF48          .field  -184,16                 ; _PHY_ofdmLtfm4freq[1][151]._real @ 13024
+     832 0000032f 0548          .field  1352,16                 ; _PHY_ofdmLtfm4freq[1][151]._imag @ 13040
+     833 00000330 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][152]._real @ 13056
+     834 00000331 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][152]._imag @ 13072
+     835 00000332 0567          .field  1383,16                 ; _PHY_ofdmLtfm4freq[1][153]._real @ 13088
+     836 00000333 0099          .field  153,16                  ; _PHY_ofdmLtfm4freq[1][153]._imag @ 13104
+     837 00000334 04ED          .field  1261,16                 ; _PHY_ofdmLtfm4freq[1][154]._real @ 13120
+     838 00000335 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][154]._imag @ 13136
+     839 00000336 FF87          .field  -121,16                 ; _PHY_ofdmLtfm4freq[1][155]._real @ 13152
+     840 00000337 0587          .field  1415,16                 ; _PHY_ofdmLtfm4freq[1][155]._imag @ 13168
+     841 00000338 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][156]._real @ 13184
+     842 00000339 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][156]._imag @ 13200
+     843 0000033a 05A9          .field  1449,16                 ; _PHY_ofdmLtfm4freq[1][157]._real @ 13216
+     844 0000033b 0057          .field  87,16                   ; _PHY_ofdmLtfm4freq[1][157]._imag @ 13232
+     845 0000033c 0575          .field  1397,16                 ; _PHY_ofdmLtfm4freq[1][158]._real @ 13248
+     846 0000033d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][158]._imag @ 13264
+     847 0000033e FFCC          .field  -52,16                  ; _PHY_ofdmLtfm4freq[1][159]._real @ 13280
+     848 0000033f 05CC          .field  1484,16                 ; _PHY_ofdmLtfm4freq[1][159]._imag @ 13296
+     849 00000340 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][160]._real @ 13312
+     850 00000341 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][160]._imag @ 13328
+     851 00000342 05F2          .field  1522,16                 ; _PHY_ofdmLtfm4freq[1][161]._real @ 13344
+     852 00000343 000E          .field  14,16                   ; _PHY_ofdmLtfm4freq[1][161]._imag @ 13360
+     853 00000344 060A          .field  1546,16                 ; _PHY_ofdmLtfm4freq[1][162]._real @ 13376
+     854 00000345 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][162]._imag @ 13392
+     855 00000346 0019          .field  25,16                   ; _PHY_ofdmLtfm4freq[1][163]._real @ 13408
+     856 00000347 0619          .field  1561,16                 ; _PHY_ofdmLtfm4freq[1][163]._imag @ 13424
+     857 00000348 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][164]._real @ 13440
+     858 00000349 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][164]._imag @ 13456
+     859 0000034a 0642          .field  1602,16                 ; _PHY_ofdmLtfm4freq[1][165]._real @ 13472
+     860 0000034b FFBE          .field  -66,16                  ; _PHY_ofdmLtfm4freq[1][165]._imag @ 13488
+     861 0000034c 06B0          .field  1712,16                 ; _PHY_ofdmLtfm4freq[1][166]._real @ 13504
+     862 0000034d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][166]._imag @ 13520
+     863 0000034e 006E          .field  110,16                  ; _PHY_ofdmLtfm4freq[1][167]._real @ 13536
+     864 0000034f 066E          .field  1646,16                 ; _PHY_ofdmLtfm4freq[1][167]._imag @ 13552
+     865 00000350 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][168]._real @ 13568
+     866 00000351 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][168]._imag @ 13584
+     867 00000352 069D          .field  1693,16                 ; _PHY_ofdmLtfm4freq[1][169]._real @ 13600
+     868 00000353 FF63          .field  -157,16                 ; _PHY_ofdmLtfm4freq[1][169]._imag @ 13616
+     869 00000354 076B          .field  1899,16                 ; _PHY_ofdmLtfm4freq[1][170]._real @ 13632
+     870 00000355 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][170]._imag @ 13648
+     871 00000356 00CF          .field  207,16                  ; _PHY_ofdmLtfm4freq[1][171]._real @ 13664
+     872 00000357 06CF          .field  1743,16                 ; _PHY_ofdmLtfm4freq[1][171]._imag @ 13680
+     873 00000358 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][172]._real @ 13696
+     874 00000359 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][172]._imag @ 13712
+     875 0000035a 0705          .field  1797,16                 ; _PHY_ofdmLtfm4freq[1][173]._real @ 13728
+     876 0000035b FEFB          .field  -261,16                 ; _PHY_ofdmLtfm4freq[1][173]._imag @ 13744
+     877 0000035c 0842          .field  2114,16                 ; _PHY_ofdmLtfm4freq[1][174]._real @ 13760
+     878 0000035d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][174]._imag @ 13776
+     879 0000035e 013F          .field  319,16                  ; _PHY_ofdmLtfm4freq[1][175]._real @ 13792
+     880 0000035f 073F          .field  1855,16                 ; _PHY_ofdmLtfm4freq[1][175]._imag @ 13808
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   17
+
+     881 00000360 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][176]._real @ 13824
+     882 00000361 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][176]._imag @ 13840
+     883 00000362 077E          .field  1918,16                 ; _PHY_ofdmLtfm4freq[1][177]._real @ 13856
+     884 00000363 FE82          .field  -382,16                 ; _PHY_ofdmLtfm4freq[1][177]._imag @ 13872
+     885 00000364 093E          .field  2366,16                 ; _PHY_ofdmLtfm4freq[1][178]._real @ 13888
+     886 00000365 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][178]._imag @ 13904
+     887 00000366 01C2          .field  450,16                  ; _PHY_ofdmLtfm4freq[1][179]._real @ 13920
+     888 00000367 07C2          .field  1986,16                 ; _PHY_ofdmLtfm4freq[1][179]._imag @ 13936
+     889 00000368 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][180]._real @ 13952
+     890 00000369 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][180]._imag @ 13968
+     891 0000036a 080E          .field  2062,16                 ; _PHY_ofdmLtfm4freq[1][181]._real @ 13984
+     892 0000036b FDF2          .field  -526,16                 ; _PHY_ofdmLtfm4freq[1][181]._imag @ 14000
+     893 0000036c 0A6D          .field  2669,16                 ; _PHY_ofdmLtfm4freq[1][182]._real @ 14016
+     894 0000036d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][182]._imag @ 14032
+     895 0000036e 0262          .field  610,16                  ; _PHY_ofdmLtfm4freq[1][183]._real @ 14048
+     896 0000036f 0862          .field  2146,16                 ; _PHY_ofdmLtfm4freq[1][183]._imag @ 14064
+     897 00000370 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][184]._real @ 14080
+     898 00000371 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][184]._imag @ 14096
+     899 00000372 08C1          .field  2241,16                 ; _PHY_ofdmLtfm4freq[1][185]._real @ 14112
+     900 00000373 FD3F          .field  -705,16                 ; _PHY_ofdmLtfm4freq[1][185]._imag @ 14128
+     901 00000374 0BE9          .field  3049,16                 ; _PHY_ofdmLtfm4freq[1][186]._real @ 14144
+     902 00000375 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][186]._imag @ 14160
+     903 00000376 032C          .field  812,16                  ; _PHY_ofdmLtfm4freq[1][187]._real @ 14176
+     904 00000377 092C          .field  2348,16                 ; _PHY_ofdmLtfm4freq[1][187]._imag @ 14192
+     905 00000378 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][188]._real @ 14208
+     906 00000379 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][188]._imag @ 14224
+     907 0000037a 09AA          .field  2474,16                 ; _PHY_ofdmLtfm4freq[1][189]._real @ 14240
+     908 0000037b FC56          .field  -938,16                 ; _PHY_ofdmLtfm4freq[1][189]._imag @ 14256
+     909 0000037c 0DE3          .field  3555,16                 ; _PHY_ofdmLtfm4freq[1][190]._real @ 14272
+     910 0000037d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][190]._imag @ 14288
+     911 0000037e 0440          .field  1088,16                 ; _PHY_ofdmLtfm4freq[1][191]._real @ 14304
+     912 0000037f 0A40          .field  2624,16                 ; _PHY_ofdmLtfm4freq[1][191]._imag @ 14320
+     913 00000380 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][192]._real @ 14336
+     914 00000381 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][192]._imag @ 14352
+     915 00000382 0AFA          .field  2810,16                 ; _PHY_ofdmLtfm4freq[1][193]._real @ 14368
+     916 00000383 FB06          .field  -1274,16                        ; _PHY_ofdmLtfm4freq[1][193]._imag @ 14384
+     917 00000384 10D6          .field  4310,16                 ; _PHY_ofdmLtfm4freq[1][194]._real @ 14400
+     918 00000385 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][194]._imag @ 14416
+     919 00000386 05EE          .field  1518,16                 ; _PHY_ofdmLtfm4freq[1][195]._real @ 14432
+     920 00000387 0BEE          .field  3054,16                 ; _PHY_ofdmLtfm4freq[1][195]._imag @ 14448
+     921 00000388 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][196]._real @ 14464
+     922 00000389 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][196]._imag @ 14480
+     923 0000038a 0D4B          .field  3403,16                 ; _PHY_ofdmLtfm4freq[1][197]._real @ 14496
+     924 0000038b F8B5          .field  -1867,16                        ; _PHY_ofdmLtfm4freq[1][197]._imag @ 14512
+     925 0000038c 1683          .field  5763,16                 ; _PHY_ofdmLtfm4freq[1][198]._real @ 14528
+     926 0000038d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][198]._imag @ 14544
+     927 0000038e 0990          .field  2448,16                 ; _PHY_ofdmLtfm4freq[1][199]._real @ 14560
+     928 0000038f 0F90          .field  3984,16                 ; _PHY_ofdmLtfm4freq[1][199]._imag @ 14576
+     929 00000390 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][200]._real @ 14592
+     930 00000391 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][200]._imag @ 14608
+     931 00000392 14A4          .field  5284,16                 ; _PHY_ofdmLtfm4freq[1][201]._real @ 14624
+     932 00000393 F15C          .field  -3748,16                        ; _PHY_ofdmLtfm4freq[1][201]._imag @ 14640
+     933 00000394 300D          .field  12301,16                        ; _PHY_ofdmLtfm4freq[1][202]._real @ 14656
+     934 00000395 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][202]._imag @ 14672
+     935 00000396 28B0          .field  10416,16                        ; _PHY_ofdmLtfm4freq[1][203]._real @ 14688
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   18
+
+     936 00000397 2EB0          .field  11952,16                        ; _PHY_ofdmLtfm4freq[1][203]._imag @ 14704
+     937 00000398 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][204]._real @ 14720
+     938 00000399 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][204]._imag @ 14736
+     939 0000039a D975          .field  -9867,16                        ; _PHY_ofdmLtfm4freq[1][205]._real @ 14752
+     940 0000039b 2C8B          .field  11403,16                        ; _PHY_ofdmLtfm4freq[1][205]._imag @ 14768
+     941 0000039c CA64          .field  -13724,16                       ; _PHY_ofdmLtfm4freq[1][206]._real @ 14784
+     942 0000039d 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][206]._imag @ 14800
+     943 0000039e D624          .field  -10716,16                       ; _PHY_ofdmLtfm4freq[1][207]._real @ 14816
+     944 0000039f DC24          .field  -9180,16                        ; _PHY_ofdmLtfm4freq[1][207]._imag @ 14832
+     945 000003a0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][208]._real @ 14848
+     946 000003a1 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][208]._imag @ 14864
+     947 000003a2 38AE          .field  14510,16                        ; _PHY_ofdmLtfm4freq[1][209]._real @ 14880
+     948 000003a3 CD52          .field  -12974,16                       ; _PHY_ofdmLtfm4freq[1][209]._imag @ 14896
+     949 000003a4 52C5          .field  21189,16                        ; _PHY_ofdmLtfm4freq[1][210]._real @ 14912
+     950 000003a5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][210]._imag @ 14928
+     951 000003a6 349F          .field  13471,16                        ; _PHY_ofdmLtfm4freq[1][211]._real @ 14944
+     952 000003a7 3A9F          .field  15007,16                        ; _PHY_ofdmLtfm4freq[1][211]._imag @ 14960
+     953 000003a8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][212]._real @ 14976
+     954 000003a9 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][212]._imag @ 14992
+     955 000003aa E245          .field  -7611,16                        ; _PHY_ofdmLtfm4freq[1][213]._real @ 15008
+     956 000003ab 23BB          .field  9147,16                 ; _PHY_ofdmLtfm4freq[1][213]._imag @ 15024
+     957 000003ac DB8E          .field  -9330,16                        ; _PHY_ofdmLtfm4freq[1][214]._real @ 15040
+     958 000003ad 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][214]._imag @ 15056
+     959 000003ae DEF5          .field  -8459,16                        ; _PHY_ofdmLtfm4freq[1][215]._real @ 15072
+     960 000003af E4F5          .field  -6923,16                        ; _PHY_ofdmLtfm4freq[1][215]._imag @ 15088
+     961 000003b0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][216]._real @ 15104
+     962 000003b1 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][216]._imag @ 15120
+     963 000003b2 4336          .field  17206,16                        ; _PHY_ofdmLtfm4freq[1][217]._real @ 15136
+     964 000003b3 C2CA          .field  -15670,16                       ; _PHY_ofdmLtfm4freq[1][217]._imag @ 15152
+     965 000003b4 6B18          .field  27416,16                        ; _PHY_ofdmLtfm4freq[1][218]._real @ 15168
+     966 000003b5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][218]._imag @ 15184
+     967 000003b6 433C          .field  17212,16                        ; _PHY_ofdmLtfm4freq[1][219]._real @ 15200
+     968 000003b7 493C          .field  18748,16                        ; _PHY_ofdmLtfm4freq[1][219]._imag @ 15216
+     969 000003b8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][220]._real @ 15232
+     970 000003b9 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][220]._imag @ 15248
+     971 000003ba FB4F          .field  -1201,16                        ; _PHY_ofdmLtfm4freq[1][221]._real @ 15264
+     972 000003bb 0AB1          .field  2737,16                 ; _PHY_ofdmLtfm4freq[1][221]._imag @ 15280
+     973 000003bc 2868          .field  10344,16                        ; _PHY_ofdmLtfm4freq[1][222]._real @ 15296
+     974 000003bd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][222]._imag @ 15312
+     975 000003be 2DF1          .field  11761,16                        ; _PHY_ofdmLtfm4freq[1][223]._real @ 15328
+     976 000003bf 33F1          .field  13297,16                        ; _PHY_ofdmLtfm4freq[1][223]._imag @ 15344
+     977 000003c0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][224]._real @ 15360
+     978 000003c1 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][224]._imag @ 15376
+     979 000003c2 EEDA          .field  -4390,16                        ; _PHY_ofdmLtfm4freq[1][225]._real @ 15392
+     980 000003c3 1726          .field  5926,16                 ; _PHY_ofdmLtfm4freq[1][225]._imag @ 15408
+     981 000003c4 137E          .field  4990,16                 ; _PHY_ofdmLtfm4freq[1][226]._real @ 15424
+     982 000003c5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][226]._imag @ 15440
+     983 000003c6 24D3          .field  9427,16                 ; _PHY_ofdmLtfm4freq[1][227]._real @ 15456
+     984 000003c7 2AD3          .field  10963,16                        ; _PHY_ofdmLtfm4freq[1][227]._imag @ 15472
+     985 000003c8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][228]._real @ 15488
+     986 000003c9 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][228]._imag @ 15504
+     987 000003ca E75C          .field  -6308,16                        ; _PHY_ofdmLtfm4freq[1][229]._real @ 15520
+     988 000003cb 1EA4          .field  7844,16                 ; _PHY_ofdmLtfm4freq[1][229]._imag @ 15536
+     989 000003cc 057F          .field  1407,16                 ; _PHY_ofdmLtfm4freq[1][230]._real @ 15552
+     990 000003cd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][230]._imag @ 15568
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   19
+
+     991 000003ce 1E30          .field  7728,16                 ; _PHY_ofdmLtfm4freq[1][231]._real @ 15584
+     992 000003cf 2430          .field  9264,16                 ; _PHY_ofdmLtfm4freq[1][231]._imag @ 15600
+     993 000003d0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][232]._real @ 15616
+     994 000003d1 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][232]._imag @ 15632
+     995 000003d2 E127          .field  -7897,16                        ; _PHY_ofdmLtfm4freq[1][233]._real @ 15648
+     996 000003d3 24D9          .field  9433,16                 ; _PHY_ofdmLtfm4freq[1][233]._imag @ 15664
+     997 000003d4 F94A          .field  -1718,16                        ; _PHY_ofdmLtfm4freq[1][234]._real @ 15680
+     998 000003d5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][234]._imag @ 15696
+     999 000003d6 1820          .field  6176,16                 ; _PHY_ofdmLtfm4freq[1][235]._real @ 15712
+    1000 000003d7 1E20          .field  7712,16                 ; _PHY_ofdmLtfm4freq[1][235]._imag @ 15728
+    1001 000003d8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][236]._real @ 15744
+    1002 000003d9 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][236]._imag @ 15760
+    1003 000003da DAFE          .field  -9474,16                        ; _PHY_ofdmLtfm4freq[1][237]._real @ 15776
+    1004 000003db 2B02          .field  11010,16                        ; _PHY_ofdmLtfm4freq[1][237]._imag @ 15792
+    1005 000003dc ECB1          .field  -4943,16                        ; _PHY_ofdmLtfm4freq[1][238]._real @ 15808
+    1006 000003dd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][238]._imag @ 15824
+    1007 000003de 119F          .field  4511,16                 ; _PHY_ofdmLtfm4freq[1][239]._real @ 15840
+    1008 000003df 179F          .field  6047,16                 ; _PHY_ofdmLtfm4freq[1][239]._imag @ 15856
+    1009 000003e0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][240]._real @ 15872
+    1010 000003e1 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][240]._imag @ 15888
+    1011 000003e2 D3D3          .field  -11309,16                       ; _PHY_ofdmLtfm4freq[1][241]._real @ 15904
+    1012 000003e3 322D          .field  12845,16                        ; _PHY_ofdmLtfm4freq[1][241]._imag @ 15920
+    1013 000003e4 DD5E          .field  -8866,16                        ; _PHY_ofdmLtfm4freq[1][242]._real @ 15936
+    1014 000003e5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][242]._imag @ 15952
+    1015 000003e6 0950          .field  2384,16                 ; _PHY_ofdmLtfm4freq[1][243]._real @ 15968
+    1016 000003e7 0F50          .field  3920,16                 ; _PHY_ofdmLtfm4freq[1][243]._imag @ 15984
+    1017 000003e8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][244]._real @ 16000
+    1018 000003e9 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][244]._imag @ 16016
+    1019 000003ea C983          .field  -13949,16                       ; _PHY_ofdmLtfm4freq[1][245]._real @ 16032
+    1020 000003eb 3C7D          .field  15485,16                        ; _PHY_ofdmLtfm4freq[1][245]._imag @ 16048
+    1021 000003ec C58E          .field  -14962,16                       ; _PHY_ofdmLtfm4freq[1][246]._real @ 16064
+    1022 000003ed 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][246]._imag @ 16080
+    1023 000003ee FB17          .field  -1257,16                        ; _PHY_ofdmLtfm4freq[1][247]._real @ 16096
+    1024 000003ef 0117          .field  279,16                  ; _PHY_ofdmLtfm4freq[1][247]._imag @ 16112
+    1025 000003f0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][248]._real @ 16128
+    1026 000003f1 4000          .field  16384,16                        ; _PHY_ofdmLtfm4freq[1][248]._imag @ 16144
+    1027 000003f2 B186          .field  -20090,16                       ; _PHY_ofdmLtfm4freq[1][249]._real @ 16160
+    1028 000003f3 547A          .field  21626,16                        ; _PHY_ofdmLtfm4freq[1][249]._imag @ 16176
+    1029 000003f4 8000          .field  -32768,16                       ; _PHY_ofdmLtfm4freq[1][250]._real @ 16192
+    1030 000003f5 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][250]._imag @ 16208
+    1031 000003f6 AEB4          .field  -20812,16                       ; _PHY_ofdmLtfm4freq[1][251]._real @ 16224
+    1032 000003f7 B4B4          .field  -19276,16                       ; _PHY_ofdmLtfm4freq[1][251]._imag @ 16240
+    1033 000003f8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[1][252]._real @ 16256
+    1034 000003f9 C000          .field  -16384,16                       ; _PHY_ofdmLtfm4freq[1][252]._imag @ 16272
+    1035 000003fa 0CC0          .field  3264,16                 ; _PHY_ofdmLtfm4freq[1][253]._real @ 16288
+    1036 000003fb F940          .field  -1728,16                        ; _PHY_ofdmLtfm4freq[1][253]._imag @ 16304
+    1037 000003fc ED38          .field  -4808,16                        ; _PHY_ofdmLtfm4freq[1][254]._real @ 16320
+    1038 000003fd 0600          .field  1536,16                 ; _PHY_ofdmLtfm4freq[1][254]._imag @ 16336
+    1039 000003fe ED12          .field  -4846,16                        ; _PHY_ofdmLtfm4freq[1][255]._real @ 16352
+    1040 000003ff F312          .field  -3310,16                        ; _PHY_ofdmLtfm4freq[1][255]._imag @ 16368
+    1041 00000400 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][0]._real @ 16384
+    1042 00000401 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][0]._imag @ 16400
+    1043 00000402 EA64          .field  -5532,16                        ; _PHY_ofdmLtfm4freq[2][1]._real @ 16416
+    1044 00000403 3F43          .field  16195,16                        ; _PHY_ofdmLtfm4freq[2][1]._imag @ 16432
+    1045 00000404 E24D          .field  -7603,16                        ; _PHY_ofdmLtfm4freq[2][2]._real @ 16448
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   20
+
+    1046 00000405 12CC          .field  4812,16                 ; _PHY_ofdmLtfm4freq[2][2]._imag @ 16464
+    1047 00000406 0E76          .field  3702,16                 ; _PHY_ofdmLtfm4freq[2][3]._real @ 16480
+    1048 00000407 0A95          .field  2709,16                 ; _PHY_ofdmLtfm4freq[2][3]._imag @ 16496
+    1049 00000408 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][4]._real @ 16512
+    1050 00000409 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][4]._imag @ 16528
+    1051 0000040a E4CF          .field  -6961,16                        ; _PHY_ofdmLtfm4freq[2][5]._real @ 16544
+    1052 0000040b 4CBC          .field  19644,16                        ; _PHY_ofdmLtfm4freq[2][5]._imag @ 16560
+    1053 0000040c CC4D          .field  -13235,16                       ; _PHY_ofdmLtfm4freq[2][6]._real @ 16576
+    1054 0000040d 1BE9          .field  7145,16                 ; _PHY_ofdmLtfm4freq[2][6]._imag @ 16592
+    1055 0000040e FBE2          .field  -1054,16                        ; _PHY_ofdmLtfm4freq[2][7]._real @ 16608
+    1056 0000040f 02E3          .field  739,16                  ; _PHY_ofdmLtfm4freq[2][7]._imag @ 16624
+    1057 00000410 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][8]._real @ 16640
+    1058 00000411 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][8]._imag @ 16656
+    1059 00000412 D7D3          .field  -10285,16                       ; _PHY_ofdmLtfm4freq[2][9]._real @ 16672
+    1060 00000413 6C14          .field  27668,16                        ; _PHY_ofdmLtfm4freq[2][9]._imag @ 16688
+    1061 00000414 885C          .field  -30628,16                       ; _PHY_ofdmLtfm4freq[2][10]._real @ 16704
+    1062 00000415 380D          .field  14349,16                        ; _PHY_ofdmLtfm4freq[2][10]._imag @ 16720
+    1063 00000416 9814          .field  -26604,16                       ; _PHY_ofdmLtfm4freq[2][11]._real @ 16736
+    1064 00000417 D98C          .field  -9844,16                        ; _PHY_ofdmLtfm4freq[2][11]._imag @ 16752
+    1065 00000418 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][12]._real @ 16768
+    1066 00000419 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][12]._imag @ 16784
+    1067 0000041a 0932          .field  2354,16                 ; _PHY_ofdmLtfm4freq[2][13]._real @ 16800
+    1068 0000041b F4E2          .field  -2846,16                        ; _PHY_ofdmLtfm4freq[2][13]._imag @ 16816
+    1069 0000041c F0F2          .field  -3854,16                        ; _PHY_ofdmLtfm4freq[2][14]._real @ 16832
+    1070 0000041d 0CBB          .field  3259,16                 ; _PHY_ofdmLtfm4freq[2][14]._imag @ 16848
+    1071 0000041e E991          .field  -5743,16                        ; _PHY_ofdmLtfm4freq[2][15]._real @ 16864
+    1072 0000041f FB4D          .field  -1203,16                        ; _PHY_ofdmLtfm4freq[2][15]._imag @ 16880
+    1073 00000420 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][16]._real @ 16896
+    1074 00000421 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][16]._imag @ 16912
+    1075 00000422 F67D          .field  -2435,16                        ; _PHY_ofdmLtfm4freq[2][17]._real @ 16928
+    1076 00000423 220E          .field  8718,16                 ; _PHY_ofdmLtfm4freq[2][17]._imag @ 16944
+    1077 00000424 C627          .field  -14809,16                       ; _PHY_ofdmLtfm4freq[2][18]._real @ 16960
+    1078 00000425 1E75          .field  7797,16                 ; _PHY_ofdmLtfm4freq[2][18]._imag @ 16976
+    1079 00000426 B7E8          .field  -18456,16                       ; _PHY_ofdmLtfm4freq[2][19]._real @ 16992
+    1080 00000427 E6BB          .field  -6469,16                        ; _PHY_ofdmLtfm4freq[2][19]._imag @ 17008
+    1081 00000428 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][20]._real @ 17024
+    1082 00000429 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][20]._imag @ 17040
+    1083 0000042a 109E          .field  4254,16                 ; _PHY_ofdmLtfm4freq[2][21]._real @ 17056
+    1084 0000042b E2F9          .field  -7431,16                        ; _PHY_ofdmLtfm4freq[2][21]._imag @ 17072
+    1085 0000042c FD56          .field  -682,16                 ; _PHY_ofdmLtfm4freq[2][22]._real @ 17088
+    1086 0000042d 0799          .field  1945,16                 ; _PHY_ofdmLtfm4freq[2][22]._imag @ 17104
+    1087 0000042e D92F          .field  -9937,16                        ; _PHY_ofdmLtfm4freq[2][23]._real @ 17120
+    1088 0000042f F483          .field  -2941,16                        ; _PHY_ofdmLtfm4freq[2][23]._imag @ 17136
+    1089 00000430 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][24]._real @ 17152
+    1090 00000431 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][24]._imag @ 17168
+    1091 00000432 2083          .field  8323,16                 ; _PHY_ofdmLtfm4freq[2][25]._real @ 17184
+    1092 00000433 BC97          .field  -17257,16                       ; _PHY_ofdmLtfm4freq[2][25]._imag @ 17200
+    1093 00000434 47BB          .field  18363,16                        ; _PHY_ofdmLtfm4freq[2][26]._real @ 17216
+    1094 00000435 E8C8          .field  -5944,16                        ; _PHY_ofdmLtfm4freq[2][26]._imag @ 17232
+    1095 00000436 3F26          .field  16166,16                        ; _PHY_ofdmLtfm4freq[2][27]._real @ 17248
+    1096 00000437 1EC0          .field  7872,16                 ; _PHY_ofdmLtfm4freq[2][27]._imag @ 17264
+    1097 00000438 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][28]._real @ 17280
+    1098 00000439 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][28]._imag @ 17296
+    1099 0000043a ED1B          .field  -4837,16                        ; _PHY_ofdmLtfm4freq[2][29]._real @ 17312
+    1100 0000043b 38B5          .field  14517,16                        ; _PHY_ofdmLtfm4freq[2][29]._imag @ 17328
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   21
+
+    1101 0000043c CC94          .field  -13164,16                       ; _PHY_ofdmLtfm4freq[2][30]._real @ 17344
+    1102 0000043d 1BCB          .field  7115,16                 ; _PHY_ofdmLtfm4freq[2][30]._imag @ 17360
+    1103 0000043e C72C          .field  -14548,16                       ; _PHY_ofdmLtfm4freq[2][31]._real @ 17376
+    1104 0000043f ED0E          .field  -4850,16                        ; _PHY_ofdmLtfm4freq[2][31]._imag @ 17392
+    1105 00000440 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][32]._real @ 17408
+    1106 00000441 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][32]._imag @ 17424
+    1107 00000442 1E90          .field  7824,16                 ; _PHY_ofdmLtfm4freq[2][33]._real @ 17440
+    1108 00000443 C14D          .field  -16051,16                       ; _PHY_ofdmLtfm4freq[2][33]._imag @ 17456
+    1109 00000444 46BC          .field  18108,16                        ; _PHY_ofdmLtfm4freq[2][34]._real @ 17472
+    1110 00000445 E932          .field  -5838,16                        ; _PHY_ofdmLtfm4freq[2][34]._imag @ 17488
+    1111 00000446 4258          .field  16984,16                        ; _PHY_ofdmLtfm4freq[2][35]._real @ 17504
+    1112 00000447 2013          .field  8211,16                 ; _PHY_ofdmLtfm4freq[2][35]._imag @ 17520
+    1113 00000448 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][36]._real @ 17536
+    1114 00000449 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][36]._imag @ 17552
+    1115 0000044a F38B          .field  -3189,16                        ; _PHY_ofdmLtfm4freq[2][37]._real @ 17568
+    1116 0000044b 2928          .field  10536,16                        ; _PHY_ofdmLtfm4freq[2][37]._imag @ 17584
+    1117 0000044c F872          .field  -1934,16                        ; _PHY_ofdmLtfm4freq[2][38]._real @ 17600
+    1118 0000044d 09A0          .field  2464,16                 ; _PHY_ofdmLtfm4freq[2][38]._imag @ 17616
+    1119 0000044e 17DB          .field  6107,16                 ; _PHY_ofdmLtfm4freq[2][39]._real @ 17632
+    1120 0000044f 0E79          .field  3705,16                 ; _PHY_ofdmLtfm4freq[2][39]._imag @ 17648
+    1121 00000450 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][40]._real @ 17664
+    1122 00000451 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][40]._imag @ 17680
+    1123 00000452 E17E          .field  -7810,16                        ; _PHY_ofdmLtfm4freq[2][41]._real @ 17696
+    1124 00000453 54BC          .field  21692,16                        ; _PHY_ofdmLtfm4freq[2][41]._imag @ 17712
+    1125 00000454 A6C2          .field  -22846,16                       ; _PHY_ofdmLtfm4freq[2][42]._real @ 17728
+    1126 00000455 2B76          .field  11126,16                        ; _PHY_ofdmLtfm4freq[2][42]._imag @ 17744
+    1127 00000456 ABBE          .field  -21570,16                       ; _PHY_ofdmLtfm4freq[2][43]._real @ 17760
+    1128 00000457 E1B1          .field  -7759,16                        ; _PHY_ofdmLtfm4freq[2][43]._imag @ 17776
+    1129 00000458 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][44]._real @ 17792
+    1130 00000459 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][44]._imag @ 17808
+    1131 0000045a 0F19          .field  3865,16                 ; _PHY_ofdmLtfm4freq[2][45]._real @ 17824
+    1132 0000045b E6A3          .field  -6493,16                        ; _PHY_ofdmLtfm4freq[2][45]._imag @ 17840
+    1133 0000045c FB6D          .field  -1171,16                        ; _PHY_ofdmLtfm4freq[2][46]._real @ 17856
+    1134 0000045d 0864          .field  2148,16                 ; _PHY_ofdmLtfm4freq[2][46]._imag @ 17872
+    1135 0000045e D9A8          .field  -9816,16                        ; _PHY_ofdmLtfm4freq[2][47]._real @ 17888
+    1136 0000045f F4B6          .field  -2890,16                        ; _PHY_ofdmLtfm4freq[2][47]._imag @ 17904
+    1137 00000460 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][48]._real @ 17920
+    1138 00000461 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][48]._imag @ 17936
+    1139 00000462 2211          .field  8721,16                 ; _PHY_ofdmLtfm4freq[2][49]._real @ 17952
+    1140 00000463 B8D9          .field  -18215,16                       ; _PHY_ofdmLtfm4freq[2][49]._imag @ 17968
+    1141 00000464 4FBB          .field  20411,16                        ; _PHY_ofdmLtfm4freq[2][50]._real @ 17984
+    1142 00000465 E578          .field  -6792,16                        ; _PHY_ofdmLtfm4freq[2][50]._imag @ 18000
+    1143 00000466 475A          .field  18266,16                        ; _PHY_ofdmLtfm4freq[2][51]._real @ 18016
+    1144 00000467 2226          .field  8742,16                 ; _PHY_ofdmLtfm4freq[2][51]._imag @ 18032
+    1145 00000468 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][52]._real @ 18048
+    1146 00000469 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][52]._imag @ 18064
+    1147 0000046a F4F5          .field  -2827,16                        ; _PHY_ofdmLtfm4freq[2][53]._real @ 18080
+    1148 0000046b 25BE          .field  9662,16                 ; _PHY_ofdmLtfm4freq[2][53]._imag @ 18096
+    1149 0000046c FC90          .field  -880,16                 ; _PHY_ofdmLtfm4freq[2][54]._real @ 18112
+    1150 0000046d 07EB          .field  2027,16                 ; _PHY_ofdmLtfm4freq[2][54]._imag @ 18128
+    1151 0000046e 1A61          .field  6753,16                 ; _PHY_ofdmLtfm4freq[2][55]._real @ 18144
+    1152 0000046f 0F85          .field  3973,16                 ; _PHY_ofdmLtfm4freq[2][55]._imag @ 18160
+    1153 00000470 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][56]._real @ 18176
+    1154 00000471 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][56]._imag @ 18192
+    1155 00000472 E24B          .field  -7605,16                        ; _PHY_ofdmLtfm4freq[2][57]._real @ 18208
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   22
+
+    1156 00000473 52CE          .field  21198,16                        ; _PHY_ofdmLtfm4freq[2][57]._imag @ 18224
+    1157 00000474 A924          .field  -22236,16                       ; _PHY_ofdmLtfm4freq[2][58]._real @ 18240
+    1158 00000475 2A79          .field  10873,16                        ; _PHY_ofdmLtfm4freq[2][58]._imag @ 18256
+    1159 00000476 AD34          .field  -21196,16                       ; _PHY_ofdmLtfm4freq[2][59]._real @ 18272
+    1160 00000477 E24C          .field  -7604,16                        ; _PHY_ofdmLtfm4freq[2][59]._imag @ 18288
+    1161 00000478 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][60]._real @ 18304
+    1162 00000479 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][60]._imag @ 18320
+    1163 0000047a 0F82          .field  3970,16                 ; _PHY_ofdmLtfm4freq[2][61]._real @ 18336
+    1164 0000047b E5A5          .field  -6747,16                        ; _PHY_ofdmLtfm4freq[2][61]._imag @ 18352
+    1165 0000047c FC73          .field  -909,16                 ; _PHY_ofdmLtfm4freq[2][62]._real @ 18368
+    1166 0000047d 07F7          .field  2039,16                 ; _PHY_ofdmLtfm4freq[2][62]._imag @ 18384
+    1167 0000047e DA11          .field  -9711,16                        ; _PHY_ofdmLtfm4freq[2][63]._real @ 18400
+    1168 0000047f F4E1          .field  -2847,16                        ; _PHY_ofdmLtfm4freq[2][63]._imag @ 18416
+    1169 00000480 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][64]._real @ 18432
+    1170 00000481 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][64]._imag @ 18448
+    1171 00000482 21DB          .field  8667,16                 ; _PHY_ofdmLtfm4freq[2][65]._real @ 18464
+    1172 00000483 B95B          .field  -18085,16                       ; _PHY_ofdmLtfm4freq[2][65]._imag @ 18480
+    1173 00000484 4DF8          .field  19960,16                        ; _PHY_ofdmLtfm4freq[2][66]._real @ 18496
+    1174 00000485 E633          .field  -6605,16                        ; _PHY_ofdmLtfm4freq[2][66]._imag @ 18512
+    1175 00000486 44FE          .field  17662,16                        ; _PHY_ofdmLtfm4freq[2][67]._real @ 18528
+    1176 00000487 212C          .field  8492,16                 ; _PHY_ofdmLtfm4freq[2][67]._imag @ 18544
+    1177 00000488 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][68]._real @ 18560
+    1178 00000489 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][68]._imag @ 18576
+    1179 0000048a F1D8          .field  -3624,16                        ; _PHY_ofdmLtfm4freq[2][69]._real @ 18592
+    1180 0000048b 2D43          .field  11587,16                        ; _PHY_ofdmLtfm4freq[2][69]._imag @ 18608
+    1181 0000048c E773          .field  -6285,16                        ; _PHY_ofdmLtfm4freq[2][70]._real @ 18624
+    1182 0000048d 10AA          .field  4266,16                 ; _PHY_ofdmLtfm4freq[2][70]._imag @ 18640
+    1183 0000048e F2DF          .field  -3361,16                        ; _PHY_ofdmLtfm4freq[2][71]._real @ 18656
+    1184 0000048f FF28          .field  -216,16                 ; _PHY_ofdmLtfm4freq[2][71]._imag @ 18672
+    1185 00000490 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][72]._real @ 18688
+    1186 00000491 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][72]._imag @ 18704
+    1187 00000492 0157          .field  343,16                  ; _PHY_ofdmLtfm4freq[2][73]._real @ 18720
+    1188 00000493 07DB          .field  2011,16                 ; _PHY_ofdmLtfm4freq[2][73]._imag @ 18736
+    1189 00000494 FB1D          .field  -1251,16                        ; _PHY_ofdmLtfm4freq[2][74]._real @ 18752
+    1190 00000495 0885          .field  2181,16                 ; _PHY_ofdmLtfm4freq[2][74]._imag @ 18768
+    1191 00000496 FA11          .field  -1519,16                        ; _PHY_ofdmLtfm4freq[2][75]._real @ 18784
+    1192 00000497 0222          .field  546,16                  ; _PHY_ofdmLtfm4freq[2][75]._imag @ 18800
+    1193 00000498 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][76]._real @ 18816
+    1194 00000499 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][76]._imag @ 18832
+    1195 0000049a 0287          .field  647,16                  ; _PHY_ofdmLtfm4freq[2][77]._real @ 18848
+    1196 0000049b 04FB          .field  1275,16                 ; _PHY_ofdmLtfm4freq[2][77]._imag @ 18864
+    1197 0000049c FDFE          .field  -514,16                 ; _PHY_ofdmLtfm4freq[2][78]._real @ 18880
+    1198 0000049d 0753          .field  1875,16                 ; _PHY_ofdmLtfm4freq[2][78]._imag @ 18896
+    1199 0000049e FB96          .field  -1130,16                        ; _PHY_ofdmLtfm4freq[2][79]._real @ 18912
+    1200 0000049f 02C4          .field  708,16                  ; _PHY_ofdmLtfm4freq[2][79]._imag @ 18928
+    1201 000004a0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][80]._real @ 18944
+    1202 000004a1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][80]._imag @ 18960
+    1203 000004a2 02EC          .field  748,16                  ; _PHY_ofdmLtfm4freq[2][81]._real @ 18976
+    1204 000004a3 0408          .field  1032,16                 ; _PHY_ofdmLtfm4freq[2][81]._imag @ 18992
+    1205 000004a4 FF1B          .field  -229,16                 ; _PHY_ofdmLtfm4freq[2][82]._real @ 19008
+    1206 000004a5 06DD          .field  1757,16                 ; _PHY_ofdmLtfm4freq[2][82]._imag @ 19024
+    1207 000004a6 FC41          .field  -959,16                 ; _PHY_ofdmLtfm4freq[2][83]._real @ 19040
+    1208 000004a7 030B          .field  779,16                  ; _PHY_ofdmLtfm4freq[2][83]._imag @ 19056
+    1209 000004a8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][84]._real @ 19072
+    1210 000004a9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][84]._imag @ 19088
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   23
+
+    1211 000004aa 0323          .field  803,16                  ; _PHY_ofdmLtfm4freq[2][85]._real @ 19104
+    1212 000004ab 0384          .field  900,16                  ; _PHY_ofdmLtfm4freq[2][85]._imag @ 19120
+    1213 000004ac FFC2          .field  -62,16                  ; _PHY_ofdmLtfm4freq[2][86]._real @ 19136
+    1214 000004ad 0698          .field  1688,16                 ; _PHY_ofdmLtfm4freq[2][86]._imag @ 19152
+    1215 000004ae FCAD          .field  -851,16                 ; _PHY_ofdmLtfm4freq[2][87]._real @ 19168
+    1216 000004af 0337          .field  823,16                  ; _PHY_ofdmLtfm4freq[2][87]._imag @ 19184
+    1217 000004b0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][88]._real @ 19200
+    1218 000004b1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][88]._imag @ 19216
+    1219 000004b2 0349          .field  841,16                  ; _PHY_ofdmLtfm4freq[2][89]._real @ 19232
+    1220 000004b3 0328          .field  808,16                  ; _PHY_ofdmLtfm4freq[2][89]._imag @ 19248
+    1221 000004b4 003C          .field  60,16                   ; _PHY_ofdmLtfm4freq[2][90]._real @ 19264
+    1222 000004b5 0666          .field  1638,16                 ; _PHY_ofdmLtfm4freq[2][90]._imag @ 19280
+    1223 000004b6 FCFE          .field  -770,16                 ; _PHY_ofdmLtfm4freq[2][91]._real @ 19296
+    1224 000004b7 0359          .field  857,16                  ; _PHY_ofdmLtfm4freq[2][91]._imag @ 19312
+    1225 000004b8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][92]._real @ 19328
+    1226 000004b9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][92]._imag @ 19344
+    1227 000004ba 0368          .field  872,16                  ; _PHY_ofdmLtfm4freq[2][93]._real @ 19360
+    1228 000004bb 02DE          .field  734,16                  ; _PHY_ofdmLtfm4freq[2][93]._imag @ 19376
+    1229 000004bc 00A1          .field  161,16                  ; _PHY_ofdmLtfm4freq[2][94]._real @ 19392
+    1230 000004bd 063C          .field  1596,16                 ; _PHY_ofdmLtfm4freq[2][94]._imag @ 19408
+    1231 000004be FD43          .field  -701,16                 ; _PHY_ofdmLtfm4freq[2][95]._real @ 19424
+    1232 000004bf 0375          .field  885,16                  ; _PHY_ofdmLtfm4freq[2][95]._imag @ 19440
+    1233 000004c0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][96]._real @ 19456
+    1234 000004c1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][96]._imag @ 19472
+    1235 000004c2 0382          .field  898,16                  ; _PHY_ofdmLtfm4freq[2][97]._real @ 19488
+    1236 000004c3 029D          .field  669,16                  ; _PHY_ofdmLtfm4freq[2][97]._imag @ 19504
+    1237 000004c4 00FB          .field  251,16                  ; _PHY_ofdmLtfm4freq[2][98]._real @ 19520
+    1238 000004c5 0617          .field  1559,16                 ; _PHY_ofdmLtfm4freq[2][98]._imag @ 19536
+    1239 000004c6 FD81          .field  -639,16                 ; _PHY_ofdmLtfm4freq[2][99]._real @ 19552
+    1240 000004c7 038F          .field  911,16                  ; _PHY_ofdmLtfm4freq[2][99]._imag @ 19568
+    1241 000004c8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][100]._real @ 19584
+    1242 000004c9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][100]._imag @ 19600
+    1243 000004ca 039B          .field  923,16                  ; _PHY_ofdmLtfm4freq[2][101]._real @ 19616
+    1244 000004cb 0262          .field  610,16                  ; _PHY_ofdmLtfm4freq[2][101]._imag @ 19632
+    1245 000004cc 014E          .field  334,16                  ; _PHY_ofdmLtfm4freq[2][102]._real @ 19648
+    1246 000004cd 05F4          .field  1524,16                 ; _PHY_ofdmLtfm4freq[2][102]._imag @ 19664
+    1247 000004ce FDBB          .field  -581,16                 ; _PHY_ofdmLtfm4freq[2][103]._real @ 19680
+    1248 000004cf 03A7          .field  935,16                  ; _PHY_ofdmLtfm4freq[2][103]._imag @ 19696
+    1249 000004d0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][104]._real @ 19712
+    1250 000004d1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][104]._imag @ 19728
+    1251 000004d2 03B2          .field  946,16                  ; _PHY_ofdmLtfm4freq[2][105]._real @ 19744
+    1252 000004d3 0229          .field  553,16                  ; _PHY_ofdmLtfm4freq[2][105]._imag @ 19760
+    1253 000004d4 019C          .field  412,16                  ; _PHY_ofdmLtfm4freq[2][106]._real @ 19776
+    1254 000004d5 05D4          .field  1492,16                 ; _PHY_ofdmLtfm4freq[2][106]._imag @ 19792
+    1255 000004d6 FDF2          .field  -526,16                 ; _PHY_ofdmLtfm4freq[2][107]._real @ 19808
+    1256 000004d7 03BE          .field  958,16                  ; _PHY_ofdmLtfm4freq[2][107]._imag @ 19824
+    1257 000004d8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][108]._real @ 19840
+    1258 000004d9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][108]._imag @ 19856
+    1259 000004da 03C9          .field  969,16                  ; _PHY_ofdmLtfm4freq[2][109]._real @ 19872
+    1260 000004db 01F4          .field  500,16                  ; _PHY_ofdmLtfm4freq[2][109]._imag @ 19888
+    1261 000004dc 01E8          .field  488,16                  ; _PHY_ofdmLtfm4freq[2][110]._real @ 19904
+    1262 000004dd 05B4          .field  1460,16                 ; _PHY_ofdmLtfm4freq[2][110]._imag @ 19920
+    1263 000004de FE27          .field  -473,16                 ; _PHY_ofdmLtfm4freq[2][111]._real @ 19936
+    1264 000004df 03D4          .field  980,16                  ; _PHY_ofdmLtfm4freq[2][111]._imag @ 19952
+    1265 000004e0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][112]._real @ 19968
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   24
+
+    1266 000004e1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][112]._imag @ 19984
+    1267 000004e2 03DE          .field  990,16                  ; _PHY_ofdmLtfm4freq[2][113]._real @ 20000
+    1268 000004e3 01BF          .field  447,16                  ; _PHY_ofdmLtfm4freq[2][113]._imag @ 20016
+    1269 000004e4 0232          .field  562,16                  ; _PHY_ofdmLtfm4freq[2][114]._real @ 20032
+    1270 000004e5 0596          .field  1430,16                 ; _PHY_ofdmLtfm4freq[2][114]._imag @ 20048
+    1271 000004e6 FE5B          .field  -421,16                 ; _PHY_ofdmLtfm4freq[2][115]._real @ 20064
+    1272 000004e7 03E9          .field  1001,16                 ; _PHY_ofdmLtfm4freq[2][115]._imag @ 20080
+    1273 000004e8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][116]._real @ 20096
+    1274 000004e9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][116]._imag @ 20112
+    1275 000004ea 03F4          .field  1012,16                 ; _PHY_ofdmLtfm4freq[2][117]._real @ 20128
+    1276 000004eb 018B          .field  395,16                  ; _PHY_ofdmLtfm4freq[2][117]._imag @ 20144
+    1277 000004ec 027B          .field  635,16                  ; _PHY_ofdmLtfm4freq[2][118]._real @ 20160
+    1278 000004ed 0578          .field  1400,16                 ; _PHY_ofdmLtfm4freq[2][118]._imag @ 20176
+    1279 000004ee FE8F          .field  -369,16                 ; _PHY_ofdmLtfm4freq[2][119]._real @ 20192
+    1280 000004ef 03FF          .field  1023,16                 ; _PHY_ofdmLtfm4freq[2][119]._imag @ 20208
+    1281 000004f0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][120]._real @ 20224
+    1282 000004f1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][120]._imag @ 20240
+    1283 000004f2 0409          .field  1033,16                 ; _PHY_ofdmLtfm4freq[2][121]._real @ 20256
+    1284 000004f3 0158          .field  344,16                  ; _PHY_ofdmLtfm4freq[2][121]._imag @ 20272
+    1285 000004f4 02C4          .field  708,16                  ; _PHY_ofdmLtfm4freq[2][122]._real @ 20288
+    1286 000004f5 0559          .field  1369,16                 ; _PHY_ofdmLtfm4freq[2][122]._imag @ 20304
+    1287 000004f6 FEC2          .field  -318,16                 ; _PHY_ofdmLtfm4freq[2][123]._real @ 20320
+    1288 000004f7 0414          .field  1044,16                 ; _PHY_ofdmLtfm4freq[2][123]._imag @ 20336
+    1289 000004f8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][124]._real @ 20352
+    1290 000004f9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][124]._imag @ 20368
+    1291 000004fa 041F          .field  1055,16                 ; _PHY_ofdmLtfm4freq[2][125]._real @ 20384
+    1292 000004fb 0124          .field  292,16                  ; _PHY_ofdmLtfm4freq[2][125]._imag @ 20400
+    1293 000004fc 030D          .field  781,16                  ; _PHY_ofdmLtfm4freq[2][126]._real @ 20416
+    1294 000004fd 053B          .field  1339,16                 ; _PHY_ofdmLtfm4freq[2][126]._imag @ 20432
+    1295 000004fe FEF6          .field  -266,16                 ; _PHY_ofdmLtfm4freq[2][127]._real @ 20448
+    1296 000004ff 0429          .field  1065,16                 ; _PHY_ofdmLtfm4freq[2][127]._imag @ 20464
+    1297 00000500 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][128]._real @ 20480
+    1298 00000501 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][128]._imag @ 20496
+    1299 00000502 0434          .field  1076,16                 ; _PHY_ofdmLtfm4freq[2][129]._real @ 20512
+    1300 00000503 00F0          .field  240,16                  ; _PHY_ofdmLtfm4freq[2][129]._imag @ 20528
+    1301 00000504 0356          .field  854,16                  ; _PHY_ofdmLtfm4freq[2][130]._real @ 20544
+    1302 00000505 051D          .field  1309,16                 ; _PHY_ofdmLtfm4freq[2][130]._imag @ 20560
+    1303 00000506 FF2A          .field  -214,16                 ; _PHY_ofdmLtfm4freq[2][131]._real @ 20576
+    1304 00000507 043F          .field  1087,16                 ; _PHY_ofdmLtfm4freq[2][131]._imag @ 20592
+    1305 00000508 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][132]._real @ 20608
+    1306 00000509 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][132]._imag @ 20624
+    1307 0000050a 044A          .field  1098,16                 ; _PHY_ofdmLtfm4freq[2][133]._real @ 20640
+    1308 0000050b 00BC          .field  188,16                  ; _PHY_ofdmLtfm4freq[2][133]._imag @ 20656
+    1309 0000050c 03A1          .field  929,16                  ; _PHY_ofdmLtfm4freq[2][134]._real @ 20672
+    1310 0000050d 04FE          .field  1278,16                 ; _PHY_ofdmLtfm4freq[2][134]._imag @ 20688
+    1311 0000050e FF5F          .field  -161,16                 ; _PHY_ofdmLtfm4freq[2][135]._real @ 20704
+    1312 0000050f 0455          .field  1109,16                 ; _PHY_ofdmLtfm4freq[2][135]._imag @ 20720
+    1313 00000510 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][136]._real @ 20736
+    1314 00000511 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][136]._imag @ 20752
+    1315 00000512 0460          .field  1120,16                 ; _PHY_ofdmLtfm4freq[2][137]._real @ 20768
+    1316 00000513 0086          .field  134,16                  ; _PHY_ofdmLtfm4freq[2][137]._imag @ 20784
+    1317 00000514 03ED          .field  1005,16                 ; _PHY_ofdmLtfm4freq[2][138]._real @ 20800
+    1318 00000515 04DE          .field  1246,16                 ; _PHY_ofdmLtfm4freq[2][138]._imag @ 20816
+    1319 00000516 FF95          .field  -107,16                 ; _PHY_ofdmLtfm4freq[2][139]._real @ 20832
+    1320 00000517 046B          .field  1131,16                 ; _PHY_ofdmLtfm4freq[2][139]._imag @ 20848
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   25
+
+    1321 00000518 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][140]._real @ 20864
+    1322 00000519 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][140]._imag @ 20880
+    1323 0000051a 0477          .field  1143,16                 ; _PHY_ofdmLtfm4freq[2][141]._real @ 20896
+    1324 0000051b 004F          .field  79,16                   ; _PHY_ofdmLtfm4freq[2][141]._imag @ 20912
+    1325 0000051c 043C          .field  1084,16                 ; _PHY_ofdmLtfm4freq[2][142]._real @ 20928
+    1326 0000051d 04BE          .field  1214,16                 ; _PHY_ofdmLtfm4freq[2][142]._imag @ 20944
+    1327 0000051e FFCD          .field  -51,16                  ; _PHY_ofdmLtfm4freq[2][143]._real @ 20960
+    1328 0000051f 0483          .field  1155,16                 ; _PHY_ofdmLtfm4freq[2][143]._imag @ 20976
+    1329 00000520 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][144]._real @ 20992
+    1330 00000521 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][144]._imag @ 21008
+    1331 00000522 048F          .field  1167,16                 ; _PHY_ofdmLtfm4freq[2][145]._real @ 21024
+    1332 00000523 0016          .field  22,16                   ; _PHY_ofdmLtfm4freq[2][145]._imag @ 21040
+    1333 00000524 048D          .field  1165,16                 ; _PHY_ofdmLtfm4freq[2][146]._real @ 21056
+    1334 00000525 049C          .field  1180,16                 ; _PHY_ofdmLtfm4freq[2][146]._imag @ 21072
+    1335 00000526 0008          .field  8,16                    ; _PHY_ofdmLtfm4freq[2][147]._real @ 21088
+    1336 00000527 049B          .field  1179,16                 ; _PHY_ofdmLtfm4freq[2][147]._imag @ 21104
+    1337 00000528 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][148]._real @ 21120
+    1338 00000529 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][148]._imag @ 21136
+    1339 0000052a 04A7          .field  1191,16                 ; _PHY_ofdmLtfm4freq[2][149]._real @ 21152
+    1340 0000052b FFDB          .field  -37,16                  ; _PHY_ofdmLtfm4freq[2][149]._imag @ 21168
+    1341 0000052c 04E2          .field  1250,16                 ; _PHY_ofdmLtfm4freq[2][150]._real @ 21184
+    1342 0000052d 0479          .field  1145,16                 ; _PHY_ofdmLtfm4freq[2][150]._imag @ 21200
+    1343 0000052e 0044          .field  68,16                   ; _PHY_ofdmLtfm4freq[2][151]._real @ 21216
+    1344 0000052f 04B4          .field  1204,16                 ; _PHY_ofdmLtfm4freq[2][151]._imag @ 21232
+    1345 00000530 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][152]._real @ 21248
+    1346 00000531 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][152]._imag @ 21264
+    1347 00000532 04C1          .field  1217,16                 ; _PHY_ofdmLtfm4freq[2][153]._real @ 21280
+    1348 00000533 FF9D          .field  -99,16                  ; _PHY_ofdmLtfm4freq[2][153]._imag @ 21296
+    1349 00000534 053B          .field  1339,16                 ; _PHY_ofdmLtfm4freq[2][154]._real @ 21312
+    1350 00000535 0454          .field  1108,16                 ; _PHY_ofdmLtfm4freq[2][154]._imag @ 21328
+    1351 00000536 0084          .field  132,16                  ; _PHY_ofdmLtfm4freq[2][155]._real @ 21344
+    1352 00000537 04CE          .field  1230,16                 ; _PHY_ofdmLtfm4freq[2][155]._imag @ 21360
+    1353 00000538 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][156]._real @ 21376
+    1354 00000539 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][156]._imag @ 21392
+    1355 0000053a 04DC          .field  1244,16                 ; _PHY_ofdmLtfm4freq[2][157]._real @ 21408
+    1356 0000053b FF5B          .field  -165,16                 ; _PHY_ofdmLtfm4freq[2][157]._imag @ 21424
+    1357 0000053c 0598          .field  1432,16                 ; _PHY_ofdmLtfm4freq[2][158]._real @ 21440
+    1358 0000053d 042D          .field  1069,16                 ; _PHY_ofdmLtfm4freq[2][158]._imag @ 21456
+    1359 0000053e 00C7          .field  199,16                  ; _PHY_ofdmLtfm4freq[2][159]._real @ 21472
+    1360 0000053f 04EA          .field  1258,16                 ; _PHY_ofdmLtfm4freq[2][159]._imag @ 21488
+    1361 00000540 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][160]._real @ 21504
+    1362 00000541 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][160]._imag @ 21520
+    1363 00000542 04F8          .field  1272,16                 ; _PHY_ofdmLtfm4freq[2][161]._real @ 21536
+    1364 00000543 FF16          .field  -234,16                 ; _PHY_ofdmLtfm4freq[2][161]._imag @ 21552
+    1365 00000544 05FC          .field  1532,16                 ; _PHY_ofdmLtfm4freq[2][162]._real @ 21568
+    1366 00000545 0404          .field  1028,16                 ; _PHY_ofdmLtfm4freq[2][162]._imag @ 21584
+    1367 00000546 010E          .field  270,16                  ; _PHY_ofdmLtfm4freq[2][163]._real @ 21600
+    1368 00000547 0508          .field  1288,16                 ; _PHY_ofdmLtfm4freq[2][163]._imag @ 21616
+    1369 00000548 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][164]._real @ 21632
+    1370 00000549 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][164]._imag @ 21648
+    1371 0000054a 0517          .field  1303,16                 ; _PHY_ofdmLtfm4freq[2][165]._real @ 21664
+    1372 0000054b FECC          .field  -308,16                 ; _PHY_ofdmLtfm4freq[2][165]._imag @ 21680
+    1373 0000054c 0666          .field  1638,16                 ; _PHY_ofdmLtfm4freq[2][166]._real @ 21696
+    1374 0000054d 03D8          .field  984,16                  ; _PHY_ofdmLtfm4freq[2][166]._imag @ 21712
+    1375 0000054e 015B          .field  347,16                  ; _PHY_ofdmLtfm4freq[2][167]._real @ 21728
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   26
+
+    1376 0000054f 0527          .field  1319,16                 ; _PHY_ofdmLtfm4freq[2][167]._imag @ 21744
+    1377 00000550 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][168]._real @ 21760
+    1378 00000551 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][168]._imag @ 21776
+    1379 00000552 0538          .field  1336,16                 ; _PHY_ofdmLtfm4freq[2][169]._real @ 21792
+    1380 00000553 FE7D          .field  -387,16                 ; _PHY_ofdmLtfm4freq[2][169]._imag @ 21808
+    1381 00000554 06D9          .field  1753,16                 ; _PHY_ofdmLtfm4freq[2][170]._real @ 21824
+    1382 00000555 03A8          .field  936,16                  ; _PHY_ofdmLtfm4freq[2][170]._imag @ 21840
+    1383 00000556 01AE          .field  430,16                  ; _PHY_ofdmLtfm4freq[2][171]._real @ 21856
+    1384 00000557 054A          .field  1354,16                 ; _PHY_ofdmLtfm4freq[2][171]._imag @ 21872
+    1385 00000558 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][172]._real @ 21888
+    1386 00000559 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][172]._imag @ 21904
+    1387 0000055a 055C          .field  1372,16                 ; _PHY_ofdmLtfm4freq[2][173]._real @ 21920
+    1388 0000055b FE26          .field  -474,16                 ; _PHY_ofdmLtfm4freq[2][173]._imag @ 21936
+    1389 0000055c 0756          .field  1878,16                 ; _PHY_ofdmLtfm4freq[2][174]._real @ 21952
+    1390 0000055d 0375          .field  885,16                  ; _PHY_ofdmLtfm4freq[2][174]._imag @ 21968
+    1391 0000055e 0208          .field  520,16                  ; _PHY_ofdmLtfm4freq[2][175]._real @ 21984
+    1392 0000055f 056F          .field  1391,16                 ; _PHY_ofdmLtfm4freq[2][175]._imag @ 22000
+    1393 00000560 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][176]._real @ 22016
+    1394 00000561 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][176]._imag @ 22032
+    1395 00000562 0583          .field  1411,16                 ; _PHY_ofdmLtfm4freq[2][177]._real @ 22048
+    1396 00000563 FDC7          .field  -569,16                 ; _PHY_ofdmLtfm4freq[2][177]._imag @ 22064
+    1397 00000564 07E0          .field  2016,16                 ; _PHY_ofdmLtfm4freq[2][178]._real @ 22080
+    1398 00000565 033C          .field  828,16                  ; _PHY_ofdmLtfm4freq[2][178]._imag @ 22096
+    1399 00000566 026C          .field  620,16                  ; _PHY_ofdmLtfm4freq[2][179]._real @ 22112
+    1400 00000567 0599          .field  1433,16                 ; _PHY_ofdmLtfm4freq[2][179]._imag @ 22128
+    1401 00000568 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][180]._real @ 22144
+    1402 00000569 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][180]._imag @ 22160
+    1403 0000056a 05AF          .field  1455,16                 ; _PHY_ofdmLtfm4freq[2][181]._real @ 22176
+    1404 0000056b FD5E          .field  -674,16                 ; _PHY_ofdmLtfm4freq[2][181]._imag @ 22192
+    1405 0000056c 0879          .field  2169,16                 ; _PHY_ofdmLtfm4freq[2][182]._real @ 22208
+    1406 0000056d 02FC          .field  764,16                  ; _PHY_ofdmLtfm4freq[2][182]._imag @ 22224
+    1407 0000056e 02DC          .field  732,16                  ; _PHY_ofdmLtfm4freq[2][183]._real @ 22240
+    1408 0000056f 05C7          .field  1479,16                 ; _PHY_ofdmLtfm4freq[2][183]._imag @ 22256
+    1409 00000570 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][184]._real @ 22272
+    1410 00000571 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][184]._imag @ 22288
+    1411 00000572 05E0          .field  1504,16                 ; _PHY_ofdmLtfm4freq[2][185]._real @ 22304
+    1412 00000573 FCE7          .field  -793,16                 ; _PHY_ofdmLtfm4freq[2][185]._imag @ 22320
+    1413 00000574 0926          .field  2342,16                 ; _PHY_ofdmLtfm4freq[2][186]._real @ 22336
+    1414 00000575 02B4          .field  692,16                  ; _PHY_ofdmLtfm4freq[2][186]._imag @ 22352
+    1415 00000576 035A          .field  858,16                  ; _PHY_ofdmLtfm4freq[2][187]._real @ 22368
+    1416 00000577 05FB          .field  1531,16                 ; _PHY_ofdmLtfm4freq[2][187]._imag @ 22384
+    1417 00000578 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][188]._real @ 22400
+    1418 00000579 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][188]._imag @ 22416
+    1419 0000057a 0618          .field  1560,16                 ; _PHY_ofdmLtfm4freq[2][189]._real @ 22432
+    1420 0000057b FC60          .field  -928,16                 ; _PHY_ofdmLtfm4freq[2][189]._imag @ 22448
+    1421 0000057c 09ED          .field  2541,16                 ; _PHY_ofdmLtfm4freq[2][190]._real @ 22464
+    1422 0000057d 0262          .field  610,16                  ; _PHY_ofdmLtfm4freq[2][190]._imag @ 22480
+    1423 0000057e 03EC          .field  1004,16                 ; _PHY_ofdmLtfm4freq[2][191]._real @ 22496
+    1424 0000057f 0638          .field  1592,16                 ; _PHY_ofdmLtfm4freq[2][191]._imag @ 22512
+    1425 00000580 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][192]._real @ 22528
+    1426 00000581 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][192]._imag @ 22544
+    1427 00000582 065A          .field  1626,16                 ; _PHY_ofdmLtfm4freq[2][193]._real @ 22560
+    1428 00000583 FBC2          .field  -1086,16                        ; _PHY_ofdmLtfm4freq[2][193]._imag @ 22576
+    1429 00000584 0AD6          .field  2774,16                 ; _PHY_ofdmLtfm4freq[2][194]._real @ 22592
+    1430 00000585 0202          .field  514,16                  ; _PHY_ofdmLtfm4freq[2][194]._imag @ 22608
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   27
+
+    1431 00000586 0498          .field  1176,16                 ; _PHY_ofdmLtfm4freq[2][195]._real @ 22624
+    1432 00000587 067F          .field  1663,16                 ; _PHY_ofdmLtfm4freq[2][195]._imag @ 22640
+    1433 00000588 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][196]._real @ 22656
+    1434 00000589 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][196]._imag @ 22672
+    1435 0000058a 06A8          .field  1704,16                 ; _PHY_ofdmLtfm4freq[2][197]._real @ 22688
+    1436 0000058b FB05          .field  -1275,16                        ; _PHY_ofdmLtfm4freq[2][197]._imag @ 22704
+    1437 0000058c 0BEE          .field  3054,16                 ; _PHY_ofdmLtfm4freq[2][198]._real @ 22720
+    1438 0000058d 018E          .field  398,16                  ; _PHY_ofdmLtfm4freq[2][198]._imag @ 22736
+    1439 0000058e 0569          .field  1385,16                 ; _PHY_ofdmLtfm4freq[2][199]._real @ 22752
+    1440 0000058f 06D5          .field  1749,16                 ; _PHY_ofdmLtfm4freq[2][199]._imag @ 22768
+    1441 00000590 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][200]._real @ 22784
+    1442 00000591 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][200]._imag @ 22800
+    1443 00000592 0708          .field  1800,16                 ; _PHY_ofdmLtfm4freq[2][201]._real @ 22816
+    1444 00000593 FA1C          .field  -1508,16                        ; _PHY_ofdmLtfm4freq[2][201]._imag @ 22832
+    1445 00000594 0D4D          .field  3405,16                 ; _PHY_ofdmLtfm4freq[2][202]._real @ 22848
+    1446 00000595 00FC          .field  252,16                  ; _PHY_ofdmLtfm4freq[2][202]._imag @ 22864
+    1447 00000596 0671          .field  1649,16                 ; _PHY_ofdmLtfm4freq[2][203]._real @ 22880
+    1448 00000597 0743          .field  1859,16                 ; _PHY_ofdmLtfm4freq[2][203]._imag @ 22896
+    1449 00000598 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][204]._real @ 22912
+    1450 00000599 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][204]._imag @ 22928
+    1451 0000059a 0787          .field  1927,16                 ; _PHY_ofdmLtfm4freq[2][205]._real @ 22944
+    1452 0000059b F8EA          .field  -1814,16                        ; _PHY_ofdmLtfm4freq[2][205]._imag @ 22960
+    1453 0000059c 0F20          .field  3872,16                 ; _PHY_ofdmLtfm4freq[2][206]._real @ 22976
+    1454 0000059d 003B          .field  59,16                   ; _PHY_ofdmLtfm4freq[2][206]._imag @ 22992
+    1455 0000059e 07DA          .field  2010,16                 ; _PHY_ofdmLtfm4freq[2][207]._real @ 23008
+    1456 0000059f 07D8          .field  2008,16                 ; _PHY_ofdmLtfm4freq[2][207]._imag @ 23024
+    1457 000005a0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][208]._real @ 23040
+    1458 000005a1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][208]._imag @ 23056
+    1459 000005a2 083D          .field  2109,16                 ; _PHY_ofdmLtfm4freq[2][209]._real @ 23072
+    1460 000005a3 F733          .field  -2253,16                        ; _PHY_ofdmLtfm4freq[2][209]._imag @ 23088
+    1461 000005a4 11DA          .field  4570,16                 ; _PHY_ofdmLtfm4freq[2][210]._real @ 23104
+    1462 000005a5 FF1A          .field  -230,16                 ; _PHY_ofdmLtfm4freq[2][210]._imag @ 23120
+    1463 000005a6 0A0B          .field  2571,16                 ; _PHY_ofdmLtfm4freq[2][211]._real @ 23136
+    1464 000005a7 08C1          .field  2241,16                 ; _PHY_ofdmLtfm4freq[2][211]._imag @ 23152
+    1465 000005a8 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][212]._real @ 23168
+    1466 000005a9 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][212]._imag @ 23184
+    1467 000005aa 097D          .field  2429,16                 ; _PHY_ofdmLtfm4freq[2][213]._real @ 23200
+    1468 000005ab F42D          .field  -3027,16                        ; _PHY_ofdmLtfm4freq[2][213]._imag @ 23216
+    1469 000005ac 1718          .field  5912,16                 ; _PHY_ofdmLtfm4freq[2][214]._real @ 23232
+    1470 000005ad FCEE          .field  -786,16                 ; _PHY_ofdmLtfm4freq[2][214]._imag @ 23248
+    1471 000005ae 0ECA          .field  3786,16                 ; _PHY_ofdmLtfm4freq[2][215]._real @ 23264
+    1472 000005af 0AB8          .field  2744,16                 ; _PHY_ofdmLtfm4freq[2][215]._imag @ 23280
+    1473 000005b0 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][216]._real @ 23296
+    1474 000005b1 0000          .field  0,16                    ; _PHY_ofdmLtfm4freq[2][216]._imag @ 23312
+    1475 000005b2 0D77          .field  3447,16                 ; _PHY_ofdmLtfm4freq[2][217]._real @ 23328
+    1476 000005b3 EA93          .field  -5485,16                        ; _PHY_ofdmLtfm4freq[2][217]._imag @ 23344
+    1477 000005b4 2EB0          .field  11952,16                        ; _PHY_ofdmLtfm4freq[2][218]._real @ 23360
+    1478 000005b5 F328          .field  -3288,16                        ; _PHY_ofdmLtfm4freq[2][218]._imag @ 23376
+    1479 000005b6 3775          .field  14197,16                        ; _PHY_ofdmLtfm4freq[2][219]._real @ 23392
+    1480 000005b7 1B90          .field  7056,16                 ; _PHY_ofdmLtfm4freq[2][219]._imag @ 23408
+    1481 000005b8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][220]._real @ 23424
+    1482 000005b9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][220]._imag @ 23440
+    1483 000005ba ED70          .field  -4752,16                        ; _PHY_ofdmLtfm4freq[2][221]._real @ 23456
+    1484 000005bb 37E7          .field  14311,16                        ; _PHY_ofdmLtfm4freq[2][221]._imag @ 23472
+    1485 000005bc D0C4          .field  -12092,16                       ; _PHY_ofdmLtfm4freq[2][222]._real @ 23488
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   28
+
+    1486 000005bd 1A0F          .field  6671,16                 ; _PHY_ofdmLtfm4freq[2][222]._imag @ 23504
+    1487 000005be CB9A          .field  -13414,16                       ; _PHY_ofdmLtfm4freq[2][223]._real @ 23520
+    1488 000005bf EEE3          .field  -4381,16                        ; _PHY_ofdmLtfm4freq[2][223]._imag @ 23536
+    1489 000005c0 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][224]._real @ 23552
+    1490 000005c1 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][224]._imag @ 23568
+    1491 000005c2 20F8          .field  8440,16                 ; _PHY_ofdmLtfm4freq[2][225]._real @ 23584
+    1492 000005c3 BB7D          .field  -17539,16                       ; _PHY_ofdmLtfm4freq[2][225]._imag @ 23600
+    1493 000005c4 4EC4          .field  20164,16                        ; _PHY_ofdmLtfm4freq[2][226]._real @ 23616
+    1494 000005c5 E5DE          .field  -6690,16                        ; _PHY_ofdmLtfm4freq[2][226]._imag @ 23632
+    1495 000005c6 470C          .field  18188,16                        ; _PHY_ofdmLtfm4freq[2][227]._real @ 23648
+    1496 000005c7 2205          .field  8709,16                 ; _PHY_ofdmLtfm4freq[2][227]._imag @ 23664
+    1497 000005c8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][228]._real @ 23680
+    1498 000005c9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][228]._imag @ 23696
+    1499 000005ca F235          .field  -3531,16                        ; _PHY_ofdmLtfm4freq[2][229]._real @ 23712
+    1500 000005cb 2C64          .field  11364,16                        ; _PHY_ofdmLtfm4freq[2][229]._imag @ 23728
+    1501 000005cc E0A0          .field  -8032,16                        ; _PHY_ofdmLtfm4freq[2][230]._real @ 23744
+    1502 000005cd 137E          .field  4990,16                 ; _PHY_ofdmLtfm4freq[2][230]._imag @ 23760
+    1503 000005ce D720          .field  -10464,16                       ; _PHY_ofdmLtfm4freq[2][231]._real @ 23776
+    1504 000005cf F3A9          .field  -3159,16                        ; _PHY_ofdmLtfm4freq[2][231]._imag @ 23792
+    1505 000005d0 E782          .field  -6270,16                        ; _PHY_ofdmLtfm4freq[2][232]._real @ 23808
+    1506 000005d1 C4DF          .field  -15137,16                       ; _PHY_ofdmLtfm4freq[2][232]._imag @ 23824
+    1507 000005d2 26AC          .field  9900,16                 ; _PHY_ofdmLtfm4freq[2][233]._real @ 23840
+    1508 000005d3 ADBA          .field  -21062,16                       ; _PHY_ofdmLtfm4freq[2][233]._imag @ 23856
+    1509 000005d4 653D          .field  25917,16                        ; _PHY_ofdmLtfm4freq[2][234]._real @ 23872
+    1510 000005d5 DC8F          .field  -9073,16                        ; _PHY_ofdmLtfm4freq[2][234]._imag @ 23888
+    1511 000005d6 5A25          .field  23077,16                        ; _PHY_ofdmLtfm4freq[2][235]._real @ 23904
+    1512 000005d7 29EE          .field  10734,16                        ; _PHY_ofdmLtfm4freq[2][235]._imag @ 23920
+    1513 000005d8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][236]._real @ 23936
+    1514 000005d9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][236]._imag @ 23952
+    1515 000005da FFC2          .field  -62,16                  ; _PHY_ofdmLtfm4freq[2][237]._real @ 23968
+    1516 000005db 0BAC          .field  2988,16                 ; _PHY_ofdmLtfm4freq[2][237]._imag @ 23984
+    1517 000005dc 27A0          .field  10144,16                        ; _PHY_ofdmLtfm4freq[2][238]._real @ 24000
+    1518 000005dd F615          .field  -2539,16                        ; _PHY_ofdmLtfm4freq[2][238]._imag @ 24016
+    1519 000005de 3E52          .field  15954,16                        ; _PHY_ofdmLtfm4freq[2][239]._real @ 24032
+    1520 000005df 1E68          .field  7784,16                 ; _PHY_ofdmLtfm4freq[2][239]._imag @ 24048
+    1521 000005e0 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][240]._real @ 24064
+    1522 000005e1 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][240]._imag @ 24080
+    1523 000005e2 F904          .field  -1788,16                        ; _PHY_ofdmLtfm4freq[2][241]._real @ 24096
+    1524 000005e3 1BF3          .field  7155,16                 ; _PHY_ofdmLtfm4freq[2][241]._imag @ 24112
+    1525 000005e4 144E          .field  5198,16                 ; _PHY_ofdmLtfm4freq[2][242]._real @ 24128
+    1526 000005e5 FE15          .field  -491,16                 ; _PHY_ofdmLtfm4freq[2][242]._imag @ 24144
+    1527 000005e6 3269          .field  12905,16                        ; _PHY_ofdmLtfm4freq[2][243]._real @ 24160
+    1528 000005e7 1979          .field  6521,16                 ; _PHY_ofdmLtfm4freq[2][243]._imag @ 24176
+    1529 000005e8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][244]._real @ 24192
+    1530 000005e9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][244]._imag @ 24208
+    1531 000005ea F4F6          .field  -2826,16                        ; _PHY_ofdmLtfm4freq[2][245]._real @ 24224
+    1532 000005eb 25BD          .field  9661,16                 ; _PHY_ofdmLtfm4freq[2][245]._imag @ 24240
+    1533 000005ec 075F          .field  1887,16                 ; _PHY_ofdmLtfm4freq[2][246]._real @ 24256
+    1534 000005ed 0371          .field  881,16                  ; _PHY_ofdmLtfm4freq[2][246]._imag @ 24272
+    1535 000005ee 29BD          .field  10685,16                        ; _PHY_ofdmLtfm4freq[2][247]._real @ 24288
+    1536 000005ef 15E1          .field  5601,16                 ; _PHY_ofdmLtfm4freq[2][247]._imag @ 24304
+    1537 000005f0 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][248]._real @ 24320
+    1538 000005f1 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][248]._imag @ 24336
+    1539 000005f2 F19A          .field  -3686,16                        ; _PHY_ofdmLtfm4freq[2][249]._real @ 24352
+    1540 000005f3 2DD9          .field  11737,16                        ; _PHY_ofdmLtfm4freq[2][249]._imag @ 24368
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   29
+
+    1541 000005f4 FC19          .field  -999,16                 ; _PHY_ofdmLtfm4freq[2][250]._real @ 24384
+    1542 000005f5 081C          .field  2076,16                 ; _PHY_ofdmLtfm4freq[2][250]._imag @ 24400
+    1543 000005f6 21D1          .field  8657,16                 ; _PHY_ofdmLtfm4freq[2][251]._real @ 24416
+    1544 000005f7 129A          .field  4762,16                 ; _PHY_ofdmLtfm4freq[2][251]._imag @ 24432
+    1545 000005f8 187E          .field  6270,16                 ; _PHY_ofdmLtfm4freq[2][252]._real @ 24448
+    1546 000005f9 3B21          .field  15137,16                        ; _PHY_ofdmLtfm4freq[2][252]._imag @ 24464
+    1547 000005fa EE45          .field  -4539,16                        ; _PHY_ofdmLtfm4freq[2][253]._real @ 24480
+    1548 000005fb 35E5          .field  13797,16                        ; _PHY_ofdmLtfm4freq[2][253]._imag @ 24496
+    1549 000005fc F075          .field  -3979,16                        ; _PHY_ofdmLtfm4freq[2][254]._real @ 24512
+    1550 000005fd 0CEF          .field  3311,16                 ; _PHY_ofdmLtfm4freq[2][254]._imag @ 24528
+    1551 000005fe 1952          .field  6482,16                 ; _PHY_ofdmLtfm4freq[2][255]._real @ 24544
+    1552 000005ff 0F14          .field  3860,16                 ; _PHY_ofdmLtfm4freq[2][255]._imag @ 24560
+    1553              
+    1554              $C$DW$1 .dwtag  DW_TAG_variable, DW_AT_name("PHY_ofdmLtfm4freq")
+    1555                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_PHY_ofdmLtfm4freq")
+    1556                      .dwattr $C$DW$1, DW_AT_location[DW_OP_addr _PHY_ofdmLtfm4freq]
+    1557                      .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$24)
+    1558                      .dwattr $C$DW$1, DW_AT_external
+    1559              ;       C:\ti\ccsv5\tools\compiler\c2000_6.1.3\bin\ac2000.exe -@C:\\Users\\a0272466\\AppData\\Local\\Temp\\07
+    1560              
+    1561              ;***************************************************************
+    1562              ;* TYPE INFORMATION                                            *
+    1563              ;***************************************************************
+    1564              
+    1565              $C$DW$T$20      .dwtag  DW_TAG_structure_type
+    1566                      .dwattr $C$DW$T$20, DW_AT_byte_size(0x02)
+    1567              $C$DW$2 .dwtag  DW_TAG_member
+    1568                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$19)
+    1569                      .dwattr $C$DW$2, DW_AT_name("real")
+    1570                      .dwattr $C$DW$2, DW_AT_TI_symbol_name("_real")
+    1571                      .dwattr $C$DW$2, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1572                      .dwattr $C$DW$2, DW_AT_accessibility(DW_ACCESS_public)
+    1573              $C$DW$3 .dwtag  DW_TAG_member
+    1574                      .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$19)
+    1575                      .dwattr $C$DW$3, DW_AT_name("imag")
+    1576                      .dwattr $C$DW$3, DW_AT_TI_symbol_name("_imag")
+    1577                      .dwattr $C$DW$3, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
+    1578                      .dwattr $C$DW$3, DW_AT_accessibility(DW_ACCESS_public)
+    1579                      .dwendtag $C$DW$T$20
+    1580              
+    1581              $C$DW$T$21      .dwtag  DW_TAG_typedef, DW_AT_name("ComplexShort_t")
+    1582                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+    1583                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+    1584              $C$DW$4 .dwtag  DW_TAG_TI_far_type
+    1585                      .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$21)
+    1586              $C$DW$T$22      .dwtag  DW_TAG_const_type
+    1587                      .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$4)
+    1588              
+    1589              $C$DW$T$23      .dwtag  DW_TAG_array_type
+    1590                      .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
+    1591                      .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+    1592                      .dwattr $C$DW$T$23, DW_AT_byte_size(0x200)
+    1593              $C$DW$5 .dwtag  DW_TAG_subrange_type
+    1594                      .dwattr $C$DW$5, DW_AT_upper_bound(0xff)
+    1595                      .dwendtag $C$DW$T$23
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   30
+
+    1596              
+    1597              
+    1598              $C$DW$T$24      .dwtag  DW_TAG_array_type
+    1599                      .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$22)
+    1600                      .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    1601                      .dwattr $C$DW$T$24, DW_AT_byte_size(0x600)
+    1602              $C$DW$6 .dwtag  DW_TAG_subrange_type
+    1603                      .dwattr $C$DW$6, DW_AT_upper_bound(0x02)
+    1604              $C$DW$7 .dwtag  DW_TAG_subrange_type
+    1605                      .dwattr $C$DW$7, DW_AT_upper_bound(0xff)
+    1606                      .dwendtag $C$DW$T$24
+    1607              
+    1608              $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1609                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1610                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1611                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1612              $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1613                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1614                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1615                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1616              $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1617                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1618                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1619                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1620              $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1621                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1622                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1623                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+    1624              $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1625                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1626                      .dwattr $C$DW$T$8, DW_AT_name("short")
+    1627                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+    1628              $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1629                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1630                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1631                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+    1632              $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1633                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1634                      .dwattr $C$DW$T$10, DW_AT_name("int")
+    1635                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+    1636              $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("SINT16")
+    1637                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$10)
+    1638                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+    1639              $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1640                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1641                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1642                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+    1643              $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1644                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1645                      .dwattr $C$DW$T$12, DW_AT_name("long")
+    1646                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+    1647              $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1648                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1649                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1650                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   31
+
+    1651              $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1652                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1653                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1654                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+    1655              $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1656                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1657                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1658                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+    1659              $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1660                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1661                      .dwattr $C$DW$T$16, DW_AT_name("float")
+    1662                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+    1663              $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1664                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1665                      .dwattr $C$DW$T$17, DW_AT_name("double")
+    1666                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+    1667              $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1668                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1669                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1670                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+    1671                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1672              
+    1673              ;***************************************************************
+    1674              ;* DWARF CIE ENTRIES                                           *
+    1675              ;***************************************************************
+    1676              
+    1677              $C$DW$CIE       .dwcie 78
+    1678                      .dwcfi  cfa_register, 20
+    1679                      .dwcfi  cfa_offset, 0
+    1680                      .dwcfi  undefined, 0
+    1681                      .dwcfi  undefined, 1
+    1682                      .dwcfi  undefined, 2
+    1683                      .dwcfi  undefined, 3
+    1684                      .dwcfi  undefined, 22
+    1685                      .dwcfi  undefined, 37
+    1686                      .dwcfi  undefined, 36
+    1687                      .dwcfi  undefined, 23
+    1688                      .dwcfi  undefined, 30
+    1689                      .dwcfi  undefined, 31
+    1690                      .dwcfi  undefined, 32
+    1691                      .dwcfi  undefined, 38
+    1692                      .dwcfi  undefined, 75
+    1693                      .dwcfi  undefined, 24
+    1694                      .dwcfi  undefined, 33
+    1695                      .dwcfi  undefined, 35
+    1696                      .dwcfi  undefined, 34
+    1697                      .dwcfi  undefined, 76
+    1698                      .dwcfi  undefined, 21
+    1699                      .dwcfi  undefined, 20
+    1700                      .dwcfi  undefined, 28
+    1701                      .dwcfi  undefined, 29
+    1702                      .dwcfi  undefined, 25
+    1703                      .dwcfi  undefined, 77
+    1704                      .dwcfi  undefined, 4
+    1705                      .dwcfi  undefined, 6
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   32
+
+    1706                      .dwcfi  undefined, 8
+    1707                      .dwcfi  undefined, 10
+    1708                      .dwcfi  undefined, 12
+    1709                      .dwcfi  undefined, 14
+    1710                      .dwcfi  undefined, 16
+    1711                      .dwcfi  undefined, 17
+    1712                      .dwcfi  undefined, 18
+    1713                      .dwcfi  undefined, 19
+    1714                      .dwcfi  undefined, 5
+    1715                      .dwcfi  undefined, 7
+    1716                      .dwcfi  undefined, 9
+    1717                      .dwcfi  undefined, 11
+    1718                      .dwcfi  undefined, 13
+    1719                      .dwcfi  undefined, 15
+    1720                      .dwcfi  undefined, 43
+    1721                      .dwcfi  undefined, 44
+    1722                      .dwcfi  undefined, 47
+    1723                      .dwcfi  undefined, 48
+    1724                      .dwcfi  undefined, 51
+    1725                      .dwcfi  undefined, 52
+    1726                      .dwcfi  undefined, 55
+    1727                      .dwcfi  undefined, 56
+    1728                      .dwcfi  undefined, 59
+    1729                      .dwcfi  undefined, 60
+    1730                      .dwcfi  undefined, 63
+    1731                      .dwcfi  undefined, 64
+    1732                      .dwcfi  undefined, 67
+    1733                      .dwcfi  undefined, 68
+    1734                      .dwcfi  undefined, 71
+    1735                      .dwcfi  undefined, 72
+    1736                      .dwcfi  undefined, 73
+    1737                      .dwcfi  undefined, 74
+    1738                      .dwcfi  undefined, 39
+    1739                      .dwcfi  undefined, 40
+    1740                      .dwcfi  undefined, 27
+    1741                      .dwcfi  undefined, 78
+    1742                      .dwendentry
+    1743              
+    1744              ;***************************************************************
+    1745              ;* DWARF REGISTER MAP                                          *
+    1746              ;***************************************************************
+    1747              
+    1748              $C$DW$8 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AL")
+    1749                      .dwattr $C$DW$8, DW_AT_location[DW_OP_reg0]
+    1750              $C$DW$9 .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AH")
+    1751                      .dwattr $C$DW$9, DW_AT_location[DW_OP_reg1]
+    1752              $C$DW$10        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PL")
+    1753                      .dwattr $C$DW$10, DW_AT_location[DW_OP_reg2]
+    1754              $C$DW$11        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PH")
+    1755                      .dwattr $C$DW$11, DW_AT_location[DW_OP_reg3]
+    1756              $C$DW$12        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("T")
+    1757                      .dwattr $C$DW$12, DW_AT_location[DW_OP_reg22]
+    1758              $C$DW$13        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
+    1759                      .dwattr $C$DW$13, DW_AT_location[DW_OP_regx 0x25]
+    1760              $C$DW$14        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   33
+
+    1761                      .dwattr $C$DW$14, DW_AT_location[DW_OP_regx 0x24]
+    1762              $C$DW$15        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST0")
+    1763                      .dwattr $C$DW$15, DW_AT_location[DW_OP_reg23]
+    1764              $C$DW$16        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SXM")
+    1765                      .dwattr $C$DW$16, DW_AT_location[DW_OP_reg30]
+    1766              $C$DW$17        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PM")
+    1767                      .dwattr $C$DW$17, DW_AT_location[DW_OP_reg31]
+    1768              $C$DW$18        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("OVM")
+    1769                      .dwattr $C$DW$18, DW_AT_location[DW_OP_regx 0x20]
+    1770              $C$DW$19        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("V")
+    1771                      .dwattr $C$DW$19, DW_AT_location[DW_OP_regx 0x26]
+    1772              $C$DW$20        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDO")
+    1773                      .dwattr $C$DW$20, DW_AT_location[DW_OP_regx 0x4b]
+    1774              $C$DW$21        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
+    1775                      .dwattr $C$DW$21, DW_AT_location[DW_OP_reg24]
+    1776              $C$DW$22        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PAGE0")
+    1777                      .dwattr $C$DW$22, DW_AT_location[DW_OP_regx 0x21]
+    1778              $C$DW$23        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("INTM")
+    1779                      .dwattr $C$DW$23, DW_AT_location[DW_OP_regx 0x23]
+    1780              $C$DW$24        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AMODE")
+    1781                      .dwattr $C$DW$24, DW_AT_location[DW_OP_regx 0x22]
+    1782              $C$DW$25        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDOH")
+    1783                      .dwattr $C$DW$25, DW_AT_location[DW_OP_regx 0x4c]
+    1784              $C$DW$26        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
+    1785                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg21]
+    1786              $C$DW$27        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+    1787                      .dwattr $C$DW$27, DW_AT_location[DW_OP_reg20]
+    1788              $C$DW$28        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FP")
+    1789                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg28]
+    1790              $C$DW$29        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("DP")
+    1791                      .dwattr $C$DW$29, DW_AT_location[DW_OP_reg29]
+    1792              $C$DW$30        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+    1793                      .dwattr $C$DW$30, DW_AT_location[DW_OP_reg25]
+    1794              $C$DW$31        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("VOL")
+    1795                      .dwattr $C$DW$31, DW_AT_location[DW_OP_regx 0x4d]
+    1796              $C$DW$32        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR0")
+    1797                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg4]
+    1798              $C$DW$33        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR1")
+    1799                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg6]
+    1800              $C$DW$34        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR2")
+    1801                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg8]
+    1802              $C$DW$35        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR3")
+    1803                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg10]
+    1804              $C$DW$36        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
+    1805                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg12]
+    1806              $C$DW$37        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR5")
+    1807                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg14]
+    1808              $C$DW$38        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
+    1809                      .dwattr $C$DW$38, DW_AT_location[DW_OP_reg16]
+    1810              $C$DW$39        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
+    1811                      .dwattr $C$DW$39, DW_AT_location[DW_OP_reg17]
+    1812              $C$DW$40        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR7")
+    1813                      .dwattr $C$DW$40, DW_AT_location[DW_OP_reg18]
+    1814              $C$DW$41        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR7")
+    1815                      .dwattr $C$DW$41, DW_AT_location[DW_OP_reg19]
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   34
+
+    1816              $C$DW$42        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR0")
+    1817                      .dwattr $C$DW$42, DW_AT_location[DW_OP_reg5]
+    1818              $C$DW$43        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR1")
+    1819                      .dwattr $C$DW$43, DW_AT_location[DW_OP_reg7]
+    1820              $C$DW$44        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR2")
+    1821                      .dwattr $C$DW$44, DW_AT_location[DW_OP_reg9]
+    1822              $C$DW$45        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
+    1823                      .dwattr $C$DW$45, DW_AT_location[DW_OP_reg11]
+    1824              $C$DW$46        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")
+    1825                      .dwattr $C$DW$46, DW_AT_location[DW_OP_reg13]
+    1826              $C$DW$47        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR5")
+    1827                      .dwattr $C$DW$47, DW_AT_location[DW_OP_reg15]
+    1828              $C$DW$48        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0HL")
+    1829                      .dwattr $C$DW$48, DW_AT_location[DW_OP_regx 0x2b]
+    1830              $C$DW$49        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R0H")
+    1831                      .dwattr $C$DW$49, DW_AT_location[DW_OP_regx 0x2c]
+    1832              $C$DW$50        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1HL")
+    1833                      .dwattr $C$DW$50, DW_AT_location[DW_OP_regx 0x2f]
+    1834              $C$DW$51        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R1H")
+    1835                      .dwattr $C$DW$51, DW_AT_location[DW_OP_regx 0x30]
+    1836              $C$DW$52        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2HL")
+    1837                      .dwattr $C$DW$52, DW_AT_location[DW_OP_regx 0x33]
+    1838              $C$DW$53        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R2H")
+    1839                      .dwattr $C$DW$53, DW_AT_location[DW_OP_regx 0x34]
+    1840              $C$DW$54        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3HL")
+    1841                      .dwattr $C$DW$54, DW_AT_location[DW_OP_regx 0x37]
+    1842              $C$DW$55        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R3H")
+    1843                      .dwattr $C$DW$55, DW_AT_location[DW_OP_regx 0x38]
+    1844              $C$DW$56        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4HL")
+    1845                      .dwattr $C$DW$56, DW_AT_location[DW_OP_regx 0x3b]
+    1846              $C$DW$57        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R4H")
+    1847                      .dwattr $C$DW$57, DW_AT_location[DW_OP_regx 0x3c]
+    1848              $C$DW$58        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5HL")
+    1849                      .dwattr $C$DW$58, DW_AT_location[DW_OP_regx 0x3f]
+    1850              $C$DW$59        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5H")
+    1851                      .dwattr $C$DW$59, DW_AT_location[DW_OP_regx 0x40]
+    1852              $C$DW$60        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6HL")
+    1853                      .dwattr $C$DW$60, DW_AT_location[DW_OP_regx 0x43]
+    1854              $C$DW$61        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R6H")
+    1855                      .dwattr $C$DW$61, DW_AT_location[DW_OP_regx 0x44]
+    1856              $C$DW$62        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7HL")
+    1857                      .dwattr $C$DW$62, DW_AT_location[DW_OP_regx 0x47]
+    1858              $C$DW$63        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R7H")
+    1859                      .dwattr $C$DW$63, DW_AT_location[DW_OP_regx 0x48]
+    1860              $C$DW$64        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RBL")
+    1861                      .dwattr $C$DW$64, DW_AT_location[DW_OP_regx 0x49]
+    1862              $C$DW$65        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RB")
+    1863                      .dwattr $C$DW$65, DW_AT_location[DW_OP_regx 0x4a]
+    1864              $C$DW$66        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STFL")
+    1865                      .dwattr $C$DW$66, DW_AT_location[DW_OP_regx 0x27]
+    1866              $C$DW$67        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("STF")
+    1867                      .dwattr $C$DW$67, DW_AT_location[DW_OP_regx 0x28]
+    1868              $C$DW$68        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FPUHAZ")
+    1869                      .dwattr $C$DW$68, DW_AT_location[DW_OP_reg27]
+    1870              $C$DW$69        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+TMS320C2000 Assembler PC v6.1.3 Thu Jan 30 10:31:42 2014
+
+Tools Copyright (c) 1996-2012 Texas Instruments Incorporated
+C:\Users\a0272466\AppData\Local\Temp\0764810                         PAGE   35
+
+    1871                      .dwattr $C$DW$69, DW_AT_location[DW_OP_regx 0x4e]
+    1872                      .dwendtag $C$DW$CU
+    1873              
+
+No Assembly Errors, No Assembly Warnings

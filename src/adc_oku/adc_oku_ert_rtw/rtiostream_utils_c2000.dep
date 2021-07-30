@@ -1,0 +1,7 @@
+rtiostream_utils_c2000.obj: C:/ProgramData/MATLAB/SupportPackages/R2020b/toolbox/target/supportpackages/tic2000/src/rtiostream_utils_c2000.c
+rtiostream_utils_c2000.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/toolbox/target/SUPPOR~1/tic2000/inc/rtiostream_utils_c2000.h
+rtiostream_utils_c2000.obj: C:/Users/furka/Desktop/Furkan_dosya/adc_oku/adc_oku_ert_rtw/rtwtypes.h
+rtiostream_utils_c2000.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/3P778C~1.INS/TIC200~1.INS/TI-CGT~1.LTS/include/stddef.h
+rtiostream_utils_c2000.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/3P778C~1.INS/TIC200~1.INS/TI-CGT~1.LTS/include/_ti_config.h
+rtiostream_utils_c2000.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/3P778C~1.INS/TIC200~1.INS/TI-CGT~1.LTS/include/linkage.h
+rtiostream_utils_c2000.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/toolbox/target/SUPPOR~1/tic2000/inc/rtiostream_c2000.h

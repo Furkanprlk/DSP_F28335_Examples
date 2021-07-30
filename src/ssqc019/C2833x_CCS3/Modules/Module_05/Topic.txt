@@ -1,0 +1,1 @@
+Data Memory Mapped Peripherals * The Peripheral Frames * Digital I/O Unit * F2833x Clock Module * Watchdog Timer * System Control and Status Register * Low Power Mode * Lab 5_1: Digital Output at 4 LEDs * Lab 5_2: Digital Output (Version 2) * Lab 5_3: Digital Input * Lab 5_4: Digital In- and Output * Lab 5_5: Digital In- and Output plus Start/Stop-function
